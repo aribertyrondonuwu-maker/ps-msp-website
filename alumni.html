@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ikatan Alumni — PS Manajemen Sumberdaya Perairan FPIK UNSRAT</title>
+<meta name="description" content="Ikatan Alumni Program Studi Manajemen Sumberdaya Perairan FPIK UNSRAT — pengurus, kegiatan, jejak karier alumni, dan ruang diskusi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/kurikulum.css">
+<link rel="stylesheet" href="css/alumni.css">
+</head>
+<body>
+
+<header class="navbar scrolled" id="navbar">
+  <div class="container navbar-inner">
+    <a href="index.html" class="brand">MSP <span>FPIK UNSRAT</span></a>
+    <nav class="nav-links">
+      <a href="index.html#profil">Profil</a>
+      <a href="kurikulum.html">Kurikulum</a>
+      <a href="index.html#dosen">Dosen</a>
+      <a href="alumni.html" class="active">Alumni</a>
+      <a href="index.html#tracer">Tracer Study</a>
+      <a href="index.html#kontak">Kontak</a>
+    </nav>
+    <a href="index.html" class="btn btn-primary btn-sm">← Beranda</a>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow">Jejaring Alumni</p>
+    <h1>Ikatan Alumni PS MSP</h1>
+    <p class="hero-sub">Menghubungkan lulusan Manajemen Sumberdaya Perairan FPIK UNSRAT — berbagi peluang kerja, membina almamater, dan merayakan kontribusi alumni di dunia kelautan dan perikanan.</p>
+  </div>
+</section>
+
+<!-- TENTANG -->
+<section class="section">
+  <div class="container">
+    <div class="cards-grid">
+      <article class="card">
+        <h3>Dasar & Payung Organisasi</h3>
+        <p>Alumni PS MSP terhimpun dalam <strong>Ikatan Keluarga Alumni Unsrat (IKA Unsrat)</strong>, organisasi resmi berdasarkan Statuta Unsrat (Permendiktisaintek No. 049/2025, Pasal 28) yang bertujuan membina hubungan alumni dengan almamater, masyarakat ilmiah, dan dunia kerja.</p>
+      </article>
+      <article class="card">
+        <h3>Kanal Komunikasi Aktif</h3>
+        <p><strong>WhatsApp Group Alumni MSP Unsrat</strong>, terbentuk sejak <strong>2017</strong>, menjadi kanal utama informasi lowongan kerja dan jejaring antar-angkatan — dirujuk langsung dalam LED sebagai bagian dari strategi penguatan serapan kerja lulusan.</p>
+      </article>
+      <article class="card">
+        <h3>Kontribusi ke Almamater</h3>
+        <p>Alumni berperan aktif sebagai <strong>responden Tracer Study</strong> dan penilaian pengguna lulusan — data yang menjadi dasar evaluasi kurikulum dan akreditasi LAM PTIP. Setiap partisipasi survei alumni adalah kontribusi nyata bagi kemajuan prodi.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PENGURUS -->
+<section class="section section-alt" id="pengurus">
+  <div class="container">
+    <h2 class="section-title">Pengurus</h2>
+    <p class="section-sub">Struktur kepengurusan Ikatan Alumni PS MSP.</p>
+    <div class="cards-grid" id="pengurusGrid">
+      <!-- diisi dari js/data/alumni-pengurus.json -->
+    </div>
+  </div>
+</section>
+
+<!-- KEGIATAN & KONTRIBUSI -->
+<section class="section" id="kegiatan">
+  <div class="container">
+    <h2 class="section-title">Kegiatan & Kontribusi</h2>
+    <p class="section-sub">Aktivitas dan sumbangsih alumni bagi almamater dan komunitas kelautan-perikanan.</p>
+    <div id="kegiatanList"></div>
+  </div>
+</section>
+
+<!-- PEKERJAAN SAAT INI -->
+<section class="section section-alt" id="pekerjaan">
+  <div class="container">
+    <h2 class="section-title">Sebaran Pekerjaan Alumni</h2>
+    <p class="section-sub">Data live dari sistem Tracer Study — sektor pekerjaan, tingkat instansi, dan waktu tunggu kerja alumni PS MSP, diperbarui otomatis dari tahun ke tahun.</p>
+    <div class="tracer-embed-note card">
+      <div class="tracer-iframe-wrap">
+        <iframe src="https://aribertyrondonuwu-maker.github.io/tracer-study-msp/#statistik" loading="lazy" title="Statistik Pekerjaan Alumni PS MSP"></iframe>
+      </div>
+      <a href="https://aribertyrondonuwu-maker.github.io/tracer-study-msp/" target="_blank" class="btn btn-primary">Update Data Karier Anda →</a>
+      <p class="muted small">Alumni: pastikan data pekerjaan Anda termutakhir dengan mengisi/memperbarui formulir Tracer Study.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DISKUSI / KOMENTAR -->
+<section class="section" id="diskusi">
+  <div class="container">
+    <h2 class="section-title">Diskusi Alumni</h2>
+    <p class="section-sub">Ruang berbagi kabar, lowongan kerja, atau sekadar menyapa sesama alumni MSP. Pesan ditinjau admin sebelum tampil publik.</p>
+
+    <form id="diskusiForm" class="diskusi-form card">
+      <div class="form-row">
+        <input type="text" id="diskusiNama" placeholder="Nama" required maxlength="80">
+        <input type="text" id="diskusiAngkatan" placeholder="Angkatan (mis. 2018)" maxlength="20">
+      </div>
+      <textarea id="diskusiPesan" placeholder="Tulis pesan, kabar, atau info lowongan kerja..." required maxlength="500" rows="3"></textarea>
+      <button type="submit" class="btn btn-primary btn-sm">Kirim Pesan</button>
+      <p class="form-note" id="diskusiStatus"></p>
+    </form>
+
+    <div id="diskusiList" class="diskusi-list">
+      <p class="muted">Memuat diskusi…</p>
+    </div>
+  </div>
+</section>
+
+<!-- GABUNG -->
+<section class="section section-alt cta-join">
+  <div class="container">
+    <h2 class="section-title">Belum Tergabung?</h2>
+    <p class="section-sub">Hubungi koordinator alumni atau prodi untuk bergabung ke WhatsApp Group Alumni MSP Unsrat.</p>
+    <a href="index.html#kontak" class="btn btn-primary">Hubungi Prodi →</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p class="footer-bottom">© Program Studi Manajemen Sumberdaya Perairan · FPIK UNSRAT</p>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+<script src="js/alumni.js"></script>
+</body>
+</html>
