@@ -1,0 +1,17 @@
+{
+  "_meta": {
+    "terakhir_diperbarui": "2026-07-17",
+    "catatan": "Hanya mitra dengan situs publik resmi yang dicantumkan (bukan link evidence SPK internal). Tambahkan entri baru dengan URL resmi yang sudah diverifikasi bisa diakses, jangan menebak domain."
+  },
+  "mitra": [
+    { "nama": "FAO (Food and Agriculture Organization)", "url": "https://www.fao.org", "keterangan": "Mitra riset & PkM internasional — Co-Management Perikanan Teri, Raja Ampat" },
+    { "nama": "Rare, Inc.", "url": "https://rare.org", "keterangan": "Mitra riset sosio-ekonomi nelayan Sulawesi Utara" },
+    { "nama": "Environmental Defense Fund (EDF)", "url": "https://www.edf.org", "keterangan": "Mitra Program Indonesia Fisheries" },
+    { "nama": "BRIN (Badan Riset dan Inovasi Nasional)", "url": "https://www.brin.go.id", "keterangan": "Mitra riset nasional — Pusat Kolaborasi Riset" },
+    { "nama": "IUCN (International Union for Conservation of Nature)", "url": "https://www.iucn.org", "keterangan": "Jejaring konservasi kawasan Coral Triangle" },
+    { "nama": "Balai Taman Nasional Bunaken", "url": "https://tn-bunaken.com", "keterangan": "Mitra PkM & lokasi riset lapangan mahasiswa/dosen" },
+    { "nama": "LAM PTIP", "url": "https://lamptip.or.id", "keterangan": "Lembaga akreditasi mandiri" },
+    { "nama": "Universitas Sam Ratulangi", "url": "https://www.unsrat.ac.id", "keterangan": "Perguruan tinggi induk" },
+    { "nama": "FPIK Unsrat", "url": "https://fpik.unsrat.ac.id", "keterangan": "Fakultas pengelola PS MSP" }
+  ]
+}
