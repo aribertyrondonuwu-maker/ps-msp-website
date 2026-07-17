@@ -39,7 +39,7 @@ a { text-decoration: none; color: inherit; }
 .navbar.scrolled .brand { color: var(--navy); }
 .brand span { color: var(--teal-light); font-weight: 600; }
 .navbar.scrolled .brand span { color: var(--teal); }
-.nav-links { display: flex; gap: 28px; font-weight: 500; font-size: 0.95rem; }
+.nav-links { display: flex; gap: 18px; font-weight: 500; font-size: 0.86rem; flex-wrap: wrap; }
 .nav-links a { color: rgba(255,255,255,0.9); transition: color .2s; }
 .navbar.scrolled .nav-links a { color: var(--ink); }
 .nav-links a:hover { color: var(--teal-light); }
@@ -48,6 +48,8 @@ a { text-decoration: none; color: inherit; }
 .btn:hover { transform: translateY(-2px); }
 .btn-primary { background: var(--teal); color: #fff; box-shadow: 0 8px 20px -8px rgba(20,184,166,0.6); }
 .btn-outline { border: 1.5px solid rgba(255,255,255,0.6); color: #fff; }
+.btn-outline-dark { border: 1.5px solid var(--navy); color: var(--navy); background: transparent; padding: 10px 20px; border-radius: 999px; font-weight: 600; font-size: 0.85rem; cursor: pointer; }
+.btn-outline-dark:hover { background: var(--navy); color: #fff; }
 .btn-sm { padding: 9px 18px; font-size: 0.85rem; }
 
 /* Hero */
@@ -124,6 +126,19 @@ a { text-decoration: none; color: inherit; }
 .galeri-placeholder .kategori { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.75; margin-bottom: 6px; }
 .galeri-placeholder .caption { font-size: 0.85rem; line-height: 1.4; }
 .galeri-item img, .galeri-item video { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.galeri-subsection { margin-top: 56px; }
+.galeri-subsection h3 { color: var(--navy); font-size: 1.4rem; margin-bottom: 6px; font-family: var(--font-head); }
+.luaran-list { display: flex; flex-direction: column; gap: 2px; max-width: 900px; margin-top: 20px; }
+.luaran-row {
+  display: flex; justify-content: space-between; align-items: center; gap: 16px;
+  padding: 12px 18px; background: var(--card-bg); border: 1px solid var(--border);
+  border-radius: 10px; font-size: 0.88rem;
+}
+.luaran-row a { color: var(--navy); font-weight: 500; }
+.luaran-row a:hover { color: var(--teal); }
+.luaran-meta { color: var(--muted); font-size: 0.78rem; white-space: nowrap; }
+.luaran-toggle { margin-top: 16px; }
 
 /* Footer */
 .footer { background: var(--navy); color: rgba(255,255,255,0.85); padding: 64px 0 24px; }
