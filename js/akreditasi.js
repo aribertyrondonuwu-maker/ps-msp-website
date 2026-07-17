@@ -53,6 +53,12 @@ async function loadAkreditasi() {
         <a href="${d.url}" target="_blank" rel="noopener">${d.nama}</a>
       </div>
     `).join('');
+
+    document.getElementById('landasanHukumList').innerHTML = (data.landasan_hukum || []).map(d => `
+      <div class="luaran-row">
+        <a href="${d.url}" target="_blank" rel="noopener">${d.nama}</a>
+      </div>
+    `).join('');
   } catch (e) {
     console.error('Gagal memuat data akreditasi:', e);
   }

@@ -41,6 +41,12 @@ async function loadMutu() {
         <a href="${d.url}" target="_blank" rel="noopener">${d.nama}</a>
       </div>
     `).join('');
+
+    document.getElementById('sertifikasiList').innerHTML = (data.sertifikasi_kelembagaan || []).map(d => `
+      <div class="luaran-row">
+        <a href="${d.url}" target="_blank" rel="noopener">${d.nama}</a>
+      </div>
+    `).join('');
   } catch (e) {
     console.error('Gagal memuat data mutu:', e);
   }
