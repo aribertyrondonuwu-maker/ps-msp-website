@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tridharma — PS Manajemen Sumberdaya Perairan FPIK UNSRAT</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/kurikulum.css">
+<link rel="stylesheet" href="css/akreditasi.css">
+</head>
+<body data-page="tridharma">
+
+<header class="navbar scrolled" id="navbar">
+  <div class="container navbar-inner">
+    <a href="index.html" class="brand">MSP <span>FPIK UNSRAT</span></a>
+    <nav class="nav-links">
+      <a href="index.html#profil">Profil</a>
+      <a href="akreditasi.html">Akreditasi</a>
+      <a href="tridharma.html" class="active">Tridharma</a>
+      <a href="kurikulum.html">Kurikulum</a>
+      <a href="kemahasiswaan.html">Kemahasiswaan</a>
+      <a href="mutu.html">Mutu</a>
+      <a href="index.html#dosen">Dosen</a>
+      <a href="alumni.html">Alumni</a>
+      <a href="tautan.html">Tautan</a>
+    </nav>
+    <a href="index.html" class="btn btn-primary btn-sm">← Beranda</a>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow">Data Lengkap Tridharma</p>
+    <h1>Penelitian, Pengabdian & Kerjasama</h1>
+    <p class="hero-sub">Rincian dana, mitra, dan kegiatan tridharma PS MSP periode 2023–2025 (TS-2 s.d. TS), bersumber langsung dari LKPS LAM PTIP.</p>
+  </div>
+</section>
+
+<!-- PENELITIAN -->
+<section class="section" id="penelitian">
+  <div class="container">
+    <h2 class="section-title">Penelitian</h2>
+    <p class="section-sub" id="penelitianSummary"></p>
+    <div class="table-wrap">
+      <table class="data-table" id="penelitianTable"></table>
+    </div>
+  </div>
+</section>
+
+<!-- PENGABDIAN -->
+<section class="section section-alt" id="pengabdian">
+  <div class="container">
+    <h2 class="section-title">Pengabdian kepada Masyarakat</h2>
+    <p class="section-sub" id="pengabdianSummary"></p>
+    <div class="table-wrap">
+      <table class="data-table" id="pengabdianTable"></table>
+    </div>
+
+    <h3 style="margin-top:40px;color:var(--navy);font-family:var(--font-head);">Desa/Kelompok Masyarakat Binaan</h3>
+    <p class="section-sub" id="desaBinaanNote"></p>
+    <div class="table-wrap">
+      <table class="data-table" id="desaBinaanTable"></table>
+    </div>
+  </div>
+</section>
+
+<!-- KERJASAMA -->
+<section class="section" id="kerjasama">
+  <div class="container">
+    <h2 class="section-title">Kerjasama</h2>
+    <p class="section-sub">Total <strong id="kerjasamaTotal">-</strong> kerjasama tridharma aktif, terbagi 4 kategori.</p>
+
+    <div class="kerjasama-tabs">
+      <button class="kerjasama-tab-btn active" data-cat="pendidikan">Pendidikan</button>
+      <button class="kerjasama-tab-btn" data-cat="penelitian">Penelitian</button>
+      <button class="kerjasama-tab-btn" data-cat="pkm">Pengabdian</button>
+      <button class="kerjasama-tab-btn" data-cat="dudi">DUDI</button>
+    </div>
+    <div class="table-wrap">
+      <table class="data-table" id="kerjasamaTable"></table>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p class="footer-bottom">© Program Studi Manajemen Sumberdaya Perairan · FPIK UNSRAT</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase-client.js"></script>
+<script src="js/app.js"></script>
+<script src="js/tridharma.js"></script>
+</body>
+</html>
