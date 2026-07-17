@@ -35,6 +35,12 @@ async function loadMutu() {
         <h3>${t.label}</h3><p class="card-link">Buka situs →</p>
       </a>
     `).join('');
+
+    document.getElementById('dokumenZiList').innerHTML = (data.dokumen_zona_integritas || []).map(d => `
+      <div class="luaran-row">
+        <a href="${d.url}" target="_blank" rel="noopener">${d.nama}</a>
+      </div>
+    `).join('');
   } catch (e) {
     console.error('Gagal memuat data mutu:', e);
   }

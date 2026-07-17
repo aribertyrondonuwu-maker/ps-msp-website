@@ -46,6 +46,13 @@ async function loadAkreditasi() {
         <p class="card-link">Buka situs →</p>
       </a>
     `).join('');
+
+    // Dokumen Legal
+    document.getElementById('dokumenLegalList').innerHTML = (data.dokumen_legal || []).map(d => `
+      <div class="luaran-row">
+        <a href="${d.url}" target="_blank" rel="noopener">${d.nama}</a>
+      </div>
+    `).join('');
   } catch (e) {
     console.error('Gagal memuat data akreditasi:', e);
   }
