@@ -19,9 +19,19 @@ async function loadKemahasiswaan() {
     document.getElementById('ptwCard').innerHTML = `<h3>Kelulusan Tepat Waktu</h3><p>${data.masa_studi.lulus_tepat_waktu}</p>`;
     document.getElementById('dayaTampungCard').innerHTML = `<h3>Daya Tampung Resmi: ${data.masa_studi.daya_tampung_resmi}/tahun</h3><p>${data.masa_studi.catatan_daya_tampung}</p>`;
 
-    document.getElementById('layananGrid').innerHTML = data.layanan.map(l => `
-      <article class="card"><h3>${l.nama}</h3><p>${l.deskripsi}</p></article>
-    `).join('');
+    const layananTable = document.getElementById('layananTable');
+    layananTable.innerHTML = `
+      <thead><tr><th>Layanan</th><th>Dasar Hukum</th><th>Mekanisme</th><th>Waktu Layanan</th></tr></thead>
+      <tbody>
+        ${data.layanan.map(l => `
+          <tr>
+            <td><strong>${l.nama}</strong></td>
+            <td>${l.dasar_hukum}</td>
+            <td>${l.mekanisme}</td>
+            <td>${l.waktu_layanan}</td>
+          </tr>
+        `).join('')}
+      </tbody>`;
 
     document.getElementById('prestasiList').innerHTML = data.prestasi_terpilih.map(p => `
       <div class="kegiatan-item">
