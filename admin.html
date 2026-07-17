@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard Admin — PS MSP FPIK UNSRAT</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="admin-body">
+
+<!-- LOGIN -->
+<section id="loginScreen" class="admin-login">
+  <form id="loginForm" class="admin-login-card">
+    <h1>MSP <span>FPIK UNSRAT</span></h1>
+    <p class="muted">Dashboard Admin</p>
+    <input type="email" id="loginEmail" placeholder="Email" required autocomplete="username">
+    <input type="password" id="loginPassword" placeholder="Password" required autocomplete="current-password">
+    <button type="submit" class="btn btn-primary btn-sm">Masuk</button>
+    <p class="form-note" id="loginError"></p>
+  </form>
+</section>
+
+<!-- DASHBOARD -->
+<div id="dashboard" class="admin-dashboard" style="display:none;">
+  <aside class="admin-sidebar">
+    <div class="admin-brand">MSP <span>Admin</span></div>
+    <nav>
+      <button class="admin-nav-btn active" data-tab="berita">📰 Berita</button>
+      <button class="admin-nav-btn" data-tab="galeri">🖼️ Galeri</button>
+      <button class="admin-nav-btn" data-tab="dosen-foto">👤 Foto Dosen</button>
+      <button class="admin-nav-btn superadmin-only" data-tab="header-foto">🎨 Header Halaman</button>
+      <button class="admin-nav-btn superadmin-only" data-tab="diskusi">💬 Diskusi Alumni</button>
+      <button class="admin-nav-btn superadmin-only" data-tab="kelola-admin">🔑 Kelola Admin</button>
+    </nav>
+    <div class="admin-user">
+      <span id="adminEmail"></span><br>
+      <span id="adminRoleBadge" class="role-badge"></span>
+      <button id="logoutBtn" class="btn-outline-dark" style="margin-top:10px;width:100%;">Keluar</button>
+    </div>
+  </aside>
+
+  <main class="admin-content">
+
+    <!-- BERITA -->
+    <section id="tab-berita" class="admin-tab active">
+      <h2>Kelola Berita & Pengumuman</h2>
+      <form id="beritaForm" class="admin-form">
+        <input type="hidden" id="beritaId">
+        <input type="text" id="beritaJudul" placeholder="Judul berita" required>
+        <select id="beritaKategori">
+          <option value="Akademik">Akademik</option>
+          <option value="Prestasi">Prestasi</option>
+          <option value="Kerjasama">Kerjasama</option>
+          <option value="Pengumuman">Pengumuman</option>
+        </select>
+        <textarea id="beritaKonten" placeholder="Isi berita..." rows="5" required></textarea>
+        <label class="checkbox-label"><input type="checkbox" id="beritaPublished"> Publikasikan sekarang</label>
+        <div class="admin-form-actions">
+          <button type="submit" class="btn btn-primary btn-sm">Simpan</button>
+          <button type="button" id="beritaCancelEdit" class="btn-outline-dark" style="display:none;">Batal Edit</button>
+        </div>
+      </form>
+      <div id="beritaTableWrap" class="table-wrap" style="margin-top:24px;">
+        <table class="data-table" id="beritaTable"></table>
+      </div>
+    </section>
+
+    <!-- GALERI -->
+    <section id="tab-galeri" class="admin-tab">
+      <h2>Kelola Galeri</h2>
+      <form id="galeriForm" class="admin-form">
+        <select id="galeriTipe">
+          <option value="foto">Foto</option>
+          <option value="video">Video (YouTube embed URL)</option>
+        </select>
+        <select id="galeriKategori">
+          <option>Riset Lapangan</option>
+          <option>Akademik</option>
+          <option>PkM</option>
+          <option>Kerjasama</option>
+          <option>Prestasi</option>
+          <option>Profil</option>
+        </select>
+        <input type="text" id="galeriCaption" placeholder="Caption / keterangan" required>
+        <input type="file" id="galeriFile" accept="image/*">
+        <p class="muted small-note" style="margin:0;">Untuk video, isi caption lalu tempel link embed YouTube di kolom bawah (bukan upload file).</p>
+        <input type="text" id="galeriVideoUrl" placeholder="https://www.youtube.com/embed/xxxxx (khusus video)">
+        <div class="admin-form-actions">
+          <button type="submit" class="btn btn-primary btn-sm">Tambah ke Galeri</button>
+        </div>
+        <p class="form-note" id="galeriStatus"></p>
+      </form>
+      <div class="admin-grid-preview" id="galeriPreviewGrid" style="margin-top:24px;"></div>
+    </section>
+
+    <!-- FOTO DOSEN -->
+    <section id="tab-dosen-foto" class="admin-tab">
+      <h2>Foto Profil Dosen</h2>
+      <p class="muted">Pilih dosen, upload foto — otomatis menggantikan avatar inisial di Beranda & halaman detail.</p>
+      <form id="dosenFotoForm" class="admin-form">
+        <select id="dosenFotoSelect"></select>
+        <input type="file" id="dosenFotoFile" accept="image/*" required>
+        <div class="admin-form-actions">
+          <button type="submit" class="btn btn-primary btn-sm">Upload Foto</button>
+        </div>
+        <p class="form-note" id="dosenFotoStatus"></p>
+      </form>
+      <div class="admin-grid-preview" id="dosenFotoGrid" style="margin-top:24px;"></div>
+    </section>
+
+    <!-- HEADER FOTO -->
+    <section id="tab-header-foto" class="admin-tab">
+      <h2>Foto Header per Halaman</h2>
+      <p class="muted">Ganti latar hero/header setiap halaman dengan foto asli.</p>
+      <form id="headerFotoForm" class="admin-form">
+        <select id="headerFotoSelect">
+          <option value="hero:beranda">Beranda</option>
+          <option value="hero:akreditasi">Akreditasi</option>
+          <option value="hero:kemahasiswaan">Kemahasiswaan</option>
+          <option value="hero:kurikulum">Kurikulum</option>
+          <option value="hero:alumni">Alumni</option>
+          <option value="hero:mutu">Penjaminan Mutu</option>
+          <option value="hero:tautan">Tautan</option>
+        </select>
+        <input type="file" id="headerFotoFile" accept="image/*" required>
+        <div class="admin-form-actions">
+          <button type="submit" class="btn btn-primary btn-sm">Upload Foto Header</button>
+        </div>
+        <p class="form-note" id="headerFotoStatus"></p>
+      </form>
+      <div class="admin-grid-preview" id="headerFotoGrid" style="margin-top:24px;"></div>
+    </section>
+
+    <!-- DISKUSI -->
+    <section id="tab-diskusi" class="admin-tab">
+      <h2>Moderasi Diskusi Alumni</h2>
+      <div id="diskusiAdminList"></div>
+    </section>
+
+    <!-- KELOLA ADMIN (superadmin only) -->
+    <section id="tab-kelola-admin" class="admin-tab">
+      <h2>Kelola Admin</h2>
+      <p class="muted">Tambah admin baru akan membuat akun login (Supabase Auth) sekaligus mendaftarkannya di sini dengan peran tertentu.</p>
+      <form id="adminUserForm" class="admin-form">
+        <input type="email" id="newAdminEmail" placeholder="Email admin baru" required>
+        <input type="password" id="newAdminPassword" placeholder="Password sementara (min. 6 karakter)" required minlength="6">
+        <input type="text" id="newAdminNama" placeholder="Nama lengkap">
+        <select id="newAdminRole">
+          <option value="admin">Admin (Berita & Galeri saja)</option>
+          <option value="superadmin">Superadmin (akses penuh)</option>
+        </select>
+        <div class="admin-form-actions">
+          <button type="submit" class="btn btn-primary btn-sm">Tambah Admin</button>
+        </div>
+        <p class="form-note" id="adminUserStatus"></p>
+      </form>
+      <div class="table-wrap" style="margin-top:24px;">
+        <table class="data-table" id="adminUserTable"></table>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase-client.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>
