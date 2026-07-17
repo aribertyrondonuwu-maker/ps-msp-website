@@ -1,0 +1,20 @@
+.dosen-hero { text-align: center; padding-top: 160px; }
+.dosen-hero-photo {
+  width: 120px; height: 120px; border-radius: 50%; margin: 0 auto 24px;
+  background: linear-gradient(135deg, var(--teal), var(--teal-light));
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-head); font-weight: 800; font-size: 2.2rem; color: var(--navy);
+  border: 4px solid rgba(255,255,255,0.3);
+}
+.dosen-hero h1 { font-size: clamp(1.6rem, 3vw, 2.4rem); margin-bottom: 10px; }
+.dosen-hero .hero-sub { max-width: 600px; margin: 0 auto; }
+
+.detail-block { margin-bottom: 40px; }
+.detail-block h2 { font-size: 1.3rem; color: var(--navy); margin-bottom: 16px; }
+.detail-block p { color: var(--ink); line-height: 1.75; max-width: 760px; }
+.pill-list { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+.pill { background: #eef4f7; color: var(--navy); padding: 6px 16px; border-radius: 999px; font-size: 0.85rem; font-weight: 500; }
+.timeline-item { border-left: 2px solid var(--teal); padding-left: 18px; margin-bottom: 14px; }
+.timeline-item strong { color: var(--navy); }
+.coming-soon { text-align: center; padding: 60px 20px; }
+.coming-soon h2 { color: var(--navy); margin-bottom: 12px; }

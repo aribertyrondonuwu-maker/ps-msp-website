@@ -1,0 +1,34 @@
+.page-hero {
+  padding: 140px 0 60px;
+  background: linear-gradient(160deg, var(--navy) 0%, var(--deep) 60%, #0f766e 100%);
+  color: #fff;
+}
+.page-hero .hero-sub { color: rgba(255,255,255,0.8); max-width: 640px; }
+.nav-links a.active { color: var(--teal); font-weight: 700; }
+
+.semester-card {
+  background: var(--card-bg); border-radius: var(--radius); border: 1px solid var(--border);
+  box-shadow: var(--shadow); margin-bottom: 22px; overflow: hidden;
+}
+.semester-head {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 22px 28px; background: linear-gradient(120deg, var(--navy), var(--deep));
+  color: #fff; cursor: pointer;
+}
+.semester-head h3 { font-size: 1.1rem; }
+.semester-head .badge { font-size: 0.78rem; background: rgba(255,255,255,0.15); padding: 4px 12px; border-radius: 999px; }
+.semester-body { padding: 8px 28px 22px; display: none; }
+.semester-card.open .semester-body { display: block; }
+.mk-row {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 12px 0; border-bottom: 1px dashed var(--border); font-size: 0.92rem;
+}
+.mk-row:last-child { border-bottom: none; }
+.mk-name { color: var(--ink); font-weight: 500; }
+.mk-code { color: var(--muted); font-size: 0.78rem; margin-right: 10px; }
+.mk-sks { color: var(--teal); font-weight: 700; font-size: 0.85rem; white-space: nowrap; }
+.semester-note {
+  margin-top: 14px; padding: 12px 16px; background: #fff7ed; border: 1px solid #fed7aa;
+  border-radius: 10px; font-size: 0.82rem; color: #9a5b13;
+}
+.semester-keterangan { font-size: 0.85rem; color: var(--muted); margin-bottom: 8px; font-style: italic; }

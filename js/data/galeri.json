@@ -1,0 +1,17 @@
+{
+  "_meta": {
+    "terakhir_diperbarui": "2026-07-17",
+    "catatan": "Tambahkan objek baru ke array `item` begitu foto/video tersedia. Field `status`: 'draft' = placeholder menanti aset, 'live' = sudah ada url asli. Untuk video gunakan tipe 'video' dan url YouTube/Vimeo embed."
+  },
+  "item": [
+    { "id": 1, "tipe": "foto", "status": "draft", "kategori": "Riset Lapangan", "caption": "Penyelaman ilmiah & monitoring terumbu karang, Taman Nasional Bunaken" },
+    { "id": 2, "tipe": "foto", "status": "draft", "kategori": "Riset Lapangan", "caption": "Ekspedisi muck diving & identifikasi biota, Selat Lembeh" },
+    { "id": 3, "tipe": "foto", "status": "draft", "kategori": "Akademik", "caption": "Praktikum lapangan mahasiswa MSP di kawasan pesisir Sulawesi Utara" },
+    { "id": 4, "tipe": "foto", "status": "draft", "kategori": "PkM", "caption": "Pelatihan pengolahan alga bersama masyarakat pesisir Desa Arakan" },
+    { "id": 5, "tipe": "foto", "status": "draft", "kategori": "Akademik", "caption": "Wisuda & prestasi mahasiswa PS MSP" },
+    { "id": 6, "tipe": "foto", "status": "draft", "kategori": "Kerjasama", "caption": "Kunjungan & kolaborasi riset mitra internasional" },
+    { "id": 7, "tipe": "video", "status": "draft", "kategori": "Profil", "caption": "Video profil Program Studi MSP FPIK UNSRAT", "url": "" },
+    { "id": 8, "tipe": "foto", "status": "draft", "kategori": "Riset Lapangan", "caption": "Restorasi terumbu buatan (Reef Ball), Teluk Manado" },
+    { "id": 9, "tipe": "foto", "status": "draft", "kategori": "Akademik", "caption": "Kegiatan Danau Tondano & Danau Moat — praktikum perairan tawar" }
+  ]
+}

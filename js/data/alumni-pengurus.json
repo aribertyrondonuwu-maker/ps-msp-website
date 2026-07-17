@@ -1,0 +1,28 @@
+{
+  "_meta": {
+    "terakhir_diperbarui": "2026-07-17",
+    "catatan": "[DATA DIPERLUKAN: struktur pengurus resmi Ikatan Alumni PS MSP belum ditemukan di dokumen LED/LKPS — hanya WhatsApp Group Alumni MSP (sejak 2017) yang terdokumentasi. Konfirmasi ke Koordinator Prodi/WD Kemahasiswaan & Alumni FPIK untuk nama & struktur pengurus resmi, lalu ganti array `pengurus` di bawah."
+  },
+  "pengurus": [
+    { "peran": "Ketua", "nama": "[DATA DIPERLUKAN]", "angkatan": "" },
+    { "peran": "Sekretaris", "nama": "[DATA DIPERLUKAN]", "angkatan": "" },
+    { "peran": "Koordinator Jejaring Karier", "nama": "[DATA DIPERLUKAN]", "angkatan": "" }
+  ],
+  "kegiatan": [
+    {
+      "judul": "WhatsApp Group Alumni MSP Unsrat",
+      "tahun": "2017–sekarang",
+      "deskripsi": "Kanal informasi lowongan kerja dan jejaring antar-angkatan, dirujuk dalam LED sebagai strategi penguatan serapan kerja lulusan PS MSP."
+    },
+    {
+      "judul": "Partisipasi Tracer Study & Survei Kepuasan",
+      "tahun": "Berkelanjutan",
+      "deskripsi": "Alumni mengisi data karier dan menilai kualitas layanan prodi — data ini menjadi dasar evaluasi kurikulum dan akreditasi LAM PTIP IAPS 1.0 (Tabel 2.7B, 2.8B1, 2.8B2)."
+    },
+    {
+      "judul": "[DATA DIPERLUKAN: agenda reuni/temu alumni]",
+      "tahun": "",
+      "deskripsi": "[DATA DIPERLUKAN: tambahkan kegiatan reuni, webinar karier, atau kunjungan alumni ke kampus bila ada]"
+    }
+  ]
+}

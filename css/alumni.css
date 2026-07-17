@@ -1,0 +1,28 @@
+.diskusi-form { margin-bottom: 32px; max-width: 720px; }
+.form-row { display: flex; gap: 12px; margin-bottom: 12px; flex-wrap: wrap; }
+.form-row input {
+  flex: 1; min-width: 160px; padding: 12px 16px; border: 1px solid var(--border);
+  border-radius: 10px; font-family: var(--font-body); font-size: 0.9rem;
+}
+.diskusi-form textarea {
+  width: 100%; padding: 12px 16px; border: 1px solid var(--border); border-radius: 10px;
+  font-family: var(--font-body); font-size: 0.9rem; margin-bottom: 12px; resize: vertical;
+}
+.form-note { margin-top: 10px; font-size: 0.82rem; color: var(--muted); }
+.diskusi-list { max-width: 720px; display: flex; flex-direction: column; gap: 14px; }
+.diskusi-item {
+  background: var(--card-bg); border: 1px solid var(--border); border-radius: 14px;
+  padding: 16px 20px; box-shadow: var(--shadow);
+}
+.diskusi-item .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 6px; }
+.diskusi-item .meta strong { color: var(--navy); }
+.diskusi-item .pesan { font-size: 0.92rem; color: var(--ink); }
+
+.kegiatan-item {
+  border-left: 3px solid var(--teal); padding: 4px 0 20px 20px; margin-bottom: 4px;
+}
+.kegiatan-item h4 { color: var(--navy); font-size: 1rem; margin-bottom: 4px; }
+.kegiatan-item .tahun { font-size: 0.78rem; color: var(--teal); font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; }
+.kegiatan-item p { color: var(--muted); font-size: 0.9rem; margin-top: 4px; }
+
+.cta-join { text-align: center; }
