@@ -10,37 +10,174 @@
     "siklus_ami": "Siklus XI (7 Juni & 7 Desember 2023), Siklus XII (16 Juni & 30 Juni 2025)"
   },
   "siklus_ppepp": [
-    { "tahap": "Penetapan", "dokumen": "Sasaran SMOP, Rencana Mutu", "nomor": "SM/FPIK-UNSRAT; Lamp. 9" },
-    { "tahap": "Pelaksanaan", "dokumen": "15 SOP Bidang Akademik & Non-Akademik", "nomor": "SOP/FPIK/PS/01–15; SOP/FPIK/KS/03–09" },
-    { "tahap": "Evaluasi", "dokumen": "SOP Audit Internal, Check List Audit", "nomor": "SOP/FPIK/KS/03" },
-    { "tahap": "Pengendalian", "dokumen": "SOP Pengendalian Dokumen, SOP Tindakan Perbaikan", "nomor": "FM/FPIK/KPM/03/04–05" },
-    { "tahap": "Peningkatan", "dokumen": "SOP Penanganan Keluhan, Formulir Tindakan Koreksi", "nomor": "SOP/FPIK/KS/09; FM/FPIK/KS/05/01" }
+    {
+      "tahap": "Penetapan",
+      "dokumen": "Sasaran SMOP, Rencana Mutu",
+      "nomor": "SM/FPIK-UNSRAT; Lamp. 9"
+    },
+    {
+      "tahap": "Pelaksanaan",
+      "dokumen": "15 SOP Bidang Akademik & Non-Akademik",
+      "nomor": "SOP/FPIK/PS/01–15; SOP/FPIK/KS/03–09"
+    },
+    {
+      "tahap": "Evaluasi",
+      "dokumen": "SOP Audit Internal, Check List Audit",
+      "nomor": "SOP/FPIK/KS/03"
+    },
+    {
+      "tahap": "Pengendalian",
+      "dokumen": "SOP Pengendalian Dokumen, SOP Tindakan Perbaikan",
+      "nomor": "FM/FPIK/KPM/03/04–05"
+    },
+    {
+      "tahap": "Peningkatan",
+      "dokumen": "SOP Penanganan Keluhan, Formulir Tindakan Koreksi",
+      "nomor": "SOP/FPIK/KS/09; FM/FPIK/KS/05/01"
+    }
   ],
   "dokumen_pedoman": [
-    { "nama": "Identifikasi Isu Internal dan Eksternal", "nomor": "Lamp 1-M-SMOP/FPIK-UNSRAT", "tanggal": "01.11.2025" },
-    { "nama": "Identifikasi Kebutuhan dan Harapan Pihak Terkait", "nomor": "Lamp 2-M-SMOP/FPIK-UNSRAT", "tanggal": "01.11.2025" },
-    { "nama": "Bisnis Proses Layanan FPIK", "nomor": "Lamp 3-M-SMOP/FPIK-UNSRAT", "tanggal": "01.11.2025" },
-    { "nama": "Identifikasi dan Penanganan Risiko dan Peluang", "nomor": "Lamp 5-M-SMOP/FPIK-UNSRAT", "tanggal": "01.11.2025" },
-    { "nama": "Kebijakan SMOP", "nomor": "Lamp 6-M-SMOP/FPIK-UNSRAT", "tanggal": "01.11.2025" },
-    { "nama": "Sasaran Mutu SMOP", "nomor": "Lamp 8-M-SMOP/FPIK-UNSRAT", "tanggal": "01.11.2025" },
-    { "nama": "Rencana Mutu FPIK", "nomor": "Lamp 9-M-SMOP/FPIK-UNSRAT", "tanggal": "01.11.2025" },
-    { "nama": "Tatalaksana Persuratan FPIK Unsrat", "nomor": "Lamp 11", "tanggal": "2025" },
-    { "nama": "SOP Penerimaan Mahasiswa Baru", "nomor": "SOP/FPIK/PS/01", "tanggal": "01.11.2025" },
-    { "nama": "SOP Perencanaan Kurikulum", "nomor": "SOP/FPIK/PS/02", "tanggal": "01.11.2025" },
-    { "nama": "SOP Audit Internal FPIK", "nomor": "SOP/FPIK/PS/03", "tanggal": "01.11.2025" },
-    { "nama": "SOP Penanganan Keluhan Stakeholder", "nomor": "SOP/FPIK/PS/09", "tanggal": "01.11.2025" },
-    { "nama": "SOP Layanan Pengaduan FPIK", "nomor": "SOP/FPIK/PS/11", "tanggal": "01.11.2025" },
-    { "nama": "SOP Pelaksanaan Ujian Akhir Skripsi", "nomor": "SOP/FPIK/PS/18", "tanggal": "01.11.2025" },
-    { "nama": "SOP Pengelolaan Program Penelitian dan PkM", "nomor": "SOP/FPIK/PS/15", "tanggal": "01.11.2025" },
-    { "nama": "SOP Manajemen SDM FPIK", "nomor": "—", "tanggal": "2025" },
-    { "nama": "SOP Mekanisme Pemberian Penghargaan", "nomor": "—", "tanggal": "2025" },
-    { "nama": "SOP Pembinaan Tendik yang Tidak Mencapai Target Kinerja", "nomor": "—", "tanggal": "2025" },
-    { "nama": "SOP Beasiswa dan Bantuan Pendidikan", "nomor": "—", "tanggal": "2025" },
-    { "nama": "SOP Kegiatan Ormawa", "nomor": "—", "tanggal": "2025" },
-    { "nama": "SOP Layanan Mahasiswa Disabilitas", "nomor": "Fix 2-WD3", "tanggal": "2025" },
-    { "nama": "Panduan Tanggung Jawab Sosial FPIK", "nomor": "Lamp 7-M-SMOP/FPIK-UNSRAT", "tanggal": "01.11.2025" }
+    {
+      "nama": "Identifikasi Isu Internal dan Eksternal",
+      "nomor": "Lamp 1-M-SMOP/FPIK-UNSRAT",
+      "tanggal": "01.11.2025"
+    },
+    {
+      "nama": "Identifikasi Kebutuhan dan Harapan Pihak Terkait",
+      "nomor": "Lamp 2-M-SMOP/FPIK-UNSRAT",
+      "tanggal": "01.11.2025"
+    },
+    {
+      "nama": "Bisnis Proses Layanan FPIK",
+      "nomor": "Lamp 3-M-SMOP/FPIK-UNSRAT",
+      "tanggal": "01.11.2025"
+    },
+    {
+      "nama": "Identifikasi dan Penanganan Risiko dan Peluang",
+      "nomor": "Lamp 5-M-SMOP/FPIK-UNSRAT",
+      "tanggal": "01.11.2025"
+    },
+    {
+      "nama": "Kebijakan SMOP",
+      "nomor": "Lamp 6-M-SMOP/FPIK-UNSRAT",
+      "tanggal": "01.11.2025"
+    },
+    {
+      "nama": "Sasaran Mutu SMOP",
+      "nomor": "Lamp 8-M-SMOP/FPIK-UNSRAT",
+      "tanggal": "01.11.2025"
+    },
+    {
+      "nama": "Rencana Mutu FPIK",
+      "nomor": "Lamp 9-M-SMOP/FPIK-UNSRAT",
+      "tanggal": "01.11.2025"
+    },
+    {
+      "nama": "Tatalaksana Persuratan FPIK Unsrat",
+      "nomor": "Lamp 11",
+      "tanggal": "2025"
+    },
+    {
+      "nama": "SOP Penerimaan Mahasiswa Baru",
+      "nomor": "SOP/FPIK/PS/01",
+      "tanggal": "01.11.2025"
+    },
+    {
+      "nama": "SOP Perencanaan Kurikulum",
+      "nomor": "SOP/FPIK/PS/02",
+      "tanggal": "01.11.2025"
+    },
+    {
+      "nama": "SOP Audit Internal FPIK",
+      "nomor": "SOP/FPIK/PS/03",
+      "tanggal": "01.11.2025"
+    },
+    {
+      "nama": "SOP Penanganan Keluhan Stakeholder",
+      "nomor": "SOP/FPIK/PS/09",
+      "tanggal": "01.11.2025"
+    },
+    {
+      "nama": "SOP Layanan Pengaduan FPIK",
+      "nomor": "SOP/FPIK/PS/11",
+      "tanggal": "01.11.2025"
+    },
+    {
+      "nama": "SOP Pelaksanaan Ujian Akhir Skripsi",
+      "nomor": "SOP/FPIK/PS/18",
+      "tanggal": "01.11.2025"
+    },
+    {
+      "nama": "SOP Pengelolaan Program Penelitian dan PkM",
+      "nomor": "SOP/FPIK/PS/15",
+      "tanggal": "01.11.2025"
+    },
+    {
+      "nama": "SOP Manajemen SDM FPIK",
+      "nomor": "—",
+      "tanggal": "2025"
+    },
+    {
+      "nama": "SOP Mekanisme Pemberian Penghargaan",
+      "nomor": "—",
+      "tanggal": "2025"
+    },
+    {
+      "nama": "SOP Pembinaan Tendik yang Tidak Mencapai Target Kinerja",
+      "nomor": "—",
+      "tanggal": "2025"
+    },
+    {
+      "nama": "SOP Beasiswa dan Bantuan Pendidikan",
+      "nomor": "—",
+      "tanggal": "2025"
+    },
+    {
+      "nama": "SOP Kegiatan Ormawa",
+      "nomor": "—",
+      "tanggal": "2025"
+    },
+    {
+      "nama": "SOP Layanan Mahasiswa Disabilitas",
+      "nomor": "Fix 2-WD3",
+      "tanggal": "2025"
+    },
+    {
+      "nama": "Panduan Tanggung Jawab Sosial FPIK",
+      "nomor": "Lamp 7-M-SMOP/FPIK-UNSRAT",
+      "tanggal": "01.11.2025"
+    }
   ],
   "tautan": [
-    { "label": "LPMPP Unsrat (Lembaga Penjaminan Mutu)", "url": "https://lpmpp.unsrat.ac.id" }
+    {
+      "label": "LPMPP Unsrat (Lembaga Penjaminan Mutu)",
+      "url": "https://lpmpp.unsrat.ac.id"
+    }
+  ],
+  "dokumen_zona_integritas": [
+    {
+      "nama": "SK Tim Kerja Zona Integritas FPIK (SK Rektor No. 1955/UN12/LL/2025)",
+      "url": "https://drive.google.com/file/d/1AR8J352s91rPOw_8DApOW-dpkj-KgRTk/view?usp=sharing"
+    },
+    {
+      "nama": "SK Tim Sistem Pengendalian Intern Pemerintah/SPIP FPIK (SK Dekan, 2025)",
+      "url": "https://drive.google.com/file/d/1_wKsIrSWIhrKr3ifjaE3Mh9szPXuelHl/view?usp=sharing"
+    },
+    {
+      "nama": "SK Tim Teknis Satgas Penanganan Pengaduan Masyarakat FPIK (SK Dekan, 2025)",
+      "url": "https://drive.google.com/file/d/1O-aZ6TX5wwpweaiN8S36BUG1hh2_reys/view?usp=sharing"
+    },
+    {
+      "nama": "SK Tim Whistle Blowing System/WBS FPIK (SK Dekan No. 1957/UN12.5/LL/2025)",
+      "url": "https://drive.google.com/file/d/1R9de_GcrLpwX-2R9HuW4frhh1MvJZ0Zp/view?usp=sharing"
+    },
+    {
+      "nama": "SK Agen Reformasi Birokrasi FPIK (SK Dekan, 2025)",
+      "url": "https://drive.google.com/file/d/1BzxxhxHA05ym8F-Gxrxkv1c5VrGiQwCi/view?usp=sharing"
+    },
+    {
+      "nama": "SK Role Model Reformasi FPIK (SK Dekan, 2025)",
+      "url": "https://drive.google.com/file/d/117sHVvoz2Scj1ALA6NQohgrDJe-FbmR4/view?usp=sharing"
+    }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "_meta": {
     "terakhir_diperbarui": "2026-07-17",
-    "catatan": "Update field `progres.tahap_sekarang` dan `progres.catatan_terbaru` setiap ada perkembangan (jangan ubah struktur `tahapan`, cukup ganti `status` tiap tahap: 'selesai' | 'berjalan' | 'menunggu')."
+    "catatan": "Update field `progres.tahap_sekarang` dan `progres.catatan_terbaru` setiap ada perkembangan (jangan ubah struktur `tahapan`, cukup ganti `status` tiap tahap: 'selesai' | 'berjalan' | 'menunggu'). Dokumen legal (dokumen_legal) bersumber dari hyperlink evidence resmi dalam LED (bukan tebakan)."
   },
   "identitas": {
     "status_saat_ini": "Baik Sekali",
@@ -67,7 +67,63 @@
     }
   ],
   "tautan": [
-    { "label": "Situs Resmi LAM PTIP", "url": "https://lamptip.or.id" },
-    { "label": "SIAP (Sistem Informasi Akreditasi)", "url": "https://siap.lamptip.or.id" }
+    {
+      "label": "Situs Resmi LAM PTIP",
+      "url": "https://lamptip.or.id"
+    },
+    {
+      "label": "SIAP (Sistem Informasi Akreditasi)",
+      "url": "https://siap.lamptip.or.id"
+    }
+  ],
+  "dokumen_legal": [
+    {
+      "nama": "SK Pendirian Perguruan Tinggi (Unsrat)",
+      "url": "https://drive.google.com/file/d/137VFPS1tbvB6mpM_ZHvstDynWXelK27s/view?usp=drive_link"
+    },
+    {
+      "nama": "SK Pendirian UPPS (FPIK)",
+      "url": "https://drive.google.com/file/d/1jGG7_pCsplPvi94cHi-blWv_oCvrdl4O/view?usp=drive_link"
+    },
+    {
+      "nama": "SK Pendirian Program Studi MSP",
+      "url": "https://drive.google.com/file/d/1WDZdZgcmh-hlFvlHABTIw3kXLezefCQb/view?usp=drive_link"
+    },
+    {
+      "nama": "SK Akreditasi PS MSP (No. 12918/SK/BAN-PT/Ak-PPJ/S/XII/2021 — Baik Sekali)",
+      "url": "https://drive.google.com/file/d/1HSvBO5Aqi1gCKKd5Ygh7275YbKECUi7g/view?usp=sharing"
+    },
+    {
+      "nama": "SK Akreditasi PS Budidaya Perairan (Unggul)",
+      "url": "https://drive.google.com/file/d/1wkVWos4i5a1aj6-VEnNq1PvQBr27h9x9/view?usp=sharing"
+    },
+    {
+      "nama": "SK Akreditasi PS Ilmu Kelautan (Baik Sekali)",
+      "url": "https://drive.google.com/file/d/1umCHNLJ3TuJK8yE2qx5sE3dTsh0x35pU/view?usp=sharing"
+    },
+    {
+      "nama": "SK Akreditasi PS Teknologi Hasil Perikanan (Unggul)",
+      "url": "https://drive.google.com/file/d/1AlWx250l0_52Unesa9EyaB00YL_EiKfi/view?usp=sharing"
+    },
+    {
+      "nama": "SK Akreditasi PS Pemanfaatan Sumber Daya Perikanan (Unggul)",
+      "url": "https://drive.google.com/file/d/1WIz-TJWJEaRe2wCnQ2BV-80eB5SdOCwp/view?usp=sharing"
+    },
+    {
+      "nama": "SK Akreditasi PS Agrobisnis Perikanan",
+      "url": "https://drive.google.com/file/d/1x3yBQlK-CqnM5aKuRuZl_htuRqK_hEco/view?usp=sharing"
+    },
+    {
+      "nama": "Renstra Unsrat 2020-2024",
+      "url": "https://drive.google.com/file/d/1qvjQG3rEgb_ddLAjfs9XWWT0656_pRCO/view?usp=drive_link"
+    },
+    {
+      "nama": "Renstra Unsrat 2025-2029",
+      "url": "https://drive.google.com/file/d/1Ccx4Ep8unI1PsS2jjnWmWzOKAPynKShG/view?usp=drive_link"
+    },
+    {
+      "nama": "Renstra FPIK 2023-2026",
+      "url": "https://drive.google.com/file/d/19xGylPFb2rAFZngZUnUoZF9remOyjjal/view?usp=drive_link"
+    }
   ]
 }
