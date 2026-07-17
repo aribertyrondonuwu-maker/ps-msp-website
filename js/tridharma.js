@@ -17,7 +17,7 @@ async function loadTridharma() {
 function renderPenelitian() {
   const p = _tridharmaData.penelitian;
   document.getElementById('penelitianSummary').textContent =
-    `Total ${p.total_judul} judul penelitian DTPS senilai ${rp(p.total_dana_rp)} selama 2023–2025 (Tabel 3.2 LKPS).`;
+    `Total ${p.total_judul} judul penelitian DTPS senilai ${rp(p.total_dana_rp)} selama 2023–2025.`;
 
   const table = document.getElementById('penelitianTable');
   table.innerHTML = `
@@ -37,7 +37,7 @@ function renderPenelitian() {
 function renderPengabdian() {
   const p = _tridharmaData.pengabdian;
   document.getElementById('pengabdianSummary').textContent =
-    `Total ${p.total_kegiatan} kegiatan PkM senilai ${rp(p.total_dana_rp)} selama 2023–2025 (Tabel 4.1 LKPS).`;
+    `Total ${p.total_kegiatan} kegiatan PkM senilai ${rp(p.total_dana_rp)} selama 2023–2025.`;
 
   const table = document.getElementById('pengabdianTable');
   table.innerHTML = `
