@@ -17,12 +17,48 @@
     "catatan_daya_tampung": "PS MSP secara konsisten menerima mahasiswa melebihi daya tampung nominal 25 orang/tahun, mencerminkan tingginya minat calon mahasiswa."
   },
   "layanan": [
-    { "nama": "Administrasi Akademik", "deskripsi": "KRS/KHS daring, cuti akademik, surat keterangan aktif, legalisir — melalui Portal INSPIRE Unsrat." },
-    { "nama": "Penalaran, Minat & Bakat", "deskripsi": "Program Kreativitas Mahasiswa (PKM), Lomba Karya Tulis Ilmiah (LKTI), kompetisi ilmiah nasional." },
-    { "nama": "Organisasi Kemahasiswaan", "deskripsi": "HIMA MSP, Mahasiswa Pencinta Alam \"Zooxanthela\" (nama diambil dari alga simbiotik terumbu karang), Unit Kerohanian (UPKK, Badan Tazkir)." },
-    { "nama": "Bimbingan & Konseling", "deskripsi": "Layanan bimbingan akademik dan konseling personal bagi mahasiswa." },
-    { "nama": "Beasiswa & Bantuan Pendidikan", "deskripsi": "KIP-Kuliah, beasiswa Pemerintah Daerah Sulawesi Utara, beasiswa mitra industri perikanan." },
-    { "nama": "MBKM (Merdeka Belajar Kampus Merdeka)", "deskripsi": "Program Independen Bersertifikat, International Training Course (mis. Kyushu University Jepang dengan beasiswa JASSO)." }
+    {
+      "nama": "Administrasi Akademik",
+      "dasar_hukum": "Peraturan Rektor No. 1/2025 Pasal 23",
+      "mekanisme": "KRS/KHS daring, pengajuan cuti akademik, surat keterangan aktif kuliah, legalisir dokumen — seluruhnya via Portal INSPIRE (beroperasi sejak 2020)",
+      "waktu_layanan": "1–2 hari kerja (surat keterangan & legalisir, SOP No. 10 & 18)"
+    },
+    {
+      "nama": "Penalaran, Minat & Bakat",
+      "dasar_hukum": "SOP No. 12/FPIK",
+      "mekanisme": "Program Kreativitas Mahasiswa (PKM), Lomba Karya Tulis Ilmiah (LKTI), kompetisi ilmiah nasional. Anggaran operasional kemahasiswaan rata-rata Rp 76.997.500/tahun (2023–2025, Tabel 3.1 LKPS)",
+      "waktu_layanan": "Perizinan kegiatan maks. 5 hari kerja sejak proposal lengkap"
+    },
+    {
+      "nama": "Organisasi Kemahasiswaan",
+      "dasar_hukum": "SOP Kegiatan Ormawa (SOP No. 12/FPIK)",
+      "mekanisme": "HIMA MSP, Mahasiswa Pencinta Alam \"Zooxanthela\" (nama dari alga simbiotik terumbu karang), Unit Kerohanian (UPKK, Badan Tazkir) — mencakup perencanaan, perizinan, pelaksanaan, monitoring, evaluasi, pelaporan",
+      "waktu_layanan": "Maks. 5 hari kerja"
+    },
+    {
+      "nama": "Bimbingan & Konseling",
+      "dasar_hukum": "Peraturan Rektor No. 1/2025 Pasal 48",
+      "mekanisme": "Setiap mahasiswa memiliki Dosen Pembimbing Akademik (PA) untuk monitoring studi & deteksi dini masalah akademik/non-akademik; dukungan bagi mahasiswa kesulitan belajar & mental-emosional; Kartu Monitoring Perkuliahan terintegrasi Portal INSPIRE",
+      "waktu_layanan": "Berkelanjutan per semester"
+    },
+    {
+      "nama": "Beasiswa & Bantuan Pendidikan",
+      "dasar_hukum": "Peraturan Rektor No. 1/2025; SE Rektor No. 10026/UN12/KM/2025",
+      "mekanisme": "Pengumuman → pengajuan berkas via Portal INSPIRE → seleksi & evaluasi → penetapan → pengumuman hasil → dokumentasi. Jenis: (a) prestasi akademik, (b) kondisi ekonomi termasuk KIP-Kuliah, (c) beasiswa eksternal/mitra industri",
+      "waktu_layanan": "2–4 minggu"
+    },
+    {
+      "nama": "Layanan Kesehatan",
+      "dasar_hukum": "Renstra Unsrat 2020–2024; Peraturan Rektor No. 1/2025 Pasal 49 ayat 3",
+      "mekanisme": "Akses ke Rumah Sakit Gigi & Mulut (RSGM) dan Poliklinik Unsrat. Mahasiswa dengan gangguan kesehatan >1 bulan dapat cuti akademik tanpa mengurangi hak/batas masa studi",
+      "waktu_layanan": "Sesuai kebutuhan"
+    },
+    {
+      "nama": "MBKM (Merdeka Belajar Kampus Merdeka)",
+      "dasar_hukum": "Kebijakan MBKM Kemdiktisaintek",
+      "mekanisme": "Program Independen Bersertifikat, International Training Course (mis. Kyushu University Jepang dengan beasiswa JASSO). Pada TS: 5 mahasiswa mengikuti MBKM dari 119 aktif (≈4,2%)",
+      "waktu_layanan": "1–3 semester (maks. 40 SKS di luar prodi)"
+    }
   ],
   "prestasi_terpilih": [
     { "nama": "Yogi Rustandi", "capaian": "5 medali di 4 kompetisi nasional (2021–2022), termasuk Medali Emas Olimpiade Sains Indonesia (POSI)" },
