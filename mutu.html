@@ -3,11 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kurikulum — PS Manajemen Sumberdaya Perairan FPIK UNSRAT</title>
+<title>Penjaminan Mutu — PS Manajemen Sumberdaya Perairan FPIK UNSRAT</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/kurikulum.css">
+<link rel="stylesheet" href="css/akreditasi.css">
 </head>
 <body>
 
@@ -16,9 +17,9 @@
     <a href="index.html" class="brand">MSP <span>FPIK UNSRAT</span></a>
         <nav class="nav-links">
       <a href="index.html#profil">Profil</a>
-      <a href="kurikulum.html" class="active">Kurikulum</a>
+      <a href="kurikulum.html">Kurikulum</a>
       <a href="akreditasi.html">Akreditasi</a>
-      <a href="mutu.html">Mutu</a>
+      <a href="mutu.html" class="active">Mutu</a>
       <a href="kemahasiswaan.html">Kemahasiswaan</a>
       <a href="index.html#dosen">Dosen</a>
       <a href="alumni.html">Alumni</a>
@@ -30,43 +31,52 @@
 
 <section class="page-hero">
   <div class="container">
-    <p class="eyebrow">Kurikulum Program Studi</p>
-    <h1>Kurikulum MBKM-OBE</h1>
-    <p class="hero-sub" id="kurikulumSubtitle">Memuat data kurikulum…</p>
+    <p class="eyebrow">Sistem Penjaminan Mutu Internal</p>
+    <h1>Penjaminan Mutu</h1>
+    <p class="hero-sub">Kebijakan, siklus PPEPP, dan dokumen SMOP/SOP yang menjamin kualitas penyelenggaraan tridharma PS MSP FPIK UNSRAT.</p>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
-    <div class="cards-grid" id="ringkasanGrid"></div>
+    <div class="cards-grid" id="ringkasanMutuGrid"></div>
   </div>
 </section>
 
 <section class="section section-alt">
   <div class="container">
-    <h2 class="section-title">Sebaran Mata Kuliah per Semester</h2>
-    <p class="section-sub">144 SKS ditempuh dalam 8 semester — progresif dari fondasi keilmuan dasar, keahlian inti MSP, hingga capstone (PKL, KKT, Skripsi).</p>
-    <div id="semesterList"></div>
+    <h2 class="section-title">Siklus PPEPP</h2>
+    <p class="section-sub">Penetapan – Pelaksanaan – Evaluasi – Pengendalian – Peningkatan.</p>
+    <div class="stepper" id="ppeppStepper"></div>
   </div>
 </section>
 
-<section class="section" id="pilihan">
+<section class="section" id="dokumen">
   <div class="container">
-    <h2 class="section-title">Mata Kuliah Pilihan</h2>
-    <p class="section-sub">Mahasiswa wajib mengambil minimal <strong>9 SKS (3 mata kuliah)</strong> dari pool berikut, tersedia mulai semester 5.</p>
-    <div id="pilihanList" class="cards-grid"></div>
+    <h2 class="section-title">Dokumen SMOP & SOP</h2>
+    <p class="section-sub">21 dokumen pedoman mutu resmi FPIK Unsrat yang menaungi penyelenggaraan PS MSP.</p>
+    <div class="table-wrap">
+      <table class="data-table" id="dokumenTable"></table>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Tautan</h2>
+    <div class="cards-grid" id="mutuTautanGrid"></div>
   </div>
 </section>
 
 <footer class="footer">
   <div class="container">
-    <p class="footer-bottom" id="dataFooterNote">Memuat metadata…</p>
+    <p class="footer-bottom">© Program Studi Manajemen Sumberdaya Perairan · FPIK UNSRAT</p>
   </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="js/supabase-client.js"></script>
 <script src="js/app.js"></script>
-<script src="js/kurikulum.js"></script>
+<script src="js/mutu.js"></script>
 </body>
 </html>
