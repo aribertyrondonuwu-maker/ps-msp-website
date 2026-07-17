@@ -35,6 +35,14 @@ a { text-decoration: none; color: inherit; }
   padding: 12px 0;
 }
 .navbar-inner { display: flex; align-items: center; justify-content: space-between; }
+.navbar-actions { display: flex; align-items: center; gap: 10px; }
+.btn-sm-outline {
+  border: 1.5px solid rgba(255,255,255,0.5); color: #fff; background: transparent;
+  padding: 9px 16px; border-radius: 999px; font-weight: 600; font-size: 0.82rem; cursor: pointer; font-family: var(--font-body);
+}
+.btn-sm-outline:hover { background: rgba(255,255,255,0.12); }
+.navbar.scrolled .btn-sm-outline { border-color: var(--navy); color: var(--navy); }
+.navbar.scrolled .btn-sm-outline:hover { background: rgba(10,37,64,0.08); }
 .brand { font-family: var(--font-head); font-weight: 800; font-size: 1.15rem; color: #fff; }
 .navbar.scrolled .brand { color: var(--navy); }
 .brand span { color: var(--teal-light); font-weight: 600; }
