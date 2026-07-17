@@ -1,0 +1,34 @@
+{
+  "_meta": {
+    "terakhir_diperbarui": "2026-07-17",
+    "sumber": "Tabel 2.8A (Jumlah Mahasiswa) & Tabel 2.6 (Masa Studi Lulusan) LKPS LAM PTIP PS MSP; LED IAPS 1.0"
+  },
+  "per_tahun": [
+    { "tahun": 2021, "label_ts": "TS-4", "pendaftar": 18, "mahasiswa_baru": 23, "mahasiswa_aktif": 131 },
+    { "tahun": 2022, "label_ts": "TS-3", "pendaftar": 22, "mahasiswa_baru": 19, "mahasiswa_aktif": 124 },
+    { "tahun": 2023, "label_ts": "TS-2", "pendaftar": 41, "mahasiswa_baru": 35, "mahasiswa_aktif": 120 },
+    { "tahun": 2024, "label_ts": "TS-1", "pendaftar": 29, "mahasiswa_baru": 40, "mahasiswa_aktif": 122 },
+    { "tahun": 2025, "label_ts": "TS", "pendaftar": 18, "mahasiswa_baru": 27, "mahasiswa_aktif": 119 }
+  ],
+  "masa_studi": {
+    "tren": "Rata-rata masa studi turun signifikan dari 5,23–5,24 tahun (angkatan TS-7 & TS-6) menjadi 4,00 tahun (angkatan TS-3) — sesuai standar ideal program sarjana.",
+    "lulus_tepat_waktu": "Angkatan TS-3: 16 dari 23 mahasiswa (69,6%) lulus tepat waktu 4 tahun — melampaui ambang batas ≥45% untuk status Terakreditasi Unggul.",
+    "daya_tampung_resmi": 25,
+    "catatan_daya_tampung": "PS MSP secara konsisten menerima mahasiswa melebihi daya tampung nominal 25 orang/tahun, mencerminkan tingginya minat calon mahasiswa."
+  },
+  "layanan": [
+    { "nama": "Administrasi Akademik", "deskripsi": "KRS/KHS daring, cuti akademik, surat keterangan aktif, legalisir — melalui Portal INSPIRE Unsrat." },
+    { "nama": "Penalaran, Minat & Bakat", "deskripsi": "Program Kreativitas Mahasiswa (PKM), Lomba Karya Tulis Ilmiah (LKTI), kompetisi ilmiah nasional." },
+    { "nama": "Organisasi Kemahasiswaan", "deskripsi": "HIMA MSP, Mahasiswa Pencinta Alam \"Zooxanthela\" (nama diambil dari alga simbiotik terumbu karang), Unit Kerohanian (UPKK, Badan Tazkir)." },
+    { "nama": "Bimbingan & Konseling", "deskripsi": "Layanan bimbingan akademik dan konseling personal bagi mahasiswa." },
+    { "nama": "Beasiswa & Bantuan Pendidikan", "deskripsi": "KIP-Kuliah, beasiswa Pemerintah Daerah Sulawesi Utara, beasiswa mitra industri perikanan." },
+    { "nama": "MBKM (Merdeka Belajar Kampus Merdeka)", "deskripsi": "Program Independen Bersertifikat, International Training Course (mis. Kyushu University Jepang dengan beasiswa JASSO)." }
+  ],
+  "prestasi_terpilih": [
+    { "nama": "Yogi Rustandi", "capaian": "5 medali di 4 kompetisi nasional (2021–2022), termasuk Medali Emas Olimpiade Sains Indonesia (POSI)" },
+    { "nama": "Libby I.Ch. Gala", "capaian": "Juara I Biologi ONMIPA Unsrat (2024); lolos International Training Course Kyushu University, Jepang (beasiswa JASSO)" },
+    { "nama": "Rowen Bonaventura", "capaian": "Juara I Lomba Karya Tulis Ilmiah FPIK (2025); peserta International Training Course Kyushu University" },
+    { "nama": "Roberkat Simanullang", "capaian": "Juara I Kimia ONMIPA Unsrat (2024), Juara III Biologi ONMIPA Unsrat (2025)" },
+    { "nama": "Natasya Kusmanto", "capaian": "Juara III Fisika ONMIPA Unsrat (2025)" }
+  ]
+}

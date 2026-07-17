@@ -1,0 +1,45 @@
+{
+  "_meta": {
+    "terakhir_diperbarui": "2026-07-17",
+    "catatan": "Tambahkan tautan baru sesuai kategori. Selalu verifikasi URL aktif sebelum menambahkan."
+  },
+  "kategori": [
+    {
+      "nama": "Sistem Informasi Akademik",
+      "tautan": [
+        { "label": "Portal INSPIRE Unsrat", "url": "https://inspire.unsrat.ac.id", "keterangan": "KRS/KHS, cuti akademik, layanan akademik terpadu" },
+        { "label": "Dashboard Akademik Unsrat", "url": "https://dashboard.unsrat.ac.id/Akademik", "keterangan": "Statistik & data akademik universitas" }
+      ]
+    },
+    {
+      "nama": "Universitas & Fakultas",
+      "tautan": [
+        { "label": "Universitas Sam Ratulangi", "url": "https://www.unsrat.ac.id", "keterangan": "Situs resmi universitas" },
+        { "label": "FPIK Unsrat", "url": "https://fpik.unsrat.ac.id", "keterangan": "Fakultas Perikanan dan Ilmu Kelautan" },
+        { "label": "PS MSP (situs resmi FPIK)", "url": "https://fpik.unsrat.ac.id/msp", "keterangan": "Halaman resmi PS MSP di domain FPIK" }
+      ]
+    },
+    {
+      "nama": "Zona Integritas & Layanan Publik FPIK",
+      "tautan": [
+        { "label": "Pembangunan Zona Integritas FPIK", "url": "https://fpik.unsrat.ac.id/pembangunan-zona-intergritas-fpik-unsrat", "keterangan": "Menuju predikat WBK" },
+        { "label": "Pelayanan Publik FPIK", "url": "https://fpik.unsrat.ac.id/pelayanan-publik/", "keterangan": "Informasi layanan publik fakultas" },
+        { "label": "e-Lapor FPIK", "url": "https://fpik.unsrat.ac.id/e-lapor-fpik/", "keterangan": "Kanal pengaduan & pelaporan online" }
+      ]
+    },
+    {
+      "nama": "Penjaminan Mutu & Akreditasi",
+      "tautan": [
+        { "label": "LPMPP Unsrat", "url": "https://lpmpp.unsrat.ac.id", "keterangan": "Lembaga Penjaminan Mutu dan Pengembangan Pembelajaran" },
+        { "label": "LAM PTIP", "url": "https://lamptip.or.id", "keterangan": "Lembaga Akreditasi Mandiri Pendidikan Tinggi Ilmu Pertanian" },
+        { "label": "SIAP (Sistem Informasi Akreditasi)", "url": "https://siap.lamptip.or.id", "keterangan": "Portal pengajuan akreditasi LAM PTIP" }
+      ]
+    },
+    {
+      "nama": "Tracer Study & Alumni",
+      "tautan": [
+        { "label": "Tracer Study & Kepuasan Stakeholder PS MSP", "url": "https://aribertyrondonuwu-maker.github.io/tracer-study-msp/", "keterangan": "Formulir alumni, pengguna lulusan, dan statistik publik" }
+      ]
+    }
+  ]
+}
