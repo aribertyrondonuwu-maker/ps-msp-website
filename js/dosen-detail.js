@@ -20,6 +20,15 @@ async function loadDosenDetail() {
 
     document.title = `${d.nama} — PS MSP FPIK UNSRAT`;
     document.getElementById('dosenAvatar').textContent = d.nama.replace(/^(Dr\.|Ir\.|Prof\.|M\.Sc\.|M\.Si\.|Ph\.D\.|,)/g, '').trim().split(' ').map(w => w[0]).slice(0,2).join('');
+    if (window.sbClient) {
+      try {
+        const { data: fotoRow } = await window.sbClient.from('site_settings').select('value').eq('key', `dosen_foto:${id}`).maybeSingle();
+        if (fotoRow && fotoRow.value) {
+          const avatarEl = document.getElementById('dosenAvatar');
+          avatarEl.innerHTML = `<img src="${fotoRow.value}" alt="${d.nama}" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">`;
+        }
+      } catch (e) { /* pakai inisial */ }
+    }
     document.getElementById('dosenJabatan').textContent = d.jabatan + (d.peran ? ` · ${d.peran}` : '');
     document.getElementById('dosenNama').textContent = d.nama;
     document.getElementById('dosenKeahlian').textContent = d.keahlian;
@@ -65,6 +74,12 @@ async function loadDosenDetail() {
       html += `<div class="detail-block"><h2>Rekognisi & Aktivitas Ilmiah</h2>`;
       d.rekognisi.forEach(r => html += `<div class="timeline-item">${r}</div>`);
       html += `</div>`;
+    }
+
+    if (d.mata_kuliah_diampu?.length && !d.mata_kuliah_diampu[0].startsWith('[DATA')) {
+      html += `<div class="detail-block"><h2>Mata Kuliah Diampu</h2><div class="pill-list">`;
+      d.mata_kuliah_diampu.forEach(mk => html += `<span class="pill">${mk}</span>`);
+      html += `</div></div>`;
     }
 
     if (d.sertifikasi?.length) {

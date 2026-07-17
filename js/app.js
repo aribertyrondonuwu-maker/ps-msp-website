@@ -32,13 +32,25 @@ document.querySelectorAll('.stat-num').forEach(el => statObserver.observe(el));
 // halaman Dosen — lihat references/dosen-data.md untuk 16 nama terverifikasi)
 async function renderDosen() {
   const grid = document.getElementById('dosenGrid');
+  if (!grid) return;
   try {
     const res = await fetch('js/data/dosen.json');
     if (!res.ok) throw new Error('belum ada dosen.json');
     const dosen = await res.json();
+
+    let fotoMap = {};
+    if (window.sbClient) {
+      try {
+        const { data } = await window.sbClient.from('site_settings').select('key,value').like('key', 'dosen_foto:%');
+        (data || []).forEach(row => { fotoMap[row.key.replace('dosen_foto:', '')] = row.value; });
+      } catch (e) { /* diam saja, pakai avatar inisial */ }
+    }
+
     grid.innerHTML = dosen.map(d => `
       <a class="dosen-card" href="dosen-detail.html?id=${d.id}">
-        <div class="dosen-photo">${d.inisial || d.nama.split(' ').map(w => w[0]).slice(0,2).join('')}</div>
+        ${fotoMap[d.id]
+          ? `<img class="dosen-photo" src="${fotoMap[d.id]}" alt="${d.nama}" style="object-fit:cover;">`
+          : `<div class="dosen-photo">${d.inisial || d.nama.split(' ').map(w => w[0]).slice(0,2).join('')}</div>`}
         <div class="dosen-info">
           <h4>${d.nama}</h4>
           <p>${d.keahlian}</p>
@@ -51,7 +63,25 @@ async function renderDosen() {
 }
 renderDosen();
 
+// Terapkan foto header (hero) per halaman jika admin sudah upload (site_settings key hero:{halaman})
+async function applyHeroImage(pageKey) {
+  const heroEl = document.querySelector('.hero, .page-hero');
+  if (!heroEl || !window.sbClient) return;
+  try {
+    const { data } = await window.sbClient.from('site_settings').select('value').eq('key', `hero:${pageKey}`).maybeSingle();
+    if (data && data.value) {
+      heroEl.style.backgroundImage = `linear-gradient(160deg, rgba(10,37,64,0.75), rgba(15,118,110,0.75)), url('${data.value}')`;
+      heroEl.style.backgroundSize = 'cover';
+      heroEl.style.backgroundPosition = 'center';
+    }
+  } catch (e) { /* pakai gradient default */ }
+}
+
 document.getElementById('year').textContent = new Date().getFullYear();
+
+// Terapkan foto header kustom jika admin sudah mengunggahnya untuk halaman ini
+const _pageKey = document.body.dataset.page;
+if (_pageKey) applyHeroImage(_pageKey);
 
 // Render galeri dari js/data/galeri.json (placeholder sampai foto/video asli tersedia)
 async function renderGaleri() {
@@ -60,7 +90,20 @@ async function renderGaleri() {
   try {
     const res = await fetch('js/data/galeri.json');
     const data = await res.json();
-    grid.innerHTML = data.item.map(g => {
+    let items = data.item;
+
+    // Gabungkan item live dari admin (tabel Supabase `galeri`)
+    if (window.sbClient) {
+      try {
+        const { data: liveItems } = await window.sbClient.from('galeri').select('*').order('created_at', { ascending: false });
+        if (liveItems && liveItems.length) {
+          const mapped = liveItems.map(g => ({ status: 'live', tipe: g.tipe, kategori: g.kategori, caption: g.caption, url: g.url }));
+          items = [...mapped, ...items];
+        }
+      } catch (e) { /* pakai data statis saja */ }
+    }
+
+    grid.innerHTML = items.map(g => {
       if (g.status === 'live' && g.tipe === 'foto') {
         return `<div class="galeri-item"><img src="${g.url}" alt="${g.caption}" loading="lazy"></div>`;
       }
@@ -117,6 +160,58 @@ async function renderBerita() {
   }
 }
 renderBerita();
+
+// Luaran Buku & Paten (dari js/data/luaran.json — sumber Tabel 3.5A & 3.5D LKPS)
+async function renderLuaran() {
+  const bukuList = document.getElementById('bukuList');
+  const patenList = document.getElementById('patenList');
+  if (!bukuList || !patenList) return;
+  try {
+    const res = await fetch('js/data/luaran.json');
+    const data = await res.json();
+
+    const rowHtml = (item) => `
+      <div class="luaran-row">
+        <a href="${item.link}" target="_blank" rel="noopener">${item.judul}</a>
+        <span class="luaran-meta">${item.penulis.split(',')[0]}${item.penulis.includes(',') ? ' dkk.' : ''} · ${item.tahun}</span>
+      </div>`;
+
+    // Tampilkan 8 buku pertama, sisanya di balik tombol "lihat semua"
+    const initialCount = 8;
+    bukuList.innerHTML = data.buku.slice(0, initialCount).map(rowHtml).join('');
+    if (data.buku.length > initialCount) {
+      bukuList.innerHTML += `<button class="btn btn-outline-dark luaran-toggle" id="bukuToggle" style="align-self:flex-start;">Lihat ${data.buku.length - initialCount} judul lainnya ↓</button>`;
+      document.getElementById('bukuToggle').addEventListener('click', function() {
+        bukuList.innerHTML = data.buku.map(rowHtml).join('');
+      });
+    }
+
+    patenList.innerHTML = data.paten.map(rowHtml).join('');
+  } catch (e) {
+    console.error('Gagal memuat data luaran:', e);
+  }
+}
+renderLuaran();
+
+// Tautan Mitra Kerjasama (dari js/data/mitra-links.json)
+async function renderMitra() {
+  const grid = document.getElementById('mitraGrid');
+  if (!grid) return;
+  try {
+    const res = await fetch('js/data/mitra-links.json');
+    const data = await res.json();
+    grid.innerHTML = data.mitra.map(m => `
+      <a href="${m.url}" target="_blank" rel="noopener" class="card" style="display:block;">
+        <h3>${m.nama}</h3>
+        <p>${m.keterangan}</p>
+        <p class="card-link">Kunjungi situs →</p>
+      </a>
+    `).join('');
+  } catch (e) {
+    console.error('Gagal memuat mitra:', e);
+  }
+}
+renderMitra();
 
 // TODO (sesi berikutnya):
 // - fetch berita dari Supabase (lihat references/tech-stack.md skema tabel `berita`)
