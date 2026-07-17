@@ -83,6 +83,41 @@ async function renderGaleri() {
 }
 renderGaleri();
 
+// Render Berita & Pengumuman dari Supabase (tabel `berita`, hanya yang published)
+async function renderBerita() {
+  const grid = document.getElementById('beritaGrid');
+  if (!grid) return;
+  if (!window.sbClient) {
+    grid.innerHTML = '<article class="card"><p class="muted">Belum ada berita dipublikasikan.</p></article>';
+    return;
+  }
+  try {
+    const { data, error } = await window.sbClient
+      .from('berita')
+      .select('judul, kategori, konten, tanggal_publish')
+      .eq('published', true)
+      .order('tanggal_publish', { ascending: false })
+      .limit(6);
+    if (error) throw error;
+    if (!data.length) {
+      grid.innerHTML = '<article class="card"><p class="muted">Belum ada berita dipublikasikan.</p></article>';
+      return;
+    }
+    grid.innerHTML = data.map(b => `
+      <article class="card">
+        ${b.kategori ? `<p class="card-link" style="margin-bottom:8px;">${b.kategori}</p>` : ''}
+        <h3>${b.judul}</h3>
+        <p>${(b.konten || '').replace(/<[^>]+>/g, '').slice(0, 140)}${b.konten && b.konten.length > 140 ? '…' : ''}</p>
+        <p class="muted" style="font-size:0.78rem;margin-top:10px;">${new Date(b.tanggal_publish).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' })}</p>
+      </article>
+    `).join('');
+  } catch (e) {
+    console.error('Gagal memuat berita:', e);
+    grid.innerHTML = '<article class="card"><p class="muted">Belum ada berita dipublikasikan.</p></article>';
+  }
+}
+renderBerita();
+
 // TODO (sesi berikutnya):
 // - fetch berita dari Supabase (lihat references/tech-stack.md skema tabel `berita`)
 // - fetch statistik tracer study / embed iframe (lihat references/tracer-study-integration.md)

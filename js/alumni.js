@@ -30,18 +30,18 @@ loadPengurusKegiatan();
 // MODE PRATINJAU: berjalan in-memory (tidak permanen) sampai Supabase
 // dihubungkan. Setelah setup Supabase (lihat references/tech-stack.md,
 // tabel `alumni_diskusi`), ganti fungsi submitDiskusi() & loadDiskusi()
-// di bawah untuk memanggil window.supabase.from('alumni_diskusi')... dst.
+// di bawah untuk memanggil window.sbClient.from('alumni_diskusi')... dst.
 
-const DISKUSI_SUPABASE_READY = false; // ubah ke true setelah supabase-client.js terhubung
+const DISKUSI_SUPABASE_READY = true; // Supabase sudah terhubung — pesan tersimpan permanen & melalui moderasi admin
 let _diskusiDemoStore = [
   { nama: 'Tim PS MSP', angkatan: '', pesan: 'Selamat datang di ruang diskusi alumni! Silakan berbagi kabar atau info lowongan kerja di sini.', created_at: new Date().toISOString() }
 ];
 
 async function loadDiskusi() {
   const list = document.getElementById('diskusiList');
-  if (DISKUSI_SUPABASE_READY && window.supabase) {
+  if (DISKUSI_SUPABASE_READY && window.sbClient) {
     try {
-      const { data, error } = await window.supabase
+      const { data, error } = await window.sbClient
         .from('alumni_diskusi')
         .select('nama, angkatan, pesan, created_at')
         .eq('approved', true)
@@ -85,9 +85,9 @@ document.getElementById('diskusiForm').addEventListener('submit', async (e) => {
   const status = document.getElementById('diskusiStatus');
   if (!nama || !pesan) return;
 
-  if (DISKUSI_SUPABASE_READY && window.supabase) {
+  if (DISKUSI_SUPABASE_READY && window.sbClient) {
     try {
-      const { error } = await window.supabase.from('alumni_diskusi').insert([{ nama, angkatan, pesan }]);
+      const { error } = await window.sbClient.from('alumni_diskusi').insert([{ nama, angkatan, pesan }]);
       if (error) throw error;
       status.textContent = '✅ Pesan terkirim, menunggu peninjauan admin sebelum tampil.';
     } catch (err) {
