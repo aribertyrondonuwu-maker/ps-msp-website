@@ -15,16 +15,32 @@
   <div class="container navbar-inner">
     <a href="#home" class="brand">MSP <span>FPIK UNSRAT</span></a>
         <nav class="nav-links">
-      <a href="profil.html">Profil</a>
-      <a href="akreditasi.html">Akreditasi</a>
-      <a href="tridharma.html">Tridharma</a>
-      <a href="sarana.html">Sarana</a>
-      <a href="kurikulum.html">Kurikulum</a>
-      <a href="kemahasiswaan.html">Kemahasiswaan</a>
-      <a href="mutu.html">Mutu</a>
-      <a href="index.html#dosen">Dosen</a>
-      <a href="alumni.html">Alumni</a>
-      <a href="tautan.html">Tautan</a>
+      <div class="nav-item has-dropdown">
+        <a href="profil.html">Tentang ▾</a>
+        <div class="dropdown">
+          <a href="profil.html">Profil</a>
+          <a href="akreditasi.html">Akreditasi</a>
+          <a href="mutu.html">Penjaminan Mutu</a>
+        </div>
+      </div>
+      <div class="nav-item has-dropdown">
+        <a href="kurikulum.html">Akademik ▾</a>
+        <div class="dropdown">
+          <a href="kurikulum.html">Kurikulum</a>
+          <a href="index.html#dosen">Dosen</a>
+          <a href="sarana.html">Sarana &amp; Prasarana</a>
+        </div>
+      </div>
+      <div class="nav-item"><a href="tridharma.html">Tridharma</a></div>
+      <div class="nav-item has-dropdown">
+        <a href="kemahasiswaan.html">Kemahasiswaan ▾</a>
+        <div class="dropdown">
+          <a href="kemahasiswaan.html">Data &amp; Layanan</a>
+          <a href="alumni.html">Alumni</a>
+        </div>
+      </div>
+      <div class="nav-item"><a href="berita.html">Berita</a></div>
+      <div class="nav-item"><a href="tautan.html">Tautan</a></div>
     </nav>
     <a href="https://aribertyrondonuwu-maker.github.io/tracer-study-msp/" target="_blank" class="btn btn-primary btn-sm">Isi Survei</a>
   </div>
@@ -65,7 +81,31 @@
   <p class="stats-note container">Terakreditasi <strong>Baik Sekali</strong> (SK BAN-PT No. 12918/SK/BAN-PT/Ak-PPJ/S/XII/2021, berlaku s.d. 25 Nov 2026) — menuju <strong>Terakreditasi Unggul</strong> LAM PTIP IAPS 1.0.</p>
 </section>
 
-<section class="section" id="profil">
+<section class="section" id="highlight">
+  <div class="container">
+    <div class="highlight-grid">
+      <div class="highlight-berita">
+        <div class="section-head-row">
+          <h2 class="section-title">Berita Terbaru</h2>
+          <a href="berita.html" class="lihat-semua">Lihat semua →</a>
+        </div>
+        <div id="highlightBeritaList" class="highlight-list">
+          <p class="muted">Memuat berita…</p>
+        </div>
+      </div>
+      <aside class="highlight-pengumuman">
+        <div class="section-head-row">
+          <h2 class="section-title">Pengumuman</h2>
+        </div>
+        <div id="highlightPengumumanList" class="pengumuman-list">
+          <p class="muted">Memuat pengumuman…</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="profil">
   <div class="container">
     <h2 class="section-title">Profil Program Studi</h2>
     <div class="cards-grid">
@@ -154,6 +194,9 @@
     <div class="cards-grid" id="beritaGrid">
       <!-- diisi dari Supabase table `berita` — lihat references/tech-stack.md -->
       <article class="card"><p class="muted">Belum ada berita dipublikasikan.</p></article>
+    </div>
+    <div style="text-align:center;margin-top:28px;">
+      <a href="berita.html" class="btn btn-primary btn-sm">Lihat semua berita →</a>
     </div>
   </div>
 </section>
