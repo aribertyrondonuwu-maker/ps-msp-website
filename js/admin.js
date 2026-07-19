@@ -48,6 +48,7 @@ function showDashboard(email) {
     loadHeaderFoto();
     loadDiskusi();
     loadAdminUsers();
+    loadSosmed();
   }
 }
 
@@ -381,6 +382,40 @@ async function deleteAdminUser(id) {
   await sb.from('admin_users').delete().eq('id', id);
   loadAdminUsers();
 }
+
+// ─────────────────────────────────────────────────────────────────────────
+// MEDIA SOSIAL (superadmin only) — site_settings key sosmed:{platform}
+// ─────────────────────────────────────────────────────────────────────────
+const SOSMED_PLATFORMS = ['facebook', 'instagram', 'youtube', 'tiktok', 'whatsapp'];
+
+async function loadSosmed() {
+  try {
+    const { data } = await sb.from('site_settings').select('key,value').like('key', 'sosmed:%');
+    (data || []).forEach(row => {
+      const platform = row.key.replace('sosmed:', '');
+      const input = document.getElementById('sosmed_' + platform);
+      if (input) input.value = row.value || '';
+    });
+  } catch (e) { console.error(e); }
+}
+
+document.getElementById('sosmedForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const status = document.getElementById('sosmedStatus');
+  status.textContent = 'Menyimpan…';
+  try {
+    const rows = SOSMED_PLATFORMS.map(p => ({
+      key: 'sosmed:' + p,
+      value: document.getElementById('sosmed_' + p).value.trim(),
+      updated_at: new Date().toISOString()
+    }));
+    const { error } = await sb.from('site_settings').upsert(rows);
+    if (error) throw error;
+    status.textContent = '✅ Media sosial tersimpan. Ikon akan muncul di footer situs.';
+  } catch (err) {
+    status.textContent = '⚠️ Gagal: ' + err.message;
+  }
+});
 
 // ─────────────────────────────────────────────────────────────────────────
 checkSession();
