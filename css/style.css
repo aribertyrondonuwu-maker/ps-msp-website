@@ -156,6 +156,7 @@ a { text-decoration: none; color: inherit; }
   background: radial-gradient(circle at 80% 20%, rgba(94,234,212,0.18), transparent 55%);
 }
 .hero-content { position: relative; z-index: 2; color: #fff; max-width: 720px; padding-top: 80px; }
+.hero-jenjang { display: inline-block; margin: 10px 0 4px; padding: 5px 14px; background: rgba(255,255,255,0.14); border: 1px solid rgba(255,255,255,0.3); border-radius: 999px; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.02em; }
 .eyebrow { color: var(--teal-light); font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; font-size: 0.8rem; margin-bottom: 14px; }
 .hero h1 { font-size: clamp(2.4rem, 5vw, 3.8rem); line-height: 1.08; margin-bottom: 20px; }
 .hero-sub { font-size: 1.08rem; color: rgba(255,255,255,0.85); margin-bottom: 34px; max-width: 560px; }
