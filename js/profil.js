@@ -4,6 +4,17 @@ async function loadProfil() {
     const d = await res.json();
 
     document.getElementById('sejarahText').textContent = d.sejarah;
+    if (d.sejarah_ps) document.getElementById('sejarahPsText').textContent = d.sejarah_ps;
+
+    if (d.sambutan_korprodi) {
+      const s = d.sambutan_korprodi;
+      document.getElementById('sambutanCard').innerHTML = `
+        <p class="sambutan-isi">"${s.isi}"</p>
+        <div class="sambutan-penutup">
+          <strong>${s.nama}</strong><br>
+          <span class="muted">${s.jabatan}</span>
+        </div>`;
+    }
     document.getElementById('visiText').textContent = `"${d.visi}"`;
     document.getElementById('misiList').innerHTML = d.misi.map(m => `<li>${m}</li>`).join('');
 
@@ -41,6 +52,15 @@ async function loadProfil() {
       <article class="card"><h3>Jangka Menengah</h3><p>${d.renstra.jangka_menengah}</p></article>
       <article class="card"><h3>Jangka Pendek</h3><p>${d.renstra.jangka_pendek}</p></article>
     `;
+
+    if (d.dokumen_resmi) {
+      document.getElementById('dokumenResmiList').innerHTML = d.dokumen_resmi.map(doc => `
+        <div class="luaran-row">
+          <a href="${doc.url}" target="_blank" rel="noopener">${doc.nama}</a>
+          ${doc.keterangan ? `<span class="luaran-ket"> — ${doc.keterangan}</span>` : ''}
+        </div>
+      `).join('');
+    }
   } catch (e) {
     console.error('Gagal memuat data profil:', e);
   }
