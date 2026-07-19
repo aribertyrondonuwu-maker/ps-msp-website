@@ -1,0 +1,37 @@
+{
+  "_meta": {
+    "terakhir_diperbarui": "2026-07-19",
+    "sumber": "LED IAPS 1.0 K.2.1 Relevansi Pendidikan; Kurikulum MBKM-OBE PS MSP 2024; Peraturan Rektor No. 1 Tahun 2025"
+  },
+  "pengantar": "Pendidikan dan pengajaran PS MSP diselenggarakan berbasis Outcome-Based Education (OBE) dengan paradigma Student Centered Learning (SCL), memastikan setiap Capaian Pembelajaran Lulusan (CPL) tercapai secara terukur dan terdokumentasi melalui Portal INSPIRE Unsrat.",
+  "statistik": {
+    "kurikulum": "Kurikulum MBKM-OBE 2024",
+    "capaian_iku7": "88% mata kuliah menggunakan case method/team-based project (2024) — melampaui target 80%",
+    "target_mutu": "Target Sasaran Mutu FPIK: 95% mata kuliah S1",
+    "paradigma": "Student Centered Learning (SCL) berbasis OBE"
+  },
+  "metode_pembelajaran": [
+    { "nama": "Case Method (Pemecahan Kasus)", "deskripsi": "Mahasiswa berperan sebagai protagonis yang menganalisis kasus nyata untuk membangun rekomendasi solusi melalui diskusi kelompok aktif. Diadopsi resmi sejak 2021." },
+    { "nama": "Team-Based Project", "deskripsi": "Kelas dibagi kelompok mengerjakan masalah nyata di masyarakat, menghasilkan presentasi/karya akhir dengan bimbingan dosen. Minimal 50% bobot nilai dari partisipasi & presentasi." },
+    { "nama": "Problem-Based Learning (PBL)", "deskripsi": "Pembelajaran berbasis masalah sesuai Peraturan Rektor No. 1/2025 Pasal 53, selaras dengan pendekatan OBE." },
+    { "nama": "Integrated Learning", "deskripsi": "Pembelajaran terintegrasi yang mengaitkan materi lintas mata kuliah dengan permasalahan nyata secara transdisiplin." },
+    { "nama": "E-Learning & Multimedia", "deskripsi": "Modul e-learning dan berbasis multimedia yang dapat diakses mahasiswa kapan saja dan dari mana saja." }
+  ],
+  "penilaian": {
+    "teknik": ["Observasi", "Partisipasi", "Unjuk kerja", "Tes tertulis", "Tes lisan", "Angket"],
+    "instrumen": ["Penilaian proses (rubrik)", "Penilaian hasil (portofolio)", "Karya desain"],
+    "prinsip": "Setiap mata kuliah memiliki kontrak rencana penilaian, umpan balik konstruktif kepada mahasiswa, serta dokumentasi proses dan hasil belajar yang lengkap."
+  },
+  "integrasi_riset": {
+    "deskripsi": "Hasil penelitian dan pengabdian DTPS diintegrasikan langsung ke dalam materi pembelajaran (RPS), sehingga mahasiswa belajar dari temuan riset terkini di bidang sumberdaya perairan tropis. Untuk status Terakreditasi Unggul, integrasi ini terdokumentasi dalam Tabel 2-Integrasi Kegiatan Penelitian/PkM dalam Pembelajaran.",
+    "contoh": "Materi tentang restorasi terumbu karang, EAFM, dan pengelolaan perikanan berkelanjutan bersumber langsung dari riset DTPS bersama EDF, FAO, dan Rare Inc."
+  },
+  "dokumentasi": {
+    "deskripsi": "Seluruh proses pembelajaran terdokumentasi real-time melalui Portal INSPIRE Unsrat:",
+    "item": ["KRS (Kartu Rencana Studi) per semester", "Rekam kehadiran dosen & mahasiswa per pertemuan", "Bahan ajar & RPS yang diunggah dosen", "Nilai UTS, UAS, tugas, dan praktikum", "KHS (Kartu Hasil Studi)"]
+  },
+  "mbkm": {
+    "deskripsi": "PS MSP memfasilitasi Merdeka Belajar Kampus Merdeka (MBKM) — mahasiswa dapat menempuh hingga 40 SKS di luar program studi melalui magang, proyek desa, pertukaran pelajar, dan penelitian.",
+    "contoh": "International Training Course di Kyushu University Jepang (beasiswa JASSO), Program Independen Bersertifikat, KKN Tematik pesisir."
+  }
+}
