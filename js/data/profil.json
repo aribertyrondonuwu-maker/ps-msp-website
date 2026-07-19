@@ -98,42 +98,50 @@
     {
       "nama": "Renstra FPIK UNSRAT 2023–2026",
       "keterangan": "SK Dekan No. 1517/UN12.5/LL/2023",
-      "url": "https://fpik.unsrat.ac.id/wp-content/uploads/FPIK_RENSTRA_2023.pdf"
+      "url": "https://fpik.unsrat.ac.id/wp-content/uploads/FPIK_RENSTRA_2023.pdf",
+      "gambar": "https://fpik.unsrat.ac.id/wp-content/uploads/renstra-fpik-unsrat-2023_cover-713x1024.jpg"
     },
     {
       "nama": "Panduan Akademik FPIK UNSRAT 2023",
       "keterangan": "SK Dekan No. 279/UN12.5/LL/2023",
-      "url": "https://fpik.unsrat.ac.id/wp-content/uploads/PANDUAN-AKADEMIK_FPIK_2023-1.pdf"
+      "url": "https://fpik.unsrat.ac.id/wp-content/uploads/PANDUAN-AKADEMIK_FPIK_2023-1.pdf",
+      "gambar": "https://fpik.unsrat.ac.id/wp-content/uploads/cover-PANDUAN-AKADEMIK-FPIK-UNSRAT.jpg"
     },
     {
       "nama": "Pedoman Penulisan Karya Ilmiah",
       "keterangan": "SK Dekan No. 873/UN12.5/LL/2023",
-      "url": "https://fpik.unsrat.ac.id/wp-content/uploads/FPIK_PEDOMAN-PENULISAN-KTAM_2023.pdf"
+      "url": "https://fpik.unsrat.ac.id/wp-content/uploads/FPIK_PEDOMAN-PENULISAN-KTAM_2023.pdf",
+      "gambar": "https://fpik.unsrat.ac.id/wp-content/uploads/COVER-PANDUAN-PENULISAN-KARYA-TULIS-MAHASISWA.jpg"
     },
     {
       "nama": "Templat Skripsi",
       "keterangan": "Format resmi penulisan skripsi",
-      "url": "https://fpik.unsrat.ac.id/wp-content/uploads/Templat-Skripsi.docx"
+      "url": "https://fpik.unsrat.ac.id/wp-content/uploads/Templat-Skripsi.docx",
+      "gambar": "https://fpik.unsrat.ac.id/wp-content/uploads/skripsi-1024x576.jpg"
     },
     {
       "nama": "Templat Makalah Seminar",
       "keterangan": "Format makalah seminar mahasiswa",
-      "url": "https://fpik.unsrat.ac.id/wp-content/uploads/Templat-Makalah-Seminar.docx"
+      "url": "https://fpik.unsrat.ac.id/wp-content/uploads/Templat-Makalah-Seminar.docx",
+      "gambar": "https://fpik.unsrat.ac.id/wp-content/uploads/makalah-seminar-1024x576.jpg"
     },
     {
       "nama": "Templat Magang & MBKM",
       "keterangan": "Format laporan magang & MBKM",
-      "url": "https://fpik.unsrat.ac.id/wp-content/uploads/Templat-Magang-MBKM.docx"
+      "url": "https://fpik.unsrat.ac.id/wp-content/uploads/Templat-Magang-MBKM.docx",
+      "gambar": "https://fpik.unsrat.ac.id/wp-content/uploads/magang-1024x576.jpg"
     },
     {
       "nama": "Templat PKL",
       "keterangan": "Format laporan Praktik Kerja Lapangan",
-      "url": "https://fpik.unsrat.ac.id/wp-content/uploads/Templat-PKL.docx"
+      "url": "https://fpik.unsrat.ac.id/wp-content/uploads/Templat-PKL.docx",
+      "gambar": "https://fpik.unsrat.ac.id/wp-content/uploads/pkl-1024x576.jpg"
     },
     {
       "nama": "Templat RKP Skripsi",
       "keterangan": "Format Rencana Kegiatan Penelitian Skripsi",
-      "url": "https://fpik.unsrat.ac.id/wp-content/uploads/Templat-RKP-Skripsi.docx"
+      "url": "https://fpik.unsrat.ac.id/wp-content/uploads/Templat-RKP-Skripsi.docx",
+      "gambar": "https://fpik.unsrat.ac.id/wp-content/uploads/rkp-skripsi-1024x576.jpg"
     }
   ]
 }
