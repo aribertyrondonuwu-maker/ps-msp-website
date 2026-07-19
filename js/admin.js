@@ -49,6 +49,8 @@ function showDashboard(email) {
     loadDiskusi();
     loadAdminUsers();
     loadSosmed();
+    loadSlideshow();
+    loadLogoFooter();
   }
 }
 
@@ -286,13 +288,13 @@ document.getElementById('headerFotoForm').addEventListener('submit', async (e) =
 
 async function loadHeaderFoto() {
   const grid = document.getElementById('headerFotoGrid');
-  const { data, error } = await sb.from('site_settings').select('*').like('key', 'hero:%');
+  const { data, error } = await sb.from('site_settings').select('*').or('key.like.hero:%,key.eq.korprodi_foto');
   if (error) { grid.innerHTML = `<p>Gagal memuat: ${error.message}</p>`; return; }
   grid.innerHTML = data.map(s => `
     <div class="admin-preview-card">
       <img src="${s.value}" alt="">
       <div class="body">
-        <strong>${s.key.replace('hero:', '')}</strong>
+        <strong>${s.key === 'korprodi_foto' ? 'Foto Koordinator' : s.key.replace('hero:', '')}</strong>
         <button onclick="deleteSetting('${s.key}', loadHeaderFoto)">Hapus</button>
       </div>
     </div>
@@ -382,6 +384,84 @@ async function deleteAdminUser(id) {
   await sb.from('admin_users').delete().eq('id', id);
   loadAdminUsers();
 }
+
+// ─────────────────────────────────────────────────────────────────────────
+// SLIDESHOW BERANDA (superadmin only) — site_settings key slideshow:{id}
+// ─────────────────────────────────────────────────────────────────────────
+async function loadSlideshow() {
+  const grid = document.getElementById('slideshowGrid');
+  if (!grid) return;
+  try {
+    const { data } = await sb.from('site_settings').select('*').like('key', 'slideshow:%');
+    grid.innerHTML = (data || []).map(s => `
+      <div class="admin-preview-card">
+        <img src="${s.value}" alt="">
+        <div class="body">
+          <strong>Foto slideshow</strong>
+          <button onclick="deleteSetting('${s.key}', loadSlideshow)">Hapus</button>
+        </div>
+      </div>
+    `).join('') || '<p class="muted">Belum ada foto slideshow. Beranda memakai gradient/foto header default.</p>';
+  } catch (e) { grid.innerHTML = `<p>Gagal memuat: ${e.message}</p>`; }
+}
+
+document.getElementById('slideshowForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const status = document.getElementById('slideshowStatus');
+  const fileInput = document.getElementById('slideshowFile');
+  if (!fileInput.files[0]) return;
+  status.textContent = 'Mengupload…';
+  try {
+    const url = await uploadToMedia(fileInput.files[0], 'slideshow');
+    const key = 'slideshow:' + Date.now();
+    const { error } = await sb.from('site_settings').upsert({ key, value: url, updated_at: new Date().toISOString() });
+    if (error) throw error;
+    status.textContent = '✅ Foto ditambahkan ke slideshow beranda.';
+    document.getElementById('slideshowForm').reset();
+    loadSlideshow();
+  } catch (err) {
+    status.textContent = '⚠️ Gagal: ' + err.message;
+  }
+});
+
+// ─────────────────────────────────────────────────────────────────────────
+// LOGO FOOTER (superadmin only) — site_settings key logo:{id}
+// ─────────────────────────────────────────────────────────────────────────
+async function loadLogoFooter() {
+  const grid = document.getElementById('logoFooterGrid');
+  if (!grid) return;
+  try {
+    const { data } = await sb.from('site_settings').select('*').like('key', 'logo:%');
+    grid.innerHTML = (data || []).map(s => `
+      <div class="admin-preview-card" style="background:#0a2540;">
+        <img src="${s.value}" alt="" style="filter:brightness(0) invert(1);">
+        <div class="body">
+          <strong style="color:#fff;">Logo</strong>
+          <button onclick="deleteSetting('${s.key}', loadLogoFooter)">Hapus</button>
+        </div>
+      </div>
+    `).join('') || '<p class="muted">Belum ada logo footer.</p>';
+  } catch (e) { grid.innerHTML = `<p>Gagal memuat: ${e.message}</p>`; }
+}
+
+document.getElementById('logoFooterForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const status = document.getElementById('logoFooterStatus');
+  const fileInput = document.getElementById('logoFooterFile');
+  if (!fileInput.files[0]) return;
+  status.textContent = 'Mengupload…';
+  try {
+    const url = await uploadToMedia(fileInput.files[0], 'logo');
+    const key = 'logo:' + Date.now();
+    const { error } = await sb.from('site_settings').upsert({ key, value: url, updated_at: new Date().toISOString() });
+    if (error) throw error;
+    status.textContent = '✅ Logo ditambahkan ke footer.';
+    document.getElementById('logoFooterForm').reset();
+    loadLogoFooter();
+  } catch (err) {
+    status.textContent = '⚠️ Gagal: ' + err.message;
+  }
+});
 
 // ─────────────────────────────────────────────────────────────────────────
 // MEDIA SOSIAL (superadmin only) — site_settings key sosmed:{platform}

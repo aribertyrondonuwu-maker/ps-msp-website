@@ -64,9 +64,68 @@ async function renderDosen() {
 renderDosen();
 
 // Terapkan foto header (hero) per halaman jika admin sudah upload (site_settings key hero:{halaman})
+// ─────────────────────────────────────────────────────────────────────────
+// PENCARIAN SITUS (client-side, indeks halaman statis)
+// ─────────────────────────────────────────────────────────────────────────
+const SEARCH_INDEX = [
+  { judul: 'Profil Program Studi', url: 'profil.html', kata: 'profil sejarah visi misi tujuan struktur organisasi pimpinan sambutan koordinator renstra' },
+  { judul: 'Akreditasi', url: 'akreditasi.html', kata: 'akreditasi lam ptip unggul status sk dokumen legal landasan hukum' },
+  { judul: 'Penjaminan Mutu', url: 'mutu.html', kata: 'mutu smop ppepp iso 21001 zona integritas sertifikasi sop audit' },
+  { judul: 'Kurikulum OBE-MBKM', url: 'kurikulum.html', kata: 'kurikulum mata kuliah sks semester obe mbkm cpl profil lulusan' },
+  { judul: 'Dosen Tetap (DTPS)', url: 'index.html#dosen', kata: 'dosen dtps guru besar doktor profesor kepakaran' },
+  { judul: 'Sarana & Prasarana', url: 'sarana.html', kata: 'sarana prasarana laboratorium lab likupang marine field station alat k3' },
+  { judul: 'Pendidikan & Pengajaran', url: 'pendidikan.html', kata: 'pendidikan pengajaran pembelajaran case method team based project mbkm penilaian inspire' },
+  { judul: 'Penelitian', url: 'tridharma.html#penelitian', kata: 'penelitian dana riset publikasi dtps miliar' },
+  { judul: 'Bidang Minat Penelitian', url: 'penelitian-minat.html', kata: 'bidang minat penelitian klaster riset roadmap peta jalan coral triangle blue carbon' },
+  { judul: 'Pengabdian kepada Masyarakat', url: 'tridharma.html#pengabdian', kata: 'pengabdian pkm desa binaan masyarakat pesisir' },
+  { judul: 'Kerjasama', url: 'tridharma.html#kerjasama', kata: 'kerjasama mitra dudi mou internasional nasional' },
+  { judul: 'Kemahasiswaan', url: 'kemahasiswaan.html', kata: 'kemahasiswaan mahasiswa layanan beasiswa prestasi masa studi' },
+  { judul: 'Alumni', url: 'alumni.html', kata: 'alumni tracer study ikatan pekerjaan diskusi' },
+  { judul: 'Berita & Pengumuman', url: 'berita.html', kata: 'berita pengumuman informasi kabar akademik' },
+  { judul: 'Tautan', url: 'tautan.html', kata: 'tautan link jurnal ilmiah platax ekoton sistem informasi' }
+];
+
+function openSearch() {
+  const m = document.getElementById('searchModal');
+  if (m) { m.classList.add('open'); const inp = document.getElementById('searchInput'); if (inp) { inp.value = ''; inp.focus(); } document.getElementById('searchResults').innerHTML = ''; }
+}
+function closeSearch() { const m = document.getElementById('searchModal'); if (m) m.classList.remove('open'); }
+function runSearch(q) {
+  const box = document.getElementById('searchResults');
+  if (!box) return;
+  const query = q.trim().toLowerCase();
+  if (!query) { box.innerHTML = ''; return; }
+  const hits = SEARCH_INDEX.filter(item =>
+    item.judul.toLowerCase().includes(query) || item.kata.toLowerCase().includes(query)
+  );
+  box.innerHTML = hits.length
+    ? hits.map(h => `<a href="${h.url}" class="search-hit">${h.judul}</a>`).join('')
+    : '<p class="search-empty">Tidak ada hasil untuk "' + q + '"</p>';
+}
+document.addEventListener('keydown', (e) => {
+  if ((e.ctrlKey || e.metaKey) && e.key === 'k') { e.preventDefault(); openSearch(); }
+});
+
 async function applyHeroImage(pageKey) {
   const heroEl = document.querySelector('.hero, .page-hero');
   if (!heroEl || !window.sbClient) return;
+
+  // Untuk beranda: cek slideshow dulu (key slideshow:*)
+  if (pageKey === 'beranda') {
+    try {
+      const { data: slides } = await window.sbClient
+        .from('site_settings').select('value').like('key', 'slideshow:%');
+      const urls = (slides || []).map(s => s.value).filter(v => v && v.trim());
+      if (urls.length > 1) { startHeroSlideshow(heroEl, urls); return; }
+      if (urls.length === 1) {
+        heroEl.style.backgroundImage = `linear-gradient(160deg, rgba(10,37,64,0.75), rgba(15,118,110,0.75)), url('${urls[0]}')`;
+        heroEl.style.backgroundSize = 'cover';
+        heroEl.style.backgroundPosition = 'center';
+        return;
+      }
+    } catch (e) { /* lanjut ke hero:beranda biasa */ }
+  }
+
   try {
     const { data } = await window.sbClient.from('site_settings').select('value').eq('key', `hero:${pageKey}`).maybeSingle();
     if (data && data.value) {
@@ -75,6 +134,19 @@ async function applyHeroImage(pageKey) {
       heroEl.style.backgroundPosition = 'center';
     }
   } catch (e) { /* pakai gradient default */ }
+}
+
+function startHeroSlideshow(heroEl, urls) {
+  let idx = 0;
+  const overlay = 'linear-gradient(160deg, rgba(10,37,64,0.72), rgba(15,118,110,0.72))';
+  const setBg = i => {
+    heroEl.style.backgroundImage = `${overlay}, url('${urls[i]}')`;
+    heroEl.style.backgroundSize = 'cover';
+    heroEl.style.backgroundPosition = 'center';
+    heroEl.style.transition = 'background-image 0.8s ease-in-out';
+  };
+  setBg(0);
+  setInterval(() => { idx = (idx + 1) % urls.length; setBg(idx); }, 5000);
 }
 
 document.getElementById('year').textContent = new Date().getFullYear();
@@ -241,6 +313,49 @@ async function renderSosmed() {
   } catch (e) { /* diam */ }
 }
 renderSosmed();
+
+// Sambutan Koordinator Program Studi di beranda (isi dari profil.json, foto dari site_settings)
+async function renderSambutanHome() {
+  const isiEl = document.getElementById('korprodiIsi');
+  if (!isiEl) return;
+  try {
+    const res = await fetch('js/data/profil.json');
+    const d = await res.json();
+    if (d.sambutan_korprodi) {
+      const s = d.sambutan_korprodi;
+      isiEl.textContent = `"${s.isi}"`;
+      const namaEl = document.getElementById('korprodiNama');
+      const jabatanEl = document.getElementById('korprodiJabatan');
+      if (namaEl) namaEl.textContent = s.nama;
+      if (jabatanEl) jabatanEl.textContent = s.jabatan;
+    }
+  } catch (e) { console.error(e); }
+
+  // Foto Korprodi (site_settings key korprodi_foto)
+  if (window.sbClient) {
+    try {
+      const { data } = await window.sbClient.from('site_settings').select('value').eq('key', 'korprodi_foto').maybeSingle();
+      if (data && data.value) {
+        const wrap = document.getElementById('korprodiFotoWrap');
+        if (wrap) wrap.innerHTML = `<img src="${data.value}" alt="Koordinator Program Studi">`;
+      }
+    } catch (e) { /* pakai placeholder inisial */ }
+  }
+}
+renderSambutanHome();
+
+// Logo institusional footer (site_settings key logo:{n}, diatur superadmin)
+async function renderFooterLogos() {
+  const row = document.getElementById('footerLogos');
+  if (!row || !window.sbClient) return;
+  try {
+    const { data } = await window.sbClient.from('site_settings').select('key,value').like('key', 'logo:%');
+    const logos = (data || []).filter(r => r.value && r.value.trim()).sort((a, b) => a.key.localeCompare(b.key));
+    if (!logos.length) return;
+    row.innerHTML = logos.map(l => `<img src="${l.value}" alt="logo institusi" class="footer-logo-img">`).join('');
+  } catch (e) { /* diam */ }
+}
+renderFooterLogos();
 
 // Luaran Buku & Paten (dari js/data/luaran.json — sumber Tabel 3.5A & 3.5D LKPS)
 async function renderLuaran() {
