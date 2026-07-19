@@ -278,6 +278,35 @@ a { text-decoration: none; color: inherit; }
 .footer-map iframe { display: block; filter: grayscale(0.2); }
 .map-link { display: inline-block; margin-top: 8px; color: var(--teal-light); font-size: 0.82rem; font-weight: 600; }
 .map-link:hover { text-decoration: underline; }
+
+/* Tombol & modal pencarian */
+.nav-search-btn {
+  background: transparent; border: 1.5px solid rgba(255,255,255,0.3); color: #fff; cursor: pointer;
+  width: 38px; height: 38px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center;
+  transition: background .15s, border-color .15s;
+}
+.navbar.scrolled .nav-search-btn { border-color: var(--border); color: var(--navy); }
+.nav-search-btn:hover { background: var(--teal); border-color: var(--teal); color: #fff; }
+.nav-search-btn svg { width: 17px; height: 17px; }
+.search-modal {
+  position: fixed; inset: 0; background: rgba(10,37,64,0.55); backdrop-filter: blur(4px);
+  z-index: 1000; display: none; align-items: flex-start; justify-content: center; padding-top: 12vh;
+}
+.search-modal.open { display: flex; }
+.search-box { background: #fff; width: min(560px, 90vw); border-radius: 16px; box-shadow: 0 24px 60px rgba(0,0,0,0.3); overflow: hidden; }
+.search-box input {
+  width: 100%; border: none; padding: 20px 24px; font-size: 1.05rem; font-family: var(--font-body); outline: none;
+  border-bottom: 1px solid var(--border);
+}
+.search-results { max-height: 320px; overflow-y: auto; }
+.search-hit { display: block; padding: 14px 24px; color: var(--navy); font-weight: 500; border-bottom: 1px solid #f1f5f9; }
+.search-hit:hover { background: #eef4f7; color: var(--teal); }
+.search-empty { padding: 18px 24px; color: var(--muted); font-size: 0.9rem; }
+
+/* Logo institusional footer */
+.footer-logos { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 28px; padding: 28px 0; margin-top: 20px; border-top: 1px solid rgba(255,255,255,0.12); }
+.footer-logo-img { height: 46px; width: auto; object-fit: contain; filter: brightness(0) invert(1); opacity: 0.9; transition: opacity .15s; }
+.footer-logo-img:hover { opacity: 1; }
 .luaran-meta { color: var(--muted); font-size: 0.78rem; white-space: nowrap; }
 .luaran-toggle { margin-top: 16px; }
 
