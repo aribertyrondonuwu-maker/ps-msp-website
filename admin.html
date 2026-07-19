@@ -33,6 +33,7 @@
       <button class="admin-nav-btn" data-tab="galeri">🖼️ Galeri</button>
       <button class="admin-nav-btn" data-tab="dosen-foto">👤 Foto Dosen</button>
       <button class="admin-nav-btn superadmin-only" data-tab="header-foto">🎨 Header Halaman</button>
+      <button class="admin-nav-btn superadmin-only" data-tab="sosmed">🔗 Media Sosial</button>
       <button class="admin-nav-btn superadmin-only" data-tab="diskusi">💬 Diskusi Alumni</button>
       <button class="admin-nav-btn superadmin-only" data-tab="kelola-admin">🔑 Kelola Admin</button>
     </nav>
@@ -139,6 +140,23 @@
     <section id="tab-diskusi" class="admin-tab">
       <h2>Moderasi Diskusi Alumni</h2>
       <div id="diskusiAdminList"></div>
+    </section>
+
+    <!-- MEDIA SOSIAL (superadmin only) -->
+    <section id="tab-sosmed" class="admin-tab">
+      <h2>Media Sosial</h2>
+      <p class="muted">Isi alamat lengkap (URL) akun media sosial PS MSP. Ikon otomatis muncul di footer situs. Kosongkan untuk menyembunyikan.</p>
+      <form id="sosmedForm" class="admin-form">
+        <label class="sosmed-field"><span>📘 Facebook</span><input type="url" id="sosmed_facebook" placeholder="https://facebook.com/..."></label>
+        <label class="sosmed-field"><span>📷 Instagram</span><input type="url" id="sosmed_instagram" placeholder="https://instagram.com/..."></label>
+        <label class="sosmed-field"><span>▶️ YouTube</span><input type="url" id="sosmed_youtube" placeholder="https://youtube.com/@..."></label>
+        <label class="sosmed-field"><span>🎵 TikTok</span><input type="url" id="sosmed_tiktok" placeholder="https://tiktok.com/@..."></label>
+        <label class="sosmed-field"><span>💬 WhatsApp</span><input type="url" id="sosmed_whatsapp" placeholder="https://wa.me/62..."></label>
+        <div class="admin-form-actions">
+          <button type="submit" class="btn btn-primary btn-sm">Simpan Media Sosial</button>
+        </div>
+        <p class="form-note" id="sosmedStatus"></p>
+      </form>
     </section>
 
     <!-- KELOLA ADMIN (superadmin only) -->
