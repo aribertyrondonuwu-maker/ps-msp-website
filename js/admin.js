@@ -15,13 +15,25 @@ async function checkSession() {
 }
 
 async function resolveRoleAndShow(email) {
-  const { data: adminRow, error } = await sb.from('admin_users').select('*').eq('username', email).maybeSingle();
-  if (error || !adminRow) {
-    document.getElementById('loginError').textContent = '⚠️ Akun ini belum terdaftar sebagai admin. Hubungi superadmin.';
-    await sb.auth.signOut();
-    showLogin();
+  const errEl = document.getElementById('loginError');
+  // Cari baris admin_users secara case-insensitive (ilike), lebih tahan terhadap perbedaan huruf besar/kecil
+  let adminRow = null, error = null;
+  try {
+    const res = await sb.from('admin_users').select('*').ilike('username', email).maybeSingle();
+    adminRow = res.data; error = res.error;
+  } catch (e) { error = e; }
+
+  if (error) {
+    // Query gagal — kemungkinan besar RLS memblokir SELECT. Beri pesan diagnostik, jangan langsung logout.
+    errEl.textContent = '⚠️ Login berhasil, tetapi gagal membaca data admin (kemungkinan kebijakan keamanan tabel). Detail: ' + (error.message || error);
+    console.error('resolveRole error:', error);
     return;
   }
+  if (!adminRow) {
+    errEl.textContent = '⚠️ Login berhasil, tetapi email ini belum terdaftar di tabel admin_users. Pastikan kolom username = ' + email;
+    return;
+  }
+  errEl.textContent = '';
   currentRole = adminRow.role;
   showDashboard(email);
 }
@@ -62,7 +74,14 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
   errEl.textContent = '';
   const { data, error } = await sb.auth.signInWithPassword({ email, password });
   if (error) {
-    errEl.textContent = '⚠️ Email atau password salah.';
+    const msg = (error.message || '').toLowerCase();
+    if (msg.includes('email not confirmed') || msg.includes('not confirmed')) {
+      errEl.textContent = '⚠️ Email belum dikonfirmasi. Buka Supabase → Authentication → Users → klik akun Anda → "Confirm email", lalu login ulang.';
+    } else if (msg.includes('invalid')) {
+      errEl.textContent = '⚠️ Email atau password salah.';
+    } else {
+      errEl.textContent = '⚠️ Gagal masuk: ' + error.message;
+    }
     return;
   }
   resolveRoleAndShow(data.user.email);
