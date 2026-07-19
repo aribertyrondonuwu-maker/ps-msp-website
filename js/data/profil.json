@@ -1,0 +1,50 @@
+{
+  "_meta": {
+    "terakhir_diperbarui": "2026-07-17",
+    "sumber": "LED IAPS 1.0 K.4; Kurikulum MBKM-OBE PS MSP 2024; Renstra Unsrat 2025-2029; Lamp 4 Struktur Organisasi FPIK"
+  },
+  "sejarah": "PS MSP adalah salah satu program studi tertua di FPIK Unsrat yang berdiri sejak 1965. Status akreditasi terus meningkat dari peringkat B (2016) menjadi Baik Sekali (SK BAN-PT No. 12918/SK/BAN-PT/Ak-PPJ/S/XII/2021, berlaku s.d. 25 November 2026), dan kini menuju target Terakreditasi Unggul melalui LAM PTIP IAPS 1.0.",
+  "visi": "Menjadi program studi MSP unggulan yang berkompeten, berkarakter, dan berintegritas dalam mengelola sumberdaya perairan secara berkelanjutan — Tahun 2029.",
+  "misi": [
+    "Menyelenggarakan pendidikan yang berkualitas dan relevan sesuai tuntutan pasar kerja di bidang manajemen sumberdaya perairan.",
+    "Mengembangkan penelitian dan pengabdian masyarakat dalam rangka meningkatkan pemahaman dan penerapan praktik-praktik dalam pengelolaan sumberdaya perairan.",
+    "Mendorong pengembangan karakter dan integritas lulusan sebagai agen perubahan dalam pengelolaan sumberdaya perairan."
+  ],
+  "tujuan": {
+    "deskripsi": "Tujuan program studi dioperasionalkan melalui 8 Capaian Pembelajaran Lulusan (CPL) terukur dalam Kurikulum MBKM-OBE 2024:",
+    "cpl": [
+      "Kompetensi teknis pengelolaan sumberdaya perairan (CPL 1–4)",
+      "Kemampuan kolaborasi dan negosiasi lintas sektor (CPL 5)",
+      "Perencanaan dan desain pengelolaan sumberdaya (CPL 6–7)",
+      "Kewirausahaan di bidang perikanan (CPL 8)"
+    ],
+    "target_terukur": [
+      "Serapan kerja lulusan sesuai bidang MSP: target >77% (tercapai & terlampaui)",
+      "Masa tunggu kerja: <3 bulan (tercapai)",
+      "IPK lulusan: >3,0 (tercapai)"
+    ]
+  },
+  "keselarasan_vertikal": [
+    { "level": "Universitas", "visi": "Unsrat Unggul Berbudaya Berstandar Internasional", "sumber": "Renstra Unsrat 2025–2029" },
+    { "level": "Fakultas", "visi": "Menjadi Fakultas yang Unggul dan Berbudaya di Kawasan Pasifik", "sumber": "Renstra FPIK 2023–2026" },
+    { "level": "Program Studi", "visi": "Menjadi program studi MSP unggulan yang berkompeten, berkarakter, dan berintegritas dalam mengelola sumberdaya perairan secara berkelanjutan Tahun 2029", "sumber": "Kurikulum MBKM-OBE 2024" }
+  ],
+  "struktur_organisasi": {
+    "dasar_hukum": "Lampiran 4 SMOP FPIK-UNSRAT (No. Lamp 4-M-SMOP/FPIK-UNSRAT), mengacu OTK Unsrat (Permendiktisaintek No. 5 Tahun 2025)",
+    "pimpinan": [
+      { "jabatan": "Dekan FPIK", "nama": "Stenly Wullur, S.Pi., M.Sc., Ph.D.", "tupoksi": "Pemegang otoritas penuh atas seluruh penyelenggaraan FPIK" },
+      { "jabatan": "Wakil Dekan Bidang Akademik & Kerjasama (WD-AK)", "nama": "", "tupoksi": "Mutu pendidikan, penelitian, pengabdian, dan pengembangan kerjasama" },
+      { "jabatan": "Wakil Dekan Bidang Umum & Keuangan (WD-UK)", "nama": "", "tupoksi": "Pengelolaan keuangan, aset, dan sarana prasarana" },
+      { "jabatan": "Wakil Dekan Bidang Kemahasiswaan & Alumni (WD-KA)", "nama": "", "tupoksi": "Layanan mahasiswa, pembinaan ormawa, dan jejaring alumni" },
+      { "jabatan": "Koordinator Sistem (KS)", "nama": "Daisy M. Makapedua, S.Pi., M.App.Sc., Ph.D.", "tupoksi": "Koordinasi implementasi SMOP ISO 21001:2018" },
+      { "jabatan": "Koordinator PS MSP", "nama": "Dr. Ir. Jety Kornela Rangan, M.Si.", "tupoksi": "Penanggung jawab implementasi mutu di level PS MSP" }
+    ],
+    "jurusan": "PS MSP berada di bawah Jurusan MSP (bersama PS BDP, PS Ilmu Kelautan, PS ABP). FPIK mengelola 6 program studi aktif dengan total 951 mahasiswa (2025).",
+    "senat": "Senat Fakultas — organ normatif yang mengawasi kebijakan akademik secara independen."
+  },
+  "renstra": {
+    "jangka_panjang": "Selaras Renstra Unsrat 2025–2029 dan Roadmap Penelitian FPIK 2023–2027 (6 klaster riset unggulan).",
+    "jangka_menengah": "Renstra FPIK 2023–2026 (4 pilar strategis); Rencana Pembangunan Zona Integritas FPIK 2025–2026 (target WBK Juni 2026, IPAK 3,89/4,00).",
+    "jangka_pendek": "Program Kerja Tahunan & Sasaran Mutu SMOP (21 IKU dalam 5 program prioritas); Program Prioritas PS MSP 2026 termasuk inovasi SIFIKA."
+  }
+}
