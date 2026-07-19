@@ -55,6 +55,7 @@
       <div class="nav-item"><a href="tautan.html">Tautan</a></div>
     </nav>
     <div class="navbar-actions">
+    <button class="nav-search-btn" onclick="openSearch()" aria-label="Cari"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></button>
     <button onclick="history.length > 1 ? history.back() : location.href='index.html'" class="btn-outline-dark btn-sm-outline">← Kembali</button>
     <a href="index.html" class="btn btn-primary btn-sm">Beranda</a>
     </div>
@@ -124,5 +125,11 @@
 
 <script src="js/app.js"></script>
 <script src="js/pendidikan.js"></script>
+<div class="search-modal" id="searchModal" onclick="if(event.target===this)closeSearch()">
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Cari halaman: profil, kurikulum, dosen, penelitian…" autocomplete="off" oninput="runSearch(this.value)" onkeydown="if(event.key==='Escape')closeSearch()">
+    <div class="search-results" id="searchResults"></div>
+  </div>
+</div>
 </body>
 </html>

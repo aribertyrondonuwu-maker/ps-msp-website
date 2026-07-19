@@ -33,6 +33,8 @@
       <button class="admin-nav-btn" data-tab="galeri">🖼️ Galeri</button>
       <button class="admin-nav-btn" data-tab="dosen-foto">👤 Foto Dosen</button>
       <button class="admin-nav-btn superadmin-only" data-tab="header-foto">🎨 Header Halaman</button>
+      <button class="admin-nav-btn superadmin-only" data-tab="slideshow">🖼️ Slideshow Beranda</button>
+      <button class="admin-nav-btn superadmin-only" data-tab="logo-footer">🏛️ Logo Footer</button>
       <button class="admin-nav-btn superadmin-only" data-tab="sosmed">🔗 Media Sosial</button>
       <button class="admin-nav-btn superadmin-only" data-tab="diskusi">💬 Diskusi Alumni</button>
       <button class="admin-nav-btn superadmin-only" data-tab="kelola-admin">🔑 Kelola Admin</button>
@@ -145,6 +147,34 @@
     <section id="tab-diskusi" class="admin-tab">
       <h2>Moderasi Diskusi Alumni</h2>
       <div id="diskusiAdminList"></div>
+    </section>
+
+    <!-- SLIDESHOW BERANDA (superadmin only) -->
+    <section id="tab-slideshow" class="admin-tab">
+      <h2>Slideshow Beranda</h2>
+      <p class="muted">Upload beberapa foto untuk latar hero beranda. Jika ada 2+ foto, latar otomatis bergganti bergiliran setiap 5 detik. Gunakan foto landscape resolusi lebar (≥1600px).</p>
+      <form id="slideshowForm" class="admin-form">
+        <input type="file" id="slideshowFile" accept="image/*" required>
+        <div class="admin-form-actions">
+          <button type="submit" class="btn btn-primary btn-sm">Tambah Foto Slideshow</button>
+        </div>
+        <p class="form-note" id="slideshowStatus"></p>
+      </form>
+      <div class="admin-preview-grid" id="slideshowGrid"></div>
+    </section>
+
+    <!-- LOGO FOOTER (superadmin only) -->
+    <section id="tab-logo-footer" class="admin-tab">
+      <h2>Logo Institusional Footer</h2>
+      <p class="muted">Upload logo yang tampil di footer beranda (mis. logo Unsrat, Kemendikbud, BLU, Diktisaintek Berdampak). Logo otomatis diberi warna putih agar serasi dengan latar footer gelap — gunakan file PNG transparan.</p>
+      <form id="logoFooterForm" class="admin-form">
+        <input type="file" id="logoFooterFile" accept="image/*" required>
+        <div class="admin-form-actions">
+          <button type="submit" class="btn btn-primary btn-sm">Tambah Logo</button>
+        </div>
+        <p class="form-note" id="logoFooterStatus"></p>
+      </form>
+      <div class="admin-preview-grid" id="logoFooterGrid"></div>
     </section>
 
     <!-- MEDIA SOSIAL (superadmin only) -->
