@@ -1,0 +1,70 @@
+{
+  "_meta": {
+    "terakhir_diperbarui": "2026-07-19",
+    "sumber": "LED IAPS 1.0 K.2.2 & K.2.3; Peta Jalan Penelitian FPIK UNSRAT 2023–2027 (disahkan April 2023 oleh Dekan FPIK)"
+  },
+  "pengantar": "Kegiatan penelitian dan pengabdian DTPS PS MSP dipayungi oleh Peta Jalan Penelitian FPIK UNSRAT 2023–2027, yang menetapkan enam klaster riset unggulan. PS MSP menjadi program studi inti pada tiga klaster (Klaster 1, 3, dan 6), dengan dukungan Laboratorium Bioekologi Perairan, Laboratorium Pesisir & Pulau-Pulau Kecil, serta Marine Field Station Likupang.",
+  "statistik": {
+    "total_penelitian": "76 judul senilai Rp 5,04 miliar (2023–2025)",
+    "publikasi_internasional": "69 publikasi jurnal internasional bereputasi",
+    "sitasi": "766 artikel tersitasi",
+    "konsentrasi": "89,7% penelitian mahasiswa pada Klaster 1, 10,3% pada Klaster 5"
+  },
+  "klaster": [
+    {
+      "no": 1,
+      "nama": "Pengelolaan Sumber Daya Perairan, Konservasi, dan Biodiversitas",
+      "inti": true,
+      "fokus": "Konservasi ekosistem pesisir, rehabilitasi habitat, Ecosystem Approach to Fisheries Management (EAFM), dan pengembangan karbon biru (blue carbon).",
+      "contoh": "Restorasi terumbu karang, monitoring ekosistem pesisir, pengelolaan perikanan berkelanjutan berbasis sains partisipatif (bersama EDF dan FAO).",
+      "lab": "Lab. Bioekologi Perairan; Lab. Pesisir & Pulau-Pulau Kecil; Marine Field Station Likupang"
+    },
+    {
+      "no": 2,
+      "nama": "Akuakultur Berkelanjutan dan Kesehatan Organisme Akuatik",
+      "inti": false,
+      "fokus": "Budidaya berkelanjutan dan kesehatan organisme akuatik.",
+      "contoh": "Pemberdayaan pembudidaya, pelatihan budidaya rumput laut dan makroalga, pengembangan karagenan dan Turbinaria ornata.",
+      "lab": "Lab. Teknologi Akuakultur"
+    },
+    {
+      "no": 3,
+      "nama": "Teknologi Penangkapan, Oseanografi Terapan, dan Sistem Perikanan",
+      "inti": true,
+      "fokus": "Teknologi penangkapan ramah lingkungan, oseanografi terapan, dan sistem perikanan berbasis data.",
+      "contoh": "Pelatihan logbook penangkapan ikan, pendampingan nelayan berbasis data (Desa Kampung Ambon).",
+      "lab": "Lab. Rekayasa Penangkapan Ikan"
+    },
+    {
+      "no": 4,
+      "nama": "Pengolahan Hasil Perikanan, Mutu, Keamanan Pangan, dan Rantai Dingin",
+      "inti": false,
+      "fokus": "Pengolahan hasil perikanan, jaminan mutu, keamanan pangan, dan sistem rantai dingin.",
+      "contoh": "Pengolahan cakalang fufu dan produk olahan pesisir.",
+      "lab": "Lab. Pengujian Produk Perikanan & Kelautan (LP3K, terakreditasi KAN)"
+    },
+    {
+      "no": 5,
+      "nama": "Bioteknologi Laut, Farmasitika, Biomaterial, dan Bioekonomi",
+      "inti": false,
+      "fokus": "Bioteknologi laut, senyawa farmasitika, biomaterial, dan bioekonomi.",
+      "contoh": "Pemanfaatan pigmen alga, kopi mangrove, dan pewarna alami dari alga.",
+      "lab": "Lab. Bioteknologi & Farmasitika Laut"
+    },
+    {
+      "no": 6,
+      "nama": "Sosial Ekonomi, Agribisnis, Kebijakan, dan Tata Kelola Pesisir–Pulau Kecil",
+      "inti": true,
+      "fokus": "Sosial ekonomi perikanan, agribisnis, kebijakan, dan tata kelola pesisir–pulau kecil.",
+      "contoh": "Model pemberdayaan masyarakat nelayan, policy brief, pendampingan pengelolaan perikanan co-management, penyusunan KLHS/RPJMD.",
+      "lab": "Lab. Sosial Ekonomi Perikanan"
+    }
+  ],
+  "roadmap": [
+    { "tahun": "2023", "fase": "Konsolidasi Fondasi", "fokus": "Audit baseline, pembentukan kelompok riset, pemetaan alat & laboratorium, penyelarasan tema prodi–lab.", "hasil": "Struktur kelompok riset aktif, baseline indikator, rencana kerja terpadu." },
+    { "tahun": "2024", "fase": "Penguatan Data & Metodologi", "fokus": "Penguatan proposal kompetitif, standardisasi metode, penguatan database, pelatihan publikasi & KI.", "hasil": "Proposal didanai meningkat, metodologi seragam, repository data, publikasi meningkat." },
+    { "tahun": "2025", "fase": "Akselerasi Hilirisasi & Kemitraan", "fokus": "Prototipe, policy brief, demplot, kontrak riset pemerintah/industri, layanan uji & standardisasi.", "hasil": "Produk/model terapan, mitra bertambah, riset termanfaatkan masyarakat." },
+    { "tahun": "2026", "fase": "Internasionalisasi & Reputasi Pasifik", "fokus": "Joint research, visiting scholar, konferensi tematik, publikasi bersama, pengakuan internasional.", "hasil": "Jejaring Pasifik lebih kuat, publikasi bersama, reputasi regional meningkat." },
+    { "tahun": "2027", "fase": "Penguatan Dampak & Keberlanjutan", "fokus": "Evaluasi menyeluruh, monetisasi KI terpilih, penguatan pusat unggulan, integrasi riset ke kurikulum & kebijakan.", "hasil": "Model keberlanjutan pembiayaan, pusat unggulan matang, dampak nyata." }
+  ]
+}
