@@ -60,6 +60,16 @@
 .klaster-contoh { font-size: 0.83rem; color: var(--muted); margin-bottom: 10px; }
 .klaster-lab { font-size: 0.8rem; color: var(--teal); font-weight: 500; }
 
+/* Pendidikan */
+.info-block { background: var(--card-bg); border-radius: 16px; padding: 28px; box-shadow: var(--shadow); border-left: 4px solid var(--teal); max-width: 900px; }
+.info-block p { color: var(--ink); font-size: 0.95rem; line-height: 1.75; }
+.penilaian-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+.sub-head { font-family: var(--font-head); font-size: 1rem; color: var(--navy); margin-bottom: 14px; }
+.pill-list { display: flex; flex-wrap: wrap; gap: 8px; }
+.pill { display: inline-block; padding: 7px 15px; background: #eef4f7; color: var(--navy); border-radius: 999px; font-size: 0.83rem; font-weight: 500; }
+.dok-ul { margin: 12px 0 0 18px; color: var(--muted); font-size: 0.88rem; line-height: 1.8; }
+@media (max-width: 640px) { .penilaian-grid { grid-template-columns: 1fr; } }
+
 /* Profil page */
 .visi-quote {
   font-family: var(--font-head); font-size: 1.35rem; line-height: 1.5; color: var(--navy);
