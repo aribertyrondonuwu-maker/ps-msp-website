@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Profil — PS Manajemen Sumberdaya Perairan FPIK UNSRAT</title>
+<title>Pendidikan & Pengajaran — PS Manajemen Sumberdaya Perairan FPIK UNSRAT</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/kurikulum.css">
 <link rel="stylesheet" href="css/akreditasi.css">
 </head>
-<body data-page="profil">
+<body data-page="pendidikan">
 
 <a href="#konten-utama" class="skip-link">Langsung ke konten utama</a>
 
@@ -19,7 +19,7 @@
     <a href="index.html" class="brand">MSP <span>FPIK UNSRAT</span></a>
     <nav class="nav-links">
       <div class="nav-item has-dropdown">
-        <a href="profil.html" class="active">Tentang ▾</a>
+        <a href="profil.html">Tentang ▾</a>
         <div class="dropdown">
           <a href="profil.html">Profil</a>
           <a href="akreditasi.html">Akreditasi</a>
@@ -35,7 +35,7 @@
         </div>
       </div>
       <div class="nav-item has-dropdown">
-        <a href="pendidikan.html">Tridharma ▾</a>
+        <a href="pendidikan.html" class="active">Tridharma ▾</a>
         <div class="dropdown">
           <a href="pendidikan.html">Pendidikan &amp; Pengajaran</a>
           <a href="tridharma.html#penelitian">Penelitian</a>
@@ -63,78 +63,56 @@
 
 <section class="page-hero" id="konten-utama">
   <div class="container">
-    <p class="eyebrow">Tentang Kami</p>
-    <h1>Profil Program Studi</h1>
-    <p class="hero-sub">Manajemen Sumberdaya Perairan FPIK UNSRAT — visi, misi, tujuan, dan struktur organisasi.</p>
+    <p class="eyebrow">Pilar Tridharma — Pendidikan</p>
+    <h1>Pendidikan &amp; Pengajaran</h1>
+    <p class="hero-sub" id="pendidikanPengantar">Penyelenggaraan pembelajaran berbasis OBE dan Student Centered Learning.</p>
   </div>
 </section>
 
-<section class="section" id="sejarah">
+<section class="section">
   <div class="container">
-    <h2 class="section-title">Sejarah</h2>
-    <p class="section-sub" id="sejarahText" style="max-width:820px;"></p>
-    <p class="section-sub" id="sejarahPsText" style="max-width:820px;margin-top:16px;"></p>
+    <div class="cards-grid" id="statPendidikanGrid"></div>
   </div>
 </section>
 
-<section class="section section-alt" id="sambutan">
+<section class="section section-alt">
   <div class="container">
-    <h2 class="section-title">Sambutan Koordinator Program Studi</h2>
-    <div class="sambutan-card" id="sambutanCard"></div>
+    <h2 class="section-title">Metode Pembelajaran</h2>
+    <div class="cards-grid" id="metodeGrid"></div>
   </div>
 </section>
 
-<section class="section section-alt" id="vmt">
+<section class="section">
   <div class="container">
-    <div class="vmt-block">
-      <h2 class="section-title">Visi</h2>
-      <blockquote class="visi-quote" id="visiText"></blockquote>
+    <h2 class="section-title">Integrasi Penelitian &amp; PkM dalam Pembelajaran</h2>
+    <div class="info-block" id="integrasiBlock"></div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Sistem Penilaian</h2>
+    <div class="penilaian-grid">
+      <div>
+        <h3 class="sub-head">Teknik Penilaian</h3>
+        <div class="pill-list" id="teknikList"></div>
+      </div>
+      <div>
+        <h3 class="sub-head">Instrumen Penilaian</h3>
+        <div class="pill-list" id="instrumenList"></div>
+      </div>
     </div>
-    <div class="vmt-block" style="margin-top:36px;">
-      <h2 class="section-title">Misi</h2>
-      <ol class="misi-list" id="misiList"></ol>
+    <p class="section-sub" id="penilaianPrinsip" style="margin-top:20px;"></p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">MBKM &amp; Dokumentasi Pembelajaran</h2>
+    <div class="cards-grid">
+      <article class="card" id="mbkmCard"></article>
+      <article class="card" id="dokumentasiCard"></article>
     </div>
-    <div class="vmt-block" style="margin-top:36px;">
-      <h2 class="section-title">Tujuan</h2>
-      <p class="section-sub" id="tujuanDesc"></p>
-      <div class="cards-grid" id="cplGrid"></div>
-      <h3 style="margin-top:28px;color:var(--navy);font-family:var(--font-head);font-size:1.1rem;">Target Terukur (Tercapai)</h3>
-      <div id="targetList"></div>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="keselarasan">
-  <div class="container">
-    <h2 class="section-title">Keselarasan Visi Vertikal</h2>
-    <p class="section-sub">Visi PS MSP selaras dari tingkat Universitas → Fakultas → Program Studi.</p>
-    <div class="stepper" id="keselarasanStepper"></div>
-  </div>
-</section>
-
-<section class="section section-alt" id="struktur">
-  <div class="container">
-    <h2 class="section-title">Struktur Organisasi</h2>
-    <p class="section-sub" id="strukturDasar"></p>
-    <div class="table-wrap">
-      <table class="data-table" id="pimpinanTable"></table>
-    </div>
-    <p class="section-sub" id="strukturJurusan" style="margin-top:20px;"></p>
-  </div>
-</section>
-
-<section class="section" id="renstra">
-  <div class="container">
-    <h2 class="section-title">Rencana Strategis</h2>
-    <div class="cards-grid" id="renstraGrid"></div>
-  </div>
-</section>
-
-<section class="section section-alt" id="dokumen">
-  <div class="container">
-    <h2 class="section-title">Renstra & Panduan Akademik</h2>
-    <p class="section-sub">Dokumen resmi FPIK UNSRAT — renstra, panduan akademik, pedoman & templat penulisan karya ilmiah.</p>
-    <div class="dok-grid" id="dokumenResmiList"></div>
   </div>
 </section>
 
@@ -145,6 +123,6 @@
 </footer>
 
 <script src="js/app.js"></script>
-<script src="js/profil.js"></script>
+<script src="js/pendidikan.js"></script>
 </body>
 </html>
