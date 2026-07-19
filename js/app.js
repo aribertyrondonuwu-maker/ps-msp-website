@@ -137,7 +137,7 @@ async function renderBerita() {
   try {
     const { data, error } = await window.sbClient
       .from('berita')
-      .select('judul, kategori, konten, tanggal_publish')
+      .select('id, judul, kategori, konten, tanggal_publish')
       .eq('published', true)
       .order('tanggal_publish', { ascending: false })
       .limit(6);
@@ -147,12 +147,12 @@ async function renderBerita() {
       return;
     }
     grid.innerHTML = data.map(b => `
-      <article class="card">
+      <a href="berita-detail.html?id=${b.id}" class="card" style="display:block;">
         ${b.kategori ? `<p class="card-link" style="margin-bottom:8px;">${b.kategori}</p>` : ''}
         <h3>${b.judul}</h3>
         <p>${(b.konten || '').replace(/<[^>]+>/g, '').slice(0, 140)}${b.konten && b.konten.length > 140 ? '…' : ''}</p>
         <p class="muted" style="font-size:0.78rem;margin-top:10px;">${new Date(b.tanggal_publish).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' })}</p>
-      </article>
+      </a>
     `).join('');
   } catch (e) {
     console.error('Gagal memuat berita:', e);
@@ -160,6 +160,61 @@ async function renderBerita() {
   }
 }
 renderBerita();
+
+// Highlight beranda: Berita Terbaru + Pengumuman (dipisah berdasarkan kategori)
+async function renderHighlight() {
+  const beritaList = document.getElementById('highlightBeritaList');
+  const pengumumanList = document.getElementById('highlightPengumumanList');
+  if (!beritaList && !pengumumanList) return;
+  if (!window.sbClient) {
+    if (beritaList) beritaList.innerHTML = '<p class="muted">Belum ada berita.</p>';
+    if (pengumumanList) pengumumanList.innerHTML = '<p class="muted">Belum ada pengumuman.</p>';
+    return;
+  }
+  try {
+    const { data, error } = await window.sbClient
+      .from('berita')
+      .select('id, judul, kategori, konten, tanggal_publish')
+      .eq('published', true)
+      .order('tanggal_publish', { ascending: false })
+      .limit(20);
+    if (error) throw error;
+
+    const pengumuman = (data || []).filter(b => b.kategori === 'Pengumuman').slice(0, 5);
+    const berita = (data || []).filter(b => b.kategori !== 'Pengumuman').slice(0, 4);
+
+    if (beritaList) {
+      beritaList.innerHTML = berita.length ? berita.map(b => `
+        <a href="berita-detail.html?id=${b.id}" class="highlight-item">
+          <div class="highlight-item-body">
+            <span class="highlight-kat">${b.kategori || 'Berita'}</span>
+            <h4>${b.judul}</h4>
+            <span class="highlight-tgl">${new Date(b.tanggal_publish).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
+          </div>
+        </a>
+      `).join('') : '<p class="muted">Belum ada berita dipublikasikan.</p>';
+    }
+
+    if (pengumumanList) {
+      pengumumanList.innerHTML = pengumuman.length ? pengumuman.map(b => {
+        const t = new Date(b.tanggal_publish);
+        return `
+        <a href="berita-detail.html?id=${b.id}" class="pengumuman-item">
+          <div class="pengumuman-date">
+            <span class="pd-day">${t.getDate()}</span>
+            <span class="pd-mon">${t.toLocaleDateString('id-ID', { month: 'short' })}</span>
+          </div>
+          <span class="pengumuman-judul">${b.judul}</span>
+        </a>`;
+      }).join('') : '<p class="muted">Belum ada pengumuman.</p>';
+    }
+  } catch (e) {
+    console.error('Gagal memuat highlight:', e);
+    if (beritaList) beritaList.innerHTML = '<p class="muted">Belum ada berita.</p>';
+    if (pengumumanList) pengumumanList.innerHTML = '<p class="muted">Belum ada pengumuman.</p>';
+  }
+}
+renderHighlight();
 
 // Luaran Buku & Paten (dari js/data/luaran.json — sumber Tabel 3.5A & 3.5D LKPS)
 async function renderLuaran() {
