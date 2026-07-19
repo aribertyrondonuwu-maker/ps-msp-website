@@ -1,9 +1,9 @@
 {
   "_meta": {
-    "terakhir_diperbarui": "2026-07-17",
-    "sumber": "LED IAPS 1.0 K.4; Kurikulum MBKM-OBE PS MSP 2024; Renstra Unsrat 2025-2029; Lamp 4 Struktur Organisasi FPIK"
+    "terakhir_diperbarui": "2026-07-19",
+    "sumber": "LED IAPS 1.0 K.4; Kurikulum MBKM-OBE PS MSP 2024; Renstra Unsrat 2025-2029; fpik.unsrat.ac.id (sejarah, pimpinan, renstra, kurikulum) diakses 2026"
   },
-  "sejarah": "PS MSP adalah salah satu program studi tertua di FPIK Unsrat yang berdiri sejak 1965. Status akreditasi terus meningkat dari peringkat B (2016) menjadi Baik Sekali (SK BAN-PT No. 12918/SK/BAN-PT/Ak-PPJ/S/XII/2021, berlaku s.d. 25 November 2026), dan kini menuju target Terakreditasi Unggul melalui LAM PTIP IAPS 1.0.",
+  "sejarah": "Fakultas Perikanan dan Ilmu Kelautan (FPIK) UNSRAT bermula dari gagasan Pemerintah Daerah pada 1965, ketika Bupati Sangihe Talaud mengajukan pendirian Perguruan Tinggi Perikanan di Tahuna. Menteri PTIP menerbitkan SK No. 58 tanggal 23 Maret 1966, dan penerimaan mahasiswa pertama dimulai 1 Januari 1967. Pada 1 Juni 1970 kampus dipindahkan dari Tahuna ke Manado. Melalui SK Dirjen Dikti No. 48/DIKTI/Kep/1984, fakultas memiliki Jurusan Manajemen Sumberdaya Perairan (MSP) dan Pengolahan Hasil Perikanan. Nama Fakultas Perikanan berubah menjadi FPIK melalui SK Mendikbud No. 0341/O/1996 tanggal 5 Desember 1996.",
   "visi": "Menjadi program studi MSP unggulan yang berkompeten, berkarakter, dan berintegritas dalam mengelola sumberdaya perairan secara berkelanjutan — Tahun 2029.",
   "misi": [
     "Menyelenggarakan pendidikan yang berkualitas dan relevan sesuai tuntutan pasar kerja di bidang manajemen sumberdaya perairan.",
@@ -25,26 +25,115 @@
     ]
   },
   "keselarasan_vertikal": [
-    { "level": "Universitas", "visi": "Unsrat Unggul Berbudaya Berstandar Internasional", "sumber": "Renstra Unsrat 2025–2029" },
-    { "level": "Fakultas", "visi": "Menjadi Fakultas yang Unggul dan Berbudaya di Kawasan Pasifik", "sumber": "Renstra FPIK 2023–2026" },
-    { "level": "Program Studi", "visi": "Menjadi program studi MSP unggulan yang berkompeten, berkarakter, dan berintegritas dalam mengelola sumberdaya perairan secara berkelanjutan Tahun 2029", "sumber": "Kurikulum MBKM-OBE 2024" }
+    {
+      "level": "Universitas",
+      "visi": "Unsrat Unggul Berbudaya Berstandar Internasional",
+      "sumber": "Renstra Unsrat 2025–2029"
+    },
+    {
+      "level": "Fakultas",
+      "visi": "Menjadi Fakultas yang Unggul dan Berbudaya di Kawasan Pasifik",
+      "sumber": "Renstra FPIK 2023–2026"
+    },
+    {
+      "level": "Program Studi",
+      "visi": "Menjadi program studi MSP unggulan yang berkompeten, berkarakter, dan berintegritas dalam mengelola sumberdaya perairan secara berkelanjutan Tahun 2029",
+      "sumber": "Kurikulum MBKM-OBE 2024"
+    }
   ],
   "struktur_organisasi": {
-    "dasar_hukum": "Lampiran 4 SMOP FPIK-UNSRAT (No. Lamp 4-M-SMOP/FPIK-UNSRAT), mengacu OTK Unsrat (Permendiktisaintek No. 5 Tahun 2025)",
+    "dasar_hukum": "Struktur Organisasi FPIK ditetapkan melalui dokumen SMOP FPIK-UNSRAT (Lamp 4-M-SMOP/FPIK-UNSRAT), mengacu OTK Unsrat (Permendiktisaintek No. 5 Tahun 2025).",
     "pimpinan": [
-      { "jabatan": "Dekan FPIK", "nama": "Stenly Wullur, S.Pi., M.Sc., Ph.D.", "tupoksi": "Pemegang otoritas penuh atas seluruh penyelenggaraan FPIK" },
-      { "jabatan": "Wakil Dekan Bidang Akademik & Kerjasama (WD-AK)", "nama": "", "tupoksi": "Mutu pendidikan, penelitian, pengabdian, dan pengembangan kerjasama" },
-      { "jabatan": "Wakil Dekan Bidang Umum & Keuangan (WD-UK)", "nama": "", "tupoksi": "Pengelolaan keuangan, aset, dan sarana prasarana" },
-      { "jabatan": "Wakil Dekan Bidang Kemahasiswaan & Alumni (WD-KA)", "nama": "", "tupoksi": "Layanan mahasiswa, pembinaan ormawa, dan jejaring alumni" },
-      { "jabatan": "Koordinator Sistem (KS)", "nama": "Daisy M. Makapedua, S.Pi., M.App.Sc., Ph.D.", "tupoksi": "Koordinasi implementasi SMOP ISO 21001:2018" },
-      { "jabatan": "Koordinator PS MSP", "nama": "Dr. Ir. Jety Kornela Rangan, M.Si.", "tupoksi": "Penanggung jawab implementasi mutu di level PS MSP" }
+      {
+        "jabatan": "Dekan FPIK",
+        "nama": "Dr. Ir. Ockstan Jurike Kalesaran, M.Sc.",
+        "tupoksi": "Pemegang otoritas penuh atas seluruh penyelenggaraan FPIK"
+      },
+      {
+        "jabatan": "Wakil Dekan Bidang Akademik & Kerjasama",
+        "nama": "Daisy Monica Makapedua, S.Pi., M.App.Sc., Ph.D.",
+        "tupoksi": "Mutu pendidikan, penelitian, pengabdian, dan pengembangan kerjasama"
+      },
+      {
+        "jabatan": "Wakil Dekan Bidang Umum & Keuangan",
+        "nama": "Dr. Ir. Reiny A. Tumbol, M.App.Sc.",
+        "tupoksi": "Pengelolaan keuangan, aset, dan sarana prasarana"
+      },
+      {
+        "jabatan": "Wakil Dekan Bidang Kemahasiswaan & Alumni",
+        "nama": "Dr. Ir. James Jobert Hanoch Paulus, M.Si.",
+        "tupoksi": "Layanan mahasiswa, pembinaan ormawa, dan jejaring alumni"
+      },
+      {
+        "jabatan": "Ketua Jurusan MSP",
+        "nama": "Dr. Ir. Edwin L. A. Ngangi, M.Si.",
+        "tupoksi": "Memimpin Jurusan Manajemen Sumberdaya Perairan"
+      },
+      {
+        "jabatan": "Sekretaris Jurusan MSP",
+        "nama": "Dr. Ir. Adnan Sjaltout Wantasen, M.Si.",
+        "tupoksi": "Membantu Ketua Jurusan MSP"
+      },
+      {
+        "jabatan": "Koordinator Program Studi MSP",
+        "nama": "Dr. Ir. Jety Kornela Rangan, M.Si.",
+        "tupoksi": "Penanggung jawab penyelenggaraan & mutu PS MSP"
+      }
     ],
-    "jurusan": "PS MSP berada di bawah Jurusan MSP (bersama PS BDP, PS Ilmu Kelautan, PS ABP). FPIK mengelola 6 program studi aktif dengan total 951 mahasiswa (2025).",
-    "senat": "Senat Fakultas — organ normatif yang mengawasi kebijakan akademik secara independen."
+    "jurusan": "PS MSP berada di bawah Jurusan Manajemen Sumberdaya Perairan (bersama PS BDP, PS Ilmu Kelautan, PS ABP). FPIK mengelola 6 program studi sarjana aktif serta program magister dan doktor.",
+    "senat": "Senat Fakultas berperan sebagai organ normatif yang mengawasi kebijakan akademik secara independen."
   },
   "renstra": {
     "jangka_panjang": "Selaras Renstra Unsrat 2025–2029 dan Roadmap Penelitian FPIK 2023–2027 (6 klaster riset unggulan).",
     "jangka_menengah": "Renstra FPIK 2023–2026 (4 pilar strategis); Rencana Pembangunan Zona Integritas FPIK 2025–2026 (target WBK Juni 2026, IPAK 3,89/4,00).",
     "jangka_pendek": "Program Kerja Tahunan & Sasaran Mutu SMOP (21 IKU dalam 5 program prioritas); Program Prioritas PS MSP 2026 termasuk inovasi SIFIKA."
-  }
+  },
+  "sejarah_ps": "Program Studi Manajemen Sumberdaya Perairan (MSP) adalah salah satu program studi tertua di FPIK, berdiri sejak fakultas mulai menyelenggarakan program sarjana dengan empat bidang ilmu awal (Teknologi Hasil Perikanan, Biologi Perikanan, Budidaya Perairan, dan Teknik Penangkapan Ikan). Bidang Ilmu Sosial Ekonomi Perikanan (SEP) sempat menjadi bagian PS MSP sebelum berdiri sendiri (kini PS Agribisnis Perikanan). Status akreditasi PS MSP terus meningkat hingga peringkat Baik Sekali (SK BAN-PT No. 12918/SK/BAN-PT/Ak-PPJ/S/XII/2021, berlaku s.d. 25 November 2026), dan kini menuju target Terakreditasi Unggul melalui LAM PTIP IAPS 1.0.",
+  "sambutan_korprodi": {
+    "nama": "Dr. Ir. Jety Kornela Rangan, M.Si.",
+    "jabatan": "Koordinator Program Studi Manajemen Sumberdaya Perairan",
+    "isi": "Selamat datang di Program Studi Manajemen Sumberdaya Perairan FPIK Universitas Sam Ratulangi. Kami berkomitmen menyelenggarakan pendidikan berkualitas yang relevan dengan kebutuhan pengelolaan sumberdaya perairan berkelanjutan, memanfaatkan keunggulan lokasi kami di jantung Coral Triangle — kawasan dengan biodiversitas laut tertinggi di dunia. Melalui kurikulum berbasis OBE-MBKM, penelitian bereputasi, dan pengabdian yang berdampak nyata bagi masyarakat pesisir, kami menyiapkan lulusan yang berkompeten, berkarakter, dan berintegritas sebagai agen perubahan. Kami mengundang Anda untuk menjadi bagian dari perjalanan kami menuju keunggulan."
+  },
+  "dokumen_resmi": [
+    {
+      "nama": "Renstra FPIK UNSRAT 2023–2026",
+      "keterangan": "SK Dekan No. 1517/UN12.5/LL/2023",
+      "url": "https://fpik.unsrat.ac.id/wp-content/uploads/FPIK_RENSTRA_2023.pdf"
+    },
+    {
+      "nama": "Panduan Akademik FPIK UNSRAT 2023",
+      "keterangan": "SK Dekan No. 279/UN12.5/LL/2023",
+      "url": "https://fpik.unsrat.ac.id/wp-content/uploads/PANDUAN-AKADEMIK_FPIK_2023-1.pdf"
+    },
+    {
+      "nama": "Pedoman Penulisan Karya Ilmiah",
+      "keterangan": "SK Dekan No. 873/UN12.5/LL/2023",
+      "url": "https://fpik.unsrat.ac.id/wp-content/uploads/FPIK_PEDOMAN-PENULISAN-KTAM_2023.pdf"
+    },
+    {
+      "nama": "Templat Skripsi",
+      "keterangan": "Format resmi penulisan skripsi",
+      "url": "https://fpik.unsrat.ac.id/wp-content/uploads/Templat-Skripsi.docx"
+    },
+    {
+      "nama": "Templat Makalah Seminar",
+      "keterangan": "Format makalah seminar mahasiswa",
+      "url": "https://fpik.unsrat.ac.id/wp-content/uploads/Templat-Makalah-Seminar.docx"
+    },
+    {
+      "nama": "Templat Magang & MBKM",
+      "keterangan": "Format laporan magang & MBKM",
+      "url": "https://fpik.unsrat.ac.id/wp-content/uploads/Templat-Magang-MBKM.docx"
+    },
+    {
+      "nama": "Templat PKL",
+      "keterangan": "Format laporan Praktik Kerja Lapangan",
+      "url": "https://fpik.unsrat.ac.id/wp-content/uploads/Templat-PKL.docx"
+    },
+    {
+      "nama": "Templat RKP Skripsi",
+      "keterangan": "Format Rencana Kegiatan Penelitian Skripsi",
+      "url": "https://fpik.unsrat.ac.id/wp-content/uploads/Templat-RKP-Skripsi.docx"
+    }
+  ]
 }
