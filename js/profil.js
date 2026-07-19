@@ -8,11 +8,21 @@ async function loadProfil() {
 
     if (d.sambutan_korprodi) {
       const s = d.sambutan_korprodi;
+      let fotoHtml = '';
+      if (window.sbClient) {
+        try {
+          const { data: f } = await window.sbClient.from('site_settings').select('value').eq('key', 'korprodi_foto').maybeSingle();
+          if (f && f.value) fotoHtml = `<img src="${f.value}" alt="${s.nama}" class="sambutan-foto-inline">`;
+        } catch (e) { /* skip */ }
+      }
       document.getElementById('sambutanCard').innerHTML = `
-        <p class="sambutan-isi">"${s.isi}"</p>
-        <div class="sambutan-penutup">
-          <strong>${s.nama}</strong><br>
-          <span class="muted">${s.jabatan}</span>
+        ${fotoHtml}
+        <div>
+          <p class="sambutan-isi">"${s.isi}"</p>
+          <div class="sambutan-penutup">
+            <strong>${s.nama}</strong><br>
+            <span class="muted">${s.jabatan}</span>
+          </div>
         </div>`;
     }
     document.getElementById('visiText').textContent = `"${d.visi}"`;
@@ -55,10 +65,19 @@ async function loadProfil() {
 
     if (d.dokumen_resmi) {
       document.getElementById('dokumenResmiList').innerHTML = d.dokumen_resmi.map(doc => `
-        <div class="luaran-row">
-          <a href="${doc.url}" target="_blank" rel="noopener">${doc.nama}</a>
-          ${doc.keterangan ? `<span class="luaran-ket"> — ${doc.keterangan}</span>` : ''}
-        </div>
+        <a href="${doc.url}" target="_blank" rel="noopener" class="dok-card">
+          <div class="dok-thumb">
+            ${doc.gambar
+              ? `<img src="${doc.gambar}" alt="${doc.nama}" loading="lazy" onerror="this.parentElement.classList.add('no-img');this.remove();">`
+              : ''}
+            <span class="dok-thumb-fallback">📄</span>
+          </div>
+          <div class="dok-info">
+            <h4>${doc.nama}</h4>
+            ${doc.keterangan ? `<p>${doc.keterangan}</p>` : ''}
+            <span class="dok-download">Unduh dokumen →</span>
+          </div>
+        </a>
       `).join('');
     }
   } catch (e) {
