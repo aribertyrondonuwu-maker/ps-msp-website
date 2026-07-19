@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profil — PS Manajemen Sumberdaya Perairan FPIK UNSRAT</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/kurikulum.css">
+<link rel="stylesheet" href="css/akreditasi.css">
+</head>
+<body data-page="profil-full">
+
+<a href="#konten-utama" class="skip-link">Langsung ke konten utama</a>
+
+<header class="navbar scrolled" id="navbar">
+  <div class="container navbar-inner">
+    <a href="index.html" class="brand">MSP <span>FPIK UNSRAT</span></a>
+    <nav class="nav-links">
+      <a href="profil.html" class="active">Profil</a>
+      <a href="akreditasi.html">Akreditasi</a>
+      <a href="tridharma.html">Tridharma</a>
+      <a href="sarana.html">Sarana</a>
+      <a href="kurikulum.html">Kurikulum</a>
+      <a href="kemahasiswaan.html">Kemahasiswaan</a>
+      <a href="mutu.html">Mutu</a>
+      <a href="index.html#dosen">Dosen</a>
+      <a href="alumni.html">Alumni</a>
+      <a href="tautan.html">Tautan</a>
+    </nav>
+    <div class="navbar-actions">
+    <button onclick="history.length > 1 ? history.back() : location.href='index.html'" class="btn-outline-dark btn-sm-outline">← Kembali</button>
+    <a href="index.html" class="btn btn-primary btn-sm">Beranda</a>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero" id="konten-utama">
+  <div class="container">
+    <p class="eyebrow">Tentang Kami</p>
+    <h1>Profil Program Studi</h1>
+    <p class="hero-sub">Manajemen Sumberdaya Perairan FPIK UNSRAT — visi, misi, tujuan, dan struktur organisasi.</p>
+  </div>
+</section>
+
+<section class="section" id="sejarah">
+  <div class="container">
+    <h2 class="section-title">Sejarah & Akreditasi</h2>
+    <p class="section-sub" id="sejarahText" style="max-width:820px;"></p>
+  </div>
+</section>
+
+<section class="section section-alt" id="vmt">
+  <div class="container">
+    <div class="vmt-block">
+      <h2 class="section-title">Visi</h2>
+      <blockquote class="visi-quote" id="visiText"></blockquote>
+    </div>
+    <div class="vmt-block" style="margin-top:36px;">
+      <h2 class="section-title">Misi</h2>
+      <ol class="misi-list" id="misiList"></ol>
+    </div>
+    <div class="vmt-block" style="margin-top:36px;">
+      <h2 class="section-title">Tujuan</h2>
+      <p class="section-sub" id="tujuanDesc"></p>
+      <div class="cards-grid" id="cplGrid"></div>
+      <h3 style="margin-top:28px;color:var(--navy);font-family:var(--font-head);font-size:1.1rem;">Target Terukur (Tercapai)</h3>
+      <div id="targetList"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="keselarasan">
+  <div class="container">
+    <h2 class="section-title">Keselarasan Visi Vertikal</h2>
+    <p class="section-sub">Visi PS MSP selaras dari tingkat Universitas → Fakultas → Program Studi.</p>
+    <div class="stepper" id="keselarasanStepper"></div>
+  </div>
+</section>
+
+<section class="section section-alt" id="struktur">
+  <div class="container">
+    <h2 class="section-title">Struktur Organisasi</h2>
+    <p class="section-sub" id="strukturDasar"></p>
+    <div class="table-wrap">
+      <table class="data-table" id="pimpinanTable"></table>
+    </div>
+    <p class="section-sub" id="strukturJurusan" style="margin-top:20px;"></p>
+  </div>
+</section>
+
+<section class="section" id="renstra">
+  <div class="container">
+    <h2 class="section-title">Rencana Strategis</h2>
+    <div class="cards-grid" id="renstraGrid"></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p class="footer-bottom">© Program Studi Manajemen Sumberdaya Perairan · FPIK UNSRAT</p>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+<script src="js/profil.js"></script>
+</body>
+</html>
