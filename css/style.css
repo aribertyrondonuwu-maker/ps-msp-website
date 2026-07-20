@@ -379,3 +379,33 @@ img.dosen-photo { display: block; }
 .tiktok-cta { font-size: 0.78rem; color: var(--teal); font-weight: 600; }
 .akun-card { text-decoration: none; transition: transform .15s, box-shadow .15s; }
 .akun-card:hover { transform: translateY(-3px); box-shadow: 0 10px 26px rgba(10,37,64,0.14); }
+
+/* ── Berita: gambar kiri, narasi kanan (halaman detail) ── */
+.berita-layout { display: flex; gap: 32px; align-items: flex-start; }
+.berita-layout .berita-konten { flex: 1 1 0; min-width: 0; }
+.berita-foto-box { border-radius: 14px; overflow: hidden; box-shadow: var(--shadow); background: #e8eef2; }
+.berita-foto-box img { width: 100%; height: auto; display: block; object-fit: cover; }
+@media (max-width: 720px) {
+  .berita-layout { flex-direction: column; }
+  .berita-foto-box { flex: 0 0 auto !important; max-width: 100% !important; width: 100%; }
+}
+
+/* ── Berita: kartu daftar dengan thumbnail (kiri gambar, kanan teks) ── */
+.berita-list-card.has-thumb { display: flex; gap: 18px; align-items: stretch; padding: 0; overflow: hidden; }
+.berita-list-thumb { flex: 0 0 200px; max-width: 200px; overflow: hidden; background: #e8eef2; }
+.berita-list-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; min-height: 140px; }
+.berita-list-card.has-thumb .berita-list-body { padding: 18px 20px; display: flex; flex-direction: column; }
+.berita-list-card:not(.has-thumb) { display: block; }
+@media (max-width: 600px) {
+  .berita-list-card.has-thumb { flex-direction: column; }
+  .berita-list-thumb { flex: 0 0 auto; max-width: 100%; height: 180px; }
+}
+
+/* ── Admin: preview & kontrol foto berita ── */
+.berita-foto-row { display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin: 4px 0; }
+.berita-foto-preview { flex: 0 0 200px; height: 150px; border-radius: 12px; overflow: hidden; background: repeating-linear-gradient(45deg,#eef4f7,#eef4f7 12px,#e6eef2 12px,#e6eef2 24px); display: flex; align-items: center; justify-content: center; }
+.berita-foto-preview img { width: 100%; height: 100%; object-fit: cover; }
+.berita-foto-preview span { color: var(--muted); font-size: 0.8rem; }
+.berita-foto-controls { flex: 1 1 240px; display: flex; flex-direction: column; gap: 10px; }
+.berita-size-label { display: flex; flex-direction: column; gap: 4px; font-size: 0.82rem; color: var(--muted); font-weight: 600; }
+.berita-size-label select { padding: 8px 10px; border-radius: 8px; border: 1px solid var(--border); font-family: var(--font-body); }
