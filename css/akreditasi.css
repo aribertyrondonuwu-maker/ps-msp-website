@@ -104,3 +104,13 @@
   color: var(--muted); font-size: 0.85rem; font-weight: 600; cursor: pointer;
 }
 .kerjasama-tab-btn.active { background: var(--navy); color: #fff; border-color: var(--navy); }
+
+/* Check-list sederhana untuk daftar ruang lingkup dsb. */
+.check-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px; }
+.check-list li { position: relative; padding-left: 30px; color: var(--ink); font-size: 0.94rem; line-height: 1.5; }
+.check-list li::before {
+  content: '✓'; position: absolute; left: 0; top: 0;
+  width: 20px; height: 20px; border-radius: 50%;
+  background: var(--teal); color: #fff; font-size: 0.72rem; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+}
