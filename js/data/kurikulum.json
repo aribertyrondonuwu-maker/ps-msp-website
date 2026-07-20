@@ -1,365 +1,365 @@
 {
-  "_meta": {
-    "kurikulum_berlaku": "MBKM-OBE 2024",
-    "terakhir_diperbarui": "2026-07-17",
-    "sumber": "Tabel 2-Kurikulum LKPS LAM PTIP PS MSP (data terstruktur resmi, bukan hasil OCR dokumen kurikulum)",
-    "catatan": "Saat ada revisi kurikulum berikutnya, tambahkan objek baru ke array riwayat_revisi dan perbarui semester di bawah."
-  },
-  "riwayat_revisi": [
-    {
-      "tahun": 2024,
-      "keterangan": "Revisi mayor kurikulum berbasis OBE-MBKM, evaluasi 5 tahunan"
-    }
-  ],
-  "ringkasan": {
-    "total_sks_wajib": 136,
-    "total_sks_pilihan_tersedia": 21,
-    "sks_pilihan_diambil_minimal": 9,
-    "masa_studi_semester": 8,
-    "gelar": "S.Pi",
-    "jumlah_mk_wajib": 45,
-    "jumlah_mk_pilihan": 7,
-    "jumlah_cpl": 8,
-    "jumlah_sub_cpl": 28,
-    "jumlah_profil_lulusan": 7,
-    "profil_lulusan": [
-      "Peneliti",
-      "Pendidik",
-      "Penyuluh",
-      "Manajer",
-      "Wirausahawan",
-      "Konsultan/Praktisi Akuakultur",
-      "Karyawan/Pegawai"
-    ]
-  },
-  "semester": [
-    {
-      "no": 1,
-      "jenis": "wajib",
-      "total_sks": 20,
-      "mata_kuliah": [
-        {
-          "kode": "NAS 1011",
-          "nama": "Agama (sesuai keyakinan)",
-          "sks": 2
-        },
-        {
-          "kode": "NAS 1021",
-          "nama": "Pendidikan Pancasila",
-          "sks": 2
-        },
-        {
-          "kode": "NAS 1031",
-          "nama": "Pendidikan Kewarganegaraan",
-          "sks": 2
-        },
-        {
-          "kode": "NAS 1041",
-          "nama": "Bahasa Indonesia",
-          "sks": 2
-        },
-        {
-          "kode": "PIK 1051",
-          "nama": "Matematika",
-          "sks": 3
-        },
-        {
-          "kode": "PIK 1061",
-          "nama": "Kimia Dasar",
-          "sks": 3
-        },
-        {
-          "kode": "PIK 1071",
-          "nama": "Biologi Umum",
-          "sks": 3
-        },
-        {
-          "kode": "MSP 1081",
-          "nama": "Aplikasi Teknologi Informasi",
-          "sks": 3
-        }
-      ]
-    },
-    {
-      "no": 2,
-      "jenis": "wajib",
-      "total_sks": 20,
-      "mata_kuliah": [
-        {
-          "kode": "USR 1012",
-          "nama": "Bahasa Inggris",
-          "sks": 2
-        },
-        {
-          "kode": "USR 1032",
-          "nama": "Pengetahuan Kepasifikan",
-          "sks": 2
-        },
-        {
-          "kode": "PIK 1042",
-          "nama": "Ilmu Perikanan Dan Kelautan",
-          "sks": 4
-        },
-        {
-          "kode": "PIK 1052",
-          "nama": "Fisika Dasar",
-          "sks": 3
-        },
-        {
-          "kode": "PIK 2012",
-          "nama": "Ekologi Perairan",
-          "sks": 3
-        },
-        {
-          "kode": "MSP 1062",
-          "nama": "Olah Raga Air",
-          "sks": 3
-        },
-        {
-          "kode": "MSP 1072",
-          "nama": "Limnologi",
-          "sks": 3
-        }
-      ]
-    },
-    {
-      "no": 3,
-      "jenis": "wajib",
-      "total_sks": 20,
-      "mata_kuliah": [
-        {
-          "kode": "MSP 2011",
-          "nama": "Biologi Perairan Tropis",
-          "sks": 3
-        },
-        {
-          "kode": "PIK 2021",
-          "nama": "Statistika",
-          "sks": 3
-        },
-        {
-          "kode": "PIK 2031",
-          "nama": "Iktiologi",
-          "sks": 4
-        },
-        {
-          "kode": "MSP 2041",
-          "nama": "Planktonologi & Produktivitas Perairan",
-          "sks": 3
-        },
-        {
-          "kode": "MSP 2051",
-          "nama": "Avertebrata Air",
-          "sks": 4
-        },
-        {
-          "kode": "MSP 2061",
-          "nama": "Oseanografi Perikanan",
-          "sks": 3
-        }
-      ]
-    },
-    {
-      "no": 4,
-      "jenis": "wajib",
-      "total_sks": 21,
-      "mata_kuliah": [
-        {
-          "kode": "USR 1022",
-          "nama": "Kewirausahaan",
-          "sks": 2
-        },
-        {
-          "kode": "MSP 2022",
-          "nama": "Pemetaan Sumberdaya Perairan",
-          "sks": 3
-        },
-        {
-          "kode": "MSP 2032",
-          "nama": "Biologi Perikanan",
-          "sks": 4
-        },
-        {
-          "kode": "MSP 2042",
-          "nama": "Ekologi Laut Tropis",
-          "sks": 3
-        },
-        {
-          "kode": "MSP 2052",
-          "nama": "Botani Akuatik",
-          "sks": 3
-        },
-        {
-          "kode": "MSP 2062",
-          "nama": "Manajemen Sumberdaya Perikanan",
-          "sks": 3
-        },
-        {
-          "kode": "MSP 2072",
-          "nama": "Hukum Dan Peraturan Perikanan Kelautan",
-          "sks": 3
-        }
-      ]
-    },
-    {
-      "no": 5,
-      "jenis": "wajib",
-      "total_sks": 15,
-      "mata_kuliah": [
-        {
-          "kode": "MSP 3011",
-          "nama": "Koralogi",
-          "sks": 3
-        },
-        {
-          "kode": "MSP 3021",
-          "nama": "Dinamika Populasi Hewan Air",
-          "sks": 3
-        },
-        {
-          "kode": "MSP 3031",
-          "nama": "Ekotoksikologi Perairan",
-          "sks": 3
-        },
-        {
-          "kode": "MSP 3041",
-          "nama": "Penyelaman Ilmiah",
-          "sks": 3
-        },
-        {
-          "kode": "MSP 3051",
-          "nama": "Konservasi Sumberdaya Hayati Perairan Dan Lingkungan",
-          "sks": 3
-        }
-      ],
-      "keterangan": "Selain 15 sks wajib di atas, tersedia 3 mata kuliah pilihan di semester ini (lihat pool Mata Kuliah Pilihan)."
-    },
-    {
-      "no": 6,
-      "jenis": "wajib",
-      "total_sks": 15,
-      "mata_kuliah": [
-        {
-          "kode": "MSP 3012",
-          "nama": "Ekowisata Perairan",
-          "sks": 3
-        },
-        {
-          "kode": "MSP 3022",
-          "nama": "Biometrika Perikanan",
-          "sks": 3
-        },
-        {
-          "kode": "MSP 3032",
-          "nama": "Analisis Mengenai Dampak Lingkungan",
-          "sks": 3
-        },
-        {
-          "kode": "MSP 3042",
-          "nama": "Manajemen Pesisir Dan Laut",
-          "sks": 3
-        },
-        {
-          "kode": "MSP 3052",
-          "nama": "Pengolahan Data Perikanan Dan Kelautan",
-          "sks": 3
-        }
-      ],
-      "keterangan": "Selain 15 sks wajib di atas, tersedia 2 mata kuliah pilihan di semester ini (lihat pool Mata Kuliah Pilihan)."
-    },
-    {
-      "no": 7,
-      "jenis": "wajib",
-      "total_sks": 11,
-      "mata_kuliah": [
-        {
-          "kode": "MSP3062",
-          "nama": "Seminar Makalah",
-          "sks": 2
-        },
-        {
-          "kode": "MSP 4011",
-          "nama": "Valuasi Sumberdaya Perairan",
-          "sks": 3
-        },
-        {
-          "kode": "MSP 4021",
-          "nama": "Manajemen Pulau-Pulau Kecil Dan Pesisir",
-          "sks": 3
-        },
-        {
-          "kode": "MSP 4031",
-          "nama": "Manajemen Kawasan Perikanan Dan Kelautan",
-          "sks": 3
-        }
-      ],
-      "keterangan": "Selain 11 sks wajib di atas, tersedia 2 mata kuliah pilihan di semester ini (lihat pool Mata Kuliah Pilihan)."
-    },
-    {
-      "no": 8,
-      "jenis": "wajib",
-      "total_sks": 14,
-      "mata_kuliah": [
-        {
-          "kode": "MSP 4010",
-          "nama": "Pkl/Magang",
-          "sks": 4
-        },
-        {
-          "kode": "USR 4020",
-          "nama": "Kuliah Kerja Terpadu",
-          "sks": 4
-        },
-        {
-          "kode": "MSP 4030",
-          "nama": "Skripsi",
-          "sks": 6
-        }
-      ]
-    }
-  ],
-  "pilihan": [
-    {
-      "kode": "MSP PL 3011",
-      "nama": "Dampak Perubahan Iklim Terhadap Ekositem",
-      "sks": 3,
-      "semester_tersedia": 5
-    },
-    {
-      "kode": "MSP PL 3021",
-      "nama": "Ekologi Ikan",
-      "sks": 3,
-      "semester_tersedia": 5
-    },
-    {
-      "kode": "MSP PL 3031",
-      "nama": "Ekologi Bentos",
-      "sks": 3,
-      "semester_tersedia": 5
-    },
-    {
-      "kode": "MSP PL 3012",
-      "nama": "Manajemen Perikanan Berbasis Masyarakat",
-      "sks": 3,
-      "semester_tersedia": 6
-    },
-    {
-      "kode": "MSP PL 3022",
-      "nama": "Reproduksi Biota Perairan",
-      "sks": 3,
-      "semester_tersedia": 6
-    },
-    {
-      "kode": "MSP PL 4011",
-      "nama": "Manajemen Kualitas Perairan",
-      "sks": 3,
-      "semester_tersedia": 7
-    },
-    {
-      "kode": "MSP PL 4021",
-      "nama": "Wawasan Kemaritiman",
-      "sks": 3,
-      "semester_tersedia": 7
-    }
+ "_meta": {
+  "kurikulum_berlaku": "MBKM-OBE 2024",
+  "terakhir_diperbarui": "2026-07-17",
+  "sumber": "Tabel 2-Kurikulum LKPS LAM PTIP PS MSP (data terstruktur resmi, bukan hasil OCR dokumen kurikulum)",
+  "catatan": "Saat ada revisi kurikulum berikutnya, tambahkan objek baru ke array riwayat_revisi dan perbarui semester di bawah."
+ },
+ "riwayat_revisi": [
+  {
+   "tahun": 2024,
+   "keterangan": "Revisi mayor kurikulum berbasis OBE-MBKM, evaluasi 5 tahunan"
+  }
+ ],
+ "ringkasan": {
+  "total_sks_wajib": 136,
+  "total_sks_pilihan_tersedia": 21,
+  "sks_pilihan_diambil_minimal": 9,
+  "masa_studi_semester": 8,
+  "gelar": "S.Pi",
+  "jumlah_mk_wajib": 45,
+  "jumlah_mk_pilihan": 7,
+  "jumlah_cpl": 8,
+  "jumlah_sub_cpl": 28,
+  "jumlah_profil_lulusan": 7,
+  "profil_lulusan": [
+   "Peneliti",
+   "Pendidik",
+   "Penyuluh",
+   "Manajer",
+   "Wirausahawan",
+   "Konsultan/Praktisi Akuakultur",
+   "Karyawan/Pegawai"
   ]
+ },
+ "semester": [
+  {
+   "no": 1,
+   "jenis": "wajib",
+   "total_sks": 20,
+   "mata_kuliah": [
+    {
+     "kode": "NAS 1011",
+     "nama": "Agama (sesuai keyakinan)",
+     "sks": 2
+    },
+    {
+     "kode": "NAS 1021",
+     "nama": "Pendidikan Pancasila",
+     "sks": 2
+    },
+    {
+     "kode": "NAS 1031",
+     "nama": "Pendidikan Kewarganegaraan",
+     "sks": 2
+    },
+    {
+     "kode": "NAS 1041",
+     "nama": "Bahasa Indonesia",
+     "sks": 2
+    },
+    {
+     "kode": "PIK 1051",
+     "nama": "Matematika",
+     "sks": 3
+    },
+    {
+     "kode": "PIK 1061",
+     "nama": "Kimia Dasar",
+     "sks": 3
+    },
+    {
+     "kode": "PIK 1071",
+     "nama": "Biologi Umum",
+     "sks": 3
+    },
+    {
+     "kode": "MSP 1081",
+     "nama": "Aplikasi Teknologi Informasi",
+     "sks": 3
+    }
+   ]
+  },
+  {
+   "no": 2,
+   "jenis": "wajib",
+   "total_sks": 20,
+   "mata_kuliah": [
+    {
+     "kode": "USR 1012",
+     "nama": "Bahasa Inggris",
+     "sks": 2
+    },
+    {
+     "kode": "USR 1032",
+     "nama": "Pengetahuan Kepasifikan",
+     "sks": 2
+    },
+    {
+     "kode": "PIK 1042",
+     "nama": "Ilmu Perikanan Dan Kelautan",
+     "sks": 4
+    },
+    {
+     "kode": "PIK 1052",
+     "nama": "Fisika Dasar",
+     "sks": 3
+    },
+    {
+     "kode": "PIK 2012",
+     "nama": "Ekologi Perairan",
+     "sks": 3
+    },
+    {
+     "kode": "MSP 1062",
+     "nama": "Olah Raga Air",
+     "sks": 3
+    },
+    {
+     "kode": "MSP 1072",
+     "nama": "Limnologi",
+     "sks": 3
+    }
+   ]
+  },
+  {
+   "no": 3,
+   "jenis": "wajib",
+   "total_sks": 20,
+   "mata_kuliah": [
+    {
+     "kode": "MSP 2011",
+     "nama": "Biologi Perairan Tropis",
+     "sks": 3
+    },
+    {
+     "kode": "PIK 2021",
+     "nama": "Statistika",
+     "sks": 3
+    },
+    {
+     "kode": "PIK 2031",
+     "nama": "Iktiologi",
+     "sks": 4
+    },
+    {
+     "kode": "MSP 2041",
+     "nama": "Planktonologi & Produktivitas Perairan",
+     "sks": 3
+    },
+    {
+     "kode": "MSP 2051",
+     "nama": "Avertebrata Air",
+     "sks": 4
+    },
+    {
+     "kode": "MSP 2061",
+     "nama": "Oseanografi Perikanan",
+     "sks": 3
+    }
+   ]
+  },
+  {
+   "no": 4,
+   "jenis": "wajib",
+   "total_sks": 21,
+   "mata_kuliah": [
+    {
+     "kode": "USR 1022",
+     "nama": "Kewirausahaan",
+     "sks": 2
+    },
+    {
+     "kode": "MSP 2022",
+     "nama": "Pemetaan Sumberdaya Perairan",
+     "sks": 3
+    },
+    {
+     "kode": "MSP 2032",
+     "nama": "Biologi Perikanan",
+     "sks": 4
+    },
+    {
+     "kode": "MSP 2042",
+     "nama": "Ekologi Laut Tropis",
+     "sks": 3
+    },
+    {
+     "kode": "MSP 2052",
+     "nama": "Botani Akuatik",
+     "sks": 3
+    },
+    {
+     "kode": "MSP 2062",
+     "nama": "Manajemen Sumberdaya Perikanan",
+     "sks": 3
+    },
+    {
+     "kode": "MSP 2072",
+     "nama": "Hukum Dan Peraturan Perikanan Kelautan",
+     "sks": 3
+    }
+   ]
+  },
+  {
+   "no": 5,
+   "jenis": "wajib",
+   "total_sks": 15,
+   "mata_kuliah": [
+    {
+     "kode": "MSP 3011",
+     "nama": "Koralogi",
+     "sks": 3
+    },
+    {
+     "kode": "MSP 3021",
+     "nama": "Dinamika Populasi Hewan Air",
+     "sks": 3
+    },
+    {
+     "kode": "MSP 3031",
+     "nama": "Ekotoksikologi Perairan",
+     "sks": 3
+    },
+    {
+     "kode": "MSP 3041",
+     "nama": "Penyelaman Ilmiah",
+     "sks": 3
+    },
+    {
+     "kode": "MSP 3051",
+     "nama": "Konservasi Sumberdaya Hayati Perairan Dan Lingkungan",
+     "sks": 3
+    }
+   ],
+   "keterangan": "Selain 15 sks wajib di atas, tersedia 3 mata kuliah pilihan di semester ini (lihat pool Mata Kuliah Pilihan)."
+  },
+  {
+   "no": 6,
+   "jenis": "wajib",
+   "total_sks": 15,
+   "mata_kuliah": [
+    {
+     "kode": "MSP 3012",
+     "nama": "Ekowisata Perairan",
+     "sks": 3
+    },
+    {
+     "kode": "MSP 3022",
+     "nama": "Biometrika Perikanan",
+     "sks": 3
+    },
+    {
+     "kode": "MSP 3032",
+     "nama": "Analisis Mengenai Dampak Lingkungan",
+     "sks": 3
+    },
+    {
+     "kode": "MSP 3042",
+     "nama": "Manajemen Pesisir Dan Laut",
+     "sks": 3
+    },
+    {
+     "kode": "MSP 3052",
+     "nama": "Pengolahan Data Perikanan Dan Kelautan",
+     "sks": 3
+    }
+   ],
+   "keterangan": "Selain 15 sks wajib di atas, tersedia 2 mata kuliah pilihan di semester ini (lihat pool Mata Kuliah Pilihan)."
+  },
+  {
+   "no": 7,
+   "jenis": "wajib",
+   "total_sks": 11,
+   "mata_kuliah": [
+    {
+     "kode": "MSP3062",
+     "nama": "Seminar Makalah",
+     "sks": 2
+    },
+    {
+     "kode": "MSP 4011",
+     "nama": "Valuasi Sumberdaya Perairan",
+     "sks": 3
+    },
+    {
+     "kode": "MSP 4021",
+     "nama": "Manajemen Pulau-Pulau Kecil Dan Pesisir",
+     "sks": 3
+    },
+    {
+     "kode": "MSP 4031",
+     "nama": "Manajemen Kawasan Perikanan Dan Kelautan",
+     "sks": 3
+    }
+   ],
+   "keterangan": "Selain 11 sks wajib di atas, tersedia 2 mata kuliah pilihan di semester ini (lihat pool Mata Kuliah Pilihan)."
+  },
+  {
+   "no": 8,
+   "jenis": "wajib",
+   "total_sks": 14,
+   "mata_kuliah": [
+    {
+     "kode": "MSP 4010",
+     "nama": "Pkl/Magang",
+     "sks": 4
+    },
+    {
+     "kode": "USR 4020",
+     "nama": "Kuliah Kerja Terpadu",
+     "sks": 4
+    },
+    {
+     "kode": "MSP 4030",
+     "nama": "Skripsi",
+     "sks": 6
+    }
+   ]
+  }
+ ],
+ "pilihan": [
+  {
+   "kode": "MSP PL 3011",
+   "nama": "Dampak Perubahan Iklim Terhadap Ekositem",
+   "sks": 3,
+   "semester_tersedia": 5
+  },
+  {
+   "kode": "MSP PL 3021",
+   "nama": "Ekologi Ikan",
+   "sks": 3,
+   "semester_tersedia": 5
+  },
+  {
+   "kode": "MSP PL 3031",
+   "nama": "Ekologi Bentos",
+   "sks": 3,
+   "semester_tersedia": 5
+  },
+  {
+   "kode": "MSP PL 3012",
+   "nama": "Manajemen Perikanan Berbasis Masyarakat",
+   "sks": 3,
+   "semester_tersedia": 6
+  },
+  {
+   "kode": "MSP PL 3022",
+   "nama": "Reproduksi Biota Perairan",
+   "sks": 3,
+   "semester_tersedia": 6
+  },
+  {
+   "kode": "MSP PL 4011",
+   "nama": "Manajemen Kualitas Perairan",
+   "sks": 3,
+   "semester_tersedia": 7
+  },
+  {
+   "kode": "MSP PL 4021",
+   "nama": "Wawasan Kemaritiman",
+   "sks": 3,
+   "semester_tersedia": 7
+  }
+ ]
 }

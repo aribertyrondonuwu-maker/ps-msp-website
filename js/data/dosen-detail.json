@@ -1,597 +1,597 @@
 {
-  "_meta": {
-    "terakhir_diperbarui": "2026-07-17",
-    "catatan": "Mata kuliah diampu bersumber dari Tabel 2.1A LKPS kolom 10, sudah lengkap untuk semua 16 DTPS."
-  },
-  "profil": {
-    "ari-rondonuwu": {
-      "nama": "Dr. Ir. Ari Berty Rondonuwu, M.Sc., M.Si.",
-      "nip": "196801291993031001",
-      "jabatan": "Lektor",
-      "peran": "Koordinator Program Studi MSP · Ketua Tim Kerja Akreditasi LAM-PTIP 2026",
-      "keahlian": "Manajemen Sumberdaya Perairan · Ekologi Terumbu Karang · Penginderaan Jauh Pesisir",
-      "status_lengkap": true,
-      "riwayat_pendidikan": [
-        {
-          "jenjang": "Doktor (S3)",
-          "institusi": "Università Politecnica delle Marche, Italia",
-          "bidang": "Manajemen Sumberdaya Perairan"
-        },
-        {
-          "jenjang": "Magister (M.Sc, M.Si)",
-          "institusi": "—",
-          "bidang": "—"
-        }
-      ],
-      "bio": "Dr. Ari B. Rondonuwu adalah Koordinator Program Studi MSP dan Ketua Tim Kerja Akreditasi LAM-PTIP PS MSP 2026 (SK Dekan FPIK UNSRAT No. 38/UN12.5/LL/2026). Kepakarannya di bidang ekologi terumbu karang, teknologi penginderaan jauh pesisir, dan pemetaan habitat menjadikan beliau salah satu pembimbing tugas akhir paling diminati mahasiswa PS MSP — dengan beban bimbingan tertinggi di antara seluruh DTPS (rasio bimbingan 4,3), mencerminkan relevansi kuat riset beliau terhadap topik-topik skripsi mahasiswa di kawasan Taman Nasional Bunaken dan Coral Triangle.",
-      "inovasi_unggulan": [
-        {
-          "judul": "Metode Terumbu Buatan (Reef Ball®)",
-          "tahun": 2022,
-          "deskripsi": "Metode rehabilitasi terumbu karang yang diimplementasikan di Semenanjung Ratatotok, Minahasa Tenggara — kini menjadi rujukan pengelola kawasan konservasi nasional."
-        }
-      ],
-      "tema_riset_aktif": [
-        "Restorasi terumbu buatan (reef ball) di Teluk Manado",
-        "Pemetaan habitat pesisir dengan UAV (drone)",
-        "Rekrutmen ikan karang di Marine Field Station Likupang",
-        "Restorasi & monitoring terumbu karang Pantai Malalayang (kemitraan PT. TJ Silfanus, 2023–2024, Rp 1,5 miliar)"
-      ],
-      "mata_kuliah_diampu": [
-        "Aplikasi Teknologi Informasi",
-        "Biologi Perikanan",
-        "Ekologi Ikan",
-        "Hukum Dan Peraturan Perikanan Kelautan",
-        "Iktiologi",
-        "Koralogi",
-        "Manajemen Kawasan Perikanan Dan Kelautan",
-        "Olah Raga Air",
-        "Pengolahan Data Perikanan Dan Kelautan",
-        "Penyelaman Ilmiah",
-        "Pemetaan Sumberdaya Perairan"
-      ],
-      "sertifikasi": [
-        "Sertifikasi Profesi"
-      ],
-      "kontak": {
-        "email": "[DATA DIPERLUKAN]"
-      }
+ "_meta": {
+  "terakhir_diperbarui": "2026-07-17",
+  "catatan": "Mata kuliah diampu bersumber dari Tabel 2.1A LKPS kolom 10, sudah lengkap untuk semua 16 DTPS."
+ },
+ "profil": {
+  "ari-rondonuwu": {
+   "nama": "Dr. Ir. Ari Berty Rondonuwu, M.Sc., M.Si.",
+   "nip": "196801291993031001",
+   "jabatan": "Lektor",
+   "peran": "Koordinator Program Studi MSP · Ketua Tim Kerja Akreditasi LAM-PTIP 2026",
+   "keahlian": "Manajemen Sumberdaya Perairan · Ekologi Terumbu Karang · Penginderaan Jauh Pesisir",
+   "status_lengkap": true,
+   "riwayat_pendidikan": [
+    {
+     "jenjang": "Doktor (S3)",
+     "institusi": "Università Politecnica delle Marche, Italia",
+     "bidang": "Manajemen Sumberdaya Perairan"
     },
-    "lumingas": {
-      "nama": "Prof. Dr. Ir. Lawrence Janneman Lucky Lumingas, DEA",
-      "jabatan": "Guru Besar",
-      "keahlian": "Oseanografi Biologi & Ekologi Laut",
-      "status_lengkap": true,
-      "riwayat_pendidikan": [
-        {
-          "jenjang": "Doktor (S3) / DEA",
-          "institusi": "Université de Bretagne Occidentale, Prancis",
-          "bidang": "Oseanografi Biologi"
-        }
-      ],
-      "bio": "Prof. Lumingas adalah satu dari tiga Guru Besar PS MSP yang membentuk inti kepemimpinan ilmiah program studi. Sepanjang kariernya beliau aktif mengintegrasikan hasil riset mutakhir ke dalam pembelajaran dan menjadi rujukan dalam komunitas editorial jurnal internasional di bidang oseanografi biologi dan ekologi laut.",
-      "tema_riset_aktif": [
-        "Struktur & variasi spasial komunitas ikan karang pada terumbu buatan (Ratatotok)",
-        "Dinamika ekosistem laut tropis"
-      ],
-      "inovasi_unggulan": [
-        {
-          "judul": "Struktur Variasi Spasial Komunitas Ikan Karang pada Terumbu Buatan di Ratatotok",
-          "tahun": 2022,
-          "deskripsi": "Metode monitoring yang diadopsi oleh pengelola kawasan konservasi laut."
-        }
-      ],
-      "rekognisi": [
-        "Editor Jurnal Ilmiah PLATAX (Sinta 4), sejak 2018",
-        "Reviewer manuskrip internasional dinamika flatfish (2026)"
-      ],
-      "mata_kuliah_diampu": [
-        "Matematika",
-        "Dinamika Populasi Hewan Air",
-        "Biometrika Perikanan",
-        "Ekologi Laut Tropis",
-        "Manajemen Sumberdaya Perikanan",
-        "Ekologi Benthos",
-        "Analisis Statistika",
-        "Pengolahan Data Perikanan dan Kelautan"
-      ],
-      "sertifikasi": []
-    },
-    "pratasik": {
-      "nama": "Prof. Dr. Ir. Silvester Benny Pratasik, M.Sc.",
-      "jabatan": "Guru Besar",
-      "keahlian": "Ekologi Tingkah Laku dan Genetika",
-      "status_lengkap": true,
-      "riwayat_pendidikan": [
-        {
-          "jenjang": "Doktor (S3)",
-          "institusi": "Simon Fraser University, Kanada",
-          "bidang": "Ekologi Tingkah Laku dan Genetika"
-        }
-      ],
-      "bio": "Prof. Pratasik dikenal aktif dalam pembinaan kemampuan menulis ilmiah dosen dan mahasiswa muda di Sulawesi Utara, di samping perannya di editorial jurnal internasional bereputasi Scopus.",
-      "rekognisi": [
-        "Editor Jurnal AACL Bioflux (terindeks Scopus Q3), aktif sejak 2018",
-        "Reviewer Environment and Natural Resources Journal (ENNRJ)",
-        "Narasumber Coaching Clinic \"Kiat Menulis Artikel Ilmiah Menembus Jurnal Internasional Bereputasi\", Politeknik KP Bitung (2023)"
-      ],
-      "tema_riset_aktif": [
-        "Ekologi tingkah laku biota perairan",
-        "Genetika populasi organisme laut"
-      ],
-      "mata_kuliah_diampu": [
-        "Pendidikan",
-        "Agama Katolik",
-        "Bahasa Indonesia",
-        "Matematika",
-        "Dinamika Populasi",
-        "Hewan Air",
-        "Ekotoksikologi Perairan",
-        "Penyelaman Ilmiah",
-        "Bahasa Inggris",
-        "Olah Raga /Pengantar SelamOrganisme AkuatikAmdal"
-      ],
-      "sertifikasi": []
-    },
-    "kepel": {
-      "nama": "Prof. Dr. Ir. Rene Charles Kepel, DEA",
-      "jabatan": "Guru Besar",
-      "keahlian": "Geomorfologi Pesisir & Pengelolaan Wilayah Pesisir",
-      "status_lengkap": true,
-      "riwayat_pendidikan": [
-        {
-          "jenjang": "Doktor (S3) / DEA",
-          "institusi": "Université de Bretagne Occidentale, Prancis",
-          "bidang": "Pengelolaan Wilayah Pesisir"
-        }
-      ],
-      "bio": "Prof. Kepel adalah DTPS dengan capaian sitasi tertinggi di PS MSP (47 sitasi dari 23 artikel pada periode 2023–2025) dan direkognisi sebagai tenaga ahli perencanaan pembangunan daerah oleh 15 kabupaten/kota di Sulawesi Utara.",
-      "tema_riset_aktif": [
-        "Pengembangan makroalga coklat Turbinaria ornata (Desa Kema II)",
-        "Penyuluhan pewarna alami dari alga Halimeda durvillei",
-        "Tenaga ahli penyusunan dokumen perencanaan pembangunan daerah"
-      ],
-      "rekognisi": [
-        "Sitasi tertinggi DTPS PS MSP: 47 sitasi dari 23 artikel (2023–2025)",
-        "Pemateri International Seminar \"Revealing Aquatic Biodiversity\" (2023)",
-        "Pemateri seminar internasional kerja sama riset Indonesia–Jepang",
-        "Pemateri Seminar Nasional BIOREACT 2025",
-        "Tenaga ahli perencanaan pembangunan daerah, 15 kabupaten/kota Sulawesi Utara (a.l. Kep. Talaud, Tomohon, Minahasa Utara, Bolmong Selatan, Bolmong Utara, Manado)"
-      ],
-      "mata_kuliah_diampu": [
-        "Dampak Perubahan Iklim Terhadap Ekosistem",
-        "Ekologi Bentos",
-        "Ekologi Ikan",
-        "Manajemen Kawasan Perikanan dan Kelautan",
-        "Pengetahuan Kepasifikan",
-        "Wawasan Kemaritiman",
-        "Botani Akuatik",
-        "Ekowisata Perairan",
-        "Hukum dan Peraturan Perikanan Kelautan",
-        "Pemetaan Sumberdaya Perairan",
-        "Reproduksi Biota Perairan",
-        "Ekowisata Perairan"
-      ],
-      "sertifikasi": []
-    },
-    "kambey": {
-      "nama": "Ir. Alex Denny Kambey, M.Sc., M.Si.",
-      "jabatan": "Lektor Kepala",
-      "keahlian": "Manajemen Perikanan Terumbu",
-      "status_lengkap": true,
-      "riwayat_pendidikan": [
-        {
-          "jenjang": "Magister (M.Sc, M.Si)",
-          "institusi": "—",
-          "bidang": "Manajemen Perikanan Karang"
-        }
-      ],
-      "bio": "Salah satu dari tiga DTPS yang saat ini sedang didorong menempuh studi lanjut S3 (Rencana Pengembangan Dosen FPIK Unsrat 2025–2029), dengan peran editorial yang sangat aktif di tiga jurnal ilmiah sekaligus.",
-      "rekognisi": [
-        "Editor in Chief Jurnal Ilmiah PLATAX (Sinta 4), sejak 2024",
-        "Editor Jurnal EKOTON",
-        "Editor Journal of Aquatic Resources Bioecology"
-      ],
-      "tema_riset_aktif": [
-        "Manajemen perikanan terumbu karang"
-      ],
-      "mata_kuliah_diampu": [
-        "Pendidikan Kewarganegaraan",
-        "Aplikasi Teknologi Informasi, Avertebrata Air",
-        "Biologi Perairan Tropis",
-        "Koralogi",
-        "Ilmu Perikanan Dan Kelautan",
-        "Ekologi Perairan"
-      ],
-      "sertifikasi": []
-    },
-    "rangan": {
-      "nama": "Dr. Ir. Jety Kornela Rangan, M.Si.",
-      "jabatan": "Lektor Kepala",
-      "keahlian": "Bioekologi Gastropoda",
-      "status_lengkap": true,
-      "peran": "Koordinator Program Studi MSP (per data Tracer Study 2026)",
-      "riwayat_pendidikan": [
-        {
-          "jenjang": "Doktor (S3)",
-          "institusi": "Institut Pertanian Bogor (IPB)",
-          "bidang": "Bioekologi Gastropoda"
-        }
-      ],
-      "bio": "Menjabat Koordinator Program Studi MSP. Penelitian kerjasama internasional beliau dengan Rare, Inc./Bloomberg Vibrant Oceans Initiative (2024) menghasilkan salah satu survei sosio-ekonomi perikanan terbesar yang pernah dilakukan PS MSP di Sulawesi Utara.",
-      "tema_riset_aktif": [
-        "Socioeconomic Fisheries Household Survey in North Sulawesi Province (Rare, Inc./Bloomberg, 2024, Rp 735 juta)"
-      ],
-      "mata_kuliah_diampu": [
-        "Pengantar Ilmu Perikanan dan Kelautan;",
-        "Avertebrata Air;",
-        "Iktiologi ;",
-        "Ekologi Perairan;",
-        "Biologi Perikanan;",
-        "Manajemen Wilayah Pesisir dan Laut;",
-        "Konservasi Sumberdaya pesisir dan    Lingkungan;",
-        "Ekologi Bentos"
-      ],
-      "sertifikasi": []
-    },
-    "lohoo": {
-      "nama": "Ir. Anneke Vivera Lohoo, M.Si.",
-      "jabatan": "Lektor Kepala",
-      "keahlian": "Limnologi",
-      "status_lengkap": true,
-      "peran": "PIC K8 / Tracer Study, Tim Akreditasi PS MSP 2026",
-      "riwayat_pendidikan": [
-        {
-          "jenjang": "Magister (M.Si)",
-          "institusi": "—",
-          "bidang": "Limnologi"
-        }
-      ],
-      "bio": "Berperan aktif dalam tim akreditasi PS MSP 2026 sebagai PIC Kriteria 8 (Tracer Study) dan Kriteria 3 (Kemahasiswaan). Salah satu dari tiga DTPS yang sedang didorong menempuh studi lanjut S3.",
-      "rekognisi": [
-        "Editor Journal of Aquatic Resources Bioecology, sejak 2024"
-      ],
-      "tema_riset_aktif": [
-        "Limnologi & ekologi perairan tawar (Danau Tondano, Danau Moat)"
-      ],
-      "mata_kuliah_diampu": [
-        "Pancasila",
-        "Pendidikan Kewarganegaraan",
-        "Kewirausahaan",
-        "Iktiologi",
-        "Ekologi Ikan",
-        "Ekologi Perairan",
-        "Limnologi",
-        "Biologi Perikanan",
-        "Ekologi Laut Tropis",
-        "Botani Akuatik",
-        "Biologi Umum."
-      ],
-      "sertifikasi": []
-    },
-    "mandagi": {
-      "nama": "Ir. Stephanus Vianny Mandagi, M.App.Sc., Ph.D.",
-      "jabatan": "Lektor Kepala",
-      "keahlian": "Pengolahan Sumberdaya Perikanan",
-      "status_lengkap": true,
-      "riwayat_pendidikan": [
-        {
-          "jenjang": "Doktor (S3) / Ph.D",
-          "institusi": "James Cook University, Australia",
-          "bidang": "Pengolahan Sumberdaya Perikanan"
-        }
-      ],
-      "bio": "DTPS dengan rekognisi internasional paling luas di PS MSP — dipercaya sebagai tenaga ahli oleh lembaga donor kelas dunia (USAID, FAO) dan firma konsultan internasional, mencerminkan reputasi PS MSP di ranah kebijakan perikanan global.",
-      "tema_riset_aktif": [
-        "Pengembangan & implementasi pengelolaan perikanan berkelanjutan (Environmental Defense Fund, 2023, Rp 650 juta)",
-        "Co-Management Perikanan Teri & peningkatan mata pencaharian, Distrik Misool Selatan Raja Ampat (FAO–UKIP Sorong, 2025, Rp 756,6 juta)",
-        "Pelatihan Logbook Penangkapan Ikan, Desa Kampung Ambon (2025)"
-      ],
-      "rekognisi": [
-        "Technical Representative USAID SEA",
-        "Konsultan FAO (Letter of Agreement dengan Universitas Kristen Papua)",
-        "Konsultan internasional Cowater Sogema International Inc.",
-        "EDF Senior Manager untuk Indonesia Fisheries Program",
-        "Narasumber Rencana Aksi Pengelolaan Perikanan (RAPP) Pelagis Kecil Berkelanjutan, Laut Sulawesi"
-      ],
-      "mata_kuliah_diampu": [
-        "Pendidikan Agama Katolik",
-        "Bahasa Inggris",
-        "Kewirausahaan",
-        "Ekotoksikologi Perairan",
-        "Manajemen Pulau-Pulau Kecil Dan Pesisir, 6. Manajemen Kawasan Perikanan Dan Kelautan",
-        "Dampak Perubahan Iklim Terhadap Ekosistem",
-        "Aplikasi Teknologi Informasi",
-        "Manajemen Sumberdaya Perikanan",
-        "Hukum Dan Peraturan Perundangan Perikanan",
-        "Ekotoksikologi Perairan",
-        "Kewirausahaan"
-      ],
-      "sertifikasi": []
-    },
-    "wantasen": {
-      "nama": "Dr. Ir. Adnan Sjaltout Wantasen, M.Si.",
-      "jabatan": "Lektor Kepala",
-      "keahlian": "Pengelolaan Pesisir",
-      "status_lengkap": true,
-      "peran": "PIC K8 / Tracer Study, Tim Akreditasi PS MSP 2026",
-      "riwayat_pendidikan": [
-        {
-          "jenjang": "Doktor (S3)",
-          "institusi": "Institut Pertanian Bogor (IPB)",
-          "bidang": "Pengelolaan Pesisir"
-        }
-      ],
-      "bio": "Aktif membina langsung kelompok nelayan pesisir Sulawesi Utara, dengan pendekatan pendampingan manajemen usaha perikanan tangkap skala kecil hingga strategi akses pasar.",
-      "tema_riset_aktif": [
-        "PKM Kelompok Nelayan Desa Kampung Ambon (2024, Rp 8 juta)",
-        "PKM Kelompok Pesisir Desa Arakan (2025, Rp 10 juta)"
-      ],
-      "sertifikasi": [
-        "Asesor BKD"
-      ],
-      "mata_kuliah_diampu": [
-        "Konservasi sumberdaya pesisir dan lingk",
-        "Valuasi Sumberdaya Perairan",
-        "Pengantar Ilmu Perikanandan Kelautan",
-        "Olahraga Air",
-        "Penyelaman Imiah",
-        "EkowisataPerairan",
-        "Manajemen Perikanan Berbasis Masyarakat",
-        "ManajemenSumber DayaPerairan",
-        "Manajemen Pulau Kecil dan Pesisir",
-        "WawasanKemaritiman"
-      ]
-    },
-    "rembet": {
-      "nama": "Dr. Ir. Unstain Neginser Welly Johnly Rembet, M.Si.",
-      "jabatan": "Lektor Kepala",
-      "keahlian": "Valuasi Sumberdaya Perairan",
-      "status_lengkap": true,
-      "riwayat_pendidikan": [
-        {
-          "jenjang": "Doktor (S3)",
-          "institusi": "Institut Pertanian Bogor (IPB)",
-          "bidang": "Valuasi Sumberdaya Perairan"
-        }
-      ],
-      "bio": "Kepakaran valuasi ekonomi sumberdaya perairan menjadikan beliau rujukan dalam analisis nilai ekonomi jasa ekosistem perairan tropis di Sulawesi Utara.",
-      "tema_riset_aktif": [
-        "Valuasi ekonomi sumberdaya perairan & jasa ekosistem"
-      ],
-      "sertifikasi": [
-        "Asesor BKD"
-      ],
-      "mata_kuliah_diampu": [
-        "Valuasi Sumber Daya Perairan",
-        "Dinamika Populasi Hewan Air",
-        "Konservasi Sumber Daya Hayati Perairan dan Lingkungan",
-        "Statistika",
-        "Koralogi",
-        "Biometrika Perikanan",
-        "Manajemen Sumber Daya Perikanan 8. Manajemen Kawasan Perikanan dan kelautan",
-        "Pengolahan Data Perikanan dan Kelautan",
-        "Ilmu Perikanan dan Kelautan"
-      ]
-    },
-    "kondoy": {
-      "nama": "Dr. Khristin Fisye Ivone Kondoy, S.Pi., M.Si.",
-      "jabatan": "Lektor Kepala",
-      "keahlian": "Tumbuhan Air & Ekologi Perairan",
-      "status_lengkap": true,
-      "peran": "PIC K3 / Kemahasiswaan, Tim Akreditasi PS MSP 2026",
-      "riwayat_pendidikan": [
-        {
-          "jenjang": "Doktor (S3)",
-          "institusi": "Universitas Brawijaya",
-          "bidang": "Tumbuhan Air"
-        }
-      ],
-      "bio": "Salah satu DTPS dengan capaian sitasi tinggi (21 sitasi dari 10 artikel, 2023–2025), dengan beban bimbingan tugas akhir yang terus meningkat — dari 1 mahasiswa (2023) menjadi 5 mahasiswa (2025) — mencerminkan proses regenerasi pembimbing yang berhasil di PS MSP.",
-      "rekognisi": [
-        "Editor Jurnal PLATAX, sejak 2018",
-        "Sitasi: 21 dari 10 artikel (2023–2025)"
-      ],
-      "tema_riset_aktif": [
-        "Pelatihan Logbook Penangkapan Ikan, Desa Kampung Ambon (bersama Dr. Mandagi, 2025)"
-      ],
-      "sertifikasi": [
-        "AMDAL A"
-      ],
-      "mata_kuliah_diampu": [
-        "Pancasila",
-        "Botani Akuatik",
-        "Biologi Perikanan",
-        "Kimia",
-        "Manajemen Pesisr dan Laut",
-        "Analsis mengenai Dampak Lingkungan",
-        "Olahraga Air",
-        "Dampak Perubahan Iklim Terhadap Ekosistem Perairan",
-        "Ekotoksikologi Perairan",
-        "Manajemen Pulau-Pulau Kecil Dan Pesisir",
-        "Osenografi Perikanan"
-      ]
-    },
-    "lasabuda": {
-      "nama": "Dr. Ir. Ridwan Lasabuda, M.Si.",
-      "jabatan": "Lektor",
-      "keahlian": "Pengelolaan Sumberdaya Pesisir",
-      "status_lengkap": true,
-      "riwayat_pendidikan": [
-        {
-          "jenjang": "Doktor (S3)",
-          "institusi": "Universitas Sam Ratulangi",
-          "bidang": "Pengelolaan Sumberdaya Pesisir"
-        }
-      ],
-      "bio": "Satu-satunya DTPS PS MSP yang meraih gelar doktor dari Unsrat sendiri, membawa kedalaman pemahaman konteks lokal dan kearifan ekologis Sulawesi Utara. Pemegang sertifikasi profesional terbanyak di antara seluruh DTPS.",
-      "rekognisi": [
-        "Narasumber Kuliah Umum PS MSP Universitas Kristen Papua (2023)"
-      ],
-      "inovasi_unggulan": [
-        {
-          "judul": "Alat Penyangga HP untuk Foto Objek Makro 15×25 cm²",
-          "tahun": 2023,
-          "deskripsi": "Diadopsi oleh peneliti lapangan di berbagai institusi riset."
-        }
-      ],
-      "sertifikasi": [
-        "Asesor BKD",
-        "EAFM (Ecosystem Approach for Fisheries Management)",
-        "Penyelia Halal"
-      ],
-      "mata_kuliah_diampu": [
-        "Manajemen Pesisir dan Laut",
-        "Ekowisata Perairan",
-        "Manajemen Perikanan Berbasis Masyarakat",
-        "Manajemen Pulau-Pulau Kecil dan Pesisir",
-        "Manajemen Kawasan Perikanan dan Kelautan",
-        "Kewarganegaraan",
-        "Agama Islam",
-        "Pengetahuan Kepasifikan"
-      ]
-    },
-    "menajang": {
-      "nama": "Dr. Ir. Febry Susana Ivonne Menajang, M.Sc., M.Si.",
-      "jabatan": "Lektor",
-      "keahlian": "Bioekologi Lamun",
-      "status_lengkap": true,
-      "riwayat_pendidikan": [
-        {
-          "jenjang": "Doktor (S3)",
-          "institusi": "Università Politecnica delle Marche, Italia",
-          "bidang": "Bioekologi Lamun"
-        }
-      ],
-      "bio": "Bagian dari lima DTPS PS MSP yang meraih gelar doktor dari Università Politecnica delle Marche, Italia — memberi PS MSP jejaring riset lamun dan bioekologi laut yang kuat di Eropa.",
-      "tema_riset_aktif": [
-        "Penyuluhan Pewarna dan Pengolahan Alga Halimeda sp. sebagai Minuman Fungsional, Desa Arakan (2024, Rp 8 juta)",
-        "Pelatihan Pembuatan Karagenan dari Alga Kappaphycus alvarezii, Desa Buku Utara (2025, Rp 8 juta)"
-      ],
-      "sertifikasi": [
-        "AMDAL A"
-      ],
-      "mata_kuliah_diampu": [
-        "Pendidikan Pancasila",
-        "Biologi",
-        "Kewarganegaraan",
-        "Kepasisfikan",
-        "Kewirausahaan",
-        "Biologi",
-        "Icktiologi",
-        "Plangtonologi",
-        "Ekotoksikologi Perairan",
-        "Pemetaan Sumberdaya Perairan",
-        "HUkum Dan Peraturan Perikanan Dan Kelautan",
-        "Amdal"
-      ]
-    },
-    "tombokan": {
-      "nama": "Dr. Ir. John Leonard Tombokan, M.Sc., M.Si.",
-      "jabatan": "Lektor",
-      "keahlian": "Ekologi Tumbuhan Air",
-      "status_lengkap": true,
-      "riwayat_pendidikan": [
-        {
-          "jenjang": "Doktor (S3)",
-          "institusi": "Università Politecnica delle Marche, Italia",
-          "bidang": "Ekologi Tumbuhan Air"
-        }
-      ],
-      "bio": "Kepakaran ekologi tumbuhan air melengkapi cakupan keilmuan PS MSP di ranah perairan tawar dan vegetasi akuatik, mendukung mata kuliah seperti Botani Akuatik dan Limnologi.",
-      "tema_riset_aktif": [
-        "Ekologi tumbuhan air & vegetasi akuatik perairan tawar"
-      ],
-      "mata_kuliah_diampu": [
-        "Kewirausahaan",
-        "Plantonologi Dan Produktivitas",
-        "Bioekologi Perairan Tropis",
-        "Koralogi",
-        "Penyelaman ilmiah",
-        "Ekologi Ikan",
-        "Olahraga Air",
-        "Ekologi Laut Tropis",
-        "Manajemen Perikanan Berbasis Masyarakat 10.Reprouksi Biota Perairan"
-      ],
-      "sertifikasi": []
-    },
-    "mantiri": {
-      "nama": "Ir. Rose Olivia Shirley Elisabeth Mantiri, M.Sc., Ph.D.",
-      "jabatan": "Lektor",
-      "keahlian": "Manajemen Sumber Daya Perairan",
-      "status_lengkap": true,
-      "peran": "Sekretaris Tim Akreditasi PS MSP 2026",
-      "riwayat_pendidikan": [
-        {
-          "jenjang": "Doktor (S3) / Ph.D",
-          "institusi": "Acadia University, Kanada / Hiroshima University, Jepang",
-          "bidang": "Manajemen Sumber Daya Perairan"
-        }
-      ],
-      "bio": "Menjabat Sekretaris Tim Kerja Akreditasi LAM-PTIP PS MSP 2026. Aktif sebagai moderator forum internasional bertema konservasi pesisir dan blue carbon, mencerminkan jejaring internasional yang kuat dari pendidikan doktoralnya di Kanada dan Jepang.",
-      "rekognisi": [
-        "Moderator \"Coastal Ecosystem Management for Sustainability\" (internasional, 2023)",
-        "Moderator \"Sustaining our Blue Planet: Blue Carbon Solution for Climate Mitigation\" (internasional, 2023)",
-        "Reviewer Jurnal Pesisir dan Laut Tropis (2025)"
-      ],
-      "inovasi_unggulan": [
-        {
-          "judul": "Proses Pembuatan Pakan dengan Stimulan Ekstrak Daun Pakis Sayur",
-          "tahun": 2022,
-          "deskripsi": "Diadopsi oleh pembudidaya kepiting bakau di pesisir Sulawesi Utara."
-        }
-      ],
-      "sertifikasi": [
-        "AMDAL A"
-      ],
-      "mata_kuliah_diampu": [
-        "Biologi PerairanTropis",
-        "AMDAL",
-        "Bahasa Inggris",
-        "Ekowisata Perairan",
-        "Pengetahuan Kepasifikan",
-        "Pendidikan Agama Kristen",
-        "Bahasa Indonesia",
-        "Biologi",
-        "Planktonologi & Produktivitas Perairan       10. Ekologi Laut Tropis"
-      ]
-    },
-    "sangari": {
-      "nama": "Ir. Joudy Ruddy Rizal Sangari, MA., MMA.",
-      "jabatan": "Lektor",
-      "keahlian": "Ekologi Terumbu Karang",
-      "status_lengkap": true,
-      "riwayat_pendidikan": [
-        {
-          "jenjang": "Magister (MA, MMA)",
-          "institusi": "—",
-          "bidang": "Manajemen Sumberdaya Perairan / Ekologi Terumbu Karang"
-        }
-      ],
-      "bio": "Salah satu dari tiga DTPS yang sedang didorong menempuh studi lanjut S3, dengan aktivitas ilmiah internasional yang menonjol di bidang konservasi terumbu karang dan isu mikroplastik.",
-      "rekognisi": [
-        "Reviewer Jurnal Aquatic Science & Management (internasional, 2024–2025)",
-        "Reviewer manuskrip internasional fish track and fish trap (2024)",
-        "Narasumber Seminar Nasional \"Konservasi Laut di Era Revolusi Biru\" (2023)",
-        "Narasumber IC-HEROES 2023 (internasional)",
-        "Presenter International Conference on Sustainable Coral Reefs 2024 (IC-SCR 2024)",
-        "Pemateri \"Microplastic Pollution in the Coral Reefs\" (internasional, 2024)"
-      ],
-      "tema_riset_aktif": [
-        "Ekologi terumbu karang",
-        "Pencemaran mikroplastik di ekosistem terumbu karang"
-      ],
-      "mata_kuliah_diampu": [
-        "Pancasila",
-        "Bahasa Inggris",
-        "Matematika",
-        "Statistik, Osenografi Perikanan, KImia, Fisika, Aplikasi",
-        "Teknologi Informasi",
-        "Bimetrika Perikanan",
-        "Manajemen Pesisir Dan Laut",
-        "Pengolahan Data Perikanan Dan Kelautan"
-      ],
-      "sertifikasi": []
+    {
+     "jenjang": "Magister (M.Sc, M.Si)",
+     "institusi": "—",
+     "bidang": "—"
     }
+   ],
+   "bio": "Dr. Ari B. Rondonuwu adalah Koordinator Program Studi MSP dan Ketua Tim Kerja Akreditasi LAM-PTIP PS MSP 2026 (SK Dekan FPIK UNSRAT No. 38/UN12.5/LL/2026). Kepakarannya di bidang ekologi terumbu karang, teknologi penginderaan jauh pesisir, dan pemetaan habitat menjadikan beliau salah satu pembimbing tugas akhir paling diminati mahasiswa PS MSP — dengan beban bimbingan tertinggi di antara seluruh DTPS (rasio bimbingan 4,3), mencerminkan relevansi kuat riset beliau terhadap topik-topik skripsi mahasiswa di kawasan Taman Nasional Bunaken dan Coral Triangle.",
+   "inovasi_unggulan": [
+    {
+     "judul": "Metode Terumbu Buatan (Reef Ball®)",
+     "tahun": 2022,
+     "deskripsi": "Metode rehabilitasi terumbu karang yang diimplementasikan di Semenanjung Ratatotok, Minahasa Tenggara — kini menjadi rujukan pengelola kawasan konservasi nasional."
+    }
+   ],
+   "tema_riset_aktif": [
+    "Restorasi terumbu buatan (reef ball) di Teluk Manado",
+    "Pemetaan habitat pesisir dengan UAV (drone)",
+    "Rekrutmen ikan karang di Marine Field Station Likupang",
+    "Restorasi & monitoring terumbu karang Pantai Malalayang (kemitraan PT. TJ Silfanus, 2023–2024, Rp 1,5 miliar)"
+   ],
+   "mata_kuliah_diampu": [
+    "Aplikasi Teknologi Informasi",
+    "Biologi Perikanan",
+    "Ekologi Ikan",
+    "Hukum Dan Peraturan Perikanan Kelautan",
+    "Iktiologi",
+    "Koralogi",
+    "Manajemen Kawasan Perikanan Dan Kelautan",
+    "Olah Raga Air",
+    "Pengolahan Data Perikanan Dan Kelautan",
+    "Penyelaman Ilmiah",
+    "Pemetaan Sumberdaya Perairan"
+   ],
+   "sertifikasi": [
+    "Sertifikasi Profesi"
+   ],
+   "kontak": {
+    "email": "[DATA DIPERLUKAN]"
+   }
+  },
+  "lumingas": {
+   "nama": "Prof. Dr. Ir. Lawrence Janneman Lucky Lumingas, DEA",
+   "jabatan": "Guru Besar",
+   "keahlian": "Oseanografi Biologi & Ekologi Laut",
+   "status_lengkap": true,
+   "riwayat_pendidikan": [
+    {
+     "jenjang": "Doktor (S3) / DEA",
+     "institusi": "Université de Bretagne Occidentale, Prancis",
+     "bidang": "Oseanografi Biologi"
+    }
+   ],
+   "bio": "Prof. Lumingas adalah satu dari tiga Guru Besar PS MSP yang membentuk inti kepemimpinan ilmiah program studi. Sepanjang kariernya beliau aktif mengintegrasikan hasil riset mutakhir ke dalam pembelajaran dan menjadi rujukan dalam komunitas editorial jurnal internasional di bidang oseanografi biologi dan ekologi laut.",
+   "tema_riset_aktif": [
+    "Struktur & variasi spasial komunitas ikan karang pada terumbu buatan (Ratatotok)",
+    "Dinamika ekosistem laut tropis"
+   ],
+   "inovasi_unggulan": [
+    {
+     "judul": "Struktur Variasi Spasial Komunitas Ikan Karang pada Terumbu Buatan di Ratatotok",
+     "tahun": 2022,
+     "deskripsi": "Metode monitoring yang diadopsi oleh pengelola kawasan konservasi laut."
+    }
+   ],
+   "rekognisi": [
+    "Editor Jurnal Ilmiah PLATAX (Sinta 4), sejak 2018",
+    "Reviewer manuskrip internasional dinamika flatfish (2026)"
+   ],
+   "mata_kuliah_diampu": [
+    "Matematika",
+    "Dinamika Populasi Hewan Air",
+    "Biometrika Perikanan",
+    "Ekologi Laut Tropis",
+    "Manajemen Sumberdaya Perikanan",
+    "Ekologi Benthos",
+    "Analisis Statistika",
+    "Pengolahan Data Perikanan dan Kelautan"
+   ],
+   "sertifikasi": []
+  },
+  "pratasik": {
+   "nama": "Prof. Dr. Ir. Silvester Benny Pratasik, M.Sc.",
+   "jabatan": "Guru Besar",
+   "keahlian": "Ekologi Tingkah Laku dan Genetika",
+   "status_lengkap": true,
+   "riwayat_pendidikan": [
+    {
+     "jenjang": "Doktor (S3)",
+     "institusi": "Simon Fraser University, Kanada",
+     "bidang": "Ekologi Tingkah Laku dan Genetika"
+    }
+   ],
+   "bio": "Prof. Pratasik dikenal aktif dalam pembinaan kemampuan menulis ilmiah dosen dan mahasiswa muda di Sulawesi Utara, di samping perannya di editorial jurnal internasional bereputasi Scopus.",
+   "rekognisi": [
+    "Editor Jurnal AACL Bioflux (terindeks Scopus Q3), aktif sejak 2018",
+    "Reviewer Environment and Natural Resources Journal (ENNRJ)",
+    "Narasumber Coaching Clinic \"Kiat Menulis Artikel Ilmiah Menembus Jurnal Internasional Bereputasi\", Politeknik KP Bitung (2023)"
+   ],
+   "tema_riset_aktif": [
+    "Ekologi tingkah laku biota perairan",
+    "Genetika populasi organisme laut"
+   ],
+   "mata_kuliah_diampu": [
+    "Pendidikan",
+    "Agama Katolik",
+    "Bahasa Indonesia",
+    "Matematika",
+    "Dinamika Populasi",
+    "Hewan Air",
+    "Ekotoksikologi Perairan",
+    "Penyelaman Ilmiah",
+    "Bahasa Inggris",
+    "Olah Raga /Pengantar SelamOrganisme AkuatikAmdal"
+   ],
+   "sertifikasi": []
+  },
+  "kepel": {
+   "nama": "Prof. Dr. Ir. Rene Charles Kepel, DEA",
+   "jabatan": "Guru Besar",
+   "keahlian": "Geomorfologi Pesisir & Pengelolaan Wilayah Pesisir",
+   "status_lengkap": true,
+   "riwayat_pendidikan": [
+    {
+     "jenjang": "Doktor (S3) / DEA",
+     "institusi": "Université de Bretagne Occidentale, Prancis",
+     "bidang": "Pengelolaan Wilayah Pesisir"
+    }
+   ],
+   "bio": "Prof. Kepel adalah DTPS dengan capaian sitasi tertinggi di PS MSP (47 sitasi dari 23 artikel pada periode 2023–2025) dan direkognisi sebagai tenaga ahli perencanaan pembangunan daerah oleh 15 kabupaten/kota di Sulawesi Utara.",
+   "tema_riset_aktif": [
+    "Pengembangan makroalga coklat Turbinaria ornata (Desa Kema II)",
+    "Penyuluhan pewarna alami dari alga Halimeda durvillei",
+    "Tenaga ahli penyusunan dokumen perencanaan pembangunan daerah"
+   ],
+   "rekognisi": [
+    "Sitasi tertinggi DTPS PS MSP: 47 sitasi dari 23 artikel (2023–2025)",
+    "Pemateri International Seminar \"Revealing Aquatic Biodiversity\" (2023)",
+    "Pemateri seminar internasional kerja sama riset Indonesia–Jepang",
+    "Pemateri Seminar Nasional BIOREACT 2025",
+    "Tenaga ahli perencanaan pembangunan daerah, 15 kabupaten/kota Sulawesi Utara (a.l. Kep. Talaud, Tomohon, Minahasa Utara, Bolmong Selatan, Bolmong Utara, Manado)"
+   ],
+   "mata_kuliah_diampu": [
+    "Dampak Perubahan Iklim Terhadap Ekosistem",
+    "Ekologi Bentos",
+    "Ekologi Ikan",
+    "Manajemen Kawasan Perikanan dan Kelautan",
+    "Pengetahuan Kepasifikan",
+    "Wawasan Kemaritiman",
+    "Botani Akuatik",
+    "Ekowisata Perairan",
+    "Hukum dan Peraturan Perikanan Kelautan",
+    "Pemetaan Sumberdaya Perairan",
+    "Reproduksi Biota Perairan",
+    "Ekowisata Perairan"
+   ],
+   "sertifikasi": []
+  },
+  "kambey": {
+   "nama": "Ir. Alex Denny Kambey, M.Sc., M.Si.",
+   "jabatan": "Lektor Kepala",
+   "keahlian": "Manajemen Perikanan Terumbu",
+   "status_lengkap": true,
+   "riwayat_pendidikan": [
+    {
+     "jenjang": "Magister (M.Sc, M.Si)",
+     "institusi": "—",
+     "bidang": "Manajemen Perikanan Karang"
+    }
+   ],
+   "bio": "Salah satu dari tiga DTPS yang saat ini sedang didorong menempuh studi lanjut S3 (Rencana Pengembangan Dosen FPIK Unsrat 2025–2029), dengan peran editorial yang sangat aktif di tiga jurnal ilmiah sekaligus.",
+   "rekognisi": [
+    "Editor in Chief Jurnal Ilmiah PLATAX (Sinta 4), sejak 2024",
+    "Editor Jurnal EKOTON",
+    "Editor Journal of Aquatic Resources Bioecology"
+   ],
+   "tema_riset_aktif": [
+    "Manajemen perikanan terumbu karang"
+   ],
+   "mata_kuliah_diampu": [
+    "Pendidikan Kewarganegaraan",
+    "Aplikasi Teknologi Informasi, Avertebrata Air",
+    "Biologi Perairan Tropis",
+    "Koralogi",
+    "Ilmu Perikanan Dan Kelautan",
+    "Ekologi Perairan"
+   ],
+   "sertifikasi": []
+  },
+  "rangan": {
+   "nama": "Dr. Ir. Jety Kornela Rangan, M.Si.",
+   "jabatan": "Lektor Kepala",
+   "keahlian": "Bioekologi Gastropoda",
+   "status_lengkap": true,
+   "peran": "Koordinator Program Studi MSP (per data Tracer Study 2026)",
+   "riwayat_pendidikan": [
+    {
+     "jenjang": "Doktor (S3)",
+     "institusi": "Institut Pertanian Bogor (IPB)",
+     "bidang": "Bioekologi Gastropoda"
+    }
+   ],
+   "bio": "Menjabat Koordinator Program Studi MSP. Penelitian kerjasama internasional beliau dengan Rare, Inc./Bloomberg Vibrant Oceans Initiative (2024) menghasilkan salah satu survei sosio-ekonomi perikanan terbesar yang pernah dilakukan PS MSP di Sulawesi Utara.",
+   "tema_riset_aktif": [
+    "Socioeconomic Fisheries Household Survey in North Sulawesi Province (Rare, Inc./Bloomberg, 2024, Rp 735 juta)"
+   ],
+   "mata_kuliah_diampu": [
+    "Pengantar Ilmu Perikanan dan Kelautan;",
+    "Avertebrata Air;",
+    "Iktiologi ;",
+    "Ekologi Perairan;",
+    "Biologi Perikanan;",
+    "Manajemen Wilayah Pesisir dan Laut;",
+    "Konservasi Sumberdaya pesisir dan Lingkungan;",
+    "Ekologi Bentos"
+   ],
+   "sertifikasi": []
+  },
+  "lohoo": {
+   "nama": "Ir. Anneke Vivera Lohoo, M.Si.",
+   "jabatan": "Lektor Kepala",
+   "keahlian": "Limnologi",
+   "status_lengkap": true,
+   "peran": "PIC K8 / Tracer Study, Tim Akreditasi PS MSP 2026",
+   "riwayat_pendidikan": [
+    {
+     "jenjang": "Magister (M.Si)",
+     "institusi": "—",
+     "bidang": "Limnologi"
+    }
+   ],
+   "bio": "Berperan aktif dalam tim akreditasi PS MSP 2026 sebagai PIC Kriteria 8 (Tracer Study) dan Kriteria 3 (Kemahasiswaan). Salah satu dari tiga DTPS yang sedang didorong menempuh studi lanjut S3.",
+   "rekognisi": [
+    "Editor Journal of Aquatic Resources Bioecology, sejak 2024"
+   ],
+   "tema_riset_aktif": [
+    "Limnologi & ekologi perairan tawar (Danau Tondano, Danau Moat)"
+   ],
+   "mata_kuliah_diampu": [
+    "Pancasila",
+    "Pendidikan Kewarganegaraan",
+    "Kewirausahaan",
+    "Iktiologi",
+    "Ekologi Ikan",
+    "Ekologi Perairan",
+    "Limnologi",
+    "Biologi Perikanan",
+    "Ekologi Laut Tropis",
+    "Botani Akuatik",
+    "Biologi Umum."
+   ],
+   "sertifikasi": []
+  },
+  "mandagi": {
+   "nama": "Ir. Stephanus Vianny Mandagi, M.App.Sc., Ph.D.",
+   "jabatan": "Lektor Kepala",
+   "keahlian": "Pengolahan Sumberdaya Perikanan",
+   "status_lengkap": true,
+   "riwayat_pendidikan": [
+    {
+     "jenjang": "Doktor (S3) / Ph.D",
+     "institusi": "James Cook University, Australia",
+     "bidang": "Pengolahan Sumberdaya Perikanan"
+    }
+   ],
+   "bio": "DTPS dengan rekognisi internasional paling luas di PS MSP — dipercaya sebagai tenaga ahli oleh lembaga donor kelas dunia (USAID, FAO) dan firma konsultan internasional, mencerminkan reputasi PS MSP di ranah kebijakan perikanan global.",
+   "tema_riset_aktif": [
+    "Pengembangan & implementasi pengelolaan perikanan berkelanjutan (Environmental Defense Fund, 2023, Rp 650 juta)",
+    "Co-Management Perikanan Teri & peningkatan mata pencaharian, Distrik Misool Selatan Raja Ampat (FAO–UKIP Sorong, 2025, Rp 756,6 juta)",
+    "Pelatihan Logbook Penangkapan Ikan, Desa Kampung Ambon (2025)"
+   ],
+   "rekognisi": [
+    "Technical Representative USAID SEA",
+    "Konsultan FAO (Letter of Agreement dengan Universitas Kristen Papua)",
+    "Konsultan internasional Cowater Sogema International Inc.",
+    "EDF Senior Manager untuk Indonesia Fisheries Program",
+    "Narasumber Rencana Aksi Pengelolaan Perikanan (RAPP) Pelagis Kecil Berkelanjutan, Laut Sulawesi"
+   ],
+   "mata_kuliah_diampu": [
+    "Pendidikan Agama Katolik",
+    "Bahasa Inggris",
+    "Kewirausahaan",
+    "Ekotoksikologi Perairan",
+    "Manajemen Pulau-Pulau Kecil Dan Pesisir, 6. Manajemen Kawasan Perikanan Dan Kelautan",
+    "Dampak Perubahan Iklim Terhadap Ekosistem",
+    "Aplikasi Teknologi Informasi",
+    "Manajemen Sumberdaya Perikanan",
+    "Hukum Dan Peraturan Perundangan Perikanan",
+    "Ekotoksikologi Perairan",
+    "Kewirausahaan"
+   ],
+   "sertifikasi": []
+  },
+  "wantasen": {
+   "nama": "Dr. Ir. Adnan Sjaltout Wantasen, M.Si.",
+   "jabatan": "Lektor Kepala",
+   "keahlian": "Pengelolaan Pesisir",
+   "status_lengkap": true,
+   "peran": "PIC K8 / Tracer Study, Tim Akreditasi PS MSP 2026",
+   "riwayat_pendidikan": [
+    {
+     "jenjang": "Doktor (S3)",
+     "institusi": "Institut Pertanian Bogor (IPB)",
+     "bidang": "Pengelolaan Pesisir"
+    }
+   ],
+   "bio": "Aktif membina langsung kelompok nelayan pesisir Sulawesi Utara, dengan pendekatan pendampingan manajemen usaha perikanan tangkap skala kecil hingga strategi akses pasar.",
+   "tema_riset_aktif": [
+    "PKM Kelompok Nelayan Desa Kampung Ambon (2024, Rp 8 juta)",
+    "PKM Kelompok Pesisir Desa Arakan (2025, Rp 10 juta)"
+   ],
+   "sertifikasi": [
+    "Asesor BKD"
+   ],
+   "mata_kuliah_diampu": [
+    "Konservasi sumberdaya pesisir dan lingk",
+    "Valuasi Sumberdaya Perairan",
+    "Pengantar Ilmu Perikanandan Kelautan",
+    "Olahraga Air",
+    "Penyelaman Imiah",
+    "EkowisataPerairan",
+    "Manajemen Perikanan Berbasis Masyarakat",
+    "ManajemenSumber DayaPerairan",
+    "Manajemen Pulau Kecil dan Pesisir",
+    "WawasanKemaritiman"
+   ]
+  },
+  "rembet": {
+   "nama": "Dr. Ir. Unstain Neginser Welly Johnly Rembet, M.Si.",
+   "jabatan": "Lektor Kepala",
+   "keahlian": "Valuasi Sumberdaya Perairan",
+   "status_lengkap": true,
+   "riwayat_pendidikan": [
+    {
+     "jenjang": "Doktor (S3)",
+     "institusi": "Institut Pertanian Bogor (IPB)",
+     "bidang": "Valuasi Sumberdaya Perairan"
+    }
+   ],
+   "bio": "Kepakaran valuasi ekonomi sumberdaya perairan menjadikan beliau rujukan dalam analisis nilai ekonomi jasa ekosistem perairan tropis di Sulawesi Utara.",
+   "tema_riset_aktif": [
+    "Valuasi ekonomi sumberdaya perairan & jasa ekosistem"
+   ],
+   "sertifikasi": [
+    "Asesor BKD"
+   ],
+   "mata_kuliah_diampu": [
+    "Valuasi Sumber Daya Perairan",
+    "Dinamika Populasi Hewan Air",
+    "Konservasi Sumber Daya Hayati Perairan dan Lingkungan",
+    "Statistika",
+    "Koralogi",
+    "Biometrika Perikanan",
+    "Manajemen Sumber Daya Perikanan 8. Manajemen Kawasan Perikanan dan kelautan",
+    "Pengolahan Data Perikanan dan Kelautan",
+    "Ilmu Perikanan dan Kelautan"
+   ]
+  },
+  "kondoy": {
+   "nama": "Dr. Khristin Fisye Ivone Kondoy, S.Pi., M.Si.",
+   "jabatan": "Lektor Kepala",
+   "keahlian": "Tumbuhan Air & Ekologi Perairan",
+   "status_lengkap": true,
+   "peran": "PIC K3 / Kemahasiswaan, Tim Akreditasi PS MSP 2026",
+   "riwayat_pendidikan": [
+    {
+     "jenjang": "Doktor (S3)",
+     "institusi": "Universitas Brawijaya",
+     "bidang": "Tumbuhan Air"
+    }
+   ],
+   "bio": "Salah satu DTPS dengan capaian sitasi tinggi (21 sitasi dari 10 artikel, 2023–2025), dengan beban bimbingan tugas akhir yang terus meningkat — dari 1 mahasiswa (2023) menjadi 5 mahasiswa (2025) — mencerminkan proses regenerasi pembimbing yang berhasil di PS MSP.",
+   "rekognisi": [
+    "Editor Jurnal PLATAX, sejak 2018",
+    "Sitasi: 21 dari 10 artikel (2023–2025)"
+   ],
+   "tema_riset_aktif": [
+    "Pelatihan Logbook Penangkapan Ikan, Desa Kampung Ambon (bersama Dr. Mandagi, 2025)"
+   ],
+   "sertifikasi": [
+    "AMDAL A"
+   ],
+   "mata_kuliah_diampu": [
+    "Pancasila",
+    "Botani Akuatik",
+    "Biologi Perikanan",
+    "Kimia",
+    "Manajemen Pesisr dan Laut",
+    "Analsis mengenai Dampak Lingkungan",
+    "Olahraga Air",
+    "Dampak Perubahan Iklim Terhadap Ekosistem Perairan",
+    "Ekotoksikologi Perairan",
+    "Manajemen Pulau-Pulau Kecil Dan Pesisir",
+    "Osenografi Perikanan"
+   ]
+  },
+  "lasabuda": {
+   "nama": "Dr. Ir. Ridwan Lasabuda, M.Si.",
+   "jabatan": "Lektor",
+   "keahlian": "Pengelolaan Sumberdaya Pesisir",
+   "status_lengkap": true,
+   "riwayat_pendidikan": [
+    {
+     "jenjang": "Doktor (S3)",
+     "institusi": "Universitas Sam Ratulangi",
+     "bidang": "Pengelolaan Sumberdaya Pesisir"
+    }
+   ],
+   "bio": "Satu-satunya DTPS PS MSP yang meraih gelar doktor dari Unsrat sendiri, membawa kedalaman pemahaman konteks lokal dan kearifan ekologis Sulawesi Utara. Pemegang sertifikasi profesional terbanyak di antara seluruh DTPS.",
+   "rekognisi": [
+    "Narasumber Kuliah Umum PS MSP Universitas Kristen Papua (2023)"
+   ],
+   "inovasi_unggulan": [
+    {
+     "judul": "Alat Penyangga HP untuk Foto Objek Makro 15×25 cm²",
+     "tahun": 2023,
+     "deskripsi": "Diadopsi oleh peneliti lapangan di berbagai institusi riset."
+    }
+   ],
+   "sertifikasi": [
+    "Asesor BKD",
+    "EAFM (Ecosystem Approach for Fisheries Management)",
+    "Penyelia Halal"
+   ],
+   "mata_kuliah_diampu": [
+    "Manajemen Pesisir dan Laut",
+    "Ekowisata Perairan",
+    "Manajemen Perikanan Berbasis Masyarakat",
+    "Manajemen Pulau-Pulau Kecil dan Pesisir",
+    "Manajemen Kawasan Perikanan dan Kelautan",
+    "Kewarganegaraan",
+    "Agama Islam",
+    "Pengetahuan Kepasifikan"
+   ]
+  },
+  "menajang": {
+   "nama": "Dr. Ir. Febry Susana Ivonne Menajang, M.Sc., M.Si.",
+   "jabatan": "Lektor",
+   "keahlian": "Bioekologi Lamun",
+   "status_lengkap": true,
+   "riwayat_pendidikan": [
+    {
+     "jenjang": "Doktor (S3)",
+     "institusi": "Università Politecnica delle Marche, Italia",
+     "bidang": "Bioekologi Lamun"
+    }
+   ],
+   "bio": "Bagian dari lima DTPS PS MSP yang meraih gelar doktor dari Università Politecnica delle Marche, Italia — memberi PS MSP jejaring riset lamun dan bioekologi laut yang kuat di Eropa.",
+   "tema_riset_aktif": [
+    "Penyuluhan Pewarna dan Pengolahan Alga Halimeda sp. sebagai Minuman Fungsional, Desa Arakan (2024, Rp 8 juta)",
+    "Pelatihan Pembuatan Karagenan dari Alga Kappaphycus alvarezii, Desa Buku Utara (2025, Rp 8 juta)"
+   ],
+   "sertifikasi": [
+    "AMDAL A"
+   ],
+   "mata_kuliah_diampu": [
+    "Pendidikan Pancasila",
+    "Biologi",
+    "Kewarganegaraan",
+    "Kepasisfikan",
+    "Kewirausahaan",
+    "Biologi",
+    "Icktiologi",
+    "Plangtonologi",
+    "Ekotoksikologi Perairan",
+    "Pemetaan Sumberdaya Perairan",
+    "HUkum Dan Peraturan Perikanan Dan Kelautan",
+    "Amdal"
+   ]
+  },
+  "tombokan": {
+   "nama": "Dr. Ir. John Leonard Tombokan, M.Sc., M.Si.",
+   "jabatan": "Lektor",
+   "keahlian": "Ekologi Tumbuhan Air",
+   "status_lengkap": true,
+   "riwayat_pendidikan": [
+    {
+     "jenjang": "Doktor (S3)",
+     "institusi": "Università Politecnica delle Marche, Italia",
+     "bidang": "Ekologi Tumbuhan Air"
+    }
+   ],
+   "bio": "Kepakaran ekologi tumbuhan air melengkapi cakupan keilmuan PS MSP di ranah perairan tawar dan vegetasi akuatik, mendukung mata kuliah seperti Botani Akuatik dan Limnologi.",
+   "tema_riset_aktif": [
+    "Ekologi tumbuhan air & vegetasi akuatik perairan tawar"
+   ],
+   "mata_kuliah_diampu": [
+    "Kewirausahaan",
+    "Plantonologi Dan Produktivitas",
+    "Bioekologi Perairan Tropis",
+    "Koralogi",
+    "Penyelaman ilmiah",
+    "Ekologi Ikan",
+    "Olahraga Air",
+    "Ekologi Laut Tropis",
+    "Manajemen Perikanan Berbasis Masyarakat 10.Reprouksi Biota Perairan"
+   ],
+   "sertifikasi": []
+  },
+  "mantiri": {
+   "nama": "Ir. Rose Olivia Shirley Elisabeth Mantiri, M.Sc., Ph.D.",
+   "jabatan": "Lektor",
+   "keahlian": "Manajemen Sumber Daya Perairan",
+   "status_lengkap": true,
+   "peran": "Sekretaris Tim Akreditasi PS MSP 2026",
+   "riwayat_pendidikan": [
+    {
+     "jenjang": "Doktor (S3) / Ph.D",
+     "institusi": "Acadia University, Kanada / Hiroshima University, Jepang",
+     "bidang": "Manajemen Sumber Daya Perairan"
+    }
+   ],
+   "bio": "Menjabat Sekretaris Tim Kerja Akreditasi LAM-PTIP PS MSP 2026. Aktif sebagai moderator forum internasional bertema konservasi pesisir dan blue carbon, mencerminkan jejaring internasional yang kuat dari pendidikan doktoralnya di Kanada dan Jepang.",
+   "rekognisi": [
+    "Moderator \"Coastal Ecosystem Management for Sustainability\" (internasional, 2023)",
+    "Moderator \"Sustaining our Blue Planet: Blue Carbon Solution for Climate Mitigation\" (internasional, 2023)",
+    "Reviewer Jurnal Pesisir dan Laut Tropis (2025)"
+   ],
+   "inovasi_unggulan": [
+    {
+     "judul": "Proses Pembuatan Pakan dengan Stimulan Ekstrak Daun Pakis Sayur",
+     "tahun": 2022,
+     "deskripsi": "Diadopsi oleh pembudidaya kepiting bakau di pesisir Sulawesi Utara."
+    }
+   ],
+   "sertifikasi": [
+    "AMDAL A"
+   ],
+   "mata_kuliah_diampu": [
+    "Biologi PerairanTropis",
+    "AMDAL",
+    "Bahasa Inggris",
+    "Ekowisata Perairan",
+    "Pengetahuan Kepasifikan",
+    "Pendidikan Agama Kristen",
+    "Bahasa Indonesia",
+    "Biologi",
+    "Planktonologi & Produktivitas Perairan 10. Ekologi Laut Tropis"
+   ]
+  },
+  "sangari": {
+   "nama": "Ir. Joudy Ruddy Rizal Sangari, MA., MMA.",
+   "jabatan": "Lektor",
+   "keahlian": "Ekologi Terumbu Karang",
+   "status_lengkap": true,
+   "riwayat_pendidikan": [
+    {
+     "jenjang": "Magister (MA, MMA)",
+     "institusi": "—",
+     "bidang": "Manajemen Sumberdaya Perairan / Ekologi Terumbu Karang"
+    }
+   ],
+   "bio": "Salah satu dari tiga DTPS yang sedang didorong menempuh studi lanjut S3, dengan aktivitas ilmiah internasional yang menonjol di bidang konservasi terumbu karang dan isu mikroplastik.",
+   "rekognisi": [
+    "Reviewer Jurnal Aquatic Science & Management (internasional, 2024–2025)",
+    "Reviewer manuskrip internasional fish track and fish trap (2024)",
+    "Narasumber Seminar Nasional \"Konservasi Laut di Era Revolusi Biru\" (2023)",
+    "Narasumber IC-HEROES 2023 (internasional)",
+    "Presenter International Conference on Sustainable Coral Reefs 2024 (IC-SCR 2024)",
+    "Pemateri \"Microplastic Pollution in the Coral Reefs\" (internasional, 2024)"
+   ],
+   "tema_riset_aktif": [
+    "Ekologi terumbu karang",
+    "Pencemaran mikroplastik di ekosistem terumbu karang"
+   ],
+   "mata_kuliah_diampu": [
+    "Pancasila",
+    "Bahasa Inggris",
+    "Matematika",
+    "Statistik, Osenografi Perikanan, KImia, Fisika, Aplikasi",
+    "Teknologi Informasi",
+    "Bimetrika Perikanan",
+    "Manajemen Pesisir Dan Laut",
+    "Pengolahan Data Perikanan Dan Kelautan"
+   ],
+   "sertifikasi": []
   }
+ }
 }

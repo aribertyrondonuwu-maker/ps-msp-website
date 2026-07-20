@@ -2,7 +2,7 @@
  "_meta": {
   "terakhir_diperbarui": "2026-07-17",
   "sumber": "LKPS LAM PTIP PS MSP FINAL 22 Juni 2026 — Tabel 3.2, 4.1, 4.3, 5.4A-D; Tabel 3.3 & 4.2 LKPS (keterlibatan DTPS-mahasiswa); Tabel 3.4B LKPS (publikasi mahasiswa)",
-  "catatan": "Tabel desa/kelompok binaan mencatat total 29 mitra pada ringkasan, namun baru 15 entri yang terisi rinci baris-per-baris — sisanya tercatat agregat saja. Update baris baru begitu data lengkap tersedia."
+  "catatan": "Tabel desa/kelompok binaan berisi 15 entri kemitraan (mayoritas tingkat pemerintah daerah). Kolom dosen disembunyikan pada tampilan situs untuk keterbacaan."
  },
  "penelitian": {
   "dana_per_sumber": [
@@ -174,7 +174,7 @@
     "judul": "pelatihan Shrimp Health Course"
    },
    {
-    "mitra": "Nitto Seimo Co..Ltd Japan",
+    "mitra": "Nitto Seimo Co.Ltd Japan",
     "tingkat": "Internasional",
     "judul": "Concerning Colaboration in The Project."
    },
@@ -186,7 +186,7 @@
    {
     "mitra": "Balai Perikanan Budiddaya Air Tawar (BPBAT) Tatelu",
     "tingkat": "Lokal/Wilayah",
-    "judul": "Tenaga Ahli Pembangunan Instalasi  Penelitian Hatchery Ikan Air Tawar"
+    "judul": "Tenaga Ahli Pembangunan Instalasi Penelitian Hatchery Ikan Air Tawar"
    },
    {
     "mitra": "CV. Pacifik Delyano Farm Bolaang Mongondow Utara Propinsi Sulawesi Utara",
@@ -194,7 +194,7 @@
     "judul": "Menganalisis keberadaan parasit Tricodina sp pada kolam pembenihan"
    },
    {
-    "mitra": "Unit Pembenihan Rakyat (UPR) Golden Fish Farm,  Tumaluntung MINUT",
+    "mitra": "Unit Pembenihan Rakyat (UPR) Golden Fish Farm, Tumaluntung MINUT",
     "tingkat": "Lokal/Wilayah",
     "judul": "Praktikum Terpadu, Praktik Kerja Lapang/penelitian Mahasiswa Mitra Dunia Usaha Dan Dunia Industri (Dudi), Paraktisi Mengajar"
    },
@@ -271,9 +271,9 @@
     "judul": "Kursus Masterclass Kesehatan Udang Genics 2024"
    },
    {
-    "mitra": "Nitto Seimo Co..Ltd Japan",
+    "mitra": "Nitto Seimo Co.Ltd Japan",
     "tingkat": "Internasional",
-    "judul": "Concerning Colaboration In The Project.  Research Of A New Of Lobster And Development Of Modern Aquaculture System"
+    "judul": "Concerning Colaboration In The Project. Research Of A New Of Lobster And Development Of Modern Aquaculture System"
    },
    {
     "mitra": "IDEA Consulatants Jepang",
@@ -651,7 +651,7 @@
     "judul": "Kelautan dan Perikanan"
    },
    {
-    "mitra": "MIME  Italy",
+    "mitra": "MIME Italy",
     "tingkat": "Internasional",
     "judul": "Multiple Stressors and Impacts on Indonesian Marine Ecosystem"
    },
@@ -1060,7 +1060,7 @@
    {
     "mitra": "LOI Nitto Seimo Co",
     "tingkat": "Internasional",
-    "judul": "Education  and academic research"
+    "judul": "Education and academic research"
    },
    {
     "mitra": "KITLV Netherland",
@@ -1100,7 +1100,7 @@
    {
     "mitra": "Universidad De la Republlica",
     "tingkat": "Internasional",
-    "judul": "Concerning Collaboration in Project Evalutionary History  of the Indonesian Coelacanth"
+    "judul": "Concerning Collaboration in Project Evalutionary History of the Indonesian Coelacanth"
    },
    {
     "mitra": "Politeknik Pelayaran Sulawesi Utara",
@@ -1110,15 +1110,15 @@
    {
     "mitra": "University TBRC-UR, Japan",
     "tingkat": "Internasional",
-    "judul": "Evolutionary and Ecological Processes for the Diversification of endemic Freshwater Fishes in  Sulawesi"
+    "judul": "Evolutionary and Ecological Processes for the Diversification of endemic Freshwater Fishes in Sulawesi"
    },
    {
     "mitra": "Chinese Academy of Sciences,Beijing China",
     "tingkat": "Internasional",
-    "judul": "International centers of excellence in initiating research, training and  technology transfer in Marine Science"
+    "judul": "International centers of excellence in initiating research, training and technology transfer in Marine Science"
    },
    {
-    "mitra": "Marche Polytechnical University  Ancona,Italy",
+    "mitra": "Marche Polytechnical University Ancona,Italy",
     "tingkat": "Internasional",
     "judul": "Technology and Science between the Institutions"
    },
@@ -1135,7 +1135,7 @@
    {
     "mitra": "Minanga Divers",
     "tingkat": "Lokal/Wilayah",
-    "judul": "Pelaksanaan Kegiatan akademik dan praktikum mahasiswa  FPIK Unsrat di bidang Kelautan dan Penyelaman"
+    "judul": "Pelaksanaan Kegiatan akademik dan praktikum mahasiswa FPIK Unsrat di bidang Kelautan dan Penyelaman"
    }
   ],
   "dudi": [
@@ -1235,13 +1235,13 @@
   {
    "dosen": "Prof. Dr. Ir. Silvester Benny Pratasik, M.Sc.",
    "judul": "Inventarisasi Cumi bernilai Ekonomis di Kota Bitung Sulawesi Utara Serta Kondisi Perikanannya",
-   "mahasiswa": "WENNY OGI (NIM. 17051101023)  STEVANO G. KABURUANG (NIM. 18051101026)  QUEENSHE NOVELINA POLII (NIM. 19051101003)",
+   "mahasiswa": "WENNY OGI (NIM. 17051101023) STEVANO G. KABURUANG (NIM. 18051101026) QUEENSHE NOVELINA POLII (NIM. 19051101003)",
    "tahun": "2023"
   },
   {
    "dosen": "Ir. Anneke Vivera Lohoo, M.Si",
    "judul": "Kajian Pencemaran Perairan Berdasarkan Analisis Keanekaragaman Moluska Sebagai Bioindikator",
-   "mahasiswa": "Miranti Lamaniu (210511010008)        Queenshe Novelina Polii (19051101003)                  Christofel R. Wolayan (16051101032)",
+   "mahasiswa": "Miranti Lamaniu (210511010008) Queenshe Novelina Polii (19051101003) Christofel R. Wolayan (16051101032)",
    "tahun": "2023"
   },
   {
@@ -1289,7 +1289,7 @@
   {
    "dosen": "Ir. Anneke Vivera Lohoo, M.Si",
    "judul": "Status Stok Untuk Pengelolaan Berkelanjutan Ikan Pelagis Kecil Yang Menjadi Ikan Target Di Perairan Minahasa Peninsula",
-   "mahasiswa": "Sarly George Pratasik (19051101015)                 Indra Tombi (210511010003)   Joanivy B. S. V. Menajang (210511010010)",
+   "mahasiswa": "Sarly George Pratasik (19051101015) Indra Tombi (210511010003) Joanivy B. S. V. Menajang (210511010010)",
    "tahun": "2024"
   },
   {
@@ -1305,7 +1305,7 @@
    "tahun": "2025"
   },
   {
-   "dosen": "Dr. Ir. Febry Susana  Ivonne Menajang, M.Sc, M.Si",
+   "dosen": "Dr. Ir. Febry Susana Ivonne Menajang, M.Sc, M.Si",
    "judul": "Biodiversitas Ikan Muara Sungai Kima Dan Talawaan Di Kecamatan Wori Dengan Pendekatan Biomolekuler",
    "mahasiswa": "Queenshe N. Polii NIM. 19051101003 Evone Intan Tompolumiu NIM. 210511010021 Nicowilliam Alexander Purukan NIM. 210511010017",
    "tahun": "2025"
@@ -1319,7 +1319,7 @@
   {
    "dosen": "Dr. Ir. Jety Kornela Rangan, M.Si.",
    "judul": "Distribusi Spasial Dan Struktur Komunitas Gastropoda Dalam Kaitannya Dengan Karakteristik Lingkungan Perairan Desa Rap Rap Kabupaten Minahasa Selatan",
-   "mahasiswa": "Mervry S. Salindeho  Treysa Aringanen  Indra Tombi",
+   "mahasiswa": "Mervry S. Salindeho Treysa Aringanen Indra Tombi",
    "tahun": "2025"
   },
   {
@@ -1343,13 +1343,13 @@
   {
    "dosen": "Ir. Stephanus Vianny Mandagi, M.App.Sc, Ph.D",
    "judul": "Kajian tentang ekosistem karbon biru - keanekaragaman dan struktur komunitas lamun - di Kabupaten Minahasa Utara",
-   "mahasiswa": "CELINE KIMBERLY EUGENEA PINONTOAN / 240511010021; MICHIO KEZIA IVANA PATINDAGHENG / 230511010033;  JESICA ANATASYA DANDEL / 230511010018",
+   "mahasiswa": "CELINE KIMBERLY EUGENEA PINONTOAN / 240511010021; MICHIO KEZIA IVANA PATINDAGHENG / 230511010033; JESICA ANATASYA DANDEL / 230511010018",
    "tahun": "2025"
   },
   {
    "dosen": "Ir. Stephanus Vianny Mandagi, M.App.Sc, Ph.D",
    "judul": "Kajian Stok Perikanan Pelagis Kecil Di Sulawesi Utara Khususnya Di Wpp 715",
-   "mahasiswa": "KEKEN ANGLIYANA RAFII / 19051101022;  Christine Cherry / 19051101001; Mutiara Ratih / 19051101002",
+   "mahasiswa": "KEKEN ANGLIYANA RAFII / 19051101022; Christine Cherry / 19051101001; Mutiara Ratih / 19051101002",
    "tahun": "2023"
   },
   {
@@ -1373,7 +1373,7 @@
   {
    "dosen": "Dr.Ir. Ari Berty Rondonuwu,M.Sc.M.Si.",
    "judul": "Kajian Hidrooseanografi dan Ekosistem Pesisir Desa Lilang Kabupaten Minahasa Utara (Wilayah Perencanaan/Alokasi Ruang Laut)",
-   "mahasiswa": "Queenshe Polii;  Andreas Leleran",
+   "mahasiswa": "Queenshe Polii; Andreas Leleran",
    "tahun": "2023"
   }
  ],
@@ -1431,7 +1431,7 @@
   "ringkasan": {
    "total_terakreditasi_nasional": 30,
    "sebaran": "TS-2 (2023): 18 judul · TS-1 (2024): 10 judul · TS (2025): 2 judul",
-   "catatan": "Berdasarkan Tabel 3.4B LKPS: 30 judul publikasi mahasiswa di jurnal nasional terakreditasi. Sebagian besar terbit di Jurnal Ilmiah Platax (ejournal.unsrat.ac.id)."
+   "catatan": "30 judul publikasi mahasiswa di jurnal nasional terakreditasi. Sebagian besar terbit di Jurnal Ilmiah Platax (ejournal.unsrat.ac.id)."
   },
   "daftar": [
    {
@@ -1465,13 +1465,13 @@
     "tahun": "2023"
    },
    {
-    "mahasiswa": "WENNY OGI (NIM. 17051101023)  STEVANO G. KABURUANG (NIM. 18051101026)  QUEENSHE NOVELINA POLII (NIM. 19051101003)",
+    "mahasiswa": "WENNY OGI (NIM. 17051101023) STEVANO G. KABURUANG (NIM. 18051101026) QUEENSHE NOVELINA POLII (NIM. 19051101003)",
     "judul": "Inventarisasi Cumi bernilai Ekonomis di Kota Bitung Sulawesi Utara Serta Kondisi Perikanannya",
     "pembimbing": "Prof. Dr. Ir. Silvester Benny Pratasik, M.Sc.",
     "tahun": "2023"
    },
    {
-    "mahasiswa": "Miranti Lamaniu (210511010008)        Queenshe Novelina Polii (19051101003)                  Christofel R. Wolayan (16051101032)",
+    "mahasiswa": "Miranti Lamaniu (210511010008) Queenshe Novelina Polii (19051101003) Christofel R. Wolayan (16051101032)",
     "judul": "Kajian Pencemaran Perairan Berdasarkan Analisis Keanekaragaman Moluska Sebagai Bioindikator",
     "pembimbing": "Ir. Anneke Vivera Lohoo, M.Si",
     "tahun": "2023"
@@ -1519,7 +1519,7 @@
     "tahun": "2024"
    },
    {
-    "mahasiswa": "Sarly George Pratasik (19051101015)                 Indra Tombi (210511010003)   Joanivy B. S. V. Menajang (210511010010)",
+    "mahasiswa": "Sarly George Pratasik (19051101015) Indra Tombi (210511010003) Joanivy B. S. V. Menajang (210511010010)",
     "judul": "Status Stok Untuk Pengelolaan Berkelanjutan Ikan Pelagis Kecil Yang Menjadi Ikan Target Di Perairan Minahasa Peninsula",
     "pembimbing": "Ir. Anneke Vivera Lohoo, M.Si",
     "tahun": "2024"
@@ -1539,7 +1539,7 @@
    {
     "mahasiswa": "Queenshe N. Polii NIM. 19051101003 Evone Intan Tompolumiu NIM. 210511010021 Nicowilliam Alexander Purukan NIM. 210511010017",
     "judul": "Biodiversitas Ikan Muara Sungai Kima Dan Talawaan Di Kecamatan Wori Dengan Pendekatan Biomolekuler",
-    "pembimbing": "Dr. Ir. Febry Susana  Ivonne Menajang, M.Sc, M.Si",
+    "pembimbing": "Dr. Ir. Febry Susana Ivonne Menajang, M.Sc, M.Si",
     "tahun": "2025"
    },
    {
@@ -1549,7 +1549,7 @@
     "tahun": "2025"
    },
    {
-    "mahasiswa": "Mervry S. Salindeho  Treysa Aringanen  Indra Tombi",
+    "mahasiswa": "Mervry S. Salindeho Treysa Aringanen Indra Tombi",
     "judul": "Distribusi Spasial Dan Struktur Komunitas Gastropoda Dalam Kaitannya Dengan Karakteristik Lingkungan Perairan Desa Rap Rap Kabupaten Minahasa Selatan",
     "pembimbing": "Dr. Ir. Jety Kornela Rangan, M.Si.",
     "tahun": "2025"
@@ -1573,13 +1573,13 @@
     "tahun": "2025"
    },
    {
-    "mahasiswa": "CELINE KIMBERLY EUGENEA PINONTOAN / 240511010021; MICHIO KEZIA IVANA PATINDAGHENG / 230511010033;  JESICA ANATASYA DANDEL / 230511010018",
+    "mahasiswa": "CELINE KIMBERLY EUGENEA PINONTOAN / 240511010021; MICHIO KEZIA IVANA PATINDAGHENG / 230511010033; JESICA ANATASYA DANDEL / 230511010018",
     "judul": "Kajian tentang ekosistem karbon biru - keanekaragaman dan struktur komunitas lamun - di Kabupaten Minahasa Utara",
     "pembimbing": "Ir. Stephanus Vianny Mandagi, M.App.Sc, Ph.D",
     "tahun": "2025"
    },
    {
-    "mahasiswa": "KEKEN ANGLIYANA RAFII / 19051101022;  Christine Cherry / 19051101001; Mutiara Ratih / 19051101002",
+    "mahasiswa": "KEKEN ANGLIYANA RAFII / 19051101022; Christine Cherry / 19051101001; Mutiara Ratih / 19051101002",
     "judul": "Kajian Stok Perikanan Pelagis Kecil Di Sulawesi Utara Khususnya Di Wpp 715",
     "pembimbing": "Ir. Stephanus Vianny Mandagi, M.App.Sc, Ph.D",
     "tahun": "2023"
@@ -1603,7 +1603,7 @@
     "tahun": "2024"
    },
    {
-    "mahasiswa": "Queenshe Polii;  Andreas Leleran",
+    "mahasiswa": "Queenshe Polii; Andreas Leleran",
     "judul": "Kajian Hidrooseanografi dan Ekosistem Pesisir Desa Lilang Kabupaten Minahasa Utara (Wilayah Perencanaan/Alokasi Ruang Laut)",
     "pembimbing": "Dr.Ir. Ari Berty Rondonuwu,M.Sc.M.Si.",
     "tahun": "2023"

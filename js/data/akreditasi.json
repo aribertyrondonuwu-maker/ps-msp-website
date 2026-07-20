@@ -1,171 +1,171 @@
 {
-  "_meta": {
-    "terakhir_diperbarui": "2026-07-17",
-    "catatan": "Update field `progres.tahap_sekarang` dan `progres.catatan_terbaru` setiap ada perkembangan (jangan ubah struktur `tahapan`, cukup ganti `status` tiap tahap: 'selesai' | 'berjalan' | 'menunggu'). Dokumen legal (dokumen_legal) bersumber dari hyperlink evidence resmi dalam LED (bukan tebakan)."
+ "_meta": {
+  "terakhir_diperbarui": "2026-07-17",
+  "catatan": "Update field `progres.tahap_sekarang` dan `progres.catatan_terbaru` setiap ada perkembangan (jangan ubah struktur `tahapan`, cukup ganti `status` tiap tahap: 'selesai' | 'berjalan' | 'menunggu'). Dokumen legal (dokumen_legal) bersumber dari hyperlink evidence resmi dalam LED (bukan tebakan)."
+ },
+ "identitas": {
+  "status_saat_ini": "Baik Sekali",
+  "sk_terakhir": "No. 12918/SK/BAN-PT/Ak-PPJ/S/XII/2021",
+  "berlaku_sampai": "25 November 2026",
+  "target": "Terakreditasi Unggul",
+  "instrumen": "IAPS 1.0 LAM PTIP",
+  "jumlah_indikator": 62
+ },
+ "progres": {
+  "tahap_sekarang": "Asesmen Kecukupan (AK)",
+  "catatan_terbaru": "Dokumen usulan akreditasi (LED dan LKPS) PS MSP dinyatakan lengkap oleh LAM PTIP, tidak ada permintaan perbaikan. Saat ini menunggu proses Asesmen Kecukupan (AK) oleh tim asesor.",
+  "update_pada": "2026-07-15"
+ },
+ "tahapan": [
+  {
+   "no": 1,
+   "nama": "Penyampaian Dokumen Usulan",
+   "status": "selesai",
+   "deskripsi": "PT/UPPS menyampaikan dokumen usulan akreditasi (LED & LKPS) melalui Sistem Informasi Akreditasi Pendidikan Tinggi Ilmu Pertanian (SIAP)."
   },
-  "identitas": {
-    "status_saat_ini": "Baik Sekali",
-    "sk_terakhir": "No. 12918/SK/BAN-PT/Ak-PPJ/S/XII/2021",
-    "berlaku_sampai": "25 November 2026",
-    "target": "Terakreditasi Unggul",
-    "instrumen": "IAPS 1.0 LAM PTIP",
-    "jumlah_indikator": 62
+  {
+   "no": 2,
+   "nama": "Verifikasi Kelengkapan Dokumen",
+   "status": "selesai",
+   "deskripsi": "Staf SIAP LAM PTIP menerima, memverifikasi, dan menetapkan status kelengkapan dokumen usulan. Dokumen PS MSP dinyatakan lengkap tanpa perbaikan."
   },
-  "progres": {
-    "tahap_sekarang": "Asesmen Kecukupan (AK)",
-    "catatan_terbaru": "Dokumen usulan akreditasi (LED dan LKPS) PS MSP dinyatakan lengkap oleh LAM PTIP, tidak ada permintaan perbaikan. Saat ini menunggu proses Asesmen Kecukupan (AK) oleh tim asesor.",
-    "update_pada": "2026-07-15"
+  {
+   "no": 3,
+   "nama": "Asesmen Kecukupan (AK)",
+   "status": "berjalan",
+   "deskripsi": "Tim Asesor mengkaji, mengevaluasi, dan menilai data & informasi dalam dokumen akreditasi (desk evaluation) — dilakukan mandiri oleh masing-masing asesor, diikuti rekonsiliasi dan validasi."
   },
-  "tahapan": [
-    {
-      "no": 1,
-      "nama": "Penyampaian Dokumen Usulan",
-      "status": "selesai",
-      "deskripsi": "PT/UPPS menyampaikan dokumen usulan akreditasi (LED & LKPS) melalui Sistem Informasi Akreditasi Pendidikan Tinggi Ilmu Pertanian (SIAP)."
-    },
-    {
-      "no": 2,
-      "nama": "Verifikasi Kelengkapan Dokumen",
-      "status": "selesai",
-      "deskripsi": "Staf SIAP LAM PTIP menerima, memverifikasi, dan menetapkan status kelengkapan dokumen usulan. Dokumen PS MSP dinyatakan lengkap tanpa perbaikan."
-    },
-    {
-      "no": 3,
-      "nama": "Asesmen Kecukupan (AK)",
-      "status": "berjalan",
-      "deskripsi": "Tim Asesor mengkaji, mengevaluasi, dan menilai data & informasi dalam dokumen akreditasi (desk evaluation) — dilakukan mandiri oleh masing-masing asesor, diikuti rekonsiliasi dan validasi."
-    },
-    {
-      "no": 4,
-      "nama": "Asesmen Lapangan (AL) / Visitasi",
-      "status": "menunggu",
-      "deskripsi": "Jika diperlukan berdasar hasil AK, Tim Asesor melakukan visitasi (daring/luring) untuk verifikasi, validasi, dan konfirmasi langsung ke UPPS, dosen, tenaga kependidikan, mahasiswa, lulusan, dan pengguna lulusan."
-    },
-    {
-      "no": 5,
-      "nama": "Penetapan Hasil Akreditasi",
-      "status": "menunggu",
-      "deskripsi": "Dewan Eksekutif LAM PTIP menetapkan hasil akreditasi berdasarkan laporan AL yang telah divalidasi, lalu mengumumkannya melalui website resmi LAM PTIP."
-    }
-  ],
-  "faq": [
-    {
-      "q": "Apa itu LAM PTIP?",
-      "a": "Lembaga Akreditasi Mandiri Pendidikan Tinggi Ilmu Pertanian (LAM PTIP) adalah lembaga akreditasi mandiri yang bertugas melaksanakan akreditasi program studi bidang pertanian, termasuk perikanan dan kelautan, menggantikan peran BAN-PT untuk rumpun ilmu ini."
-    },
-    {
-      "q": "Apa tujuan akreditasi?",
-      "a": "Memberikan pengakuan resmi bahwa program studi telah memenuhi kriteria mutu yang ditetapkan, sehingga layak menyelenggarakan program pendidikannya — sekaligus mendorong perbaikan mutu berkelanjutan pada aspek masukan, proses, luaran, dan dampak."
-    },
-    {
-      "q": "Apa beda LED dan LKPS?",
-      "a": "LED (Laporan Evaluasi Diri) adalah dokumen naratif yang menggambarkan kinerja dan kondisi nyata program studi. LKPS (Laporan Kinerja Program Studi) adalah data kuantitatif pendukung yang diukur dalam proses akreditasi."
-    },
-    {
-      "q": "Berapa lama masa berlaku status akreditasi?",
-      "a": "5 tahun untuk status Terakreditasi biasa, dan bisa sampai 3 tahun untuk status Terakreditasi Unggul (sesuai nilai akreditasi yang diperoleh)."
-    }
-  ],
-  "tautan": [
-    {
-      "label": "Situs Resmi LAM PTIP",
-      "url": "https://lamptip.or.id"
-    },
-    {
-      "label": "SIAP (Sistem Informasi Akreditasi)",
-      "url": "https://siap.lamptip.or.id"
-    }
-  ],
-  "dokumen_legal": [
-    {
-      "nama": "SK Pendirian Perguruan Tinggi (Unsrat)",
-      "url": "https://drive.google.com/file/d/137VFPS1tbvB6mpM_ZHvstDynWXelK27s/view?usp=drive_link"
-    },
-    {
-      "nama": "SK Pendirian UPPS (FPIK)",
-      "url": "https://drive.google.com/file/d/1jGG7_pCsplPvi94cHi-blWv_oCvrdl4O/view?usp=drive_link"
-    },
-    {
-      "nama": "SK Pendirian Program Studi MSP",
-      "url": "https://drive.google.com/file/d/1WDZdZgcmh-hlFvlHABTIw3kXLezefCQb/view?usp=drive_link"
-    },
-    {
-      "nama": "SK Akreditasi PS MSP (No. 12918/SK/BAN-PT/Ak-PPJ/S/XII/2021 — Baik Sekali)",
-      "url": "https://drive.google.com/file/d/1HSvBO5Aqi1gCKKd5Ygh7275YbKECUi7g/view?usp=sharing"
-    },
-    {
-      "nama": "SK Akreditasi PS Budidaya Perairan (Unggul)",
-      "url": "https://drive.google.com/file/d/1wkVWos4i5a1aj6-VEnNq1PvQBr27h9x9/view?usp=sharing"
-    },
-    {
-      "nama": "SK Akreditasi PS Ilmu Kelautan (Baik Sekali)",
-      "url": "https://drive.google.com/file/d/1umCHNLJ3TuJK8yE2qx5sE3dTsh0x35pU/view?usp=sharing"
-    },
-    {
-      "nama": "SK Akreditasi PS Teknologi Hasil Perikanan (Unggul)",
-      "url": "https://drive.google.com/file/d/1AlWx250l0_52Unesa9EyaB00YL_EiKfi/view?usp=sharing"
-    },
-    {
-      "nama": "SK Akreditasi PS Pemanfaatan Sumber Daya Perikanan (Unggul)",
-      "url": "https://drive.google.com/file/d/1WIz-TJWJEaRe2wCnQ2BV-80eB5SdOCwp/view?usp=sharing"
-    },
-    {
-      "nama": "SK Akreditasi PS Agrobisnis Perikanan",
-      "url": "https://drive.google.com/file/d/1x3yBQlK-CqnM5aKuRuZl_htuRqK_hEco/view?usp=sharing"
-    },
-    {
-      "nama": "Renstra Unsrat 2020-2024",
-      "url": "https://drive.google.com/file/d/1qvjQG3rEgb_ddLAjfs9XWWT0656_pRCO/view?usp=drive_link"
-    },
-    {
-      "nama": "Renstra Unsrat 2025-2029",
-      "url": "https://drive.google.com/file/d/1Ccx4Ep8unI1PsS2jjnWmWzOKAPynKShG/view?usp=drive_link"
-    },
-    {
-      "nama": "Renstra FPIK 2023-2026",
-      "url": "https://drive.google.com/file/d/19xGylPFb2rAFZngZUnUoZF9remOyjjal/view?usp=drive_link"
-    }
-  ],
-  "landasan_hukum": [
-    {
-      "nama": "UU No. 20 Tahun 2003 — Sistem Pendidikan Nasional",
-      "url": "https://drive.google.com/file/d/16FqEHJTP_QJpF5HAavCkU7n8ArRT-9MU/view?usp=sharing"
-    },
-    {
-      "nama": "UU No. 12 Tahun 2012 — Pendidikan Tinggi",
-      "url": "https://drive.google.com/file/d/1Gr6hVNaEOuiH3vtbzLpkZgOUIxpz40gz/view?usp=sharing"
-    },
-    {
-      "nama": "UU No. 31 Tahun 2004 jo. UU No. 45 Tahun 2009 — Perikanan",
-      "url": "https://drive.google.com/file/d/1xh_Mu7Ec9LT8dKDzZH7Lpg44OHXN-zbN/view?usp=sharing"
-    },
-    {
-      "nama": "PP No. 4 Tahun 2014 — Penyelenggaraan Pendidikan Tinggi",
-      "url": "https://drive.google.com/file/d/1ZsgusoTam92txas60LhS4SZbPzc8fgbX/view?usp=sharing"
-    },
-    {
-      "nama": "PP No. 57 Tahun 2021 jo. PP No. 4 Tahun 2022 — Standar Nasional Pendidikan",
-      "url": "https://drive.google.com/file/d/1E8LusRHbPMrxWMFuzACl04JwVjybxLAR/view?usp=sharing"
-    },
-    {
-      "nama": "Permendiktisaintek No. 39 Tahun 2025 — Penjaminan Mutu Pendidikan Tinggi (menggantikan Permendikbudristek No. 53/2023)",
-      "url": "https://drive.google.com/file/d/1cghjCg08b5nn5aMTCdYrQzuquCR5Ls_F/view?usp=sharing"
-    },
-    {
-      "nama": "Peraturan LAM PTIP No. 4 Tahun 2025 — Instrumen Akreditasi Program Studi (IAPS) 1.0",
-      "url": "https://drive.google.com/file/d/1ZWQ9e25VHp-wfzVlwYgwpVlE-ULna2OT/view?usp=sharing"
-    },
-    {
-      "nama": "PP No. 49 Tahun 2025 — Statuta Universitas Sam Ratulangi",
-      "url": "https://drive.google.com/file/d/16aHHH2C0L_joW1NHZ5_6NFY9t1jzFPmB/view?usp=drive_link"
-    },
-    {
-      "nama": "Permendiktisaintek No. 5 Tahun 2025",
-      "url": "https://drive.google.com/file/d/1srMu3IOrbTkp0p6AIsL2nDa7hNwHjkaJ/view?usp=drive_link"
-    },
-    {
-      "nama": "Peraturan Akademik Unsrat (Peraturan Rektor No. 1 Tahun 2025)",
-      "url": "https://drive.google.com/file/d/1bvHsearDhKJB6MoalyDaN_3uwu-7liSI/view?usp=drive_link"
-    }
-  ]
+  {
+   "no": 4,
+   "nama": "Asesmen Lapangan (AL) / Visitasi",
+   "status": "menunggu",
+   "deskripsi": "Jika diperlukan berdasar hasil AK, Tim Asesor melakukan visitasi (daring/luring) untuk verifikasi, validasi, dan konfirmasi langsung ke UPPS, dosen, tenaga kependidikan, mahasiswa, lulusan, dan pengguna lulusan."
+  },
+  {
+   "no": 5,
+   "nama": "Penetapan Hasil Akreditasi",
+   "status": "menunggu",
+   "deskripsi": "Dewan Eksekutif LAM PTIP menetapkan hasil akreditasi berdasarkan laporan AL yang telah divalidasi, lalu mengumumkannya melalui website resmi LAM PTIP."
+  }
+ ],
+ "faq": [
+  {
+   "q": "Apa itu LAM PTIP?",
+   "a": "Lembaga Akreditasi Mandiri Pendidikan Tinggi Ilmu Pertanian (LAM PTIP) adalah lembaga akreditasi mandiri yang bertugas melaksanakan akreditasi program studi bidang pertanian, termasuk perikanan dan kelautan, menggantikan peran BAN-PT untuk rumpun ilmu ini."
+  },
+  {
+   "q": "Apa tujuan akreditasi?",
+   "a": "Memberikan pengakuan resmi bahwa program studi telah memenuhi kriteria mutu yang ditetapkan, sehingga layak menyelenggarakan program pendidikannya — sekaligus mendorong perbaikan mutu berkelanjutan pada aspek masukan, proses, luaran, dan dampak."
+  },
+  {
+   "q": "Apa beda LED dan LKPS?",
+   "a": "LED (Laporan Evaluasi Diri) adalah dokumen naratif yang menggambarkan kinerja dan kondisi nyata program studi. LKPS (Laporan Kinerja Program Studi) adalah data kuantitatif pendukung yang diukur dalam proses akreditasi."
+  },
+  {
+   "q": "Berapa lama masa berlaku status akreditasi?",
+   "a": "5 tahun untuk status Terakreditasi biasa, dan bisa sampai 3 tahun untuk status Terakreditasi Unggul (sesuai nilai akreditasi yang diperoleh)."
+  }
+ ],
+ "tautan": [
+  {
+   "label": "Situs Resmi LAM PTIP",
+   "url": "https://lamptip.or.id"
+  },
+  {
+   "label": "SIAP (Sistem Informasi Akreditasi)",
+   "url": "https://siap.lamptip.or.id"
+  }
+ ],
+ "dokumen_legal": [
+  {
+   "nama": "SK Pendirian Perguruan Tinggi (Unsrat)",
+   "url": "https://drive.google.com/file/d/137VFPS1tbvB6mpM_ZHvstDynWXelK27s/view?usp=drive_link"
+  },
+  {
+   "nama": "SK Pendirian UPPS (FPIK)",
+   "url": "https://drive.google.com/file/d/1jGG7_pCsplPvi94cHi-blWv_oCvrdl4O/view?usp=drive_link"
+  },
+  {
+   "nama": "SK Pendirian Program Studi MSP",
+   "url": "https://drive.google.com/file/d/1WDZdZgcmh-hlFvlHABTIw3kXLezefCQb/view?usp=drive_link"
+  },
+  {
+   "nama": "SK Akreditasi PS MSP (No. 12918/SK/BAN-PT/Ak-PPJ/S/XII/2021 — Baik Sekali)",
+   "url": "https://drive.google.com/file/d/1HSvBO5Aqi1gCKKd5Ygh7275YbKECUi7g/view?usp=sharing"
+  },
+  {
+   "nama": "SK Akreditasi PS Budidaya Perairan (Unggul)",
+   "url": "https://drive.google.com/file/d/1wkVWos4i5a1aj6-VEnNq1PvQBr27h9x9/view?usp=sharing"
+  },
+  {
+   "nama": "SK Akreditasi PS Ilmu Kelautan (Baik Sekali)",
+   "url": "https://drive.google.com/file/d/1umCHNLJ3TuJK8yE2qx5sE3dTsh0x35pU/view?usp=sharing"
+  },
+  {
+   "nama": "SK Akreditasi PS Teknologi Hasil Perikanan (Unggul)",
+   "url": "https://drive.google.com/file/d/1AlWx250l0_52Unesa9EyaB00YL_EiKfi/view?usp=sharing"
+  },
+  {
+   "nama": "SK Akreditasi PS Pemanfaatan Sumber Daya Perikanan (Unggul)",
+   "url": "https://drive.google.com/file/d/1WIz-TJWJEaRe2wCnQ2BV-80eB5SdOCwp/view?usp=sharing"
+  },
+  {
+   "nama": "SK Akreditasi PS Agrobisnis Perikanan",
+   "url": "https://drive.google.com/file/d/1x3yBQlK-CqnM5aKuRuZl_htuRqK_hEco/view?usp=sharing"
+  },
+  {
+   "nama": "Renstra Unsrat 2020-2024",
+   "url": "https://drive.google.com/file/d/1qvjQG3rEgb_ddLAjfs9XWWT0656_pRCO/view?usp=drive_link"
+  },
+  {
+   "nama": "Renstra Unsrat 2025-2029",
+   "url": "https://drive.google.com/file/d/1Ccx4Ep8unI1PsS2jjnWmWzOKAPynKShG/view?usp=drive_link"
+  },
+  {
+   "nama": "Renstra FPIK 2023-2026",
+   "url": "https://drive.google.com/file/d/19xGylPFb2rAFZngZUnUoZF9remOyjjal/view?usp=drive_link"
+  }
+ ],
+ "landasan_hukum": [
+  {
+   "nama": "UU No. 20 Tahun 2003 — Sistem Pendidikan Nasional",
+   "url": "https://drive.google.com/file/d/16FqEHJTP_QJpF5HAavCkU7n8ArRT-9MU/view?usp=sharing"
+  },
+  {
+   "nama": "UU No. 12 Tahun 2012 — Pendidikan Tinggi",
+   "url": "https://drive.google.com/file/d/1Gr6hVNaEOuiH3vtbzLpkZgOUIxpz40gz/view?usp=sharing"
+  },
+  {
+   "nama": "UU No. 31 Tahun 2004 jo. UU No. 45 Tahun 2009 — Perikanan",
+   "url": "https://drive.google.com/file/d/1xh_Mu7Ec9LT8dKDzZH7Lpg44OHXN-zbN/view?usp=sharing"
+  },
+  {
+   "nama": "PP No. 4 Tahun 2014 — Penyelenggaraan Pendidikan Tinggi",
+   "url": "https://drive.google.com/file/d/1ZsgusoTam92txas60LhS4SZbPzc8fgbX/view?usp=sharing"
+  },
+  {
+   "nama": "PP No. 57 Tahun 2021 jo. PP No. 4 Tahun 2022 — Standar Nasional Pendidikan",
+   "url": "https://drive.google.com/file/d/1E8LusRHbPMrxWMFuzACl04JwVjybxLAR/view?usp=sharing"
+  },
+  {
+   "nama": "Permendiktisaintek No. 39 Tahun 2025 — Penjaminan Mutu Pendidikan Tinggi (menggantikan Permendikbudristek No. 53/2023)",
+   "url": "https://drive.google.com/file/d/1cghjCg08b5nn5aMTCdYrQzuquCR5Ls_F/view?usp=sharing"
+  },
+  {
+   "nama": "Peraturan LAM PTIP No. 4 Tahun 2025 — Instrumen Akreditasi Program Studi (IAPS) 1.0",
+   "url": "https://drive.google.com/file/d/1ZWQ9e25VHp-wfzVlwYgwpVlE-ULna2OT/view?usp=sharing"
+  },
+  {
+   "nama": "PP No. 49 Tahun 2025 — Statuta Universitas Sam Ratulangi",
+   "url": "https://drive.google.com/file/d/16aHHH2C0L_joW1NHZ5_6NFY9t1jzFPmB/view?usp=drive_link"
+  },
+  {
+   "nama": "Permendiktisaintek No. 5 Tahun 2025",
+   "url": "https://drive.google.com/file/d/1srMu3IOrbTkp0p6AIsL2nDa7hNwHjkaJ/view?usp=drive_link"
+  },
+  {
+   "nama": "Peraturan Akademik Unsrat (Peraturan Rektor No. 1 Tahun 2025)",
+   "url": "https://drive.google.com/file/d/1bvHsearDhKJB6MoalyDaN_3uwu-7liSI/view?usp=drive_link"
+  }
+ ]
 }
