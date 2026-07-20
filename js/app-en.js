@@ -1,4 +1,4 @@
-// Script ringan khusus halaman /en/ — path data disesuaikan dengan prefix '../'
+// Script ringan khusus halaman Inggris (index-en.html) di root.
 // karena file EN berada di subfolder. Konten dinamis (bio dosen, berita) masih
 // bersumber dari data Bahasa Indonesia sampai versi terjemahan tersedia.
 
@@ -36,11 +36,11 @@ async function renderDosenEn() {
   const grid = document.getElementById('dosenGrid');
   if (!grid) return;
   try {
-    const res = await fetch('../js/data/dosen.json');
+    const res = await fetch('js/data/dosen.json');
     if (!res.ok) throw new Error('dosen.json not found');
     const dosen = await res.json();
     grid.innerHTML = dosen.map(d => `
-      <a class="dosen-card" href="../dosen-detail.html?id=${d.id}">
+      <a class="dosen-card" href="dosen-detail.html?id=${d.id}">
         <div class="dosen-photo">${d.inisial || d.nama.split(' ').map(w => w[0]).slice(0,2).join('')}</div>
         <div class="dosen-info">
           <h4>${d.nama}</h4>
@@ -49,7 +49,7 @@ async function renderDosenEn() {
       </a>
     `).join('');
   } catch (e) {
-    grid.innerHTML = '<p class="muted">Faculty data unavailable right now — see the <a href="../index.html#dosen">Indonesian page</a>.</p>';
+    grid.innerHTML = '<p class="muted">Faculty data unavailable right now — see the <a href="index.html#dosen">Indonesian page</a>.</p>';
   }
 }
 renderDosenEn();
