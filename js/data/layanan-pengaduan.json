@@ -1,0 +1,68 @@
+{
+  "_meta": {
+    "terakhir_diperbarui": "2026-07-20",
+    "sumber": "SOP/FP/KS/11 Layanan Pengaduan FPIK (01.11.2025); SOP/FPIK/KS/09 Penanganan Keluhan Stakeholder FPIK (01.11.2025); SK Tim WBS FPIK No. 1957/UN12.5/LL/2025; SK Tim Satgas Penanganan Pengaduan Masyarakat FPIK 2025",
+    "catatan": "Konten halaman ini mengacu langsung pada dokumen SOP resmi FPIK. Perbarui melalui admin panel atau edit file ini bila SOP direvisi."
+  },
+  "ringkasan": {
+    "pengantar": "FPIK UNSRAT mengoperasikan tiga mekanisme pengaduan resmi yang saling melengkapi, menjamin setiap mahasiswa, dosen, tenaga kependidikan, maupun masyarakat umum dapat menyuarakan keberatan atau keluhannya tanpa hambatan dan tanpa diskriminasi.",
+    "target_waktu_utama": "Maksimal 14 hari kerja (SOP Layanan Pengaduan No. 11) — PPKT ditargetkan merespons ≤24 jam"
+  },
+  "kanal": [
+    {
+      "nama": "e-Lapor FPIK / Portal INSPIRE",
+      "untuk": "Pengaduan akademik, administrasi, dan non-akademik oleh mahasiswa & dosen",
+      "cara_akses": "Login Portal INSPIRE UNSRAT dengan akun resmi \u2192 pilih menu e-lapor \u2192 isi formulir (identitas/anonim, jenis pengaduan, uraian, bukti pendukung)",
+      "url": "https://fpik.unsrat.ac.id/e-lapor-fpik/",
+      "waktu_respons": "Verifikasi awal maks. 2 hari kerja; tindak lanjut unit maks. 5 hari kerja; total maks. 14 hari kerja",
+      "dasar_hukum": "SOP/FP/KS/11 \u2014 Layanan Pengaduan FPIK (01.11.2025)"
+    },
+    {
+      "nama": "Whistle Blowing System (WBS)",
+      "untuk": "Pelaporan pelanggaran, gratifikasi, atau penyimpangan \u2014 bersifat anonim untuk melindungi identitas pelapor",
+      "cara_akses": "Portal pelaporan online WBS FPIK (dikelola Tim WBS)",
+      "url": "https://fpik.unsrat.ac.id/e-lapor-fpik/",
+      "waktu_respons": "Ditangani Tim WBS sesuai SK penetapan",
+      "dasar_hukum": "SK Dekan No. 1957/UN12.5/LL/2025 (Ketua Tim: Prof. Dr. Ir. Lefrand Manoppo, M.Si.)"
+    },
+    {
+      "nama": "Tim Satgas Penanganan Pengaduan Masyarakat",
+      "untuk": "Pengaduan dari masyarakat umum / stakeholder eksternal secara transparan",
+      "cara_akses": "Formulir, Google Form, email, atau WhatsApp \u2014 diteruskan ke Kepala Lab. Penjaminan Mutu \u2192 Wakil Dekan I",
+      "url": "https://fpik.unsrat.ac.id/e-lapor-fpik/",
+      "waktu_respons": "Ditanggapi pada hari kerja (Senin\u2013Jumat, 08.00\u201316.00)",
+      "dasar_hukum": "SK Dekan FPIK 2025 (Ketua Tim: Ir. Steelma Rantung, dkk.); SOP/FPIK/KS/09 Penanganan Keluhan Stakeholder"
+    },
+    {
+      "nama": "PPKT \u2014 Penanganan Pengaduan & Konsultasi Terpadu",
+      "untuk": "Layanan konsultasi & pengaduan terpadu tingkat universitas",
+      "cara_akses": "Dashboard layanan publik UNSRAT",
+      "url": "https://www.unsrat.ac.id",
+      "waktu_respons": "Target respons \u2264 24 jam",
+      "dasar_hukum": "Inovasi tata kelola Zona Integritas UNSRAT"
+    }
+  ],
+  "alur": [
+    { "tahap": "1. Penyampaian Pengaduan", "keterangan": "Login Portal INSPIRE \u2192 menu e-lapor \u2192 isi identitas (atau anonim), jenis pengaduan, uraian masalah, bukti pendukung \u2192 submit \u2192 sistem menerbitkan nomor tiket." },
+    { "tahap": "2. Verifikasi Awal", "keterangan": "Admin portal memverifikasi kelengkapan data maks. 2 hari kerja. Lengkap \u2192 diteruskan ke unit terkait. Tidak lengkap \u2192 dikembalikan ke pelapor untuk perbaikan." },
+    { "tahap": "3. Tindak Lanjut", "keterangan": "Unit terkait menelaah pengaduan maks. 5 hari kerja dan menyusun rekomendasi/solusi. Pelapor dapat memantau progres." },
+    { "tahap": "4. Penyelesaian", "keterangan": "Pengaduan dinyatakan selesai jika solusi/rekomendasi sudah diberikan dan diterima pelapor. Jika belum puas, pelapor dapat mengajukan eskalasi ke pimpinan fakultas/universitas melalui portal." },
+    { "tahap": "5. Evaluasi", "keterangan": "Admin portal menyusun laporan pengaduan bulanan; evaluasi menyeluruh dilakukan tiap semester untuk perbaikan layanan berkelanjutan." }
+  ],
+  "penanggung_jawab": [
+    { "peran": "Admin Portal INSPIRE UNSRAT", "tugas": "Verifikasi awal kelengkapan data pengaduan" },
+    { "peran": "Unit / Fakultas terkait", "tugas": "Menindaklanjuti substansi pengaduan sesuai bidangnya" },
+    { "peran": "Pimpinan UNSRAT / FPIK", "tugas": "Eskalasi dan keputusan akhir bila pelapor tidak puas dengan tindak lanjut awal" }
+  ],
+  "ruang_lingkup": [
+    "Layanan akademik: perkuliahan, bimbingan, ujian, kurikulum",
+    "Layanan administrasi: registrasi, beasiswa, fasilitas kampus",
+    "Etika, perilaku, dan tata tertib sivitas akademika",
+    "Pelanggaran, gratifikasi, atau penyimpangan (melalui kanal WBS)"
+  ],
+  "kontak_langsung": {
+    "email": "psmsp@unsrat.ac.id",
+    "whatsapp": "+62 823-2675-1375 (WA Panitia Akreditasi PS MSP)",
+    "catatan": "Untuk pengaduan formal yang tercatat dan dapat dipantau, gunakan kanal e-Lapor FPIK / Portal INSPIRE \u2014 kontak langsung PS MSP di atas untuk pertanyaan umum."
+  }
+}
