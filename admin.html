@@ -61,6 +61,40 @@
           <option value="Pengumuman">Pengumuman</option>
         </select>
         <textarea id="beritaKonten" placeholder="Isi berita..." rows="5" required></textarea>
+
+        <div class="berita-foto-row">
+          <div class="berita-foto-preview" id="beritaFotoPreview">
+            <span>Belum ada gambar</span>
+          </div>
+          <div class="berita-foto-controls">
+            <label class="btn-outline-dark" style="cursor:pointer;display:inline-block;">
+              Pilih Gambar
+              <input type="file" id="beritaFotoInput" accept="image/*" style="display:none;">
+            </label>
+            <button type="button" id="beritaFotoHapus" class="btn-delete" style="border:0;display:none;">Hapus Gambar</button>
+            <input type="hidden" id="beritaFotoUrl">
+
+            <label class="berita-size-label">Rasio kotak gambar:
+              <select id="beritaFotoRasio">
+                <option value="1.3333">Lanskap 4:3 (default)</option>
+                <option value="1.7778">Lebar 16:9</option>
+                <option value="1">Persegi 1:1</option>
+                <option value="0.75">Potret 3:4</option>
+              </select>
+            </label>
+
+            <label class="berita-size-label">Lebar kotak gambar di halaman:
+              <select id="beritaFotoLebar">
+                <option value="34">Kecil (34%)</option>
+                <option value="42" selected>Sedang (42%)</option>
+                <option value="50">Besar (50%)</option>
+                <option value="60">Sangat besar (60%)</option>
+              </select>
+            </label>
+            <p class="form-note" id="beritaFotoStatus"></p>
+          </div>
+        </div>
+
         <label class="checkbox-label"><input type="checkbox" id="beritaPublished"> Publikasikan sekarang</label>
         <div class="admin-form-actions">
           <button type="submit" class="btn btn-primary btn-sm">Simpan</button>
