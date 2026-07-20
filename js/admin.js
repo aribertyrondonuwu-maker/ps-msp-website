@@ -571,13 +571,13 @@ async function loadLogoFooter() {
     const { data } = await sb.from('site_settings').select('*').like('key', 'logo:%');
     grid.innerHTML = (data || []).map(s => `
       <div class="admin-preview-card" style="background:#0a2540;">
-        <img src="${s.value}" alt="" style="filter:brightness(0) invert(1);">
+        <img src="${s.value}" alt="" style="background:#fff;padding:8px;box-sizing:border-box;">
         <div class="body">
           <strong style="color:#fff;">Logo</strong>
           <button onclick="deleteSetting('${s.key}', loadLogoFooter)">Hapus</button>
         </div>
       </div>
-    `).join('') || '<p class="muted">Belum ada logo footer.</p>';
+    `).join('') || '<p class="muted">Belum ada logo header.</p>';
   } catch (e) { grid.innerHTML = `<p>Gagal memuat: ${e.message}</p>`; }
 }
 

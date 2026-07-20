@@ -344,18 +344,23 @@ async function renderSambutanHome() {
 }
 renderSambutanHome();
 
-// Logo institusional footer (site_settings key logo:{n}, diatur superadmin)
-async function renderFooterLogos() {
-  const row = document.getElementById('footerLogos');
-  if (!row || !window.sbClient) return;
+// Logo institusional di HEADER/navbar (site_settings key logo:{n}, diatur superadmin)
+// Disuntikkan via JS agar tampil di semua halaman tanpa perlu edit tiap file HTML.
+async function renderHeaderLogos() {
+  const navbarInner = document.querySelector('.navbar-inner');
+  const brand = document.querySelector('.brand');
+  if (!navbarInner || !brand || !window.sbClient) return;
   try {
     const { data } = await window.sbClient.from('site_settings').select('key,value').like('key', 'logo:%');
     const logos = (data || []).filter(r => r.value && r.value.trim()).sort((a, b) => a.key.localeCompare(b.key));
     if (!logos.length) return;
-    row.innerHTML = logos.map(l => `<img src="${l.value}" alt="logo institusi" class="footer-logo-img">`).join('');
+    const wrap = document.createElement('div');
+    wrap.className = 'navbar-logos';
+    wrap.innerHTML = logos.map(l => `<img src="${l.value}" alt="logo institusi" class="navbar-logo-img">`).join('');
+    brand.insertAdjacentElement('afterend', wrap);
   } catch (e) { /* diam */ }
 }
-renderFooterLogos();
+renderHeaderLogos();
 
 // ─────────────────────────────────────────────────────────────────────────
 // NAVBAR MOBILE: sisipkan tombol hamburger otomatis di semua halaman,
