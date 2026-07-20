@@ -345,3 +345,37 @@ img.dosen-photo { display: block; }
 @media (max-width: 860px) {
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* Kartu Laboratorium (halaman Sarana) */
+.lab-card { padding: 0; overflow: hidden; display: flex; flex-direction: column; }
+.lab-card-body { padding: 18px 20px 20px; display: flex; flex-direction: column; gap: 6px; }
+.lab-photo { width: 100%; height: 150px; overflow: hidden; background: #e8eef2; }
+.lab-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.lab-photo-empty { display: flex; align-items: center; justify-content: center; text-align: center;
+  background: repeating-linear-gradient(45deg, #eef4f7, #eef4f7 12px, #e6eef2 12px, #e6eef2 24px); }
+.lab-photo-empty span { color: var(--muted); font-size: 0.78rem; line-height: 1.35; }
+.lab-kepala { font-size: 0.85rem; color: var(--muted); margin: 0; }
+.lab-badge { display: inline-block; align-self: flex-start; padding: 3px 12px; border-radius: 999px; font-size: 0.72rem; font-weight: 700; margin-top: 4px; }
+.badge-relevan-tinggi { background: rgba(20,184,166,0.15); color: #0f766e; }
+.badge-relevan { background: rgba(10,37,64,0.08); color: var(--navy); }
+
+/* Kartu Jurnal (sampul portrait) */
+.jurnal-cover { width: 100%; height: 200px; overflow: hidden; background: #e8eef2; display: flex; align-items: center; justify-content: center; }
+.jurnal-cover img { width: 100%; height: 100%; object-fit: contain; background: #fff; }
+.jurnal-cover-empty { background: repeating-linear-gradient(45deg, #eef4f7, #eef4f7 12px, #e6eef2 12px, #e6eef2 24px); text-align: center; }
+.jurnal-cover-empty span { color: var(--muted); font-size: 0.78rem; line-height: 1.35; }
+
+/* Galeri Media */
+.video-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; }
+.video-embed { position: relative; width: 100%; padding-bottom: 56.25%; border-radius: 12px; overflow: hidden; box-shadow: var(--shadow); background: #000; }
+.video-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.tiktok-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 16px; }
+.tiktok-card { display: flex; align-items: center; gap: 14px; padding: 16px 18px; text-decoration: none; transition: transform .15s, box-shadow .15s; }
+.tiktok-card:hover { transform: translateY(-3px); box-shadow: 0 10px 26px rgba(10,37,64,0.14); }
+.tiktok-icon { flex-shrink: 0; width: 42px; height: 42px; border-radius: 12px; background: var(--navy); color: #fff; display: flex; align-items: center; justify-content: center; }
+.tiktok-icon svg { width: 22px; height: 22px; }
+.tiktok-body { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.tiktok-akun { font-weight: 700; color: var(--navy); font-size: 0.9rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tiktok-cta { font-size: 0.78rem; color: var(--teal); font-weight: 600; }
+.akun-card { text-decoration: none; transition: transform .15s, box-shadow .15s; }
+.akun-card:hover { transform: translateY(-3px); box-shadow: 0 10px 26px rgba(10,37,64,0.14); }
