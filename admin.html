@@ -76,7 +76,10 @@
 
             <label class="berita-size-label">Rasio kotak gambar:
               <select id="beritaFotoRasio">
-                <option value="1.3333">Lanskap 4:3 (default)</option>
+                <option value="asli">Sesuai gambar asli (tanpa dipotong) — untuk flyer/poster</option>
+                <option value="0.6667">Poster tegak 2:3 (flyer)</option>
+                <option value="0.7071">Poster A4 tegak</option>
+                <option value="1.3333">Lanskap 4:3</option>
                 <option value="1.7778">Lebar 16:9</option>
                 <option value="1">Persegi 1:1</option>
                 <option value="0.75">Potret 3:4</option>
@@ -85,10 +88,11 @@
 
             <label class="berita-size-label">Lebar kotak gambar di halaman:
               <select id="beritaFotoLebar">
-                <option value="34">Kecil (34%)</option>
-                <option value="42" selected>Sedang (42%)</option>
-                <option value="50">Besar (50%)</option>
+                <option value="30">Kecil (30%)</option>
+                <option value="40">Sedang (40%)</option>
+                <option value="50" selected>Besar (50%)</option>
                 <option value="60">Sangat besar (60%)</option>
+                <option value="100">Penuh (100%) — poster besar</option>
               </select>
             </label>
             <p class="form-note" id="beritaFotoStatus"></p>

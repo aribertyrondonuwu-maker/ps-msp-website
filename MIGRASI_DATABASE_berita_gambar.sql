@@ -9,8 +9,8 @@
 --   gambar_lebar : lebar kotak gambar di halaman dalam persen (34 / 42 / 50 / 60)
 
 ALTER TABLE berita ADD COLUMN IF NOT EXISTS gambar_url   text;
-ALTER TABLE berita ADD COLUMN IF NOT EXISTS gambar_rasio text DEFAULT '1.3333';
-ALTER TABLE berita ADD COLUMN IF NOT EXISTS gambar_lebar text DEFAULT '42';
+ALTER TABLE berita ADD COLUMN IF NOT EXISTS gambar_rasio text DEFAULT 'asli';
+ALTER TABLE berita ADD COLUMN IF NOT EXISTS gambar_lebar text DEFAULT '50';
 
 -- Selesai. Berita lama tetap aman (tanpa gambar); berita baru bisa diberi gambar
 -- lewat panel admin: pilih gambar → atur posisi (crop) → atur rasio & lebar kotak.
