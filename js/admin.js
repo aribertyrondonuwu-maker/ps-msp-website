@@ -270,12 +270,20 @@ document.getElementById('beritaFotoInput').addEventListener('change', async (e) 
   const file = e.target.files[0];
   if (!file) return;
   const status = document.getElementById('beritaFotoStatus');
-  const rasio = parseFloat(document.getElementById('beritaFotoRasio').value) || (4 / 3);
+  const rasioVal = document.getElementById('beritaFotoRasio').value;
   try {
-    status.textContent = 'Menyiapkan gambar…';
-    const cropped = await openCropper(file, rasio, 'Sesuaikan Gambar Berita');
-    status.textContent = 'Mengunggah…';
-    const url = await uploadToMedia(cropped, 'berita', 'berita.jpg');
+    let toUpload;
+    if (rasioVal === 'asli') {
+      // Tanpa crop: unggah gambar utuh apa adanya (cocok untuk flyer/poster penuh)
+      status.textContent = 'Mengunggah gambar utuh…';
+      toUpload = file;
+    } else {
+      status.textContent = 'Menyiapkan gambar…';
+      const rasio = parseFloat(rasioVal) || (4 / 3);
+      toUpload = await openCropper(file, rasio, 'Sesuaikan Gambar Berita');
+      status.textContent = 'Mengunggah…';
+    }
+    const url = await uploadToMedia(toUpload, 'berita', 'berita.jpg');
     document.getElementById('beritaFotoUrl').value = url;
     setBeritaFotoPreview(url);
     status.textContent = '✅ Gambar siap.';

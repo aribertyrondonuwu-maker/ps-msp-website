@@ -37,16 +37,30 @@ async function loadBeritaDetail() {
     const container = document.getElementById('beritaContainer');
     if (data.gambar_url && fotoBox) {
       const lebar = parseInt(data.gambar_lebar, 10) || 42;   // persen lebar kotak gambar
-      const rasio = parseFloat(data.gambar_rasio) || (4 / 3); // lebar : tinggi
-      fotoBox.style.display = 'block';
-      fotoBox.style.flex = `0 0 ${lebar}%`;
-      fotoBox.style.maxWidth = `${lebar}%`;
       const img = document.getElementById('beritaFotoImg');
       img.src = data.gambar_url;
       img.alt = data.judul;
-      img.style.aspectRatio = String(rasio);
+      fotoBox.style.display = 'block';
+
+      if (lebar >= 100) {
+        // Poster penuh: gambar di atas (full width), narasi mengalir di bawah
+        layout.classList.add('foto-atas');
+        fotoBox.style.flex = '0 0 auto';
+        fotoBox.style.maxWidth = '640px';
+        fotoBox.style.margin = '0 auto 8px';
+      } else {
+        fotoBox.style.flex = `0 0 ${lebar}%`;
+        fotoBox.style.maxWidth = `${lebar}%`;
+      }
+
+      if (data.gambar_rasio && data.gambar_rasio !== 'asli') {
+        img.style.aspectRatio = String(parseFloat(data.gambar_rasio) || (4 / 3));
+        img.style.objectFit = 'cover';
+      } else {
+        img.style.aspectRatio = 'auto';
+        img.style.objectFit = 'contain';
+      }
       layout.classList.add('has-foto');
-      // beri ruang lebih lebar bila ada gambar berdampingan
       if (container) container.style.maxWidth = '1000px';
     }
 
