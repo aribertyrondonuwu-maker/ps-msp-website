@@ -1,1204 +1,1613 @@
 {
-  "_meta": {
-    "terakhir_diperbarui": "2026-07-17",
-    "sumber": "LKPS LAM PTIP PS MSP FINAL 22 Juni 2026 — Tabel 3.2, 4.1, 4.3, 5.4A-D",
-    "catatan": "Tabel desa/kelompok binaan mencatat total 29 mitra pada ringkasan, namun baru 15 entri yang terisi rinci baris-per-baris — sisanya tercatat agregat saja. Update baris baru begitu data lengkap tersedia."
+ "_meta": {
+  "terakhir_diperbarui": "2026-07-17",
+  "sumber": "LKPS LAM PTIP PS MSP FINAL 22 Juni 2026 — Tabel 3.2, 4.1, 4.3, 5.4A-D; Tabel 3.3 & 4.2 LKPS (keterlibatan DTPS-mahasiswa); Tabel 3.4B LKPS (publikasi mahasiswa)",
+  "catatan": "Tabel desa/kelompok binaan mencatat total 29 mitra pada ringkasan, namun baru 15 entri yang terisi rinci baris-per-baris — sisanya tercatat agregat saja. Update baris baru begitu data lengkap tersedia."
+ },
+ "penelitian": {
+  "dana_per_sumber": [
+   {
+    "sumber": "Perguruan Tinggi & Mandiri",
+    "2023": 26,
+    "2024": 8,
+    "2025": 12,
+    "total_judul": 46,
+    "total_dana_rp": 1340000000
+   },
+   {
+    "sumber": "Lembaga Dalam Negeri (luar PT)",
+    "2023": 9,
+    "2024": 13,
+    "2025": 5,
+    "total_judul": 27,
+    "total_dana_rp": 1558070000
+   },
+   {
+    "sumber": "Lembaga Luar Negeri",
+    "2023": 1,
+    "2024": 1,
+    "2025": 1,
+    "total_judul": 3,
+    "total_dana_rp": 2141630000
+   }
+  ],
+  "total_judul": 76,
+  "total_dana_rp": 5039700000
+ },
+ "pengabdian": {
+  "dana_per_sumber": [
+   {
+    "sumber": "Perguruan Tinggi & Mandiri",
+    "2023": 0,
+    "2024": 2,
+    "2025": 4,
+    "total_kegiatan": 6,
+    "total_dana_rp": 54500000
+   },
+   {
+    "sumber": "Lembaga Dalam Negeri (luar PT)",
+    "2023": 6,
+    "2024": 5,
+    "2025": 3,
+    "total_kegiatan": 14,
+    "total_dana_rp": 590000000
+   },
+   {
+    "sumber": "Lembaga Luar Negeri",
+    "2023": 1,
+    "2024": 0,
+    "2025": 1,
+    "total_kegiatan": 2,
+    "total_dana_rp": 2141630000
+   }
+  ],
+  "total_kegiatan": 22,
+  "total_dana_rp": 2786130000,
+  "desa_binaan": [
+   {
+    "dosen": "Prof. Dr. Ir. Rene Charles Kepel, DEA",
+    "mitra": "Pemerintah Kabupaten Kepulauan Talaud",
+    "kategori": "Kelompok Kerja",
+    "keterangan": "Lainnya (Pemda)"
+   },
+   {
+    "dosen": "Prof. Dr. Ir. Rene Charles Kepel, DEA",
+    "mitra": "Pemerintah Kabupaten Bolaang Mongondow",
+    "kategori": "Kelompok Kerja",
+    "keterangan": "Lainnya (Pemda)"
+   },
+   {
+    "dosen": "Prof. Dr. Ir. Rene Charles Kepel, DEA",
+    "mitra": "Pemerintah Daerah (KLHS RPJMD)",
+    "kategori": "Kelompok Kerja",
+    "keterangan": "Lainnya (Pemda)"
+   },
+   {
+    "dosen": "Prof. Dr. Ir. Rene Charles Kepel, DEA",
+    "mitra": "Pemerintah Daerah (RPJMPD Teknokratik)",
+    "kategori": "Kelompok Kerja",
+    "keterangan": "Lainnya (Pemda)"
+   },
+   {
+    "dosen": "Prof. Dr. Ir. Rene Charles Kepel, DEA",
+    "mitra": "Pemerintah Daerah (RUED)",
+    "kategori": "Kelompok Kerja",
+    "keterangan": "Lainnya (Pemda)"
+   },
+   {
+    "dosen": "Prof. Dr. Ir. Rene Charles Kepel, DEA",
+    "mitra": "Pemerintah Daerah (RPIP)",
+    "kategori": "Kelompok Kerja",
+    "keterangan": "Lainnya (Pemda)"
+   },
+   {
+    "dosen": "Prof. Dr. Ir. Rene Charles Kepel, DEA",
+    "mitra": "Pemerintah Daerah (RIPPARKAB)",
+    "kategori": "Lainnya",
+    "keterangan": "Lainnya (Pemda)"
+   },
+   {
+    "dosen": "Prof. Dr. Ir. Rene Charles Kepel, DEA",
+    "mitra": "Pemerintah Daerah (Ranperda 2022)",
+    "kategori": "Lainnya",
+    "keterangan": "Lainnya (Pemda)"
+   },
+   {
+    "dosen": "Prof. Dr. Ir. Rene Charles Kepel, DEA",
+    "mitra": "Pemerintah Daerah (Kelompok Kerja 2023)",
+    "kategori": "Lainnya",
+    "keterangan": "Lainnya (Pemda)"
+   },
+   {
+    "dosen": "Prof. Dr. Ir. Rene Charles Kepel, DEA",
+    "mitra": "Pemerintah Daerah (Kajian Lingkungan)",
+    "kategori": "Lainnya",
+    "keterangan": "Lainnya (Pemda)"
+   },
+   {
+    "dosen": "Prof. Dr. Ir. Rene Charles Kepel, DEA",
+    "mitra": "Pemerintah Daerah (Tenaga Ahli Teknokratik)",
+    "kategori": "Lainnya",
+    "keterangan": "Lainnya (Pemda)"
+   },
+   {
+    "dosen": "Prof. Dr. Ir. Rene Charles Kepel, DEA",
+    "mitra": "Pemerintah Daerah (RIPK)",
+    "kategori": "Lainnya",
+    "keterangan": "Lainnya (Pemda)"
+   },
+   {
+    "dosen": "Prof. Dr. Ir. Rene Charles Kepel, DEA",
+    "mitra": "Pemerintah Daerah (RPIK)",
+    "kategori": "Lainnya",
+    "keterangan": "Lainnya (Pemda)"
+   },
+   {
+    "dosen": "Prof. Dr. Ir. Rene Charles Kepel, DEA",
+    "mitra": "Pemerintah Provinsi Sulawesi Utara (Keputusan Gubernur)",
+    "kategori": "Lainnya",
+    "keterangan": "Lainnya (Pemda)"
+   },
+   {
+    "dosen": "Prof. Dr. Ir. Rene Charles Kepel, DEA",
+    "mitra": "Pemerintah Daerah (SK Bupati No. 483 Tahun 2022)",
+    "kategori": "Lainnya",
+    "keterangan": "Lainnya (Pemda)"
+   }
+  ]
+ },
+ "kerjasama": {
+  "pendidikan": [
+   {
+    "mitra": "UD. Minanga Divers",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Sertifikasi Selam SCUBA"
+   },
+   {
+    "mitra": "Guangxi Academy of Sciences, China",
+    "tingkat": "Internasional",
+    "judul": "MOU on science and technology of healthy mariculture and ecological disaster risk forecasting and prevention"
+   },
+   {
+    "mitra": "Genics Pty Ltd. St Lucia, QLD Australia",
+    "tingkat": "Internasional",
+    "judul": "pelatihan Shrimp Health Course"
+   },
+   {
+    "mitra": "Nitto Seimo Co..Ltd Japan",
+    "tingkat": "Internasional",
+    "judul": "Concerning Colaboration in The Project."
+   },
+   {
+    "mitra": "Balai Riset Budidaya Ikan Hias Depok",
+    "tingkat": "Nasional",
+    "judul": "Praktikum Terpadu, Praktisi Mengajar, Merdeka Belajar Kampus Merdeka (MBKM)"
+   },
+   {
+    "mitra": "Balai Perikanan Budiddaya Air Tawar (BPBAT) Tatelu",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Tenaga Ahli Pembangunan Instalasi  Penelitian Hatchery Ikan Air Tawar"
+   },
+   {
+    "mitra": "CV. Pacifik Delyano Farm Bolaang Mongondow Utara Propinsi Sulawesi Utara",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Menganalisis keberadaan parasit Tricodina sp pada kolam pembenihan"
+   },
+   {
+    "mitra": "Unit Pembenihan Rakyat (UPR) Golden Fish Farm,  Tumaluntung MINUT",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Praktikum Terpadu, Praktik Kerja Lapang/penelitian Mahasiswa Mitra Dunia Usaha Dan Dunia Industri (Dudi), Paraktisi Mengajar"
+   },
+   {
+    "mitra": "Balai Riset Budidaya Ikan Hias Depok",
+    "tingkat": "Nasional",
+    "judul": "Praktek kerja lapangan tentang kualitas air"
+   },
+   {
+    "mitra": "BPBAT Tatelu 2023",
+    "tingkat": "-",
+    "judul": "Keberadaan parasit pada kelompok Pembudidaya ikan"
+   },
+   {
+    "mitra": "Universitas Brawijaya, Fakultas Perikanan dan Ilmu Kelautan Prodi Budidaya Perairan",
+    "tingkat": "Nasional",
+    "judul": "Meneliti Pengaruh kualitas air terhadap serangan parasit"
+   },
+   {
+    "mitra": "Balai Pembenihan dan Pengendalian Hama & Penyakit Ikan Tateli",
+    "tingkat": "Internasional",
+    "judul": "MBKM (Merdeka Belajar Kampus Merdeka) Kerjasama dalam bidang akademik"
+   },
+   {
+    "mitra": "Dinas Pertanian, Kelautan dan Perikanan Kota Manado",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Kerjasama Penyelenggaraan program kemitraan pendidikan, penelitian dan pengabdian kepada Masyarakat"
+   },
+   {
+    "mitra": "Fakultas Pertanian Universitas Warmadewa",
+    "tingkat": "Nasional",
+    "judul": "Kerjasama Penyelenggaraan program kemitraan pendidikan, penelitian dan pengabdian kepada Masyarakat"
+   },
+   {
+    "mitra": "BPBAT Tatelu 2023",
+    "tingkat": "-",
+    "judul": "Praktikum Terpadu Mahasiswa"
+   },
+   {
+    "mitra": "Kyudai University, Japan",
+    "tingkat": "Internasional",
+    "judul": "Pertukaran mahasiwa untuk menunjang program MBKM"
+   },
+   {
+    "mitra": "Nanning Normal University",
+    "tingkat": "Internasional",
+    "judul": "Kerjasama dalam bidang akademik"
+   },
+   {
+    "mitra": "PT Karua Hanesa Jaya -p Lampung",
+    "tingkat": "Nasional",
+    "judul": "Kerjasama dalam bidang akademik"
+   },
+   {
+    "mitra": "PT Inti Murni Minahasa Selatan",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Kerjasama dalam bidang akademik"
+   },
+   {
+    "mitra": "Laboratorium Penguji Balai Karantina Hewan Ikan dan Tumbuhan Sulawesi Utara",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Jejaring Laboratorium Pengujian Bidang Karantina Hewan, Ikan dan Tumbuhan"
+   }
+  ],
+  "penelitian": [
+   {
+    "mitra": "PT. Mitra Jaya Samudera",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Kajian Ekosistem Pesisir Dan Hidrooseanografi Pesisir Lokasi Perencanaan Ruang Laut Pt. MJS Bitung"
+   },
+   {
+    "mitra": "Genics Pty Ltd. St Lucia. QLD Australia",
+    "tingkat": "Internasional",
+    "judul": "Kursus Masterclass Kesehatan Udang Genics 2024"
+   },
+   {
+    "mitra": "Nitto Seimo Co..Ltd Japan",
+    "tingkat": "Internasional",
+    "judul": "Concerning Colaboration In The Project.  Research Of A New Of Lobster And Development Of Modern Aquaculture System"
+   },
+   {
+    "mitra": "IDEA Consulatants Jepang",
+    "tingkat": "Nasional",
+    "judul": "Riset Ekowisata"
+   },
+   {
+    "mitra": "Dinas Pertanian, Kelautan dan Perikanan Kota Manado",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Kerjasama Penyelenggaraan program kemitraan pendidikan, penelitian dan pengabdian kepada Masyarakat"
+   },
+   {
+    "mitra": "Nanning Normal University",
+    "tingkat": "Internasional",
+    "judul": "Kerjasama dalam bidang penelitian"
+   },
+   {
+    "mitra": "PT Karua Hanesa Jaya -p Lampung",
+    "tingkat": "Nasional",
+    "judul": "Kerjasama dalam bidang penelitian"
+   },
+   {
+    "mitra": "Universitas Kristen Indonesia, Tomohon",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Universitas Gorontalo, Gorontalo",
+    "tingkat": "Nasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Universitas Tadulako, Palu",
+    "tingkat": "Nasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Universitas Khairun, Ternate",
+    "tingkat": "Nasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Universitas Diponegoro, Semarang",
+    "tingkat": "Nasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Balai Pelatihan dan Penyuluhan Perikanan KKP, Bitung",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Universitas Brawijaya, Malang",
+    "tingkat": "Nasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Universitas Sultan Ageng Tirtayasa, Banten",
+    "tingkat": "Nasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "PT Minahasa Permai Resort and Development",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Yayasan Indonesia Biru",
+    "tingkat": "Nasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Yayasan Laut Lestari Indonesia",
+    "tingkat": "Nasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Universitas Warmadewa, Bali",
+    "tingkat": "Nasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "PT Celebes Mina Pratama",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "PT Sinar Purefoods International",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "PT Nutrindo Freshfood International",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "PT Delta Pasific Indotuna",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "PT Citra Samudera Nusantara",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Balai Riset Budidaya Ikan Hias KKP, Depok",
+    "tingkat": "Nasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Badan Riset dan Inovasi Nasional, Pusat Kolaborasi Riset Kosmetik Nano Berbasis Biomassa",
+    "tingkat": "Nasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Universitas Pattimura, Ambon",
+    "tingkat": "Nasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Polteknik Pelayaran Sulawesi Utara",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Universitas Mulawarman, Samarinda",
+    "tingkat": "Nasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Universitas Mataram, Mataram",
+    "tingkat": "Nasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Universitas Halu Oleo, Kendari",
+    "tingkat": "Nasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Universitas Riau, Pekanbaru",
+    "tingkat": "Nasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Masyarakat dan Perikanan Indonesia (MDPI)",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Dinas Pertanian, Kelautan dan Perikanan, Kota Manado",
+    "tingkat": "Nasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Yayasan Satriabudi Dharma Setia (YSDS)",
+    "tingkat": "Nasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Universitas Sriwijaya, Palembang",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Badan Riset Daerah, Kabupaten Minahasa Utara",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Dinas Kelautan dan Perikanan, Kabupaten Minahasa Utara",
+    "tingkat": "Nasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Yayasan Cahaya Samudera Indonesia",
+    "tingkat": "Nasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Bank Syariah Indonesia",
+    "tingkat": "Nasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "PT Perikanan Indonesia",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Yayasan Pendidikan Sola Gratia Tongkeina",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "PT Coral Eye Bangka",
+    "tingkat": "Nasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Jayadi Global Education Center (JGEC)",
+    "tingkat": "Nasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Yayasan Segitiga Non Sampah (NTTI)",
+    "tingkat": "Nasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Royal Netherlands Institute of Southeast Asian and Carribean Studies (KITLV), Netherland",
+    "tingkat": "Internasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Tropical Biosphere Research Center (TBRC) University of the Ryukyus, Japan",
+    "tingkat": "Internasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Universidad De La Republica, Uruguay",
+    "tingkat": "Internasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Feng Chia University, Taiwan",
+    "tingkat": "Internasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Kyushu University, Japan",
+    "tingkat": "Internasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Commonwealth Scientific and Industrial Research Organization (CSIRO), Australia",
+    "tingkat": "Internasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Nitto Seimo Co. Ltd., Japan",
+    "tingkat": "Internasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "University of Tokyo, Japan",
+    "tingkat": "Internasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Third Institute of Oceonology (TIO), China",
+    "tingkat": "Internasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "National Ocean Technology Center (NOTC), Ministry of Natural Resources, China",
+    "tingkat": "Internasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Plymouth University, United Kingdom",
+    "tingkat": "Internasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "University of Bologna, Italy",
+    "tingkat": "Internasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Hainan Academy of Ocean and Fisheries Sciences, China",
+    "tingkat": "Internasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Hainan Aerospace Technology Innovation Center, China",
+    "tingkat": "Internasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Westminster University, United Kingdom",
+    "tingkat": "Internasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Institute of Vertebrate Paleontology and Paleoanthropology (IVPP), China",
+    "tingkat": "Internasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Institute of Oceanology Chinese Academy of Science (IOCAS), China",
+    "tingkat": "Internasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Coral Triangle Initiatives - Coral reefs, Fisheries, Food security (CTI-CFF)",
+    "tingkat": "Internasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "University of Presov, Slovakia",
+    "tingkat": "Internasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Underwater Scientific Exploration for Education (UNSEEN), France",
+    "tingkat": "Internasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Kyungpook National University, Korea",
+    "tingkat": "Internasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "CSEAS University of Kyoto, Japan",
+    "tingkat": "Internasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Guangxi University of Chinese Medicine, China",
+    "tingkat": "Internasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Polytechnic University of Marche, Italy",
+    "tingkat": "Internasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Kagoshima University, Japan",
+    "tingkat": "Internasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Kasetsart University, Thailand",
+    "tingkat": "Internasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "University of Philipines Visayas, Philipina",
+    "tingkat": "Internasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "University Malaysia Terengganu, Malaysia",
+    "tingkat": "Internasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Nha Trang University, Vietnam",
+    "tingkat": "Internasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "National Chiayi University, Taiwan",
+    "tingkat": "Internasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Wildlife Conservation Society (WCS)",
+    "tingkat": "Internasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "RARE International",
+    "tingkat": "Internasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "USAID Berikan",
+    "tingkat": "Internasional",
+    "judul": "Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "MIME  Italy",
+    "tingkat": "Internasional",
+    "judul": "Multiple Stressors and Impacts on Indonesian Marine Ecosystem"
+   },
+   {
+    "mitra": "BRIN",
+    "tingkat": "Internasional",
+    "judul": "The Natural History of a \"Living Fossil\", The cassiduloid echinoid of Notherm Sulawesi."
+   }
+  ],
+  "pkm": [
+   {
+    "mitra": "Cahaya Trans",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Penggunaan Batok Kelapa Untuk Mengurangi Pencemaran Plastik Di Laut"
+   },
+   {
+    "mitra": "Balai Taman Nasional Bunaken",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Penggunaan Batok Kelapa Untuk Mengurangi Pencemaran Plastik Di Laut"
+   },
+   {
+    "mitra": "Universitas Kristen Indonesia, Tomohon",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Universitas Gorontalo, Gorontalo",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Universitas Tadulako, Palu",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Universitas Khairun, Ternate",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Universitas Diponegoro, Semarang",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Balai Pelatihan dan Penyuluhan Perikanan KKP, Bitung",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Universitas Brawijaya, Malang",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Universitas Sultan Ageng Tirtayasa, Banten",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "PT Minahasa Permai Resort and Development",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Yayasan Indonesia Biru",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Yayasan Laut Lestari Indonesia",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Universitas Warmadewa, Bali",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "PT Celebes Mina Pratama",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "PT Sinar Purefoods International",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "PT Nutrindo Freshfood International",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "PT Delta Pasific Indotuna",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "PT Citra Samudera Nusantara",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Balai Riset Budidaya Ikan Hias KKP, Depok",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Badan Riset dan Inovasi Nasional, Pusat Kolaborasi Riset Kosmetik Nano Berbasis Biomassa",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Universitas Pattimura, Ambon",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Polteknik Pelayaran Sulawesi Utara",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Universitas Mataram, Mataram",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Universitas Halu Oleo, Kendari",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Universitas Riau, Pekanbaru",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Masyarakat dan Perikanan Indonesia (MDPI)",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Dinas Pertanian, Kelautan dan Perikanan, Kota Manado",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Yayasan Satriabudi Dharma Setia (YSDS)",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Universitas Sriwijaya, Palembang",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Badan Riset Daerah, Kabupaten Minahasa Utara",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Dinas Kelautan dan Perikanan, Kabupaten Minahasa Utara",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Yayasan Cahaya Samudera Indonesia",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Bank Syariah Indonesia",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "PT Perikanan Indonesia",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Yayasan Pendidikan Sola Gratia Tongkeina",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "PT Coral Eye Bangka",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Jayadi Global Education Center (JGEC)",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Yayasan Segitiga Non Sampah (NTTI)",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "RARE International",
+    "tingkat": "Internasional",
+    "judul": "Survey Sosial Ekonomi Nelayan Tradisional di Sulawesi Utara"
+   },
+   {
+    "mitra": "Kementerian Pariwisata dan Ekonomi Kreatif",
+    "tingkat": "Nasional",
+    "judul": "Dewan Kepariwisataan Berkelanjutan Indonesia (Indonesia Sustainable Tourism Council)"
+   },
+   {
+    "mitra": "Universitas Kristen Indonesia, Tomohon",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Universitas Gorontalo, Gorontalo",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Universitas Tadulako, Palu",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Universitas Khairun, Ternate",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Universitas Diponegoro, Semarang",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Balai Pelatihan dan Penyuluhan Perikanan KKP, Bitung",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Universitas Brawijaya, Malang",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Universitas Sultan Ageng Tirtayasa, Banten",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "PT Minahasa Permai Resort and Development",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Yayasan Indonesia Biru",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Yayasan Laut Lestari Indonesia",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Universitas Warmadewa, Bali",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "PT Celebes Mina Pratama",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "PT Sinar Purefoods International",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "PT Nutrindo Freshfood International",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "PT Delta Pasific Indotuna",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "PT Citra Samudera Nusantara",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Balai Riset Budidaya Ikan Hias KKP, Depok",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Badan Riset dan Inovasi Nasional, Pusat Kolaborasi Riset Kosmetik Nano Berbasis Biomassa",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Universitas Pattimura, Ambon",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Polteknik Pelayaran Sulawesi Utara",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Universitas Mataram, Mataram",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Universitas Halu Oleo, Kendari",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Universitas Riau, Pekanbaru",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Masyarakat dan Perikanan Indonesia (MDPI)",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Dinas Pertanian, Kelautan dan Perikanan, Kota Manado",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Yayasan Satriabudi Dharma Setia (YSDS)",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Universitas Sriwijaya, Palembang",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Badan Riset Daerah, Kabupaten Minahasa Utara",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Dinas Kelautan dan Perikanan, Kabupaten Minahasa Utara",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Yayasan Cahaya Samudera Indonesia",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Bank Syariah Indonesia",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "PT Perikanan Indonesia",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Yayasan Pendidikan Sola Gratia Tongkeina",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "PT Coral Eye Bangka",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Jayadi Global Education Center (JGEC)",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "Yayasan Segitiga Non Sampah (NTTI)",
+    "tingkat": "Nasional",
+    "judul": "Bidang Kelautan dan Perikanan"
+   },
+   {
+    "mitra": "RARE International",
+    "tingkat": "Internasional",
+    "judul": "Survey Sosial Ekonomi Nelayan Tradisional di Sulawesi Utara"
+   },
+   {
+    "mitra": "LOI Nitto Seimo Co",
+    "tingkat": "Internasional",
+    "judul": "Education  and academic research"
+   },
+   {
+    "mitra": "KITLV Netherland",
+    "tingkat": "Internasional",
+    "judul": "Climate Change and the Governance of Tropical Marine Conservation"
+   },
+   {
+    "mitra": "UNSEEN, France",
+    "tingkat": "Internasional",
+    "judul": "Education,Research and Community Service Collaboration"
+   },
+   {
+    "mitra": "Universitas Mulawarman, Samarinda",
+    "tingkat": "Nasional",
+    "judul": "Kerjasama Tridharma dan Implementasi Merdeka Belajar Kampus Mredeka"
+   },
+   {
+    "mitra": "University of Westminster",
+    "tingkat": "Internasional",
+    "judul": "Coral Reef Conservation in Bunaken National Park"
+   },
+   {
+    "mitra": "LMECR-TIO dan FFMS-SRU",
+    "tingkat": "Internasional",
+    "judul": "Academic Collaboration on Ecological Conservation of Marine Biodiversity and Ecosystems"
+   },
+   {
+    "mitra": "PT. Karua Hanesa Jaya (KHJ)",
+    "tingkat": "Nasional",
+    "judul": "Praktisi Mengajar Penelitian Dosen dan Mahasiswa Praktek Kerja lapangan Mahasiswa Merdeka Belajar Kampus Merdeka (MBKM)"
+   },
+   {
+    "mitra": "University of Bologna, Italy",
+    "tingkat": "Internasional",
+    "judul": "Biological,Geological and Environmental Sciences of the \"Alma Mater Stodiorum\""
+   },
+   {
+    "mitra": "Universidad De la Republlica",
+    "tingkat": "Internasional",
+    "judul": "Concerning Collaboration in Project Evalutionary History  of the Indonesian Coelacanth"
+   },
+   {
+    "mitra": "Politeknik Pelayaran Sulawesi Utara",
+    "tingkat": "Nasional",
+    "judul": "Kerja sama Dosen, Penelitian dan Pengabdian Kepada Masyarakat"
+   },
+   {
+    "mitra": "University TBRC-UR, Japan",
+    "tingkat": "Internasional",
+    "judul": "Evolutionary and Ecological Processes for the Diversification of endemic Freshwater Fishes in  Sulawesi"
+   },
+   {
+    "mitra": "Chinese Academy of Sciences,Beijing China",
+    "tingkat": "Internasional",
+    "judul": "International centers of excellence in initiating research, training and  technology transfer in Marine Science"
+   },
+   {
+    "mitra": "Marche Polytechnical University  Ancona,Italy",
+    "tingkat": "Internasional",
+    "judul": "Technology and Science between the Institutions"
+   },
+   {
+    "mitra": "Kyushu University, Japan",
+    "tingkat": "Internasional",
+    "judul": "Scientific,academic and educational cooperation"
+   },
+   {
+    "mitra": "CSIRO Australia",
+    "tingkat": "Internasional",
+    "judul": "Fostering Scientific Cooperation on Seagrass Ecosystems for Blue Carbon and Community Livelihoods"
+   },
+   {
+    "mitra": "Minanga Divers",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Pelaksanaan Kegiatan akademik dan praktikum mahasiswa  FPIK Unsrat di bidang Kelautan dan Penyelaman"
+   }
+  ],
+  "dudi": [
+   {
+    "mitra": "PT. Perikanan Indonesia Bitung",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Pre-Feasibility Studi Hilirisasi Produk Perikanan"
+   },
+   {
+    "mitra": "PT. Nichindo Manado Suisan",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Praktek Bersama, Magang Berdampak"
+   },
+   {
+    "mitra": "PT. TJ. Silfanus",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Restorasi Terumbu Karang"
+   },
+   {
+    "mitra": "Nitto Seimo Co Ltd, Japan",
+    "tingkat": "Internasional",
+    "judul": "Perikanan Tangkap"
+   },
+   {
+    "mitra": "PT Autore Pearl",
+    "tingkat": "Nasional",
+    "judul": "Budidaya Mutiara"
+   },
+   {
+    "mitra": "PT Karua Hanesa Jaya",
+    "tingkat": "Nasional",
+    "judul": "Budidaya Udang Vanamei"
+   },
+   {
+    "mitra": "PT Celebes Minapratama",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Industri Pengolahan Ikan"
+   },
+   {
+    "mitra": "PT Citra Samudera Busantara",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Industri Pengolahan Ikan"
+   },
+   {
+    "mitra": "PT Sinar Purefood International",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Industri Pengolahan Ikan"
+   },
+   {
+    "mitra": "PT Delta Pasifik Indotuna",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Industri Pengolahan Ikan"
+   },
+   {
+    "mitra": "PT Nutrindo Freshfood International",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Industri Pengolahan Ikan"
+   },
+   {
+    "mitra": "PT Coral Eye",
+    "tingkat": "Lokal/Wilayah",
+    "judul": "Konservasi Laut"
+   }
+  ]
+ },
+ "keterlibatan_penelitian": [
+  {
+   "dosen": "Ir. Joudy Ruddy Rizal Sangari, MA, MMA.",
+   "judul": "Penggunaan Algoritma Tropfishr Untuk Penentuan Status Stok Perikanan Kerapu Di Kabupaten Kepulauan Sangihe (WPPNRI 716)",
+   "mahasiswa": "Mutiara Ratih (NIM 19051101002) Trifena Kindangen (NIM 19051101018) Rizki Bawole (NIM 19051101023)",
+   "tahun": "2023"
   },
-  "penelitian": {
-    "dana_per_sumber": [
-      {
-        "sumber": "Perguruan Tinggi & Mandiri",
-        "2023": 26,
-        "2024": 8,
-        "2025": 12,
-        "total_judul": 46,
-        "total_dana_rp": 1340000000
-      },
-      {
-        "sumber": "Lembaga Dalam Negeri (luar PT)",
-        "2023": 9,
-        "2024": 13,
-        "2025": 5,
-        "total_judul": 27,
-        "total_dana_rp": 1558070000
-      },
-      {
-        "sumber": "Lembaga Luar Negeri",
-        "2023": 1,
-        "2024": 1,
-        "2025": 1,
-        "total_judul": 3,
-        "total_dana_rp": 2141630000
-      }
-    ],
-    "total_judul": 76,
-    "total_dana_rp": 5039700000
+  {
+   "dosen": "Ir. Stephanus Vianny Mandagi, M.App.Sc, Ph.D",
+   "judul": "Kajian Stok Perikanan Pelagis Kecil di Sulawesi Utara khususnya di WPP 715",
+   "mahasiswa": "Celine Kimberly Eugenea Pinontoan, NIM: 240511010021 Michio Kezia Ivana Patindagheng, NIM: 230511010033 Jesica Anatasya Dandel, NIM: 230511010018",
+   "tahun": "2023"
   },
-  "pengabdian": {
-    "dana_per_sumber": [
-      {
-        "sumber": "Perguruan Tinggi & Mandiri",
-        "2023": 0,
-        "2024": 2,
-        "2025": 4,
-        "total_kegiatan": 6,
-        "total_dana_rp": 54500000
-      },
-      {
-        "sumber": "Lembaga Dalam Negeri (luar PT)",
-        "2023": 6,
-        "2024": 5,
-        "2025": 3,
-        "total_kegiatan": 14,
-        "total_dana_rp": 590000000
-      },
-      {
-        "sumber": "Lembaga Luar Negeri",
-        "2023": 1,
-        "2024": 0,
-        "2025": 1,
-        "total_kegiatan": 2,
-        "total_dana_rp": 2141630000
-      }
-    ],
-    "total_kegiatan": 22,
-    "total_dana_rp": 2786130000,
-    "desa_binaan": [
-      {
-        "dosen": "Prof. Dr. Ir. Rene Charles Kepel, DEA",
-        "mitra": "Pemerintah Kabupaten Kepulauan Talaud",
-        "kategori": "Kelompok Kerja",
-        "keterangan": "Lainnya (Pemda)"
-      },
-      {
-        "dosen": "Prof. Dr. Ir. Rene Charles Kepel, DEA",
-        "mitra": "Pemerintah Kabupaten Bolaang Mongondow",
-        "kategori": "Kelompok Kerja",
-        "keterangan": "Lainnya (Pemda)"
-      },
-      {
-        "dosen": "Prof. Dr. Ir. Rene Charles Kepel, DEA",
-        "mitra": "Pemerintah Daerah (KLHS RPJMD)",
-        "kategori": "Kelompok Kerja",
-        "keterangan": "Lainnya (Pemda)"
-      },
-      {
-        "dosen": "Prof. Dr. Ir. Rene Charles Kepel, DEA",
-        "mitra": "Pemerintah Daerah (RPJMPD Teknokratik)",
-        "kategori": "Kelompok Kerja",
-        "keterangan": "Lainnya (Pemda)"
-      },
-      {
-        "dosen": "Prof. Dr. Ir. Rene Charles Kepel, DEA",
-        "mitra": "Pemerintah Daerah (RUED)",
-        "kategori": "Kelompok Kerja",
-        "keterangan": "Lainnya (Pemda)"
-      },
-      {
-        "dosen": "Prof. Dr. Ir. Rene Charles Kepel, DEA",
-        "mitra": "Pemerintah Daerah (RPIP)",
-        "kategori": "Kelompok Kerja",
-        "keterangan": "Lainnya (Pemda)"
-      },
-      {
-        "dosen": "Prof. Dr. Ir. Rene Charles Kepel, DEA",
-        "mitra": "Pemerintah Daerah (RIPPARKAB)",
-        "kategori": "Lainnya",
-        "keterangan": "Lainnya (Pemda)"
-      },
-      {
-        "dosen": "Prof. Dr. Ir. Rene Charles Kepel, DEA",
-        "mitra": "Pemerintah Daerah (Ranperda 2022)",
-        "kategori": "Lainnya",
-        "keterangan": "Lainnya (Pemda)"
-      },
-      {
-        "dosen": "Prof. Dr. Ir. Rene Charles Kepel, DEA",
-        "mitra": "Pemerintah Daerah (Kelompok Kerja 2023)",
-        "kategori": "Lainnya",
-        "keterangan": "Lainnya (Pemda)"
-      },
-      {
-        "dosen": "Prof. Dr. Ir. Rene Charles Kepel, DEA",
-        "mitra": "Pemerintah Daerah (Kajian Lingkungan)",
-        "kategori": "Lainnya",
-        "keterangan": "Lainnya (Pemda)"
-      },
-      {
-        "dosen": "Prof. Dr. Ir. Rene Charles Kepel, DEA",
-        "mitra": "Pemerintah Daerah (Tenaga Ahli Teknokratik)",
-        "kategori": "Lainnya",
-        "keterangan": "Lainnya (Pemda)"
-      },
-      {
-        "dosen": "Prof. Dr. Ir. Rene Charles Kepel, DEA",
-        "mitra": "Pemerintah Daerah (RIPK)",
-        "kategori": "Lainnya",
-        "keterangan": "Lainnya (Pemda)"
-      },
-      {
-        "dosen": "Prof. Dr. Ir. Rene Charles Kepel, DEA",
-        "mitra": "Pemerintah Daerah (RPIK)",
-        "kategori": "Lainnya",
-        "keterangan": "Lainnya (Pemda)"
-      },
-      {
-        "dosen": "Prof. Dr. Ir. Rene Charles Kepel, DEA",
-        "mitra": "Pemerintah Provinsi Sulawesi Utara (Keputusan Gubernur)",
-        "kategori": "Lainnya",
-        "keterangan": "Lainnya (Pemda)"
-      },
-      {
-        "dosen": "Prof. Dr. Ir. Rene Charles Kepel, DEA",
-        "mitra": "Pemerintah Daerah (SK Bupati No. 483 Tahun 2022)",
-        "kategori": "Lainnya",
-        "keterangan": "Lainnya (Pemda)"
-      }
-    ]
+  {
+   "dosen": "Ir. Alex Denny Kambey, M.Sc, M.Si.",
+   "judul": "Keberhasilan Hidup Dan Laju Pertumbuhan Karang Yang Di Transplantasi Pada Komunitas Karang Mati Sebagai Proses Rehabilitasi Karang",
+   "mahasiswa": "Queenshe N. Polii Nim: 19051101003 Miranti Lamaniu Nim: 210511010008 Frane F. Pomohon Nim: 20051101010",
+   "tahun": "2023"
   },
-  "kerjasama": {
-    "pendidikan": [
-      {
-        "mitra": "UD. Minanga Divers",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Sertifikasi Selam SCUBA"
-      },
-      {
-        "mitra": "Guangxi Academy of Sciences, China",
-        "tingkat": "Internasional",
-        "judul": "MOU on science and technology of healthy mariculture and ecological disaster risk forecasting and prevention"
-      },
-      {
-        "mitra": "Genics Pty Ltd. St Lucia, QLD Australia",
-        "tingkat": "Internasional",
-        "judul": "pelatihan Shrimp Health Course"
-      },
-      {
-        "mitra": "Nitto Seimo Co..Ltd Japan",
-        "tingkat": "Internasional",
-        "judul": "Concerning Colaboration in The Project."
-      },
-      {
-        "mitra": "Balai Riset Budidaya Ikan Hias Depok",
-        "tingkat": "Nasional",
-        "judul": "Praktikum Terpadu, Praktisi Mengajar, Merdeka Belajar Kampus Merdeka (MBKM)"
-      },
-      {
-        "mitra": "Balai Perikanan Budiddaya Air Tawar (BPBAT) Tatelu",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Tenaga Ahli Pembangunan Instalasi  Penelitian Hatchery Ikan Air Tawar"
-      },
-      {
-        "mitra": "CV. Pacifik Delyano Farm Bolaang Mongondow Utara Propinsi Sulawesi Utara",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Menganalisis keberadaan parasit Tricodina sp pada kolam pembenihan"
-      },
-      {
-        "mitra": "Unit Pembenihan Rakyat (UPR) Golden Fish Farm,  Tumaluntung MINUT",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Praktikum Terpadu, Praktik Kerja Lapang/penelitian Mahasiswa Mitra Dunia Usaha Dan Dunia Industri (Dudi), Paraktisi Mengajar"
-      },
-      {
-        "mitra": "Balai Riset Budidaya Ikan Hias Depok",
-        "tingkat": "Nasional",
-        "judul": "Praktek kerja lapangan tentang kualitas air"
-      },
-      {
-        "mitra": "BPBAT Tatelu 2023",
-        "tingkat": "-",
-        "judul": "Keberadaan parasit pada kelompok Pembudidaya ikan"
-      },
-      {
-        "mitra": "Universitas Brawijaya, Fakultas Perikanan dan Ilmu Kelautan Prodi Budidaya Perairan",
-        "tingkat": "Nasional",
-        "judul": "Meneliti Pengaruh kualitas air terhadap serangan parasit"
-      },
-      {
-        "mitra": "Balai Pembenihan dan Pengendalian Hama & Penyakit Ikan Tateli",
-        "tingkat": "Internasional",
-        "judul": "MBKM (Merdeka Belajar Kampus Merdeka) Kerjasama dalam bidang akademik"
-      },
-      {
-        "mitra": "Dinas Pertanian, Kelautan dan Perikanan Kota Manado",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Kerjasama Penyelenggaraan program kemitraan pendidikan, penelitian dan pengabdian kepada Masyarakat"
-      },
-      {
-        "mitra": "Fakultas Pertanian Universitas Warmadewa",
-        "tingkat": "Nasional",
-        "judul": "Kerjasama Penyelenggaraan program kemitraan pendidikan, penelitian dan pengabdian kepada Masyarakat"
-      },
-      {
-        "mitra": "BPBAT Tatelu 2023",
-        "tingkat": "-",
-        "judul": "Praktikum Terpadu Mahasiswa"
-      },
-      {
-        "mitra": "Kyudai University, Japan",
-        "tingkat": "Internasional",
-        "judul": "Pertukaran mahasiwa untuk menunjang program MBKM"
-      },
-      {
-        "mitra": "Nanning Normal University",
-        "tingkat": "Internasional",
-        "judul": "Kerjasama dalam bidang akademik"
-      },
-      {
-        "mitra": "PT Karua Hanesa Jaya -p Lampung",
-        "tingkat": "Nasional",
-        "judul": "Kerjasama dalam bidang akademik"
-      },
-      {
-        "mitra": "PT Inti Murni Minahasa Selatan",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Kerjasama dalam bidang akademik"
-      },
-      {
-        "mitra": "Laboratorium Penguji Balai Karantina Hewan Ikan dan Tumbuhan Sulawesi Utara",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Jejaring Laboratorium Pengujian Bidang Karantina Hewan, Ikan dan Tumbuhan"
-      }
-    ],
-    "penelitian": [
-      {
-        "mitra": "PT. Mitra Jaya Samudera",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Kajian Ekosistem Pesisir Dan Hidrooseanografi Pesisir Lokasi Perencanaan Ruang Laut Pt. MJS Bitung"
-      },
-      {
-        "mitra": "Genics Pty Ltd. St Lucia. QLD Australia",
-        "tingkat": "Internasional",
-        "judul": "Kursus Masterclass Kesehatan Udang Genics 2024"
-      },
-      {
-        "mitra": "Nitto Seimo Co..Ltd Japan",
-        "tingkat": "Internasional",
-        "judul": "Concerning Colaboration In The Project.  Research Of A New Of Lobster And Development Of Modern Aquaculture System"
-      },
-      {
-        "mitra": "IDEA Consulatants Jepang",
-        "tingkat": "Nasional",
-        "judul": "Riset Ekowisata"
-      },
-      {
-        "mitra": "Dinas Pertanian, Kelautan dan Perikanan Kota Manado",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Kerjasama Penyelenggaraan program kemitraan pendidikan, penelitian dan pengabdian kepada Masyarakat"
-      },
-      {
-        "mitra": "Nanning Normal University",
-        "tingkat": "Internasional",
-        "judul": "Kerjasama dalam bidang penelitian"
-      },
-      {
-        "mitra": "PT Karua Hanesa Jaya -p Lampung",
-        "tingkat": "Nasional",
-        "judul": "Kerjasama dalam bidang penelitian"
-      },
-      {
-        "mitra": "Universitas Kristen Indonesia, Tomohon",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Universitas Gorontalo, Gorontalo",
-        "tingkat": "Nasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Universitas Tadulako, Palu",
-        "tingkat": "Nasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Universitas Khairun, Ternate",
-        "tingkat": "Nasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Universitas Diponegoro, Semarang",
-        "tingkat": "Nasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Balai Pelatihan dan Penyuluhan Perikanan KKP, Bitung",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Universitas Brawijaya, Malang",
-        "tingkat": "Nasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Universitas Sultan Ageng Tirtayasa, Banten",
-        "tingkat": "Nasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "PT Minahasa Permai Resort and Development",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Yayasan Indonesia Biru",
-        "tingkat": "Nasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Yayasan Laut Lestari Indonesia",
-        "tingkat": "Nasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Universitas Warmadewa, Bali",
-        "tingkat": "Nasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "PT Celebes Mina Pratama",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "PT Sinar Purefoods International",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "PT Nutrindo Freshfood International",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "PT Delta Pasific Indotuna",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "PT Citra Samudera Nusantara",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Balai Riset Budidaya Ikan Hias KKP, Depok",
-        "tingkat": "Nasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Badan Riset dan Inovasi Nasional, Pusat Kolaborasi Riset Kosmetik Nano Berbasis Biomassa",
-        "tingkat": "Nasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Universitas Pattimura, Ambon",
-        "tingkat": "Nasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Polteknik Pelayaran Sulawesi Utara",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Universitas Mulawarman, Samarinda",
-        "tingkat": "Nasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Universitas Mataram, Mataram",
-        "tingkat": "Nasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Universitas Halu Oleo, Kendari",
-        "tingkat": "Nasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Universitas Riau, Pekanbaru",
-        "tingkat": "Nasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Masyarakat dan Perikanan Indonesia (MDPI)",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Dinas Pertanian, Kelautan dan Perikanan, Kota Manado",
-        "tingkat": "Nasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Yayasan Satriabudi Dharma Setia (YSDS)",
-        "tingkat": "Nasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Universitas Sriwijaya, Palembang",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Badan Riset Daerah, Kabupaten Minahasa Utara",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Dinas Kelautan dan Perikanan, Kabupaten Minahasa Utara",
-        "tingkat": "Nasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Yayasan Cahaya Samudera Indonesia",
-        "tingkat": "Nasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Bank Syariah Indonesia",
-        "tingkat": "Nasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "PT Perikanan Indonesia",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Yayasan Pendidikan Sola Gratia Tongkeina",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "PT Coral Eye Bangka",
-        "tingkat": "Nasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Jayadi Global Education Center (JGEC)",
-        "tingkat": "Nasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Yayasan Segitiga Non Sampah (NTTI)",
-        "tingkat": "Nasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Royal Netherlands Institute of Southeast Asian and Carribean Studies (KITLV), Netherland",
-        "tingkat": "Internasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Tropical Biosphere Research Center (TBRC) University of the Ryukyus, Japan",
-        "tingkat": "Internasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Universidad De La Republica, Uruguay",
-        "tingkat": "Internasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Feng Chia University, Taiwan",
-        "tingkat": "Internasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Kyushu University, Japan",
-        "tingkat": "Internasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Commonwealth Scientific and Industrial Research Organization (CSIRO), Australia",
-        "tingkat": "Internasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Nitto Seimo Co. Ltd., Japan",
-        "tingkat": "Internasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "University of Tokyo, Japan",
-        "tingkat": "Internasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Third Institute of Oceonology (TIO), China",
-        "tingkat": "Internasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "National Ocean Technology Center (NOTC), Ministry of Natural Resources, China",
-        "tingkat": "Internasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Plymouth University, United Kingdom",
-        "tingkat": "Internasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "University of Bologna, Italy",
-        "tingkat": "Internasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Hainan Academy of Ocean and Fisheries Sciences, China",
-        "tingkat": "Internasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Hainan Aerospace Technology Innovation Center, China",
-        "tingkat": "Internasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Westminster University, United Kingdom",
-        "tingkat": "Internasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Institute of Vertebrate Paleontology and Paleoanthropology (IVPP), China",
-        "tingkat": "Internasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Institute of Oceanology Chinese Academy of Science (IOCAS), China",
-        "tingkat": "Internasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Coral Triangle Initiatives - Coral reefs, Fisheries, Food security (CTI-CFF)",
-        "tingkat": "Internasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "University of Presov, Slovakia",
-        "tingkat": "Internasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Underwater Scientific Exploration for Education (UNSEEN), France",
-        "tingkat": "Internasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Kyungpook National University, Korea",
-        "tingkat": "Internasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "CSEAS University of Kyoto, Japan",
-        "tingkat": "Internasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Guangxi University of Chinese Medicine, China",
-        "tingkat": "Internasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Polytechnic University of Marche, Italy",
-        "tingkat": "Internasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Kagoshima University, Japan",
-        "tingkat": "Internasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Kasetsart University, Thailand",
-        "tingkat": "Internasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "University of Philipines Visayas, Philipina",
-        "tingkat": "Internasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "University Malaysia Terengganu, Malaysia",
-        "tingkat": "Internasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Nha Trang University, Vietnam",
-        "tingkat": "Internasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "National Chiayi University, Taiwan",
-        "tingkat": "Internasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Wildlife Conservation Society (WCS)",
-        "tingkat": "Internasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "RARE International",
-        "tingkat": "Internasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "USAID Berikan",
-        "tingkat": "Internasional",
-        "judul": "Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "MIME  Italy",
-        "tingkat": "Internasional",
-        "judul": "Multiple Stressors and Impacts on Indonesian Marine Ecosystem"
-      },
-      {
-        "mitra": "BRIN",
-        "tingkat": "Internasional",
-        "judul": "The Natural History of a \"Living Fossil\", The cassiduloid echinoid of Notherm Sulawesi."
-      }
-    ],
-    "pkm": [
-      {
-        "mitra": "Cahaya Trans",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Penggunaan Batok Kelapa Untuk Mengurangi Pencemaran Plastik Di Laut"
-      },
-      {
-        "mitra": "Balai Taman Nasional Bunaken",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Penggunaan Batok Kelapa Untuk Mengurangi Pencemaran Plastik Di Laut"
-      },
-      {
-        "mitra": "Universitas Kristen Indonesia, Tomohon",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Universitas Gorontalo, Gorontalo",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Universitas Tadulako, Palu",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Universitas Khairun, Ternate",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Universitas Diponegoro, Semarang",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Balai Pelatihan dan Penyuluhan Perikanan KKP, Bitung",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Universitas Brawijaya, Malang",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Universitas Sultan Ageng Tirtayasa, Banten",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "PT Minahasa Permai Resort and Development",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Yayasan Indonesia Biru",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Yayasan Laut Lestari Indonesia",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Universitas Warmadewa, Bali",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "PT Celebes Mina Pratama",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "PT Sinar Purefoods International",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "PT Nutrindo Freshfood International",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "PT Delta Pasific Indotuna",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "PT Citra Samudera Nusantara",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Balai Riset Budidaya Ikan Hias KKP, Depok",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Badan Riset dan Inovasi Nasional, Pusat Kolaborasi Riset Kosmetik Nano Berbasis Biomassa",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Universitas Pattimura, Ambon",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Polteknik Pelayaran Sulawesi Utara",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Universitas Mataram, Mataram",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Universitas Halu Oleo, Kendari",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Universitas Riau, Pekanbaru",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Masyarakat dan Perikanan Indonesia (MDPI)",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Dinas Pertanian, Kelautan dan Perikanan, Kota Manado",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Yayasan Satriabudi Dharma Setia (YSDS)",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Universitas Sriwijaya, Palembang",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Badan Riset Daerah, Kabupaten Minahasa Utara",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Dinas Kelautan dan Perikanan, Kabupaten Minahasa Utara",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Yayasan Cahaya Samudera Indonesia",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Bank Syariah Indonesia",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "PT Perikanan Indonesia",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Yayasan Pendidikan Sola Gratia Tongkeina",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "PT Coral Eye Bangka",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Jayadi Global Education Center (JGEC)",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Yayasan Segitiga Non Sampah (NTTI)",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "RARE International",
-        "tingkat": "Internasional",
-        "judul": "Survey Sosial Ekonomi Nelayan Tradisional di Sulawesi Utara"
-      },
-      {
-        "mitra": "Kementerian Pariwisata dan Ekonomi Kreatif",
-        "tingkat": "Nasional",
-        "judul": "Dewan Kepariwisataan Berkelanjutan Indonesia (Indonesia Sustainable Tourism Council)"
-      },
-      {
-        "mitra": "Universitas Kristen Indonesia, Tomohon",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Universitas Gorontalo, Gorontalo",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Universitas Tadulako, Palu",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Universitas Khairun, Ternate",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Universitas Diponegoro, Semarang",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Balai Pelatihan dan Penyuluhan Perikanan KKP, Bitung",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Universitas Brawijaya, Malang",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Universitas Sultan Ageng Tirtayasa, Banten",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "PT Minahasa Permai Resort and Development",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Yayasan Indonesia Biru",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Yayasan Laut Lestari Indonesia",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Universitas Warmadewa, Bali",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "PT Celebes Mina Pratama",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "PT Sinar Purefoods International",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "PT Nutrindo Freshfood International",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "PT Delta Pasific Indotuna",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "PT Citra Samudera Nusantara",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Balai Riset Budidaya Ikan Hias KKP, Depok",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Badan Riset dan Inovasi Nasional, Pusat Kolaborasi Riset Kosmetik Nano Berbasis Biomassa",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Universitas Pattimura, Ambon",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Polteknik Pelayaran Sulawesi Utara",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Universitas Mataram, Mataram",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Universitas Halu Oleo, Kendari",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Universitas Riau, Pekanbaru",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Masyarakat dan Perikanan Indonesia (MDPI)",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Dinas Pertanian, Kelautan dan Perikanan, Kota Manado",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Yayasan Satriabudi Dharma Setia (YSDS)",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Universitas Sriwijaya, Palembang",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Badan Riset Daerah, Kabupaten Minahasa Utara",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Dinas Kelautan dan Perikanan, Kabupaten Minahasa Utara",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Yayasan Cahaya Samudera Indonesia",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Bank Syariah Indonesia",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "PT Perikanan Indonesia",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Yayasan Pendidikan Sola Gratia Tongkeina",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "PT Coral Eye Bangka",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Jayadi Global Education Center (JGEC)",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "Yayasan Segitiga Non Sampah (NTTI)",
-        "tingkat": "Nasional",
-        "judul": "Bidang Kelautan dan Perikanan"
-      },
-      {
-        "mitra": "RARE International",
-        "tingkat": "Internasional",
-        "judul": "Survey Sosial Ekonomi Nelayan Tradisional di Sulawesi Utara"
-      },
-      {
-        "mitra": "LOI Nitto Seimo Co",
-        "tingkat": "Internasional",
-        "judul": "Education  and academic research"
-      },
-      {
-        "mitra": "KITLV Netherland",
-        "tingkat": "Internasional",
-        "judul": "Climate Change and the Governance of Tropical Marine Conservation"
-      },
-      {
-        "mitra": "UNSEEN, France",
-        "tingkat": "Internasional",
-        "judul": "Education,Research and Community Service Collaboration"
-      },
-      {
-        "mitra": "Universitas Mulawarman, Samarinda",
-        "tingkat": "Nasional",
-        "judul": "Kerjasama Tridharma dan Implementasi Merdeka Belajar Kampus Mredeka"
-      },
-      {
-        "mitra": "University of Westminster",
-        "tingkat": "Internasional",
-        "judul": "Coral Reef Conservation in Bunaken National Park"
-      },
-      {
-        "mitra": "LMECR-TIO dan FFMS-SRU",
-        "tingkat": "Internasional",
-        "judul": "Academic Collaboration on Ecological Conservation of Marine Biodiversity and Ecosystems"
-      },
-      {
-        "mitra": "PT. Karua Hanesa Jaya (KHJ)",
-        "tingkat": "Nasional",
-        "judul": "Praktisi Mengajar Penelitian Dosen dan Mahasiswa Praktek Kerja lapangan Mahasiswa Merdeka Belajar Kampus Merdeka (MBKM)"
-      },
-      {
-        "mitra": "University of Bologna, Italy",
-        "tingkat": "Internasional",
-        "judul": "Biological,Geological and Environmental Sciences of the \"Alma Mater Stodiorum\""
-      },
-      {
-        "mitra": "Universidad De la Republlica",
-        "tingkat": "Internasional",
-        "judul": "Concerning Collaboration in Project Evalutionary History  of the Indonesian Coelacanth"
-      },
-      {
-        "mitra": "Politeknik Pelayaran Sulawesi Utara",
-        "tingkat": "Nasional",
-        "judul": "Kerja sama Dosen, Penelitian dan Pengabdian Kepada Masyarakat"
-      },
-      {
-        "mitra": "University TBRC-UR, Japan",
-        "tingkat": "Internasional",
-        "judul": "Evolutionary and Ecological Processes for the Diversification of endemic Freshwater Fishes in  Sulawesi"
-      },
-      {
-        "mitra": "Chinese Academy of Sciences,Beijing China",
-        "tingkat": "Internasional",
-        "judul": "International centers of excellence in initiating research, training and  technology transfer in Marine Science"
-      },
-      {
-        "mitra": "Marche Polytechnical University  Ancona,Italy",
-        "tingkat": "Internasional",
-        "judul": "Technology and Science between the Institutions"
-      },
-      {
-        "mitra": "Kyushu University, Japan",
-        "tingkat": "Internasional",
-        "judul": "Scientific,academic and educational cooperation"
-      },
-      {
-        "mitra": "CSIRO Australia",
-        "tingkat": "Internasional",
-        "judul": "Fostering Scientific Cooperation on Seagrass Ecosystems for Blue Carbon and Community Livelihoods"
-      },
-      {
-        "mitra": "Minanga Divers",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Pelaksanaan Kegiatan akademik dan praktikum mahasiswa  FPIK Unsrat di bidang Kelautan dan Penyelaman"
-      }
-    ],
-    "dudi": [
-      {
-        "mitra": "PT. Perikanan Indonesia Bitung",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Pre-Feasibility Studi Hilirisasi Produk Perikanan"
-      },
-      {
-        "mitra": "PT. Nichindo Manado Suisan",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Praktek Bersama, Magang Berdampak"
-      },
-      {
-        "mitra": "PT. TJ. Silfanus",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Restorasi Terumbu Karang"
-      },
-      {
-        "mitra": "Nitto Seimo Co Ltd, Japan",
-        "tingkat": "Internasional",
-        "judul": "Perikanan Tangkap"
-      },
-      {
-        "mitra": "PT Autore Pearl",
-        "tingkat": "Nasional",
-        "judul": "Budidaya Mutiara"
-      },
-      {
-        "mitra": "PT Karua Hanesa Jaya",
-        "tingkat": "Nasional",
-        "judul": "Budidaya Udang Vanamei"
-      },
-      {
-        "mitra": "PT Celebes Minapratama",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Industri Pengolahan Ikan"
-      },
-      {
-        "mitra": "PT Citra Samudera Busantara",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Industri Pengolahan Ikan"
-      },
-      {
-        "mitra": "PT Sinar Purefood International",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Industri Pengolahan Ikan"
-      },
-      {
-        "mitra": "PT Delta Pasifik Indotuna",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Industri Pengolahan Ikan"
-      },
-      {
-        "mitra": "PT Nutrindo Freshfood International",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Industri Pengolahan Ikan"
-      },
-      {
-        "mitra": "PT Coral Eye",
-        "tingkat": "Lokal/Wilayah",
-        "judul": "Konservasi Laut"
-      }
-    ]
+  {
+   "dosen": "Dr. Ir. Jety Kornela Rangan, M.Si.",
+   "judul": "Struktur Komunitas Gastropoda Sebagai Indikator Kesehatan Lamun di Perairan Bahoi Likupang Barat, Minahasa Utara",
+   "mahasiswa": "Deandra Hadath Fauzina Simbolon Reisaldy F. Pandengkalu",
+   "tahun": "2023"
+  },
+  {
+   "dosen": "Dr. Ir. Adnan Sjaltout Wantasen, M.Si.",
+   "judul": "Pemanfaatan Sumberdaya Pesisir dan Sediaan Sumber Air Tawar Untuk Kawasan Konservasi dan Ekowisata di Desa Bahoi, Kecamatan Likupang Barat",
+   "mahasiswa": "Najira Saniapon/ 17051101024 Christine Cherry/19051101001 Tasya C. Salele/20051101017",
+   "tahun": "2023"
+  },
+  {
+   "dosen": "Prof. Dr. Ir. Silvester Benny Pratasik, M.Sc.",
+   "judul": "Inventarisasi Cumi bernilai Ekonomis di Kota Bitung Sulawesi Utara Serta Kondisi Perikanannya",
+   "mahasiswa": "WENNY OGI (NIM. 17051101023)  STEVANO G. KABURUANG (NIM. 18051101026)  QUEENSHE NOVELINA POLII (NIM. 19051101003)",
+   "tahun": "2023"
+  },
+  {
+   "dosen": "Ir. Anneke Vivera Lohoo, M.Si",
+   "judul": "Kajian Pencemaran Perairan Berdasarkan Analisis Keanekaragaman Moluska Sebagai Bioindikator",
+   "mahasiswa": "Miranti Lamaniu (210511010008)        Queenshe Novelina Polii (19051101003)                  Christofel R. Wolayan (16051101032)",
+   "tahun": "2023"
+  },
+  {
+   "dosen": "Prof. Dr. Ir. Rene Charles Kepel, DEA",
+   "judul": "Biodiversitas dan Potensi Makroalga Sebagai Bahan Sediaan Biomineral Laut",
+   "mahasiswa": "Giovani M. A. J. Tamara / 19051101019 Jonathan Y. Iyanleba / 19051101020 Febrila Amelia Sabanari / 20051101001",
+   "tahun": "2023"
+  },
+  {
+   "dosen": "Dr. Khristin Fisye Ivone Kondoy, S.Pi, M.Si.",
+   "judul": "Profil Ekosistem Lamun Sebagai Bioindikator Kesehatan Lingkungan Perairan Di Pantai Tongkaina, Kecamatan Bunaken, Kota Manado",
+   "mahasiswa": "RISWANTO MAMONTO 19051101011,GRASELA LAMBER 20051101005 ,RIZKI BAWOLE 20051101005",
+   "tahun": "2023"
+  },
+  {
+   "dosen": "Ir. Joudy Ruddy Rizal Sangari, MA, MMA.",
+   "judul": "Pemetaan Distribusi Mikroplastik Di Sedimen Sebagai Indikator Kesehatan Ekosistem Pesisir Menggunakan Python-Orange",
+   "mahasiswa": "Ester Ch.C. Losung NIM. 19051101029 Ni Gusti Ayu Pramesti NIM. 20051101009 Nita Olivia Sitorus NIM. 220511010018",
+   "tahun": "2024"
+  },
+  {
+   "dosen": "Prof. Dr. Ir. Rene Charles Kepel, DEA",
+   "judul": "Biodiversitas Makroalga Dan Potensinya Sebagai Bahan Sediaan Nutrasitika",
+   "mahasiswa": "Giovani M. A. J. Tamara Nim: 19051101019 Jonathan Y. Iyanleba Nim: 19051101020 Febrila Amelia Sabanari Nim: 20051101001",
+   "tahun": "2024"
+  },
+  {
+   "dosen": "Dr. Khristin Fisye Ivone Kondoy, S.Pi, M.Si.",
+   "judul": "Peran Vegetasi Lamun Dalam Penyerapan Karbon Sebagai Upaya Menjaga Keseimbangan Lingkungan Di Pulau Mantehage, Minahasa Utara, Sulawesi Utara",
+   "mahasiswa": "HANNA SRI MONICA MANURUNG 20051101016,GRASELA LAMBER 20051101005,RIZKI BAWOLE 20051101005",
+   "tahun": "2024"
+  },
+  {
+   "dosen": "Ir. Alex Denny Kambey, M.Sc, M.Si.",
+   "judul": "Penentuan Pencemaran Perairan Pantai Teluk Manado Berdasarkan Analisis Index Biologi Gastropoda (Moluska)",
+   "mahasiswa": "Miranti Lamaniu NIM. 210511010008 Queenshe Novelina Polii NIM. 19051101003 Christine Paat NIM. 18051101019",
+   "tahun": "2024"
+  },
+  {
+   "dosen": "Dr. Ir. Adnan Sjaltout Wantasen, M.Si.",
+   "judul": "Pemanfaatan Teknologi Sederhana Transplantasi Terumbu Karang Untuk Konservasi Dan Ekowisata Bahari Di Desa Bahoi, Kecamatan Likupang Barat, Kabupaten Minahasa Utara",
+   "mahasiswa": "Tasya C. Salele/ 2005110101 Jonatan/ 210511010013 Angel S. Lomba/ 220511010001",
+   "tahun": "2024"
+  },
+  {
+   "dosen": "Ir. Anneke Vivera Lohoo, M.Si",
+   "judul": "Status Stok Untuk Pengelolaan Berkelanjutan Ikan Pelagis Kecil Yang Menjadi Ikan Target Di Perairan Minahasa Peninsula",
+   "mahasiswa": "Sarly George Pratasik (19051101015)                 Indra Tombi (210511010003)   Joanivy B. S. V. Menajang (210511010010)",
+   "tahun": "2024"
+  },
+  {
+   "dosen": "Ir. Alex Denny Kambey, M.Sc, M.Si.",
+   "judul": "Pemanfaatan Makrozoobentos Sebagai Indikator Dalam Penentuan Pencemaran Perairan Manado",
+   "mahasiswa": "Miranti Lamaniu NIM. 210511010008 Gadryyah Rifana Tanjung NIM. 210511010020 Joanivy B. S. V. Menajang NIM. 210511010010",
+   "tahun": "2025"
+  },
+  {
+   "dosen": "Dr. Ir. Adnan Sjaltout Wantasen, M.Si.",
+   "judul": "Pemanfaatan Teknologi UAV (Unmanned Aerial Vehicle) Secara Spasial Untuk Kawasan Mangrove Sebagai Area Konservasi Dan Ekowisata Di Tiwoho, Kecamatan Wori, Kabupaten Minahasa Utara",
+   "mahasiswa": "Tasya C. Salele/ 2005110101 Jonatan/ 210511010013 Angel S. Lomba/ 220511010001",
+   "tahun": "2025"
+  },
+  {
+   "dosen": "Dr. Ir. Febry Susana  Ivonne Menajang, M.Sc, M.Si",
+   "judul": "Biodiversitas Ikan Muara Sungai Kima Dan Talawaan Di Kecamatan Wori Dengan Pendekatan Biomolekuler",
+   "mahasiswa": "Queenshe N. Polii NIM. 19051101003 Evone Intan Tompolumiu NIM. 210511010021 Nicowilliam Alexander Purukan NIM. 210511010017",
+   "tahun": "2025"
+  },
+  {
+   "dosen": "Prof. Dr. Ir. Rene Charles Kepel, DEA",
+   "judul": "Biodiversitas Makroalga Dan Potensinya Sebagai Bahan Sediaan Kosmetik",
+   "mahasiswa": "Apriali Riandy Sawal Nim: 19051101004 Dwiko Yonathan Nim: 21051101009 David Langi Nim: 22051101005",
+   "tahun": "2025"
+  },
+  {
+   "dosen": "Dr. Ir. Jety Kornela Rangan, M.Si.",
+   "judul": "Distribusi Spasial Dan Struktur Komunitas Gastropoda Dalam Kaitannya Dengan Karakteristik Lingkungan Perairan Desa Rap Rap Kabupaten Minahasa Selatan",
+   "mahasiswa": "Mervry S. Salindeho  Treysa Aringanen  Indra Tombi",
+   "tahun": "2025"
+  },
+  {
+   "dosen": "Dr. Ir. Ridwan Lasabuda, M.Si.",
+   "judul": "Pengelolaan Perikanan Pelagis Kecil Dengan Pendekatan Ekosistem Di Perairan Sulawesi Utara Dalam Rangka Blue Economy",
+   "mahasiswa": "Alfariski Safitrah Ukri / NIM.18051105018 Yogi Julio Anduk / NIM. 220511010008 Nazril Fitrawan Bokingo/ NIM. 220511010006",
+   "tahun": "2025"
+  },
+  {
+   "dosen": "Dr. Khristin Fisye Ivone Kondoy, S.Pi, M.Si.",
+   "judul": "Studi Kondisi Dan Kontribusi Ekosistem Lamun Sebagai Daerah Asuhan Biota Laut Di Pantai Sarawet Kecamatan Likupang Timur Kabupaten Minahasa Utara",
+   "mahasiswa": "DESIANA LAYANG NIM 210511010007,ROBERKAT SIMANULLANG NIM 23051101003,MELISA DJAMALUDIN 210511010015 UNIVERSITAS SAM RATULANGI",
+   "tahun": "2025"
+  },
+  {
+   "dosen": "Ir. Rose Olivia Shirley Elisabeth Mantiri, M.Sc, Ph.D",
+   "judul": "Pemetaan Komunitas Plankton di Perairan Sulawesi Utara sebagai Indikator Kesehatan Ekosistem Laut",
+   "mahasiswa": "Rowen Bonaventura (210511010005) Haryati Rabuka (210511010012) Tesalonika Stevani Koloay (210511030058)",
+   "tahun": "2025"
+  },
+  {
+   "dosen": "Ir. Stephanus Vianny Mandagi, M.App.Sc, Ph.D",
+   "judul": "Kajian tentang ekosistem karbon biru - keanekaragaman dan struktur komunitas lamun - di Kabupaten Minahasa Utara",
+   "mahasiswa": "CELINE KIMBERLY EUGENEA PINONTOAN / 240511010021; MICHIO KEZIA IVANA PATINDAGHENG / 230511010033;  JESICA ANATASYA DANDEL / 230511010018",
+   "tahun": "2025"
+  },
+  {
+   "dosen": "Ir. Stephanus Vianny Mandagi, M.App.Sc, Ph.D",
+   "judul": "Kajian Stok Perikanan Pelagis Kecil Di Sulawesi Utara Khususnya Di Wpp 715",
+   "mahasiswa": "KEKEN ANGLIYANA RAFII / 19051101022;  Christine Cherry / 19051101001; Mutiara Ratih / 19051101002",
+   "tahun": "2023"
+  },
+  {
+   "dosen": "Ir. Stephanus Vianny Mandagi, M.App.Sc, Ph.D",
+   "judul": "Potensi Karbon Pada Sedimen Hutan Mangrove Di Kabupaten Minahasa Utara",
+   "mahasiswa": "TREYSA ARINGANEN / 210511010006; MEYCHEN PRATISYA MANALIP / 20051101013; TIRSA POMALINGO / 20051101014",
+   "tahun": "2024"
+  },
+  {
+   "dosen": "Dr.Ir. Ari Berty Rondonuwu,M.Sc.M.Si.",
+   "judul": "Kajian Pelekatan, Pertumbuhan Hewan Karang Dan Rekruitmen Ikan Karang Pada Media Terumbu Buatan Di Teluk Manado",
+   "mahasiswa": "Queenshe N. Polii NIM. 19051101003 David Langi NIM. 220511010005 Xavier Leon Tamu'u NIM. 220511010003",
+   "tahun": "2025"
+  },
+  {
+   "dosen": "Dr.Ir. Ari Berty Rondonuwu,M.Sc.M.Si.",
+   "judul": "Keragaman Genetik Ikan Di Beberapa Muara Sungai Teluk Buyat Dan Teluk Totok, Kabupaten Minahasa Tenggara",
+   "mahasiswa": "Queenshe N. Polii NIM. 19051101003 Stevanno G. Kaburuang NIM. 18051101026 Rizky Bawole NIM. 19051101023",
+   "tahun": "2024"
+  },
+  {
+   "dosen": "Dr.Ir. Ari Berty Rondonuwu,M.Sc.M.Si.",
+   "judul": "Kajian Hidrooseanografi dan Ekosistem Pesisir Desa Lilang Kabupaten Minahasa Utara (Wilayah Perencanaan/Alokasi Ruang Laut)",
+   "mahasiswa": "Queenshe Polii;  Andreas Leleran",
+   "tahun": "2023"
   }
+ ],
+ "keterlibatan_pkm": [
+  {
+   "dosen": "Adnan Sjaltout Wantasen",
+   "judul": "PKM Kelompok Pesisir Desa Arakan Kecamatan Tatapaan Kabupaten Minahasa Selatan",
+   "mahasiswa": "Suriani Sindi Awuy, Christina Putri Lamogia, Fransesco Wowiling",
+   "tahun": "2025"
+  },
+  {
+   "dosen": "Stephanus Vianny Mandagi",
+   "judul": "Pelatihan Penggunaan Logbook Penangkapan Ikan Untuk Menunjang Pengelolaan Perikanan Pelagis Kecil Berbasis Masyarakat Desa Kampung Ambon, Likupang Timur",
+   "mahasiswa": "Celine Kimberly Eugenea Pinontoan, Michio Kezia Ivana Patindagheng, Jesica Anantasya Dandel",
+   "tahun": "2025"
+  },
+  {
+   "dosen": "Khristin I.F Kondoy",
+   "judul": "Pelatihan Penggunaan Logbook Penangkapan Ikan Untuk Menunjang Pengelolaan Perikanan Pelagis Kecil Berbasis Masyarakat Desa Kampung Ambon, Likupang Timur",
+   "mahasiswa": "Celine Kimberly Eugenea Pinontoan, Michio Kezia Ivana Patindagheng, Jesica Anantasya Dandel",
+   "tahun": "2025"
+  },
+  {
+   "dosen": "Adnan Sjaltout Wantasen",
+   "judul": "PKM Kelompok Nelayan Desa Kampung Ambon Kecamatan Likupang Timur Kabupaten Minahasa Utara",
+   "mahasiswa": "—",
+   "tahun": "2024"
+  },
+  {
+   "dosen": "Rene Charles Kepel",
+   "judul": "Pengembangan Makroalga Coklat Turbinaria Ornata di Perairan Desa Kema II, Kecamatan Kema, Kabupaten Minahasa Utara",
+   "mahasiswa": "—",
+   "tahun": "2025"
+  },
+  {
+   "dosen": "Rene Charles Kepel",
+   "judul": "Pelatihan Pembuatan Karagenan dari Alga Kappaphycus Alvarezii pada Masyarakat di Desa Buku Utara, Kecamatan Belang, Kabupaten Minahasa Tenggara",
+   "mahasiswa": "",
+   "tahun": "2025"
+  },
+  {
+   "dosen": "Rene Charles Kepel",
+   "judul": "Penyuluhan tentang Pewarna dan Pengolahan Alga Halimenia Durvillei Menjadi Pewarna Merah di Wanita Kaum Ibu GMIM Eirene, Desa Kema I, Kabupaten Minahasa Utara",
+   "mahasiswa": "",
+   "tahun": "2024"
+  },
+  {
+   "dosen": "Ari Berty Rondonuwu",
+   "judul": "Pemanfaatan limbah botol plastik sebagai tempat GPS dan tali nilon sebagai penghubung GPS dan Penyelam SCUBA",
+   "mahasiswa": "Kevin Antou; Queenshe Pilii",
+   "tahun": "2022"
+  }
+ ],
+ "publikasi_mahasiswa": {
+  "ringkasan": {
+   "total_terakreditasi_nasional": 30,
+   "sebaran": "TS-2 (2023): 18 judul · TS-1 (2024): 10 judul · TS (2025): 2 judul",
+   "catatan": "Berdasarkan Tabel 3.4B LKPS: 30 judul publikasi mahasiswa di jurnal nasional terakreditasi. Sebagian besar terbit di Jurnal Ilmiah Platax (ejournal.unsrat.ac.id)."
+  },
+  "daftar": [
+   {
+    "mahasiswa": "Mutiara Ratih (NIM 19051101002) Trifena Kindangen (NIM 19051101018) Rizki Bawole (NIM 19051101023)",
+    "judul": "Penggunaan Algoritma Tropfishr Untuk Penentuan Status Stok Perikanan Kerapu Di Kabupaten Kepulauan Sangihe (WPPNRI 716)",
+    "pembimbing": "Ir. Joudy Ruddy Rizal Sangari, MA, MMA.",
+    "tahun": "2023"
+   },
+   {
+    "mahasiswa": "Celine Kimberly Eugenea Pinontoan, NIM: 240511010021 Michio Kezia Ivana Patindagheng, NIM: 230511010033 Jesica Anatasya Dandel, NIM: 230511010018",
+    "judul": "Kajian Stok Perikanan Pelagis Kecil di Sulawesi Utara khususnya di WPP 715",
+    "pembimbing": "Ir. Stephanus Vianny Mandagi, M.App.Sc, Ph.D",
+    "tahun": "2023"
+   },
+   {
+    "mahasiswa": "Queenshe N. Polii Nim: 19051101003 Miranti Lamaniu Nim: 210511010008 Frane F. Pomohon Nim: 20051101010",
+    "judul": "Keberhasilan Hidup Dan Laju Pertumbuhan Karang Yang Di Transplantasi Pada Komunitas Karang Mati Sebagai Proses Rehabilitasi Karang",
+    "pembimbing": "Ir. Alex Denny Kambey, M.Sc, M.Si.",
+    "tahun": "2023"
+   },
+   {
+    "mahasiswa": "Deandra Hadath Fauzina Simbolon Reisaldy F. Pandengkalu",
+    "judul": "Struktur Komunitas Gastropoda Sebagai Indikator Kesehatan Lamun di Perairan Bahoi Likupang Barat, Minahasa Utara",
+    "pembimbing": "Dr. Ir. Jety Kornela Rangan, M.Si.",
+    "tahun": "2023"
+   },
+   {
+    "mahasiswa": "Najira Saniapon/ 17051101024 Christine Cherry/19051101001 Tasya C. Salele/20051101017",
+    "judul": "Pemanfaatan Sumberdaya Pesisir dan Sediaan Sumber Air Tawar Untuk Kawasan Konservasi dan Ekowisata di Desa Bahoi, Kecamatan Likupang Barat",
+    "pembimbing": "Dr. Ir. Adnan Sjaltout Wantasen, M.Si.",
+    "tahun": "2023"
+   },
+   {
+    "mahasiswa": "WENNY OGI (NIM. 17051101023)  STEVANO G. KABURUANG (NIM. 18051101026)  QUEENSHE NOVELINA POLII (NIM. 19051101003)",
+    "judul": "Inventarisasi Cumi bernilai Ekonomis di Kota Bitung Sulawesi Utara Serta Kondisi Perikanannya",
+    "pembimbing": "Prof. Dr. Ir. Silvester Benny Pratasik, M.Sc.",
+    "tahun": "2023"
+   },
+   {
+    "mahasiswa": "Miranti Lamaniu (210511010008)        Queenshe Novelina Polii (19051101003)                  Christofel R. Wolayan (16051101032)",
+    "judul": "Kajian Pencemaran Perairan Berdasarkan Analisis Keanekaragaman Moluska Sebagai Bioindikator",
+    "pembimbing": "Ir. Anneke Vivera Lohoo, M.Si",
+    "tahun": "2023"
+   },
+   {
+    "mahasiswa": "Giovani M. A. J. Tamara / 19051101019 Jonathan Y. Iyanleba / 19051101020 Febrila Amelia Sabanari / 20051101001",
+    "judul": "Biodiversitas dan Potensi Makroalga Sebagai Bahan Sediaan Biomineral Laut",
+    "pembimbing": "Prof. Dr. Ir. Rene Charles Kepel, DEA",
+    "tahun": "2023"
+   },
+   {
+    "mahasiswa": "RISWANTO MAMONTO 19051101011,GRASELA LAMBER 20051101005 ,RIZKI BAWOLE 20051101005",
+    "judul": "Profil Ekosistem Lamun Sebagai Bioindikator Kesehatan Lingkungan Perairan Di Pantai Tongkaina, Kecamatan Bunaken, Kota Manado",
+    "pembimbing": "Dr. Khristin Fisye Ivone Kondoy, S.Pi, M.Si.",
+    "tahun": "2023"
+   },
+   {
+    "mahasiswa": "Ester Ch.C. Losung NIM. 19051101029 Ni Gusti Ayu Pramesti NIM. 20051101009 Nita Olivia Sitorus NIM. 220511010018",
+    "judul": "Pemetaan Distribusi Mikroplastik Di Sedimen Sebagai Indikator Kesehatan Ekosistem Pesisir Menggunakan Python-Orange",
+    "pembimbing": "Ir. Joudy Ruddy Rizal Sangari, MA, MMA.",
+    "tahun": "2024"
+   },
+   {
+    "mahasiswa": "Giovani M. A. J. Tamara Nim: 19051101019 Jonathan Y. Iyanleba Nim: 19051101020 Febrila Amelia Sabanari Nim: 20051101001",
+    "judul": "Biodiversitas Makroalga Dan Potensinya Sebagai Bahan Sediaan Nutrasitika",
+    "pembimbing": "Prof. Dr. Ir. Rene Charles Kepel, DEA",
+    "tahun": "2024"
+   },
+   {
+    "mahasiswa": "HANNA SRI MONICA MANURUNG 20051101016,GRASELA LAMBER 20051101005,RIZKI BAWOLE 20051101005",
+    "judul": "Peran Vegetasi Lamun Dalam Penyerapan Karbon Sebagai Upaya Menjaga Keseimbangan Lingkungan Di Pulau Mantehage, Minahasa Utara, Sulawesi Utara",
+    "pembimbing": "Dr. Khristin Fisye Ivone Kondoy, S.Pi, M.Si.",
+    "tahun": "2024"
+   },
+   {
+    "mahasiswa": "Miranti Lamaniu NIM. 210511010008 Queenshe Novelina Polii NIM. 19051101003 Christine Paat NIM. 18051101019",
+    "judul": "Penentuan Pencemaran Perairan Pantai Teluk Manado Berdasarkan Analisis Index Biologi Gastropoda (Moluska)",
+    "pembimbing": "Ir. Alex Denny Kambey, M.Sc, M.Si.",
+    "tahun": "2024"
+   },
+   {
+    "mahasiswa": "Tasya C. Salele/ 2005110101 Jonatan/ 210511010013 Angel S. Lomba/ 220511010001",
+    "judul": "Pemanfaatan Teknologi Sederhana Transplantasi Terumbu Karang Untuk Konservasi Dan Ekowisata Bahari Di Desa Bahoi, Kecamatan Likupang Barat, Kabupaten Minahasa Utara",
+    "pembimbing": "Dr. Ir. Adnan Sjaltout Wantasen, M.Si.",
+    "tahun": "2024"
+   },
+   {
+    "mahasiswa": "Sarly George Pratasik (19051101015)                 Indra Tombi (210511010003)   Joanivy B. S. V. Menajang (210511010010)",
+    "judul": "Status Stok Untuk Pengelolaan Berkelanjutan Ikan Pelagis Kecil Yang Menjadi Ikan Target Di Perairan Minahasa Peninsula",
+    "pembimbing": "Ir. Anneke Vivera Lohoo, M.Si",
+    "tahun": "2024"
+   },
+   {
+    "mahasiswa": "Miranti Lamaniu NIM. 210511010008 Gadryyah Rifana Tanjung NIM. 210511010020 Joanivy B. S. V. Menajang NIM. 210511010010",
+    "judul": "Pemanfaatan Makrozoobentos Sebagai Indikator Dalam Penentuan Pencemaran Perairan Manado",
+    "pembimbing": "Ir. Alex Denny Kambey, M.Sc, M.Si.",
+    "tahun": "2025"
+   },
+   {
+    "mahasiswa": "Tasya C. Salele/ 2005110101 Jonatan/ 210511010013 Angel S. Lomba/ 220511010001",
+    "judul": "Pemanfaatan Teknologi UAV (Unmanned Aerial Vehicle) Secara Spasial Untuk Kawasan Mangrove Sebagai Area Konservasi Dan Ekowisata Di Tiwoho, Kecamatan Wori, Kabupaten Minahasa Utara",
+    "pembimbing": "Dr. Ir. Adnan Sjaltout Wantasen, M.Si.",
+    "tahun": "2025"
+   },
+   {
+    "mahasiswa": "Queenshe N. Polii NIM. 19051101003 Evone Intan Tompolumiu NIM. 210511010021 Nicowilliam Alexander Purukan NIM. 210511010017",
+    "judul": "Biodiversitas Ikan Muara Sungai Kima Dan Talawaan Di Kecamatan Wori Dengan Pendekatan Biomolekuler",
+    "pembimbing": "Dr. Ir. Febry Susana  Ivonne Menajang, M.Sc, M.Si",
+    "tahun": "2025"
+   },
+   {
+    "mahasiswa": "Apriali Riandy Sawal Nim: 19051101004 Dwiko Yonathan Nim: 21051101009 David Langi Nim: 22051101005",
+    "judul": "Biodiversitas Makroalga Dan Potensinya Sebagai Bahan Sediaan Kosmetik",
+    "pembimbing": "Prof. Dr. Ir. Rene Charles Kepel, DEA",
+    "tahun": "2025"
+   },
+   {
+    "mahasiswa": "Mervry S. Salindeho  Treysa Aringanen  Indra Tombi",
+    "judul": "Distribusi Spasial Dan Struktur Komunitas Gastropoda Dalam Kaitannya Dengan Karakteristik Lingkungan Perairan Desa Rap Rap Kabupaten Minahasa Selatan",
+    "pembimbing": "Dr. Ir. Jety Kornela Rangan, M.Si.",
+    "tahun": "2025"
+   },
+   {
+    "mahasiswa": "Alfariski Safitrah Ukri / NIM.18051105018 Yogi Julio Anduk / NIM. 220511010008 Nazril Fitrawan Bokingo/ NIM. 220511010006",
+    "judul": "Pengelolaan Perikanan Pelagis Kecil Dengan Pendekatan Ekosistem Di Perairan Sulawesi Utara Dalam Rangka Blue Economy",
+    "pembimbing": "Dr. Ir. Ridwan Lasabuda, M.Si.",
+    "tahun": "2025"
+   },
+   {
+    "mahasiswa": "DESIANA LAYANG NIM 210511010007,ROBERKAT SIMANULLANG NIM 23051101003,MELISA DJAMALUDIN 210511010015 UNIVERSITAS SAM RATULANGI",
+    "judul": "Studi Kondisi Dan Kontribusi Ekosistem Lamun Sebagai Daerah Asuhan Biota Laut Di Pantai Sarawet Kecamatan Likupang Timur Kabupaten Minahasa Utara",
+    "pembimbing": "Dr. Khristin Fisye Ivone Kondoy, S.Pi, M.Si.",
+    "tahun": "2025"
+   },
+   {
+    "mahasiswa": "Rowen Bonaventura (210511010005) Haryati Rabuka (210511010012) Tesalonika Stevani Koloay (210511030058)",
+    "judul": "Pemetaan Komunitas Plankton di Perairan Sulawesi Utara sebagai Indikator Kesehatan Ekosistem Laut",
+    "pembimbing": "Ir. Rose Olivia Shirley Elisabeth Mantiri, M.Sc, Ph.D",
+    "tahun": "2025"
+   },
+   {
+    "mahasiswa": "CELINE KIMBERLY EUGENEA PINONTOAN / 240511010021; MICHIO KEZIA IVANA PATINDAGHENG / 230511010033;  JESICA ANATASYA DANDEL / 230511010018",
+    "judul": "Kajian tentang ekosistem karbon biru - keanekaragaman dan struktur komunitas lamun - di Kabupaten Minahasa Utara",
+    "pembimbing": "Ir. Stephanus Vianny Mandagi, M.App.Sc, Ph.D",
+    "tahun": "2025"
+   },
+   {
+    "mahasiswa": "KEKEN ANGLIYANA RAFII / 19051101022;  Christine Cherry / 19051101001; Mutiara Ratih / 19051101002",
+    "judul": "Kajian Stok Perikanan Pelagis Kecil Di Sulawesi Utara Khususnya Di Wpp 715",
+    "pembimbing": "Ir. Stephanus Vianny Mandagi, M.App.Sc, Ph.D",
+    "tahun": "2023"
+   },
+   {
+    "mahasiswa": "TREYSA ARINGANEN / 210511010006; MEYCHEN PRATISYA MANALIP / 20051101013; TIRSA POMALINGO / 20051101014",
+    "judul": "Potensi Karbon Pada Sedimen Hutan Mangrove Di Kabupaten Minahasa Utara",
+    "pembimbing": "Ir. Stephanus Vianny Mandagi, M.App.Sc, Ph.D",
+    "tahun": "2024"
+   },
+   {
+    "mahasiswa": "Queenshe N. Polii NIM. 19051101003 David Langi NIM. 220511010005 Xavier Leon Tamu'u NIM. 220511010003",
+    "judul": "Kajian Pelekatan, Pertumbuhan Hewan Karang Dan Rekruitmen Ikan Karang Pada Media Terumbu Buatan Di Teluk Manado",
+    "pembimbing": "Dr.Ir. Ari Berty Rondonuwu,M.Sc.M.Si.",
+    "tahun": "2025"
+   },
+   {
+    "mahasiswa": "Queenshe N. Polii NIM. 19051101003 Stevanno G. Kaburuang NIM. 18051101026 Rizky Bawole NIM. 19051101023",
+    "judul": "Keragaman Genetik Ikan Di Beberapa Muara Sungai Teluk Buyat Dan Teluk Totok, Kabupaten Minahasa Tenggara",
+    "pembimbing": "Dr.Ir. Ari Berty Rondonuwu,M.Sc.M.Si.",
+    "tahun": "2024"
+   },
+   {
+    "mahasiswa": "Queenshe Polii;  Andreas Leleran",
+    "judul": "Kajian Hidrooseanografi dan Ekosistem Pesisir Desa Lilang Kabupaten Minahasa Utara (Wilayah Perencanaan/Alokasi Ruang Laut)",
+    "pembimbing": "Dr.Ir. Ari Berty Rondonuwu,M.Sc.M.Si.",
+    "tahun": "2023"
+   }
+  ]
+ }
 }

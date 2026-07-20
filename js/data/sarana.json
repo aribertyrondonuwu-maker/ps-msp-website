@@ -1,42 +1,171 @@
 {
-  "_meta": {
-    "terakhir_diperbarui": "2026-07-17",
-    "sumber": "LED IAPS 1.0 K.2.1; Peralatan_Laboratorium_FPIK_Unsrat.docx; Ketersediaan_Laboratorium_FPIK_MSD_Perairan_v2.docx"
+ "_meta": {
+  "terakhir_diperbarui": "2026-07-20",
+  "sumber": "SK Rektor No. 1348/UN12/KP/2022 (30 September 2022); Ketersediaan_Laboratorium_FPIK_MSD_Perairan_v2; Peralatan_Laboratorium_FPIK_Unsrat; LED IAPS 1.0 K.2.1",
+  "catatan": "Daftar 14 laboratorium sesuai SK Rektor resmi. Kolom 'url_dokumen' dan 'gambar' dikosongkan agar admin dapat mengisi tautan bukti/foto lab melalui panel admin."
+ },
+ "ringkasan": {
+  "jumlah_lab_aktif": 14,
+  "dasar_hukum": "SK Rektor No. 1348/UN12/KP/2022 (30 September 2022)",
+  "investasi_rata_rata_tahunan": "Rp 81,7 juta/tahun tingkat PS MSP; Rp 229 juta/tahun tingkat UPPS (2023–2025)",
+  "kepuasan_mahasiswa": "65% menilai fasilitas praktikum & laboratorium Sangat Baik/Baik (30% sangat baik, 35% baik)"
+ },
+ "laboratorium": [
+  {
+   "no": 1,
+   "nama": "Laboratorium Pesisir dan Pulau-Pulau Kecil",
+   "kepala": "Dr. Ir. Hariyani Sambali, M.Sc",
+   "fungsi": "Penelitian ekosistem pesisir, mangrove, terumbu karang dan pulau kecil",
+   "relevansi": "Sangat Relevan",
+   "url_dokumen": "",
+   "gambar": ""
   },
-  "ringkasan": {
-    "jumlah_lab_aktif": 14,
-    "dasar_hukum": "SK Rektor No. 1348/UN12/KP/2022 (30 September 2022)",
-    "investasi_rata_rata_tahunan": "Rp 81,7 juta/tahun tingkat PS MSP; Rp 229 juta/tahun tingkat UPPS (2023–2025)",
-    "kepuasan_mahasiswa": "65% menilai fasilitas praktikum & laboratorium Sangat Baik/Baik (30% sangat baik, 35% baik)"
+  {
+   "no": 2,
+   "nama": "Laboratorium Teknologi Penanganan dan Pengolahan Hasil Perikanan",
+   "kepala": "Dr. Ir. Hens Onibala, M.Sc",
+   "fungsi": "Analisis kualitas dan pengolahan produk perikanan",
+   "relevansi": "Relevan",
+   "url_dokumen": "",
+   "gambar": ""
   },
-  "laboratorium": [
-    {
-      "nama": "Marine Field Station Likupang",
-      "highlight": true,
-      "deskripsi": "Laboratorium lapangan alam di kawasan KEK Pariwisata Likupang — akses langsung ke ekosistem terumbu karang, lamun, dan mangrove Coral Triangle. Fasilitas penyelaman, survei bawah air, dan pengukuran oseanografi. Pengajuan akses: 14 hari sebelum kegiatan (SOP No. 54)."
-    },
-    { "nama": "Lab. Bioekologi Perairan", "deskripsi": "Peralatan analisis kualitas air, mikroskop, instrumen fisika-kimia perairan. Peminjaman: 2–3 hari kerja (SOP No. 51)." },
-    { "nama": "Lab. Bioteknologi dan Farmasetika Laut", "deskripsi": "Analisis molekuler, elektroforesis, PCR, sentrifuge. Peminjaman: 3–5 hari kerja (biosafety, kultur mikroba, uji bioaktif)." },
-    { "nama": "Lab. Pesisir dan Pulau-Pulau Kecil", "deskripsi": "Peralatan survei lapangan, GPS, instrumen ekosistem pesisir. Peminjaman: 5 hari kerja (SOP No. 47)." },
-    { "nama": "Lab. Kesehatan Ikan, Lingkungan dan Toksikologi", "deskripsi": "Horiba U50, AAS, HPLC, Laminar Flow, Mikroskop, DO Meter, Refractometer, Centrifuge, Autoclave, Spektrometer." },
-    { "nama": "Lab. Teknologi Akuakultur", "deskripsi": "42 akuarium bersekat, kolam beton berbagai ukuran, peralatan kualitas air, Laminar Flow, Incubator, Microtome." },
-    { "nama": "Lab. Pengujian Produk Perikanan dan Kelautan (LP3K)", "deskripsi": "Terakreditasi KAN (satu-satunya di FPIK). Spektrofotometer UV-Vis, Centrifuge, HPLC, Laminar Air Flow, Shaking Incubator, Autoclave, Freezer." },
-    { "nama": "Lab. Rekayasa Perikanan Tangkap", "deskripsi": "Furuno Satelit Navigator, Water Quality Measurement, Water Flow Probe, Bathymetry." },
-    { "nama": "Lab. Sosial Ekonomi Perikanan", "deskripsi": "Mendukung analisis data sosial-ekonomi perikanan (SPSS, SAS, E-VIEW)." },
-    { "nama": "UPT Laboratorium Terpadu Unsrat (tingkat universitas)", "deskripsi": "Spektrofotometer UV-Vis, HPLC, FTIR, XRF, Autoclave, Rotary Evaporator, CO₂ Incubator — dapat diakses mahasiswa/dosen PS MSP." },
-    { "nama": "Laboratorium Biomolekuler Unsrat (BSL-2+)", "deskripsi": "5 unit PCR, DNA barcoding, analisis eDNA, genomik perairan — tingkat universitas." }
-  ],
-  "standar_pengelolaan": [
-    "54 SOP Layanan Laboratorium (Rencana Pembangunan ZI FPIK 2025–2026)",
-    "SOP Penggunaan Laboratorium (No. 15) — penjadwalan 2–3 hari",
-    "SOP Peminjaman Alat & Bahan Lab (No. 16) — layanan hari yang sama",
-    "SOP Umum K3 Laboratorium (No. 36) — induksi K3, APD, penanganan limbah",
-    "SOP Pengelolaan Bahan Kimia Berbahaya (No. 37) — B3",
-    "SOP K3 Penelitian Lapangan Marine & Coastal (No. 38) — risk assessment, buddy system",
-    "SOP Audit dan Inspeksi K3 (No. 45) — inspeksi bulanan, audit tahunan"
-  ],
-  "tarif_layanan": {
-    "keterangan": "Tarif UPT Lab Terpadu Unsrat ditetapkan formal melalui SK Rektor No. 339/UN12/LL/2025, akuntabel sesuai ketentuan BLU.",
-    "url": ""
+  {
+   "no": 3,
+   "nama": "Laboratorium Bioekologi Air Tawar",
+   "kepala": "Dr. Ir. Nego E. Bataragoa, M.Sc",
+   "fungsi": "Studi ekologi perairan tawar, keanekaragaman biota air tawar",
+   "relevansi": "Sangat Relevan",
+   "url_dokumen": "",
+   "gambar": ""
+  },
+  {
+   "no": 4,
+   "nama": "Laboratorium Teknologi Akuakultur",
+   "kepala": "Ir. Jopy D. Mudeng, M.Si",
+   "fungsi": "Penelitian budidaya perairan, teknik akuakultur berkelanjutan",
+   "relevansi": "Relevan",
+   "url_dokumen": "",
+   "gambar": ""
+  },
+  {
+   "no": 5,
+   "nama": "Laboratorium Pengendalian Mutu Hasil Perikanan",
+   "kepala": "Dr. Ir. Lena J. Damongilala, M.Si",
+   "fungsi": "Uji mutu dan keamanan produk perikanan",
+   "relevansi": "Relevan",
+   "url_dokumen": "",
+   "gambar": ""
+  },
+  {
+   "no": 6,
+   "nama": "Laboratorium Sosial Ekonomi Perikanan",
+   "kepala": "Dr. Ir. Jeannette F. Pangemanan, M.Si",
+   "fungsi": "Analisis sosial, ekonomi, dan kebijakan pengelolaan sumber daya perairan",
+   "relevansi": "Sangat Relevan",
+   "url_dokumen": "",
+   "gambar": ""
+  },
+  {
+   "no": 7,
+   "nama": "Laboratorium Biologi Kelautan",
+   "kepala": "Dr. Indri Shelovita Manembu, S.IK., M.Si",
+   "fungsi": "Studi keanekaragaman hayati laut, ekologi biota kelautan",
+   "relevansi": "Sangat Relevan",
+   "url_dokumen": "",
+   "gambar": ""
+  },
+  {
+   "no": 8,
+   "nama": "Laboratorium Geomorfologi Pantai",
+   "kepala": "Ir. Jane M. Mamuaja, M.Sc., Ph.D",
+   "fungsi": "Analisis perubahan morfologi pantai, sedimentasi dan dinamika perairan",
+   "relevansi": "Sangat Relevan",
+   "url_dokumen": "",
+   "gambar": ""
+  },
+  {
+   "no": 9,
+   "nama": "Laboratorium Rekayasa Perikanan Tangkap",
+   "kepala": "Prof. Dr. Ir. Wilhelmina Patty, M.Sc",
+   "fungsi": "Teknologi penangkapan ikan, alat tangkap ramah lingkungan",
+   "relevansi": "Relevan",
+   "url_dokumen": "",
+   "gambar": ""
+  },
+  {
+   "no": 10,
+   "nama": "Laboratorium Biologi Molekular dan Farmakologi",
+   "kepala": "Dr. Veibe Warouw, S.Pi., M.Si",
+   "fungsi": "Analisis genetik, biologi molekuler biota perairan",
+   "relevansi": "Sangat Relevan",
+   "url_dokumen": "",
+   "gambar": ""
+  },
+  {
+   "no": 11,
+   "nama": "Laboratorium Kesehatan Ikan, Lingkungan dan Toksikologi",
+   "kepala": "Dr. Ir. Reny L. Kreckhoff, M.Si",
+   "fungsi": "Analisis kesehatan perairan, pencemaran dan uji toksikologi",
+   "relevansi": "Sangat Relevan",
+   "url_dokumen": "",
+   "gambar": ""
+  },
+  {
+   "no": 12,
+   "nama": "Laboratorium Field Station Likupang",
+   "kepala": "Dr. Ir. Lefrand Manoppo, M.Si",
+   "fungsi": "Penelitian lapangan ekosistem laut di kawasan Likupang (KEK)",
+   "relevansi": "Sangat Relevan",
+   "highlight": true,
+   "url_dokumen": "",
+   "gambar": ""
+  },
+  {
+   "no": 13,
+   "nama": "Laboratorium Penjaminan Mutu",
+   "kepala": "Dr.rer.nat. Robert Antonius Bara, S.IK., M.Sc",
+   "fungsi": "Sistem jaminan mutu penelitian dan standarisasi prosedur",
+   "relevansi": "Relevan",
+   "url_dokumen": "",
+   "gambar": ""
+  },
+  {
+   "no": 14,
+   "nama": "Laboratorium Pengujian Produk Perikanan dan Kelautan",
+   "kepala": "Ir. Elvy Like Ginting, M.Si., Ph.D",
+   "fungsi": "Pengujian produk perikanan untuk sertifikasi dan keamanan pangan",
+   "relevansi": "Relevan",
+   "url_dokumen": "",
+   "gambar": ""
   }
+ ],
+ "lab_universitas": [
+  {
+   "nama": "UPT Laboratorium Terpadu Unsrat",
+   "dasar_hukum": "SK Rektor No. 2084/UN12/LL/2022; tarif SK Rektor No. 339/UN12/LL/2025",
+   "deskripsi": "Pusat pengujian multidisiplin tingkat universitas: Analisis Proksimat, Antioksidan (DPPH), HPLC, Spektrofotometri UV-Vis. Mendukung analisis gizi biota, kualitas air, dan senyawa bioaktif MSP.",
+   "url_dokumen": "",
+   "gambar": ""
+  },
+  {
+   "nama": "Laboratorium Biomolekuler Unsrat (BSL-2+ standar WHO)",
+   "dasar_hukum": "SK Menkes No. HK.01.07/MENKES/4642/2021",
+   "deskripsi": "Kapasitas 1.500 sampel/hari, 5 unit PCR, surveilans genomik. Mendukung DNA barcoding, eDNA, deteksi patogen perairan, dan toksikologi molekuler MSP. Peraih PPKM Awards kategori Lab Surveilans Genomik Terbaik.",
+   "url_dokumen": "",
+   "gambar": ""
+  }
+ ],
+ "standar_pengelolaan": [
+  "54 SOP Layanan Laboratorium (Rencana Pembangunan ZI FPIK 2025–2026)",
+  "SOP Penggunaan Laboratorium (No. 15) — penjadwalan 2–3 hari",
+  "SOP Peminjaman Alat & Bahan Lab (No. 16) — layanan hari yang sama",
+  "SOP Umum K3 Laboratorium (No. 36) — induksi K3, APD, penanganan limbah",
+  "SOP Pengelolaan Bahan Kimia Berbahaya (No. 37) — B3",
+  "SOP K3 Penelitian Lapangan Marine & Coastal (No. 38) — risk assessment, buddy system",
+  "SOP Audit dan Inspeksi K3 (No. 45) — inspeksi bulanan, audit tahunan"
+ ],
+ "tarif_layanan": {
+  "keterangan": "Tarif UPT Lab Terpadu Unsrat ditetapkan formal melalui SK Rektor No. 339/UN12/LL/2025, akuntabel sesuai ketentuan BLU.",
+  "url": ""
+ }
 }
