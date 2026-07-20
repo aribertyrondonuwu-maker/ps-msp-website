@@ -383,8 +383,8 @@ img.dosen-photo { display: block; }
 /* ── Berita: gambar kiri, narasi kanan (halaman detail) ── */
 .berita-layout { display: flex; gap: 32px; align-items: flex-start; }
 .berita-layout .berita-konten { flex: 1 1 0; min-width: 0; }
-.berita-foto-box { border-radius: 14px; overflow: hidden; box-shadow: var(--shadow); background: #e8eef2; }
-.berita-foto-box img { width: 100%; height: auto; display: block; object-fit: cover; }
+.berita-foto-box { border-radius: 14px; overflow: hidden; box-shadow: var(--shadow); background: #f2f5f7; }
+.berita-foto-box img { width: 100%; height: auto; display: block; }
 @media (max-width: 720px) {
   .berita-layout { flex-direction: column; }
   .berita-foto-box { flex: 0 0 auto !important; max-width: 100% !important; width: 100%; }
@@ -392,13 +392,13 @@ img.dosen-photo { display: block; }
 
 /* ── Berita: kartu daftar dengan thumbnail (kiri gambar, kanan teks) ── */
 .berita-list-card.has-thumb { display: flex; gap: 18px; align-items: stretch; padding: 0; overflow: hidden; }
-.berita-list-thumb { flex: 0 0 200px; max-width: 200px; overflow: hidden; background: #e8eef2; }
-.berita-list-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; min-height: 140px; }
+.berita-list-thumb { flex: 0 0 200px; max-width: 200px; overflow: hidden; background: #f2f5f7; display: flex; align-items: center; justify-content: center; }
+.berita-list-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; min-height: 140px; max-height: 240px; }
 .berita-list-card.has-thumb .berita-list-body { padding: 18px 20px; display: flex; flex-direction: column; }
 .berita-list-card:not(.has-thumb) { display: block; }
 @media (max-width: 600px) {
   .berita-list-card.has-thumb { flex-direction: column; }
-  .berita-list-thumb { flex: 0 0 auto; max-width: 100%; height: 180px; }
+  .berita-list-thumb { flex: 0 0 auto; max-width: 100%; height: 200px; }
 }
 
 /* ── Admin: preview & kontrol foto berita ── */
@@ -409,3 +409,7 @@ img.dosen-photo { display: block; }
 .berita-foto-controls { flex: 1 1 240px; display: flex; flex-direction: column; gap: 10px; }
 .berita-size-label { display: flex; flex-direction: column; gap: 4px; font-size: 0.82rem; color: var(--muted); font-weight: 600; }
 .berita-size-label select { padding: 8px 10px; border-radius: 8px; border: 1px solid var(--border); font-family: var(--font-body); }
+
+/* Berita: mode poster penuh (gambar di atas, teks di bawah) */
+.berita-layout.foto-atas { flex-direction: column; }
+.berita-layout.foto-atas .berita-foto-box { width: 100%; }
