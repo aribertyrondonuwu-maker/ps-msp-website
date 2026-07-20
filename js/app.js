@@ -67,6 +67,7 @@ renderDosen();
 const SEARCH_INDEX = [
   { judul: 'Profil Program Studi', url: 'profil.html', kata: 'profil sejarah visi misi tujuan struktur organisasi pimpinan sambutan koordinator renstra' },
   { judul: 'Akreditasi', url: 'akreditasi.html', kata: 'akreditasi lam ptip unggul status sk dokumen legal landasan hukum' },
+  { judul: 'HIMASUPER (Organisasi Mahasiswa)', url: 'kemahasiswaan.html#himasuper', kata: 'himasuper mapala zooxanthellae organisasi himpunan mahasiswa pecinta alam ormawa kegiatan non akademik kepemimpinan konservasi terumbu karang kaderisasi program kerja' },
   { judul: 'Galeri Media', url: 'galeri-media.html', kata: 'galeri media video youtube tiktok facebook dokumentasi sosial media konten kegiatan' },
   { judul: 'Publikasi Mahasiswa', url: 'tridharma.html#publikasi-mahasiswa', kata: 'artikel publikasi mahasiswa skripsi tugas akhir platax jurnal nasional terakreditasi' },
   { judul: 'Jurnal Ilmiah PS MSP', url: 'tridharma.html#jurnal', kata: 'jurnal platax jpkt jarb sinta publikasi ejournal aquatic resources bioecology perikanan kelautan tropis' },
