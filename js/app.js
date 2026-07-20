@@ -357,6 +357,50 @@ async function renderFooterLogos() {
 }
 renderFooterLogos();
 
+// ─────────────────────────────────────────────────────────────────────────
+// NAVBAR MOBILE: sisipkan tombol hamburger otomatis di semua halaman,
+// ubah dropdown jadi accordion tap-to-expand pada layar sempit.
+// ─────────────────────────────────────────────────────────────────────────
+function setupMobileNav() {
+  const navLinks = document.querySelector('.nav-links');
+  const navbarInner = document.querySelector('.navbar-inner');
+  if (!navLinks || !navbarInner || document.querySelector('.nav-hamburger')) return;
+
+  const btn = document.createElement('button');
+  btn.className = 'nav-hamburger';
+  btn.setAttribute('aria-label', 'Buka menu navigasi');
+  btn.innerHTML = '<span></span><span></span><span></span>';
+  btn.addEventListener('click', () => {
+    navLinks.classList.toggle('mobile-open');
+    btn.classList.toggle('open');
+  });
+
+  const actions = document.querySelector('.navbar-actions');
+  navbarInner.insertBefore(btn, actions || null);
+
+  // Tap pada menu induk (Tentang, Akademik, dst) untuk expand submenu di mobile,
+  // sementara hover tetap berfungsi normal di desktop.
+  document.querySelectorAll('.nav-item.has-dropdown > a').forEach(a => {
+    a.addEventListener('click', (e) => {
+      if (window.innerWidth <= 900) {
+        e.preventDefault();
+        a.parentElement.classList.toggle('expanded');
+      }
+    });
+  });
+
+  // Tutup menu mobile saat memilih tautan biasa (bukan induk dropdown)
+  navLinks.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      if (window.innerWidth <= 900 && !a.parentElement.classList.contains('has-dropdown')) {
+        navLinks.classList.remove('mobile-open');
+        btn.classList.remove('open');
+      }
+    });
+  });
+}
+setupMobileNav();
+
 // Luaran Buku & Paten (dari js/data/luaran.json — sumber Tabel 3.5A & 3.5D LKPS)
 async function renderLuaran() {
   const bukuList = document.getElementById('bukuList');
