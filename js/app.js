@@ -67,6 +67,9 @@ renderDosen();
 const SEARCH_INDEX = [
   { judul: 'Profil Program Studi', url: 'profil.html', kata: 'profil sejarah visi misi tujuan struktur organisasi pimpinan sambutan koordinator renstra' },
   { judul: 'Akreditasi', url: 'akreditasi.html', kata: 'akreditasi lam ptip unggul status sk dokumen legal landasan hukum' },
+  { judul: 'Galeri Media', url: 'galeri-media.html', kata: 'galeri media video youtube tiktok facebook dokumentasi sosial media konten kegiatan' },
+  { judul: 'Publikasi Mahasiswa', url: 'tridharma.html#publikasi-mahasiswa', kata: 'artikel publikasi mahasiswa skripsi tugas akhir platax jurnal nasional terakreditasi' },
+  { judul: 'Jurnal Ilmiah PS MSP', url: 'tridharma.html#jurnal', kata: 'jurnal platax jpkt jarb sinta publikasi ejournal aquatic resources bioecology perikanan kelautan tropis' },
   { judul: 'Penjaminan Mutu', url: 'mutu.html', kata: 'mutu smop ppepp iso 21001 zona integritas sertifikasi sop audit' },
   { judul: 'Layanan Pengaduan', url: 'layanan-pengaduan.html', kata: 'pengaduan keluhan wbs whistle blowing satgas e-lapor inspire ppkt aduan komplain' },
   { judul: 'Kurikulum OBE-MBKM', url: 'kurikulum.html', kata: 'kurikulum mata kuliah sks semester obe mbkm cpl profil lulusan' },
