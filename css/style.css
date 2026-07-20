@@ -413,3 +413,20 @@ img.dosen-photo { display: block; }
 /* Berita: mode poster penuh (gambar di atas, teks di bawah) */
 .berita-layout.foto-atas { flex-direction: column; }
 .berita-layout.foto-atas .berita-foto-box { width: 100%; }
+
+/* HIMASUPER — organisasi kemahasiswaan */
+.himasuper-head { display: flex; align-items: center; gap: 22px; margin-bottom: 24px; flex-wrap: wrap; }
+.himasuper-logo { flex: 0 0 84px; width: 84px; height: 84px; border-radius: 16px; background: var(--navy); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.8rem; text-align: center; overflow: hidden; }
+.himasuper-logo img { width: 100%; height: 100%; object-fit: cover; }
+.himasuper-head-text h3 { color: var(--navy); font-family: var(--font-head); font-size: 1.15rem; margin: 0 0 4px; }
+.himasuper-sub { color: var(--muted); font-size: 0.85rem; margin: 0; }
+.himasuper-deskripsi p { margin-bottom: 14px; line-height: 1.7; }
+.himasuper-subtitle { color: var(--navy); font-family: var(--font-head); font-size: 1.05rem; margin: 30px 0 14px; }
+.himasuper-penutup { margin-top: 20px; padding: 18px 22px; background: rgba(20,184,166,0.08); border-left: 4px solid var(--teal); border-radius: 10px; line-height: 1.7; font-style: italic; }
+.himasuper-sosmed { margin-top: 20px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.himasuper-sosmed-label { font-weight: 600; color: var(--muted); font-size: 0.9rem; }
+.himasuper-sosmed-link { display: inline-block; padding: 7px 16px; border-radius: 999px; background: var(--navy); color: #fff; font-size: 0.82rem; font-weight: 600; text-decoration: none; transition: background .15s; }
+.himasuper-sosmed-link:hover { background: var(--teal); }
+
+/* Pemisah antar blok organisasi kemahasiswaan */
+.organisasi-block-sep { margin-top: 48px; padding-top: 40px; border-top: 2px dashed var(--border); }
