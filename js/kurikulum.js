@@ -46,7 +46,7 @@ async function loadKurikulum() {
       </article>
     `).join('');
 
-    footerNote.textContent = `Data terakhir diperbarui: ${meta.terakhir_diperbarui} · Sumber: ${meta.sumber} · © Program Studi Manajemen Sumberdaya Perairan FPIK UNSRAT`;
+    footerNote.textContent = `Data terakhir diperbarui: ${meta.terakhir_diperbarui} · © Program Studi Manajemen Sumberdaya Perairan FPIK UNSRAT`;
   } catch (e) {
     subtitle.textContent = '[DATA DIPERLUKAN: js/data/kurikulum.json belum tersedia atau gagal dimuat]';
     console.error(e);

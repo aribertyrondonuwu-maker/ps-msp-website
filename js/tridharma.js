@@ -56,14 +56,14 @@ function renderPengabdian() {
     </tbody>`;
 
   document.getElementById('desaBinaanNote').textContent =
-    `${_tridharmaData._meta.catatan}`;
+    'Desa/kelompok masyarakat binaan hasil pengabdian DTPS PS MSP, mencakup kemitraan strategis tingkat pemerintah daerah (penyusunan RPJMD/RPJPD provinsi & kabupaten) sebagai bentuk rekognisi kepakaran.';
 
   const desaTable = document.getElementById('desaBinaanTable');
   desaTable.innerHTML = `
-    <thead><tr><th>Dosen</th><th>Mitra</th><th>Kategori</th><th>Keterangan</th></tr></thead>
+    <thead><tr><th>Mitra</th><th>Kategori</th><th>Keterangan</th></tr></thead>
     <tbody>
       ${p.desa_binaan.map(d => `
-        <tr><td>${d.dosen}</td><td>${d.mitra}</td><td>${d.kategori}</td><td>${d.keterangan}</td></tr>
+        <tr><td>${d.mitra}</td><td>${d.kategori}</td><td>${d.keterangan}</td></tr>
       `).join('')}
     </tbody>`;
 }
@@ -168,7 +168,7 @@ function renderPublikasiMahasiswa() {
   const statGrid = document.getElementById('pubMhsStatGrid');
   if (statGrid) {
     statGrid.innerHTML = `
-      <article class="card"><h3>${pm.ringkasan.total_terakreditasi_nasional} Judul</h3><p>Publikasi mahasiswa di jurnal nasional terakreditasi (Tabel 3.4B LKPS)</p></article>
+      <article class="card"><h3>${pm.ringkasan.total_terakreditasi_nasional} Judul</h3><p>Publikasi mahasiswa di jurnal nasional terakreditasi</p></article>
       <article class="card"><h3>Sebaran per Tahun</h3><p>${pm.ringkasan.sebaran}</p></article>
       <article class="card"><h3>Jurnal Utama</h3><p>Mayoritas terbit di Jurnal Ilmiah Platax (SINTA 2) yang dikelola PS MSP</p></article>
     `;
