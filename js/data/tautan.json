@@ -40,6 +40,21 @@
       "tautan": [
         { "label": "Tracer Study & Kepuasan Stakeholder PS MSP", "url": "https://aribertyrondonuwu-maker.github.io/tracer-study-msp/", "keterangan": "Formulir alumni, pengguna lulusan, dan statistik publik" }
       ]
+    },
+    {
+      "nama": "Jurnal Ilmiah (dikelola DTPS PS MSP)",
+      "tautan": [
+        { "label": "PLATAX", "url": "https://ejournal.unsrat.ac.id/index.php/platax", "keterangan": "Jurnal Ilmiah PLATAX (Sinta 4) — editor: Prof. Lumingas, Ir. Kambey" },
+        { "label": "EKOTON", "url": "https://ejournal.unsrat.ac.id/index.php/ekoton", "keterangan": "Editor: Ir. Anneke Lohoo" },
+        { "label": "AACL Bioflux", "url": "https://www.bioflux.com.ro/aacl", "keterangan": "Terindeks Scopus Q3 — editor: Prof. Silvester Pratasik" },
+        { "label": "Journal of Aquatic Resources Bioecology", "url": "https://ejournal.unsrat.ac.id/", "keterangan": "Editor: Ir. Alex Kambey, Ir. Anneke Lohoo, Dr. Khristin Kondoy" }
+      ]
+    },
+    {
+      "nama": "Fasilitas & Layanan",
+      "tautan": [
+        { "label": "Sarana & Prasarana PS MSP", "url": "sarana.html", "keterangan": "14 laboratorium aktif, termasuk Marine Field Station Likupang" }
+      ]
     }
   ]
 }
