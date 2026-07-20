@@ -53,7 +53,7 @@ a { text-decoration: none; color: inherit; }
 .navbar.scrolled .brand { color: var(--navy); }
 .brand span { color: var(--teal-light); font-weight: 600; }
 .navbar.scrolled .brand span { color: var(--teal); }
-.nav-links { display: flex; gap: 18px; font-weight: 500; font-size: 0.86rem; flex-wrap: wrap; align-items: center; }
+.nav-links { display: flex; gap: 13px; font-weight: 500; font-size: 0.82rem; align-items: center; white-space: nowrap; }
 .nav-item { position: relative; }
 .nav-item.has-dropdown > a { cursor: pointer; }
 .dropdown {
@@ -312,7 +312,7 @@ img.dosen-photo { display: block; }
 .navbar-logos { display: flex; align-items: center; gap: 8px; margin-right: 14px; padding-right: 14px; border-right: 1px solid rgba(255,255,255,0.25); }
 .navbar.scrolled .navbar-logos { border-right-color: var(--border); }
 .navbar-logo-img { height: 30px; width: auto; object-fit: contain; background: #fff; border-radius: 6px; padding: 3px; box-shadow: 0 1px 4px rgba(0,0,0,0.15); }
-@media (max-width: 900px) { .navbar-logos { display: none; } }
+@media (max-width: 1320px) { .navbar-logos { display: none; } }
 
 /* Navbar mobile (hamburger) — disuntik oleh app.js pada layar sempit */
 .nav-hamburger {
@@ -325,7 +325,7 @@ img.dosen-photo { display: block; }
 .nav-hamburger.open span:nth-child(2) { opacity: 0; }
 .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-@media (max-width: 900px) {
+@media (max-width: 1320px) {
   .nav-hamburger { display: flex; }
   .nav-links {
     display: none; position: fixed; top: 64px; left: 0; right: 0; bottom: 0;
@@ -355,6 +355,5 @@ img.dosen-photo { display: block; }
 .footer-bottom { text-align: center; border-top: 1px solid rgba(255,255,255,0.12); padding-top: 20px; font-size: 0.8rem; color: rgba(255,255,255,0.5); }
 
 @media (max-width: 860px) {
-  .nav-links { display: none; }
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
 }
