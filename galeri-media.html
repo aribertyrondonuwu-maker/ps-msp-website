@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tautan Layanan — PS Manajemen Sumberdaya Perairan FPIK UNSRAT</title>
+<title>Galeri Media — PS Manajemen Sumberdaya Perairan FPIK UNSRAT</title>
+<meta name="description" content="Kumpulan video, dokumentasi, dan media sosial Program Studi Manajemen Sumberdaya Perairan FPIK UNSRAT.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/kurikulum.css">
-<link rel="stylesheet" href="css/akreditasi.css">
 </head>
-<body data-page="tautan">
+<body data-page="galeri-media">
 
 <header class="navbar" id="navbar">
   <div class="navbar-top">
@@ -62,30 +62,48 @@
         </div>
       </div>
       <div class="nav-item"><a href="berita.html">Berita</a></div>
-      <div class="nav-item"><a href="galeri-media.html">Galeri Media</a></div>
-      <div class="nav-item"><a href="tautan.html" class="active">Tautan</a></div>
+      <div class="nav-item"><a href="galeri-media.html" class="active">Galeri Media</a></div>
     </nav>
-      <div class="navbar-actions">
+    <div class="navbar-actions">
       <button class="nav-search-btn" onclick="openSearch()" aria-label="Cari"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></button>
-      <a href="index-en.html" class="btn-outline-dark btn-sm-outline lang-toggle" title="English version">EN</a>
-      <button onclick="history.length > 1 ? history.back() : location.href='index.html'" class="btn-outline-dark btn-sm-outline">← Kembali</button>
+      <a href="galeri-media-en.html" class="btn-outline-dark btn-sm-outline lang-toggle" title="English version" style="display:none;">EN</a>
       <a href="index.html" class="btn btn-primary btn-sm">Beranda</a>
-      </div>
+    </div>
     </div>
   </div>
 </header>
 
 <section class="page-hero">
   <div class="container">
-    <p class="eyebrow">Layanan Terpadu</p>
-    <h1>Tautan Layanan</h1>
-    <p class="hero-sub">Kumpulan tautan resmi Universitas Sam Ratulangi, FPIK, dan lembaga terkait untuk kebutuhan akademik, layanan publik, dan akreditasi.</p>
+    <p class="eyebrow">Dokumentasi &amp; Media Sosial</p>
+    <h1>Galeri Media</h1>
+    <p class="hero-sub">Kumpulan video kegiatan, dokumentasi lapangan, dan konten media sosial Program Studi Manajemen Sumberdaya Perairan FPIK UNSRAT.</p>
   </div>
 </section>
 
-<section class="section" id="tautanContent">
+<!-- AKUN RESMI -->
+<section class="section">
   <div class="container">
-    <p class="muted">Memuat tautan…</p>
+    <h2 class="section-title">Akun Resmi</h2>
+    <div class="cards-grid" id="mediaAkunGrid"></div>
+  </div>
+</section>
+
+<!-- YOUTUBE -->
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Video YouTube</h2>
+    <p class="section-sub"><span id="ytCount">0</span> video dokumentasi kegiatan &amp; profil PS MSP.</p>
+    <div class="video-grid" id="ytGrid"></div>
+  </div>
+</section>
+
+<!-- TIKTOK -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">TikTok</h2>
+    <p class="section-sub"><span id="ttCount">0</span> konten TikTok dari sivitas &amp; mahasiswa PS MSP. Klik untuk menonton.</p>
+    <div class="tiktok-grid" id="ttGrid"></div>
   </div>
 </section>
 
@@ -129,7 +147,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="js/supabase-client.js"></script>
 <script src="js/app.js"></script>
-<script src="js/tautan.js"></script>
+<script src="js/media.js"></script>
 <div class="search-modal" id="searchModal" onclick="if(event.target===this)closeSearch()">
   <div class="search-box">
     <input type="text" id="searchInput" placeholder="Cari halaman: profil, kurikulum, dosen, penelitian…" autocomplete="off" oninput="runSearch(this.value)" onkeydown="if(event.key==='Escape')closeSearch()">
