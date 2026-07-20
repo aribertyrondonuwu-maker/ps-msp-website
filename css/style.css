@@ -209,6 +209,7 @@ a { text-decoration: none; color: inherit; }
 .dosen-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 22px; }
 .dosen-card { display: block; background: var(--card-bg); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); border: 1px solid var(--border); transition: transform .2s; }
 .dosen-card:hover { transform: translateY(-4px); }
+.dosen-photo { object-fit: cover; object-position: top center; }
 .dosen-photo { aspect-ratio: 1; background: linear-gradient(135deg, var(--deep), var(--teal)); display: flex; align-items: center; justify-content: center; color: #fff; font-family: var(--font-head); font-weight: 700; font-size: 1.8rem; }
 .dosen-info { padding: 16px; }
 .dosen-info h4 { font-size: 0.95rem; color: var(--navy); margin-bottom: 4px; }
