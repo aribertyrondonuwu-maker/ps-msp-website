@@ -3,21 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sarana & Prasarana — PS Manajemen Sumberdaya Perairan FPIK UNSRAT</title>
+<title>Layanan Pengaduan — PS Manajemen Sumberdaya Perairan FPIK UNSRAT</title>
+<meta name="description" content="Kanal resmi, alur, dan penanggung jawab layanan pengaduan PS Manajemen Sumberdaya Perairan FPIK UNSRAT, mengacu pada SOP/FP/KS/11 dan SOP/FPIK/KS/09.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/kurikulum.css">
 <link rel="stylesheet" href="css/akreditasi.css">
 </head>
-<body data-page="sarana">
-
-<a href="#konten-utama" class="skip-link">Langsung ke konten utama</a>
+<body data-page="layanan-pengaduan">
 
 <header class="navbar scrolled" id="navbar">
   <div class="container navbar-inner">
     <a href="index.html" class="brand">MSP <span>FPIK UNSRAT</span></a>
-    <nav class="nav-links">
+        <nav class="nav-links">
       <div class="nav-item has-dropdown">
         <a href="profil.html">Tentang &#9662;</a>
         <div class="dropdown">
@@ -32,7 +31,7 @@
           <a href="index.html#dosen">Dosen</a>
         </div>
       </div>
-      <div class="nav-item"><a href="sarana.html" class="active">Sarana &amp; Prasarana</a></div>
+      <div class="nav-item"><a href="sarana.html">Sarana &amp; Prasarana</a></div>
       <div class="nav-item has-dropdown">
         <a href="pendidikan.html">Tridharma &#9662;</a>
         <div class="dropdown">
@@ -46,7 +45,7 @@
       <div class="nav-item"><a href="kemahasiswaan.html">Kemahasiswaan</a></div>
       <div class="nav-item"><a href="alumni.html">Alumni</a></div>
       <div class="nav-item"><a href="mutu.html">Penjaminan Mutu</a></div>
-      <div class="nav-item"><a href="layanan-pengaduan.html">Layanan Pengaduan</a></div>
+      <div class="nav-item"><a href="layanan-pengaduan.html" class="active">Layanan Pengaduan</a></div>
       <div class="nav-item"><a href="berita.html">Berita</a></div>
       <div class="nav-item"><a href="tautan.html">Tautan</a></div>
     </nav>
@@ -59,32 +58,69 @@
   </div>
 </header>
 
-<section class="page-hero" id="konten-utama">
+<section class="page-hero">
   <div class="container">
-    <p class="eyebrow">Fasilitas Penunjang Tridharma</p>
-    <h1>Sarana & Prasarana</h1>
-    <p class="hero-sub">14 laboratorium aktif mendukung pembelajaran, penelitian, dan pengabdian PS MSP — termasuk Marine Field Station Likupang, laboratorium lapangan alam di kawasan Coral Triangle.</p>
+    <p class="eyebrow">Akuntabilitas & Tata Kelola</p>
+    <h1>Layanan Pengaduan</h1>
+    <p class="hero-sub" id="pengaduanRingkasan">Memuat ringkasan…</p>
   </div>
 </section>
 
+<!-- BANNER TARGET WAKTU -->
 <section class="section">
   <div class="container">
-    <div class="cards-grid" id="ringkasanSaranaGrid"></div>
+    <div class="status-banner card">
+      <div class="status-main">
+        <span class="badge-status">Target Waktu Penyelesaian</span>
+        <h3 id="pengaduanTargetWaktu">Memuat…</h3>
+        <p>Berdasarkan SOP/FP/KS/11 Layanan Pengaduan FPIK dan SOP/FPIK/KS/09 Penanganan Keluhan Stakeholder (terbit 01.11.2025).</p>
+      </div>
+    </div>
   </div>
 </section>
 
+<!-- KANAL PENGADUAN -->
 <section class="section section-alt">
   <div class="container">
-    <h2 class="section-title">Laboratorium</h2>
-    <p class="section-sub">Setiap laboratorium dikelola berdasarkan SOP resmi FPIK Unsrat.</p>
-    <div class="cards-grid" id="labGrid"></div>
+    <h2 class="section-title">Kanal Pengaduan Resmi</h2>
+    <p class="section-sub">PS MSP FPIK UNSRAT mengoperasikan beberapa mekanisme pengaduan yang saling melengkapi — pilih kanal sesuai jenis pengaduan.</p>
+    <div class="cards-grid" id="pengaduanKanalGrid"></div>
   </div>
 </section>
 
+<!-- ALUR PENGADUAN -->
 <section class="section">
   <div class="container">
-    <h2 class="section-title">Standar Pengelolaan (K3 & Mutu)</h2>
-    <div id="sopList"></div>
+    <h2 class="section-title">Alur Penanganan Pengaduan</h2>
+    <p class="section-sub">Lima tahap sesuai SOP/FP/KS/11 Layanan Pengaduan FPIK.</p>
+    <div class="stepper" id="pengaduanStepper"></div>
+  </div>
+</section>
+
+<!-- RUANG LINGKUP & PENANGGUNG JAWAB -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="cards-grid" style="grid-template-columns: 1fr 1.4fr; align-items: start;">
+      <div>
+        <h2 class="section-title">Ruang Lingkup</h2>
+        <ul id="pengaduanLingkupList" class="check-list"></ul>
+      </div>
+      <div>
+        <h2 class="section-title">Penanggung Jawab</h2>
+        <div class="table-wrap">
+          <table class="data-table" id="pengaduanPJTable"></table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KONTAK LANGSUNG -->
+<section class="section" id="kontak-pengaduan">
+  <div class="container">
+    <h2 class="section-title">Kontak Langsung PS MSP</h2>
+    <p class="section-sub">Untuk pengaduan formal, gunakan kanal resmi di atas agar tercatat dan dapat dipantau. Untuk pertanyaan umum, hubungi:</p>
+    <div class="card" id="pengaduanKontakLangsung" style="max-width:520px;"></div>
   </div>
 </section>
 
@@ -127,7 +163,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="js/supabase-client.js"></script>
 <script src="js/app.js"></script>
-<script src="js/sarana.js"></script>
+<script src="js/layanan-pengaduan.js"></script>
 <div class="search-modal" id="searchModal" onclick="if(event.target===this)closeSearch()">
   <div class="search-box">
     <input type="text" id="searchInput" placeholder="Cari halaman: profil, kurikulum, dosen, penelitian…" autocomplete="off" oninput="runSearch(this.value)" onkeydown="if(event.key==='Escape')closeSearch()">

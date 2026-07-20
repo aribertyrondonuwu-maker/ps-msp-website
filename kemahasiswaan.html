@@ -17,23 +17,22 @@
     <a href="index.html" class="brand">MSP <span>FPIK UNSRAT</span></a>
         <nav class="nav-links">
       <div class="nav-item has-dropdown">
-        <a href="profil.html">Tentang ▾</a>
+        <a href="profil.html">Tentang &#9662;</a>
         <div class="dropdown">
           <a href="profil.html">Profil</a>
           <a href="akreditasi.html">Akreditasi</a>
-          <a href="mutu.html">Penjaminan Mutu</a>
         </div>
       </div>
       <div class="nav-item has-dropdown">
-        <a href="kurikulum.html">Akademik ▾</a>
+        <a href="kurikulum.html">Akademik &#9662;</a>
         <div class="dropdown">
           <a href="kurikulum.html">Kurikulum</a>
           <a href="index.html#dosen">Dosen</a>
-          <a href="sarana.html">Sarana &amp; Prasarana</a>
         </div>
       </div>
+      <div class="nav-item"><a href="sarana.html">Sarana &amp; Prasarana</a></div>
       <div class="nav-item has-dropdown">
-        <a href="pendidikan.html">Tridharma ▾</a>
+        <a href="pendidikan.html">Tridharma &#9662;</a>
         <div class="dropdown">
           <a href="pendidikan.html">Pendidikan &amp; Pengajaran</a>
           <a href="tridharma.html#penelitian">Penelitian</a>
@@ -42,18 +41,16 @@
           <a href="tridharma.html#kerjasama">Kerjasama</a>
         </div>
       </div>
-      <div class="nav-item has-dropdown">
-        <a href="kemahasiswaan.html" class="active">Kemahasiswaan ▾</a>
-        <div class="dropdown">
-          <a href="kemahasiswaan.html">Data &amp; Layanan</a>
-          <a href="alumni.html">Alumni</a>
-        </div>
-      </div>
+      <div class="nav-item"><a href="kemahasiswaan.html" class="active">Kemahasiswaan</a></div>
+      <div class="nav-item"><a href="alumni.html">Alumni</a></div>
+      <div class="nav-item"><a href="mutu.html">Penjaminan Mutu</a></div>
+      <div class="nav-item"><a href="layanan-pengaduan.html">Layanan Pengaduan</a></div>
       <div class="nav-item"><a href="berita.html">Berita</a></div>
       <div class="nav-item"><a href="tautan.html">Tautan</a></div>
     </nav>
     <div class="navbar-actions">
     <button class="nav-search-btn" onclick="openSearch()" aria-label="Cari"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></button>
+    <a href="en/index.html" class="btn-outline-dark btn-sm-outline lang-toggle" title="English version">EN</a>
     <button onclick="history.length > 1 ? history.back() : location.href='index.html'" class="btn-outline-dark btn-sm-outline">← Kembali</button>
     <a href="index.html" class="btn btn-primary btn-sm">Beranda</a>
     </div>
@@ -102,10 +99,40 @@
   </div>
 </section>
 
-<footer class="footer">
-  <div class="container">
-    <p class="footer-bottom">© Program Studi Manajemen Sumberdaya Perairan · FPIK UNSRAT</p>
+<footer class="footer" id="kontak">
+  <div class="container footer-grid">
+    <div>
+      <p class="brand footer-brand">MSP <span>FPIK UNSRAT</span></p>
+      <p>Kampus UNSRAT, Bahu, Manado 95115, Sulawesi Utara</p>
+      <div class="footer-map">
+        <iframe
+          src="https://www.google.com/maps?q=1.4562725,124.8259245&z=17&output=embed"
+          width="100%" height="180" style="border:0;border-radius:12px;margin-top:12px;"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Lokasi PS MSP FPIK UNSRAT"></iframe>
+        <a href="https://www.google.com/maps/search/?api=1&query=1.4562725,124.8259245" target="_blank" rel="noopener" class="map-link">Buka di Google Maps &rarr;</a>
+      </div>
+    </div>
+    <div>
+      <h4>Tautan Cepat</h4>
+      <a href="index.html">Beranda</a>
+      <a href="profil.html">Profil</a>
+      <a href="index.html#dosen">Dosen</a>
+      <a href="akreditasi.html">Akreditasi</a>
+      <a href="mutu.html">Penjaminan Mutu</a>
+      <a href="layanan-pengaduan.html">Layanan Pengaduan</a>
+      <a href="berita.html">Berita</a>
+      <a href="https://aribertyrondonuwu-maker.github.io/tracer-study-msp/" target="_blank">Tracer Study</a>
+    </div>
+    <div>
+      <h4>Kontak</h4>
+      <p>Telp: (0431) 868027</p>
+      <p><a href="mailto:psmsp@unsrat.ac.id">psmsp@unsrat.ac.id</a></p>
+      <p>WA Panitia Akreditasi: +62 823-2675-1375</p>
+      <div class="sosmed-row" id="sosmedRow"></div>
+    </div>
   </div>
+  <p class="footer-bottom">&copy; <span id="year"></span> Program Studi Manajemen Sumberdaya Perairan &middot; FPIK UNSRAT</p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
