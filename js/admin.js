@@ -107,13 +107,125 @@ document.querySelectorAll('.admin-nav-btn').forEach(btn => {
 // ─────────────────────────────────────────────────────────────────────────
 // STORAGE UPLOAD HELPER
 // ─────────────────────────────────────────────────────────────────────────
-async function uploadToMedia(file, folder) {
-  const ext = file.name.split('.').pop();
+async function uploadToMedia(fileOrBlob, folder, filenameHint) {
+  const ext = (filenameHint || fileOrBlob.name || 'foto.jpg').split('.').pop() || 'jpg';
   const path = `${folder}/${Date.now()}_${Math.random().toString(36).slice(2, 8)}.${ext}`;
-  const { error } = await sb.storage.from('media').upload(path, file);
+  const { error } = await sb.storage.from('media').upload(path, fileOrBlob, { contentType: fileOrBlob.type || 'image/jpeg' });
   if (error) throw error;
   const { data } = sb.storage.from('media').getPublicUrl(path);
   return data.publicUrl;
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+// CROP FOTO INTERAKTIF — dipakai sebelum upload di semua form foto.
+// openCropper(file, aspectRatio, judul) -> Promise<Blob JPEG>
+// Foto otomatis diperkecil ke maksimum 1600px pada sisi terpanjang saat
+// dipotong, sehingga file selalu ringan & konsisten ukurannya.
+// ─────────────────────────────────────────────────────────────────────────
+function openCropper(file, aspectRatio, judul) {
+  return new Promise((resolve, reject) => {
+    const modal = document.getElementById('cropModal');
+    const frame = document.getElementById('cropFrame');
+    const imgEl = document.getElementById('cropImg');
+    const zoomEl = document.getElementById('cropZoom');
+    const titleEl = document.getElementById('cropTitle');
+    const confirmBtn = document.getElementById('cropConfirmBtn');
+    const cancelBtn = document.getElementById('cropCancelBtn');
+
+    titleEl.textContent = judul || 'Sesuaikan Foto';
+
+    // Atur rasio bingkai crop (mis. 1 = persegi, 16/9 = lanskap, 3/4 = potret)
+    const frameWidth = 380;
+    const frameHeight = Math.round(frameWidth / aspectRatio);
+    frame.style.width = frameWidth + 'px';
+    frame.style.height = frameHeight + 'px';
+
+    const reader = new FileReader();
+    reader.onload = (ev) => {
+      imgEl.src = ev.target.result;
+      imgEl.onload = () => {
+        // Skala awal: gambar menutupi penuh bingkai (seperti object-fit: cover)
+        const natW = imgEl.naturalWidth, natH = imgEl.naturalHeight;
+        const coverScale = Math.max(frameWidth / natW, frameHeight / natH);
+        let scale = coverScale;
+        let posX = (frameWidth - natW * scale) / 2;
+        let posY = (frameHeight - natH * scale) / 2;
+
+        function applyTransform() {
+          imgEl.style.width = (natW * scale) + 'px';
+          imgEl.style.height = (natH * scale) + 'px';
+          imgEl.style.transform = `translate(${posX}px, ${posY}px)`;
+        }
+        function clampPos() {
+          const w = natW * scale, h = natH * scale;
+          posX = Math.min(0, Math.max(frameWidth - w, posX));
+          posY = Math.min(0, Math.max(frameHeight - h, posY));
+        }
+        applyTransform();
+
+        zoomEl.value = 1;
+        zoomEl.oninput = () => {
+          const zoomFactor = parseFloat(zoomEl.value);
+          scale = coverScale * zoomFactor;
+          clampPos();
+          applyTransform();
+        };
+
+        // Drag (mouse & touch) untuk memposisikan foto
+        let dragging = false, startX = 0, startY = 0, origX = 0, origY = 0;
+        function pointerDown(x, y) { dragging = true; startX = x; startY = y; origX = posX; origY = posY; }
+        function pointerMove(x, y) {
+          if (!dragging) return;
+          posX = origX + (x - startX);
+          posY = origY + (y - startY);
+          clampPos();
+          applyTransform();
+        }
+        function pointerUp() { dragging = false; }
+
+        frame.onmousedown = (e) => pointerDown(e.clientX, e.clientY);
+        window.onmousemove = (e) => pointerMove(e.clientX, e.clientY);
+        window.onmouseup = pointerUp;
+        frame.ontouchstart = (e) => { const t = e.touches[0]; pointerDown(t.clientX, t.clientY); };
+        frame.ontouchmove = (e) => { const t = e.touches[0]; pointerMove(t.clientX, t.clientY); e.preventDefault(); };
+        frame.ontouchend = pointerUp;
+
+        modal.classList.add('open');
+
+        function cleanup() {
+          modal.classList.remove('open');
+          frame.onmousedown = null; window.onmousemove = null; window.onmouseup = null;
+          frame.ontouchstart = null; frame.ontouchmove = null; frame.ontouchend = null;
+          zoomEl.oninput = null; confirmBtn.onclick = null; cancelBtn.onclick = null;
+        }
+
+        confirmBtn.onclick = () => {
+          // Render hasil crop ke canvas pada resolusi maksimum 1600px sisi terpanjang
+          const OUT_MAX = 1600;
+          const outW = aspectRatio >= 1 ? OUT_MAX : Math.round(OUT_MAX * aspectRatio);
+          const outH = aspectRatio >= 1 ? Math.round(OUT_MAX / aspectRatio) : OUT_MAX;
+          const canvas = document.createElement('canvas');
+          canvas.width = outW; canvas.height = outH;
+          const ctx = canvas.getContext('2d');
+          // Petakan area bingkai (frameWidth x frameHeight) ke ukuran output
+          const scaleOut = outW / frameWidth;
+          ctx.drawImage(
+            imgEl,
+            0, 0, natW, natH,
+            posX * scaleOut, posY * scaleOut, natW * scale * scaleOut, natH * scale * scaleOut
+          );
+          canvas.toBlob((blob) => {
+            cleanup();
+            if (!blob) { reject(new Error('Gagal memproses gambar')); return; }
+            resolve(blob);
+          }, 'image/jpeg', 0.87);
+        };
+        cancelBtn.onclick = () => { cleanup(); reject(new Error('dibatalkan')); };
+      };
+    };
+    reader.onerror = () => reject(new Error('Gagal membaca file'));
+    reader.readAsDataURL(file);
+  });
 }
 
 // ─────────────────────────────────────────────────────────────────────────
@@ -206,7 +318,7 @@ async function loadGaleri() {
 document.getElementById('galeriForm').addEventListener('submit', async (e) => {
   e.preventDefault();
   const status = document.getElementById('galeriStatus');
-  status.textContent = 'Mengunggah…';
+  status.textContent = '';
   const tipe = document.getElementById('galeriTipe').value;
   const kategori = document.getElementById('galeriKategori').value;
   const caption = document.getElementById('galeriCaption').value.trim();
@@ -216,7 +328,9 @@ document.getElementById('galeriForm').addEventListener('submit', async (e) => {
   try {
     if (tipe === 'foto') {
       if (!file) { status.textContent = '⚠️ Pilih file foto dulu.'; return; }
-      url = await uploadToMedia(file, 'galeri');
+      const cropped = await openCropper(file, 4 / 3, 'Sesuaikan Foto Galeri');
+      status.textContent = 'Mengunggah…';
+      url = await uploadToMedia(cropped, 'galeri', 'foto.jpg');
     } else if (!url) {
       status.textContent = '⚠️ Isi link embed YouTube untuk video.';
       return;
@@ -227,7 +341,7 @@ document.getElementById('galeriForm').addEventListener('submit', async (e) => {
     document.getElementById('galeriForm').reset();
     loadGaleri();
   } catch (err) {
-    status.textContent = '⚠️ Gagal: ' + err.message;
+    if (err.message !== 'dibatalkan') status.textContent = '⚠️ Gagal: ' + err.message;
   }
 });
 
@@ -255,16 +369,17 @@ document.getElementById('dosenFotoForm').addEventListener('submit', async (e) =>
   const slug = document.getElementById('dosenFotoSelect').value;
   const file = document.getElementById('dosenFotoFile').files[0];
   if (!file) return;
-  status.textContent = 'Mengunggah…';
   try {
-    const url = await uploadToMedia(file, 'dosen');
+    const cropped = await openCropper(file, 3 / 4, 'Sesuaikan Foto Dosen');
+    status.textContent = 'Mengunggah…';
+    const url = await uploadToMedia(cropped, 'dosen', 'foto.jpg');
     const { error } = await sb.from('site_settings').upsert([{ key: `dosen_foto:${slug}`, value: url, updated_at: new Date().toISOString() }]);
     if (error) throw error;
     status.textContent = '✅ Foto tersimpan.';
     document.getElementById('dosenFotoForm').reset();
     loadDosenFoto();
   } catch (err) {
-    status.textContent = '⚠️ Gagal: ' + err.message;
+    if (err.message !== 'dibatalkan') status.textContent = '⚠️ Gagal: ' + err.message;
   }
 });
 
@@ -292,16 +407,18 @@ document.getElementById('headerFotoForm').addEventListener('submit', async (e) =
   const key = document.getElementById('headerFotoSelect').value;
   const file = document.getElementById('headerFotoFile').files[0];
   if (!file) return;
-  status.textContent = 'Mengunggah…';
+  const isKorprodi = key === 'korprodi_foto';
   try {
-    const url = await uploadToMedia(file, 'header');
+    const cropped = await openCropper(file, isKorprodi ? 3 / 4 : 16 / 9, isKorprodi ? 'Sesuaikan Foto Koordinator' : 'Sesuaikan Foto Header Halaman');
+    status.textContent = 'Mengunggah…';
+    const url = await uploadToMedia(cropped, 'header', 'foto.jpg');
     const { error } = await sb.from('site_settings').upsert([{ key, value: url, updated_at: new Date().toISOString() }]);
     if (error) throw error;
     status.textContent = '✅ Foto header tersimpan.';
     document.getElementById('headerFotoForm').reset();
     loadHeaderFoto();
   } catch (err) {
-    status.textContent = '⚠️ Gagal: ' + err.message;
+    if (err.message !== 'dibatalkan') status.textContent = '⚠️ Gagal: ' + err.message;
   }
 });
 
@@ -429,9 +546,10 @@ document.getElementById('slideshowForm').addEventListener('submit', async (e) =>
   const status = document.getElementById('slideshowStatus');
   const fileInput = document.getElementById('slideshowFile');
   if (!fileInput.files[0]) return;
-  status.textContent = 'Mengupload…';
   try {
-    const url = await uploadToMedia(fileInput.files[0], 'slideshow');
+    const cropped = await openCropper(fileInput.files[0], 16 / 9, 'Sesuaikan Foto Slideshow');
+    status.textContent = 'Mengupload…';
+    const url = await uploadToMedia(cropped, 'slideshow', 'foto.jpg');
     const key = 'slideshow:' + Date.now();
     const { error } = await sb.from('site_settings').upsert({ key, value: url, updated_at: new Date().toISOString() });
     if (error) throw error;
@@ -439,7 +557,7 @@ document.getElementById('slideshowForm').addEventListener('submit', async (e) =>
     document.getElementById('slideshowForm').reset();
     loadSlideshow();
   } catch (err) {
-    status.textContent = '⚠️ Gagal: ' + err.message;
+    if (err.message !== 'dibatalkan') status.textContent = '⚠️ Gagal: ' + err.message;
   }
 });
 
@@ -463,14 +581,46 @@ async function loadLogoFooter() {
   } catch (e) { grid.innerHTML = `<p>Gagal memuat: ${e.message}</p>`; }
 }
 
+// Resize khusus LOGO: tidak dipotong (crop), hanya diperkecil sambil menjaga
+// rasio asli dan transparansi PNG — supaya bentuk logo tidak rusak.
+function resizeLogo(file, maxDim) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = (ev) => {
+      const img = new Image();
+      img.onload = () => {
+        let { width, height } = img;
+        if (width > maxDim || height > maxDim) {
+          if (width > height) { height = Math.round(height * maxDim / width); width = maxDim; }
+          else { width = Math.round(width * maxDim / height); height = maxDim; }
+        }
+        const canvas = document.createElement('canvas');
+        canvas.width = width; canvas.height = height;
+        const ctx = canvas.getContext('2d');
+        ctx.clearRect(0, 0, width, height);
+        ctx.drawImage(img, 0, 0, width, height);
+        canvas.toBlob((blob) => {
+          if (!blob) { reject(new Error('Gagal memproses logo')); return; }
+          resolve(blob);
+        }, 'image/png');
+      };
+      img.onerror = () => reject(new Error('Gagal membaca gambar'));
+      img.src = ev.target.result;
+    };
+    reader.onerror = () => reject(new Error('Gagal membaca file'));
+    reader.readAsDataURL(file);
+  });
+}
+
 document.getElementById('logoFooterForm').addEventListener('submit', async (e) => {
   e.preventDefault();
   const status = document.getElementById('logoFooterStatus');
   const fileInput = document.getElementById('logoFooterFile');
   if (!fileInput.files[0]) return;
-  status.textContent = 'Mengupload…';
+  status.textContent = 'Memproses & mengupload…';
   try {
-    const url = await uploadToMedia(fileInput.files[0], 'logo');
+    const resized = await resizeLogo(fileInput.files[0], 500);
+    const url = await uploadToMedia(resized, 'logo', 'logo.png');
     const key = 'logo:' + Date.now();
     const { error } = await sb.from('site_settings').upsert({ key, value: url, updated_at: new Date().toISOString() });
     if (error) throw error;
