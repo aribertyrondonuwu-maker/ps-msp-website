@@ -31,6 +31,25 @@ async function loadBeritaDetail() {
     judulEl.textContent = data.judul;
     document.getElementById('beritaTanggal').textContent = new Date(data.tanggal_publish).toLocaleDateString('id-ID', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
 
+    // Gambar berita: kiri gambar, kanan narasi. Lebar & rasio kotak diatur admin.
+    const fotoBox = document.getElementById('beritaFotoBox');
+    const layout = document.getElementById('beritaLayout');
+    const container = document.getElementById('beritaContainer');
+    if (data.gambar_url && fotoBox) {
+      const lebar = parseInt(data.gambar_lebar, 10) || 42;   // persen lebar kotak gambar
+      const rasio = parseFloat(data.gambar_rasio) || (4 / 3); // lebar : tinggi
+      fotoBox.style.display = 'block';
+      fotoBox.style.flex = `0 0 ${lebar}%`;
+      fotoBox.style.maxWidth = `${lebar}%`;
+      const img = document.getElementById('beritaFotoImg');
+      img.src = data.gambar_url;
+      img.alt = data.judul;
+      img.style.aspectRatio = String(rasio);
+      layout.classList.add('has-foto');
+      // beri ruang lebih lebar bila ada gambar berdampingan
+      if (container) container.style.maxWidth = '1000px';
+    }
+
     // Render konten: pertahankan paragraf, escape tag berbahaya sederhana
     const konten = (data.konten || '').trim();
     const paragraphs = konten.split(/\n\s*\n/).map(p => `<p>${p.replace(/\n/g, '<br>')}</p>`).join('');

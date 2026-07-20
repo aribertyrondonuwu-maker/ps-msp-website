@@ -28,14 +28,21 @@ function renderBeritaList(kategori) {
     grid.innerHTML = `<p class="muted">Belum ada berita${kategori !== 'semua' ? ' kategori ' + kategori : ''}.</p>`;
     return;
   }
-  grid.innerHTML = list.map(b => `
-    <a href="berita-detail.html?id=${b.id}" class="card" style="display:block;">
-      ${b.kategori ? `<p class="card-link" style="margin-bottom:8px;">${b.kategori}</p>` : ''}
-      <h3>${b.judul}</h3>
-      <p>${(b.konten || '').replace(/<[^>]+>/g, '').slice(0, 160)}${b.konten && b.konten.length > 160 ? '…' : ''}</p>
-      <p class="muted" style="font-size:0.78rem;margin-top:10px;">${new Date(b.tanggal_publish).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' })}</p>
+  grid.innerHTML = list.map(b => {
+    const thumb = b.gambar_url
+      ? `<div class="berita-list-thumb"><img src="${b.gambar_url}" alt="${b.judul}" loading="lazy"></div>`
+      : '';
+    return `
+    <a href="berita-detail.html?id=${b.id}" class="card berita-list-card${b.gambar_url ? ' has-thumb' : ''}">
+      ${thumb}
+      <div class="berita-list-body">
+        ${b.kategori ? `<p class="card-link" style="margin-bottom:8px;">${b.kategori}</p>` : ''}
+        <h3>${b.judul}</h3>
+        <p>${(b.konten || '').replace(/<[^>]+>/g, '').slice(0, 160)}${b.konten && b.konten.length > 160 ? '…' : ''}</p>
+        <p class="muted" style="font-size:0.78rem;margin-top:10px;">${new Date(b.tanggal_publish).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' })}</p>
+      </div>
     </a>
-  `).join('');
+  `; }).join('');
 }
 
 document.querySelectorAll('#beritaFilter .kerjasama-tab-btn').forEach(btn => {

@@ -253,6 +253,45 @@ async function loadBerita() {
   window._beritaCache = data;
 }
 
+// ── Foto berita: pilih → crop sesuai rasio → upload → preview ──
+function setBeritaFotoPreview(url) {
+  const prev = document.getElementById('beritaFotoPreview');
+  const hapusBtn = document.getElementById('beritaFotoHapus');
+  if (url) {
+    prev.innerHTML = `<img src="${url}" alt="preview">`;
+    hapusBtn.style.display = 'inline-block';
+  } else {
+    prev.innerHTML = '<span>Belum ada gambar</span>';
+    hapusBtn.style.display = 'none';
+  }
+}
+
+document.getElementById('beritaFotoInput').addEventListener('change', async (e) => {
+  const file = e.target.files[0];
+  if (!file) return;
+  const status = document.getElementById('beritaFotoStatus');
+  const rasio = parseFloat(document.getElementById('beritaFotoRasio').value) || (4 / 3);
+  try {
+    status.textContent = 'Menyiapkan gambar…';
+    const cropped = await openCropper(file, rasio, 'Sesuaikan Gambar Berita');
+    status.textContent = 'Mengunggah…';
+    const url = await uploadToMedia(cropped, 'berita', 'berita.jpg');
+    document.getElementById('beritaFotoUrl').value = url;
+    setBeritaFotoPreview(url);
+    status.textContent = '✅ Gambar siap.';
+  } catch (err) {
+    status.textContent = '⚠️ ' + (err.message || 'Gagal memproses gambar');
+  } finally {
+    e.target.value = '';
+  }
+});
+
+document.getElementById('beritaFotoHapus').addEventListener('click', () => {
+  document.getElementById('beritaFotoUrl').value = '';
+  setBeritaFotoPreview('');
+  document.getElementById('beritaFotoStatus').textContent = 'Gambar dihapus dari berita ini.';
+});
+
 document.getElementById('beritaForm').addEventListener('submit', async (e) => {
   e.preventDefault();
   const id = document.getElementById('beritaId').value;
@@ -261,6 +300,9 @@ document.getElementById('beritaForm').addEventListener('submit', async (e) => {
     kategori: document.getElementById('beritaKategori').value,
     konten: document.getElementById('beritaKonten').value.trim(),
     published: document.getElementById('beritaPublished').checked,
+    gambar_url: document.getElementById('beritaFotoUrl').value || null,
+    gambar_rasio: document.getElementById('beritaFotoRasio').value || '1.3333',
+    gambar_lebar: document.getElementById('beritaFotoLebar').value || '42',
   };
   if (!id) {
     payload.slug = payload.judul.toLowerCase().replace(/[^a-z0-9]+/g, '-').slice(0, 60) + '-' + Date.now();
@@ -270,6 +312,9 @@ document.getElementById('beritaForm').addEventListener('submit', async (e) => {
   if (error) { alert('Gagal menyimpan: ' + error.message); return; }
   document.getElementById('beritaForm').reset();
   document.getElementById('beritaId').value = '';
+  document.getElementById('beritaFotoUrl').value = '';
+  setBeritaFotoPreview('');
+  document.getElementById('beritaFotoStatus').textContent = '';
   document.getElementById('beritaCancelEdit').style.display = 'none';
   loadBerita();
 });
@@ -282,11 +327,19 @@ function editBerita(id) {
   document.getElementById('beritaKategori').value = b.kategori || 'Akademik';
   document.getElementById('beritaKonten').value = b.konten || '';
   document.getElementById('beritaPublished').checked = b.published;
+  document.getElementById('beritaFotoUrl').value = b.gambar_url || '';
+  document.getElementById('beritaFotoRasio').value = b.gambar_rasio || '1.3333';
+  document.getElementById('beritaFotoLebar').value = b.gambar_lebar || '42';
+  setBeritaFotoPreview(b.gambar_url || '');
+  document.getElementById('beritaFotoStatus').textContent = '';
   document.getElementById('beritaCancelEdit').style.display = 'inline-block';
 }
 document.getElementById('beritaCancelEdit').addEventListener('click', () => {
   document.getElementById('beritaForm').reset();
   document.getElementById('beritaId').value = '';
+  document.getElementById('beritaFotoUrl').value = '';
+  setBeritaFotoPreview('');
+  document.getElementById('beritaFotoStatus').textContent = '';
   document.getElementById('beritaCancelEdit').style.display = 'none';
 });
 
