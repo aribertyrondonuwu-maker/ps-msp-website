@@ -1,8 +1,5 @@
-// Navbar solid saat scroll
-const navbar = document.getElementById('navbar');
-window.addEventListener('scroll', () => {
-  navbar.classList.toggle('scrolled', window.scrollY > 40);
-});
+// Navbar kini statis dua-baris (bukan overlay transparan), jadi tidak perlu
+// toggle class .scrolled lagi — baris menu navy sudah sticky lewat CSS.
 
 // Counter animasi untuk strip statistik
 function animateCount(el) {
@@ -348,17 +345,13 @@ renderSambutanHome();
 // Logo institusional di HEADER/navbar (site_settings key logo:{n}, diatur superadmin)
 // Disuntikkan via JS agar tampil di semua halaman tanpa perlu edit tiap file HTML.
 async function renderHeaderLogos() {
-  const navbarInner = document.querySelector('.navbar-inner');
-  const brand = document.querySelector('.brand');
-  if (!navbarInner || !brand || !window.sbClient) return;
+  const slot = document.getElementById('navbarLogosTop');
+  if (!slot || !window.sbClient) return;
   try {
     const { data } = await window.sbClient.from('site_settings').select('key,value').like('key', 'logo:%');
     const logos = (data || []).filter(r => r.value && r.value.trim()).sort((a, b) => a.key.localeCompare(b.key));
     if (!logos.length) return;
-    const wrap = document.createElement('div');
-    wrap.className = 'navbar-logos';
-    wrap.innerHTML = logos.map(l => `<img src="${l.value}" alt="logo institusi" class="navbar-logo-img">`).join('');
-    brand.insertAdjacentElement('afterend', wrap);
+    slot.innerHTML = logos.map(l => `<img src="${l.value}" alt="logo institusi" class="navbar-logo-img">`).join('');
   } catch (e) { /* diam */ }
 }
 renderHeaderLogos();
@@ -369,8 +362,8 @@ renderHeaderLogos();
 // ─────────────────────────────────────────────────────────────────────────
 function setupMobileNav() {
   const navLinks = document.querySelector('.nav-links');
-  const navbarInner = document.querySelector('.navbar-inner');
-  if (!navLinks || !navbarInner || document.querySelector('.nav-hamburger')) return;
+  const navbarMainInner = document.querySelector('.navbar-main-inner');
+  if (!navLinks || !navbarMainInner || document.querySelector('.nav-hamburger')) return;
 
   const btn = document.createElement('button');
   btn.className = 'nav-hamburger';
@@ -382,13 +375,15 @@ function setupMobileNav() {
   });
 
   const actions = document.querySelector('.navbar-actions');
-  navbarInner.insertBefore(btn, actions || null);
+  navbarMainInner.insertBefore(btn, actions || null);
+
+  const MOBILE_BREAKPOINT = 1320; // harus sama dengan breakpoint di css/style.css
 
   // Tap pada menu induk (Tentang, Akademik, dst) untuk expand submenu di mobile,
   // sementara hover tetap berfungsi normal di desktop.
   document.querySelectorAll('.nav-item.has-dropdown > a').forEach(a => {
     a.addEventListener('click', (e) => {
-      if (window.innerWidth <= 900) {
+      if (window.innerWidth <= MOBILE_BREAKPOINT) {
         e.preventDefault();
         a.parentElement.classList.toggle('expanded');
       }
@@ -398,7 +393,7 @@ function setupMobileNav() {
   // Tutup menu mobile saat memilih tautan biasa (bukan induk dropdown)
   navLinks.querySelectorAll('a').forEach(a => {
     a.addEventListener('click', () => {
-      if (window.innerWidth <= 900 && !a.parentElement.classList.contains('has-dropdown')) {
+      if (window.innerWidth <= MOBILE_BREAKPOINT && !a.parentElement.classList.contains('has-dropdown')) {
         navLinks.classList.remove('mobile-open');
         btn.classList.remove('open');
       }
