@@ -71,6 +71,7 @@ const SEARCH_INDEX = [
   { judul: 'Profil Program Studi', url: 'profil.html', kata: 'profil sejarah visi misi tujuan struktur organisasi pimpinan sambutan koordinator renstra' },
   { judul: 'Akreditasi', url: 'akreditasi.html', kata: 'akreditasi lam ptip unggul status sk dokumen legal landasan hukum' },
   { judul: 'Penjaminan Mutu', url: 'mutu.html', kata: 'mutu smop ppepp iso 21001 zona integritas sertifikasi sop audit' },
+  { judul: 'Layanan Pengaduan', url: 'layanan-pengaduan.html', kata: 'pengaduan keluhan wbs whistle blowing satgas e-lapor inspire ppkt aduan komplain' },
   { judul: 'Kurikulum OBE-MBKM', url: 'kurikulum.html', kata: 'kurikulum mata kuliah sks semester obe mbkm cpl profil lulusan' },
   { judul: 'Dosen Tetap (DTPS)', url: 'index.html#dosen', kata: 'dosen dtps guru besar doktor profesor kepakaran' },
   { judul: 'Sarana & Prasarana', url: 'sarana.html', kata: 'sarana prasarana laboratorium lab likupang marine field station alat k3' },
