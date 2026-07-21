@@ -58,6 +58,9 @@ function showDashboard(email) {
   loadDosenFoto();
   loadPengurusDropdown();
   loadPengurusFoto();
+  loadLabDropdowns();
+  loadLabFoto();
+  loadLabKepalaFoto();
   if (currentRole === 'superadmin') {
     loadHeaderFoto();
     loadDiskusi();
@@ -302,6 +305,54 @@ document.getElementById('beritaFotoHapus').addEventListener('click', () => {
   document.getElementById('beritaFotoStatus').textContent = 'Gambar dihapus dari berita ini.';
 });
 
+// ── Galeri Foto Dokumentasi (0 atau lebih foto per berita) ──
+function getGaleriUrls() {
+  try { return JSON.parse(document.getElementById('beritaGaleriUrls').value || '[]'); }
+  catch (e) { return []; }
+}
+function setGaleriUrls(arr) {
+  document.getElementById('beritaGaleriUrls').value = JSON.stringify(arr);
+  renderGaleriPreview(arr);
+}
+function renderGaleriPreview(arr) {
+  const wrap = document.getElementById('beritaGaleriPreview');
+  if (!wrap) return;
+  if (!arr.length) { wrap.innerHTML = '<p class="muted" style="font-size:0.82rem;">Belum ada foto dokumentasi ditambahkan.</p>'; return; }
+  wrap.innerHTML = arr.map((url, i) => `
+    <div class="berita-galeri-item">
+      <img src="${url}" alt="Dokumentasi ${i + 1}">
+      <button type="button" class="berita-galeri-hapus" onclick="hapusGaleriFoto(${i})" title="Hapus foto ini">×</button>
+    </div>`).join('');
+}
+function hapusGaleriFoto(i) {
+  const arr = getGaleriUrls();
+  arr.splice(i, 1);
+  setGaleriUrls(arr);
+}
+
+document.getElementById('beritaGaleriInput').addEventListener('change', async (e) => {
+  const files = Array.from(e.target.files || []);
+  if (!files.length) return;
+  const status = document.getElementById('beritaGaleriStatus');
+  const arr = getGaleriUrls();
+  let sukses = 0;
+  for (const file of files) {
+    try {
+      status.textContent = `Mengunggah ${sukses + 1} dari ${files.length}…`;
+      const url = await uploadToMedia(file, 'berita-galeri', 'foto.jpg');
+      arr.push(url);
+      sukses++;
+    } catch (err) {
+      console.error('Gagal upload salah satu foto galeri:', err);
+    }
+  }
+  setGaleriUrls(arr);
+  status.textContent = sukses === files.length
+    ? `✅ ${sukses} foto ditambahkan ke galeri.`
+    : `⚠️ ${sukses} dari ${files.length} foto berhasil diunggah.`;
+  e.target.value = '';
+});
+
 document.getElementById('beritaForm').addEventListener('submit', async (e) => {
   e.preventDefault();
   const id = document.getElementById('beritaId').value;
@@ -314,6 +365,7 @@ document.getElementById('beritaForm').addEventListener('submit', async (e) => {
     gambar_rasio: document.getElementById('beritaFotoRasio').value || '1.3333',
     gambar_lebar: document.getElementById('beritaFotoLebar').value || '42',
     gambar_posisi: document.getElementById('beritaFotoPosisi').value || 'kiri',
+    galeri_foto: getGaleriUrls(),
   };
   if (!id) {
     payload.slug = payload.judul.toLowerCase().replace(/[^a-z0-9]+/g, '-').slice(0, 60) + '-' + Date.now();
@@ -326,6 +378,8 @@ document.getElementById('beritaForm').addEventListener('submit', async (e) => {
   document.getElementById('beritaFotoUrl').value = '';
   setBeritaFotoPreview('');
   document.getElementById('beritaFotoStatus').textContent = '';
+  setGaleriUrls([]);
+  document.getElementById('beritaGaleriStatus').textContent = '';
   document.getElementById('beritaCancelEdit').style.display = 'none';
   loadBerita();
 });
@@ -344,6 +398,8 @@ function editBerita(id) {
   document.getElementById('beritaFotoPosisi').value = b.gambar_posisi || 'kiri';
   setBeritaFotoPreview(b.gambar_url || '');
   document.getElementById('beritaFotoStatus').textContent = '';
+  setGaleriUrls(Array.isArray(b.galeri_foto) ? b.galeri_foto : []);
+  document.getElementById('beritaGaleriStatus').textContent = '';
   document.getElementById('beritaCancelEdit').style.display = 'inline-block';
 }
 document.getElementById('beritaCancelEdit').addEventListener('click', () => {
@@ -352,6 +408,8 @@ document.getElementById('beritaCancelEdit').addEventListener('click', () => {
   document.getElementById('beritaFotoUrl').value = '';
   setBeritaFotoPreview('');
   document.getElementById('beritaFotoStatus').textContent = '';
+  setGaleriUrls([]);
+  document.getElementById('beritaGaleriStatus').textContent = '';
   document.getElementById('beritaCancelEdit').style.display = 'none';
 });
 
@@ -518,6 +576,110 @@ async function loadPengurusFoto() {
         </div>
       </div>`;
   }).join('') || '<p class="muted">Belum ada foto pengurus diunggah.</p>';
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+// FOTO LABORATORIUM & FOTO KEPALA LAB (site_settings, key = lab_foto:{idx} / lab_kepala_foto:{idx})
+// ─────────────────────────────────────────────────────────────────────────
+let _labDataCache = [];
+
+async function loadLabDropdowns() {
+  try {
+    const res = await fetch('js/data/sarana.json');
+    const data = await res.json();
+    _labDataCache = data.laboratorium || [];
+    const opts = _labDataCache.map((l, i) => `<option value="${i}">${l.no}. ${l.nama}</option>`).join('');
+    const selLab = document.getElementById('labFotoSelect');
+    const selKepala = document.getElementById('labKepalaFotoSelect');
+    if (selLab) selLab.innerHTML = opts;
+    if (selKepala) selKepala.innerHTML = opts;
+  } catch (e) { console.error(e); }
+}
+
+const _labFotoForm = document.getElementById('labFotoForm');
+if (_labFotoForm) {
+  _labFotoForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const status = document.getElementById('labFotoStatus');
+    const idx = document.getElementById('labFotoSelect').value;
+    const file = document.getElementById('labFotoFile').files[0];
+    if (!file) return;
+    try {
+      const cropped = await openCropper(file, 4 / 3, 'Sesuaikan Foto Laboratorium');
+      status.textContent = 'Mengunggah…';
+      const url = await uploadToMedia(cropped, 'lab', 'foto.jpg');
+      const { error } = await sb.from('site_settings').upsert([{ key: `lab_foto:${idx}`, value: url, updated_at: new Date().toISOString() }]);
+      if (error) throw error;
+      status.textContent = '✅ Foto lab tersimpan.';
+      _labFotoForm.reset();
+      loadLabFoto();
+    } catch (err) {
+      if (err.message !== 'dibatalkan') status.textContent = '⚠️ Gagal: ' + err.message;
+    }
+  });
+}
+
+async function loadLabFoto() {
+  const grid = document.getElementById('labFotoGrid');
+  if (!grid) return;
+  const { data, error } = await sb.from('site_settings').select('*').like('key', 'lab_foto:%');
+  if (error) { grid.innerHTML = `<p>Gagal memuat: ${error.message}</p>`; return; }
+  grid.innerHTML = (data || []).map(s => {
+    const idx = parseInt(s.key.replace('lab_foto:', ''), 10);
+    const lab = _labDataCache[idx];
+    const label = lab ? `${lab.no}. ${lab.nama}` : `Lab #${idx}`;
+    return `
+      <div class="admin-preview-card">
+        <img src="${s.value}" alt="">
+        <div class="body">
+          <strong>${label}</strong>
+          <button onclick="deleteSetting('${s.key}', loadLabFoto)">Hapus</button>
+        </div>
+      </div>`;
+  }).join('') || '<p class="muted">Belum ada foto laboratorium diunggah.</p>';
+}
+
+const _labKepalaFotoForm = document.getElementById('labKepalaFotoForm');
+if (_labKepalaFotoForm) {
+  _labKepalaFotoForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const status = document.getElementById('labKepalaFotoStatus');
+    const idx = document.getElementById('labKepalaFotoSelect').value;
+    const file = document.getElementById('labKepalaFotoFile').files[0];
+    if (!file) return;
+    try {
+      const cropped = await openCropper(file, 1, 'Sesuaikan Foto Kepala Laboratorium');
+      status.textContent = 'Mengunggah…';
+      const url = await uploadToMedia(cropped, 'lab-kepala', 'foto.jpg');
+      const { error } = await sb.from('site_settings').upsert([{ key: `lab_kepala_foto:${idx}`, value: url, updated_at: new Date().toISOString() }]);
+      if (error) throw error;
+      status.textContent = '✅ Foto kepala lab tersimpan.';
+      _labKepalaFotoForm.reset();
+      loadLabKepalaFoto();
+    } catch (err) {
+      if (err.message !== 'dibatalkan') status.textContent = '⚠️ Gagal: ' + err.message;
+    }
+  });
+}
+
+async function loadLabKepalaFoto() {
+  const grid = document.getElementById('labKepalaFotoGrid');
+  if (!grid) return;
+  const { data, error } = await sb.from('site_settings').select('*').like('key', 'lab_kepala_foto:%');
+  if (error) { grid.innerHTML = `<p>Gagal memuat: ${error.message}</p>`; return; }
+  grid.innerHTML = (data || []).map(s => {
+    const idx = parseInt(s.key.replace('lab_kepala_foto:', ''), 10);
+    const lab = _labDataCache[idx];
+    const label = lab ? `${lab.kepala} (${lab.nama})` : `Lab #${idx}`;
+    return `
+      <div class="admin-preview-card">
+        <img src="${s.value}" alt="" style="border-radius:50%;">
+        <div class="body">
+          <strong>${label}</strong>
+          <button onclick="deleteSetting('${s.key}', loadLabKepalaFoto)">Hapus</button>
+        </div>
+      </div>`;
+  }).join('') || '<p class="muted">Belum ada foto kepala lab diunggah.</p>';
 }
 
 // ─────────────────────────────────────────────────────────────────────────

@@ -81,9 +81,51 @@ async function loadBeritaDetail() {
     const konten = (data.konten || '').trim();
     const paragraphs = konten.split(/\n\s*\n/).map(p => `<p>${p.replace(/\n/g, '<br>')}</p>`).join('');
     document.getElementById('beritaKonten').innerHTML = paragraphs || '<p class="muted">(Isi berita kosong)</p>';
+
+    // Galeri foto dokumentasi (0 atau lebih)
+    const galeri = Array.isArray(data.galeri_foto) ? data.galeri_foto.filter(Boolean) : [];
+    if (galeri.length) {
+      _galeriFotos = galeri;
+      const section = document.getElementById('beritaGaleriSection');
+      const grid = document.getElementById('beritaGaleriGrid');
+      section.style.display = 'block';
+      grid.innerHTML = galeri.map((url, i) => `
+        <button type="button" class="berita-galeri-thumb" onclick="bukaLightbox(${i})">
+          <img src="${url}" alt="Dokumentasi kegiatan ${i + 1}" loading="lazy">
+        </button>`).join('');
+    }
   } catch (e) {
     console.error('Gagal memuat berita:', e);
     judulEl.textContent = 'Gagal memuat berita';
   }
 }
 loadBeritaDetail();
+
+// ── Lightbox galeri foto ──
+let _galeriFotos = [];
+let _galeriIndex = 0;
+
+function bukaLightbox(i) {
+  _galeriIndex = i;
+  const lb = document.getElementById('galeriLightbox');
+  document.getElementById('galeriLightboxImg').src = _galeriFotos[i];
+  lb.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+function tutupLightbox(e) {
+  if (e && e.target.closest('img')) return; // klik gambar tidak menutup
+  document.getElementById('galeriLightbox').classList.remove('active');
+  document.body.style.overflow = '';
+}
+function navLightbox(e, dir) {
+  e.stopPropagation();
+  _galeriIndex = (_galeriIndex + dir + _galeriFotos.length) % _galeriFotos.length;
+  document.getElementById('galeriLightboxImg').src = _galeriFotos[_galeriIndex];
+}
+document.addEventListener('keydown', (e) => {
+  const lb = document.getElementById('galeriLightbox');
+  if (!lb || !lb.classList.contains('active')) return;
+  if (e.key === 'Escape') tutupLightbox();
+  if (e.key === 'ArrowLeft') navLightbox(e, -1);
+  if (e.key === 'ArrowRight') navLightbox(e, 1);
+});
