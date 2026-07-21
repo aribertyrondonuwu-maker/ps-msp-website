@@ -1,23 +1,38 @@
 {
  "_meta": {
-  "terakhir_diperbarui": "2026-07-17",
-  "catatan": "[DATA DIPERLUKAN: struktur pengurus resmi Ikatan Alumni PS MSP belum ditemukan di dokumen LED/LKPS — hanya WhatsApp Group Alumni MSP (sejak 2017) yang terdokumentasi. Konfirmasi ke Koordinator Prodi/WD Kemahasiswaan & Alumni FPIK untuk nama & struktur pengurus resmi, lalu ganti array `pengurus` di bawah."
+  "terakhir_diperbarui": "2026-07-20",
+  "catatan": "Pengurus inti Ikatan Alumni PS MSP FPIK Unsrat. Field foto dikosongkan agar superadmin dapat mengunggah foto pengurus melalui panel admin."
  },
  "pengurus": [
   {
-   "peran": "Ketua",
-   "nama": "[DATA DIPERLUKAN]",
-   "angkatan": ""
+   "peran": "Ketua Umum",
+   "nama": "Ir. Boyke Toloh, M.Sc.",
+   "foto": ""
+  },
+  {
+   "peran": "Ketua Harian",
+   "nama": "Adriyanto Papuke, S.Pi.",
+   "foto": ""
   },
   {
    "peran": "Sekretaris",
-   "nama": "[DATA DIPERLUKAN]",
-   "angkatan": ""
+   "nama": "Dr. Ir. Rose O. S. E. Mantiri, M.Sc.",
+   "foto": ""
   },
   {
-   "peran": "Koordinator Jejaring Karier",
-   "nama": "[DATA DIPERLUKAN]",
-   "angkatan": ""
+   "peran": "Wakil Sekretaris",
+   "nama": "Jhon Liuw, S.Pi.",
+   "foto": ""
+  },
+  {
+   "peran": "Bendahara",
+   "nama": "Ir. Ari Rondonuwu, M.Sc.",
+   "foto": ""
+  },
+  {
+   "peran": "Wakil Bendahara",
+   "nama": "Monaliana Manabung, S.Pi.",
+   "foto": ""
   }
  ],
  "kegiatan": [
@@ -36,5 +51,13 @@
    "tahun": "",
    "deskripsi": "[DATA DIPERLUKAN: tambahkan kegiatan reuni, webinar karier, atau kunjungan alumni ke kampus bila ada]"
   }
- ]
+ ],
+ "ikatan_alumni": {
+  "nama": "Ikatan Alumni Program Studi Manajemen Sumberdaya Perairan FPIK UNSRAT",
+  "deskripsi": [
+   "Ikatan Alumni Program Studi Manajemen Sumberdaya Perairan (MSP), Fakultas Perikanan dan Ilmu Kelautan (FPIK), Universitas Sam Ratulangi merupakan wadah yang menghimpun seluruh alumni dalam upaya mempererat tali silaturahmi, membangun jejaring profesional, serta mendukung pengembangan Program Studi MSP.",
+   "Melalui berbagai kegiatan dan kerja sama, Ikatan Alumni MSP diharapkan dapat menjadi mitra strategis bagi program studi dalam pelaksanaan pendidikan, penelitian, dan pengabdian kepada masyarakat.",
+   "Kepengurusan ini diharapkan terus memperkuat sinergi antara alumni, mahasiswa, dosen, dan seluruh pemangku kepentingan dalam mendukung kemajuan Program Studi Manajemen Sumberdaya Perairan, Fakultas Perikanan dan Ilmu Kelautan, Universitas Sam Ratulangi."
+  ]
+ }
 }
