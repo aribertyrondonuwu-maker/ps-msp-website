@@ -329,7 +329,10 @@ img.dosen-photo { display: block; }
   }
   .nav-item.has-dropdown.expanded .dropdown { display: flex; }
   .nav-item.has-dropdown.expanded > a { color: var(--teal) !important; }
-  .dropdown a { padding: 12px 4px; border-bottom: 1px solid #f1f5f9; }
+  .nav-links .dropdown a,
+  .nav-item.has-dropdown .dropdown a { padding: 12px 4px 12px 14px !important; border-bottom: 1px solid #f1f5f9; color: #0a2540 !important; font-weight: 500 !important; background: #fff !important; text-transform: none !important; opacity: 1 !important; }
+  .nav-links .dropdown a:hover,
+  .nav-links .dropdown a.active { color: #14b8a6 !important; }
 }
 .luaran-meta { color: var(--muted); font-size: 0.78rem; white-space: nowrap; }
 .luaran-toggle { margin-top: 16px; }
@@ -525,3 +528,21 @@ img.dosen-photo { display: block; }
 .nav-links > .nav-item:nth-last-child(-n+2) .dropdown { left: auto; right: 0; transform: translateX(0) translateY(8px); }
 .nav-links > .nav-item:nth-last-child(-n+2).has-dropdown:hover .dropdown,
 .nav-links > .nav-item:nth-last-child(-n+2).has-dropdown:focus-within .dropdown { transform: translateX(0) translateY(4px); }
+
+/* ═══ Bagan Struktur Pengurus Alumni ═══ */
+.bagan-struktur { display: flex; flex-direction: column; align-items: center; padding: 10px 0; }
+.bagan-baris { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; }
+.bagan-baris-tunggal { justify-content: center; }
+.bagan-card { width: 220px; flex: 0 0 220px; }
+.bagan-garis-vertikal { width: 2px; height: 28px; background: var(--border); }
+.bagan-garis-vertikal.kecil { height: 20px; margin: 0 auto; }
+.bagan-garis-horizontal { width: 50%; max-width: 420px; height: 2px; background: var(--border); margin-bottom: 0; }
+.bagan-cabang { display: flex; justify-content: center; gap: 80px; margin-top: 0; position: relative; flex-wrap: wrap; }
+.bagan-cabang::before { content: ''; position: absolute; top: -2px; left: 25%; right: 25%; height: 2px; background: transparent; }
+.bagan-kolom { display: flex; flex-direction: column; align-items: center; position: relative; }
+.bagan-kolom::before { content: ''; position: absolute; top: -28px; left: 50%; width: 2px; height: 28px; background: var(--border); }
+@media (max-width: 620px) {
+  .bagan-cabang { gap: 30px; }
+  .bagan-card { width: 160px; flex-basis: 160px; }
+  .bagan-kolom::before { display: none; }
+}
