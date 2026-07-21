@@ -581,3 +581,39 @@ input, textarea, select { max-width: 100%; box-sizing: border-box; }
 
 /* Kontras teks sekunder (WCAG AA) — perkuat dari abu terang */
 .muted, .small-note { color: #5a6b7a; }
+
+/* Foto kepala laboratorium (bulat kecil, di samping nama) */
+.lab-kepala-row { display: flex; align-items: center; gap: 10px; margin: 4px 0; }
+.lab-kepala-foto { flex: 0 0 36px; width: 36px; height: 36px; border-radius: 50%; overflow: hidden; background: #e8eef2; }
+.lab-kepala-foto img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.lab-kepala-foto-empty { display: flex; align-items: center; justify-content: center; background: var(--navy); }
+.lab-kepala-foto-empty span { color: #fff; font-size: 0.65rem; font-weight: 700; }
+.lab-kepala-row .lab-kepala { margin: 0; }
+
+/* Admin: galeri foto dokumentasi berita */
+.berita-galeri-section { margin: 4px 0; padding: 14px; background: #f8fafc; border-radius: 12px; }
+.berita-galeri-preview { display: flex; flex-wrap: wrap; gap: 10px; }
+.berita-galeri-item { position: relative; width: 84px; height: 84px; border-radius: 8px; overflow: hidden; background: #e8eef2; }
+.berita-galeri-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.berita-galeri-hapus { position: absolute; top: 2px; right: 2px; width: 20px; height: 20px; border-radius: 50%; border: none; background: rgba(220,38,38,0.9); color: #fff; font-size: 0.9rem; line-height: 1; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+
+/* ═══ Galeri Foto Dokumentasi Berita (halaman publik) ═══ */
+.berita-galeri-title { color: var(--navy); font-family: var(--font-head); font-size: 1.2rem; margin: 44px 0 18px; padding-top: 24px; border-top: 1px solid var(--border); }
+.berita-galeri-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 12px; }
+.berita-galeri-thumb { border: none; padding: 0; border-radius: 10px; overflow: hidden; cursor: pointer; aspect-ratio: 1/1; background: #e8eef2; transition: transform .15s; }
+.berita-galeri-thumb:hover { transform: scale(1.03); }
+.berita-galeri-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+/* Lightbox */
+.galeri-lightbox { position: fixed; inset: 0; background: rgba(10,15,25,0.94); z-index: 200; display: none; align-items: center; justify-content: center; padding: 40px; }
+.galeri-lightbox.active { display: flex; }
+.galeri-lightbox img { max-width: 90vw; max-height: 85vh; object-fit: contain; border-radius: 8px; }
+.galeri-lightbox-close { position: absolute; top: 20px; right: 26px; background: none; border: none; color: #fff; font-size: 2.2rem; cursor: pointer; line-height: 1; }
+.galeri-lightbox-nav { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.12); border: none; color: #fff; font-size: 1.4rem; width: 46px; height: 46px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background .15s; }
+.galeri-lightbox-nav:hover { background: rgba(255,255,255,0.25); }
+.galeri-lightbox-prev { left: 20px; }
+.galeri-lightbox-next { right: 20px; }
+@media (max-width: 600px) {
+  .galeri-lightbox { padding: 16px; }
+  .galeri-lightbox-nav { width: 38px; height: 38px; font-size: 1.1rem; }
+}
