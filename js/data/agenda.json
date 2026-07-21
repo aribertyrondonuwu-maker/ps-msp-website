@@ -1,0 +1,15 @@
+{
+  "_meta": {
+    "terakhir_diperbarui": "2026-07-21",
+    "catatan": "Kalender akademik mengikuti kalender resmi Unsrat. Tanggal spesifik perlu diisi/diperbarui admin setiap tahun akademik dari SK Rektor terbaru."
+  },
+  "tautan_resmi": {
+    "label": "Kalender Akademik Resmi Unsrat",
+    "url": "https://www.unsrat.ac.id/"
+  },
+  "tahun_akademik": "2026/2027",
+  "kalender": [
+    { "kegiatan": "[DATA DIPERLUKAN: isi dari SK Kalender Akademik Unsrat]", "mulai": "", "selesai": "", "semester": "Ganjil" }
+  ],
+  "agenda": []
+}
