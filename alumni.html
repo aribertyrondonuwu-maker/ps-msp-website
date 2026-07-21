@@ -30,6 +30,8 @@
         <a href="profil.html">Tentang &#9662;</a>
         <div class="dropdown">
           <a href="profil.html">Profil</a>
+          <a href="profil.html#sejarah">Sejarah</a>
+          <a href="profil.html#vmt">Visi, Misi &amp; Tujuan</a>
           <a href="akreditasi.html">Akreditasi</a>
         </div>
       </div>
@@ -37,10 +39,18 @@
         <a href="kurikulum.html">Akademik &#9662;</a>
         <div class="dropdown">
           <a href="kurikulum.html">Kurikulum</a>
+          <a href="pendidikan.html">Pendidikan &amp; Pengajaran</a>
           <a href="index.html#dosen">Dosen</a>
         </div>
       </div>
-      <div class="nav-item"><a href="sarana.html">Sarana &amp; Prasarana</a></div>
+      <div class="nav-item has-dropdown">
+        <a href="sarana.html">Sarana &amp; Prasarana &#9662;</a>
+        <div class="dropdown">
+          <a href="sarana.html#lab-fpik">14 Laboratorium FPIK</a>
+          <a href="sarana.html#lab-universitas">Lab Tingkat Universitas</a>
+          <a href="sarana.html#standar-lab">Standar Pengelolaan (K3 &amp; Mutu)</a>
+        </div>
+      </div>
       <div class="nav-item has-dropdown">
         <a href="pendidikan.html">Tridharma &#9662;</a>
         <div class="dropdown">
@@ -53,8 +63,25 @@
           <a href="tridharma.html#publikasi-mahasiswa">Publikasi Mahasiswa</a>
         </div>
       </div>
-      <div class="nav-item"><a href="kemahasiswaan.html">Kemahasiswaan</a></div>
-      <div class="nav-item"><a href="alumni.html" class="active">Alumni</a></div>
+      <div class="nav-item has-dropdown">
+        <a href="kemahasiswaan.html">Kemahasiswaan &#9662;</a>
+        <div class="dropdown">
+          <a href="kemahasiswaan.html#statistik-mhs">Statistik Mahasiswa</a>
+          <a href="kemahasiswaan.html#layanan-mhs">Layanan Kemahasiswaan</a>
+          <a href="kemahasiswaan.html#prestasi-mhs">Prestasi Mahasiswa</a>
+          <a href="kemahasiswaan.html#himasuper">Organisasi (HIMASUPER &amp; MAPALA)</a>
+        </div>
+      </div>
+      <div class="nav-item has-dropdown">
+        <a href="alumni.html" class="active">Alumni &#9662;</a>
+        <div class="dropdown">
+          <a href="alumni.html#tentang">Tentang Ikatan Alumni</a>
+          <a href="alumni.html#pengurus">Pengurus</a>
+          <a href="alumni.html#kegiatan">Kegiatan &amp; Kontribusi</a>
+          <a href="alumni.html#pekerjaan">Sebaran Pekerjaan</a>
+          <a href="forum-alumni.html">Forum Percakapan</a>
+        </div>
+      </div>
       <div class="nav-item has-dropdown">
         <a href="mutu.html">Mutu &amp; Pengaduan &#9662;</a>
         <div class="dropdown">
@@ -62,9 +89,22 @@
           <a href="layanan-pengaduan.html">Layanan Pengaduan</a>
         </div>
       </div>
-      <div class="nav-item"><a href="berita.html">Berita</a></div>
-      <div class="nav-item"><a href="galeri-media.html">Galeri Media</a></div>
-      <div class="nav-item"><a href="tautan.html">Tautan</a></div>
+      <div class="nav-item has-dropdown">
+        <a href="galeri-media.html">Galeri Media &#9662;</a>
+        <div class="dropdown">
+          <a href="galeri-media.html#akun-resmi">Akun Resmi</a>
+          <a href="galeri-media.html#video-youtube">Video YouTube</a>
+          <a href="galeri-media.html#konten-tiktok">TikTok</a>
+        </div>
+      </div>
+      <div class="nav-item has-dropdown">
+        <a href="berita.html">Berita &#9662;</a>
+        <div class="dropdown">
+          <a href="berita.html">Semua Berita</a>
+          <a href="galeri-media.html">Galeri Media</a>
+          <a href="tautan.html">Tautan Penting</a>
+        </div>
+      </div>
     </nav>
       <div class="navbar-actions">
       <button class="nav-search-btn" onclick="openSearch()" aria-label="Cari"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></button>
@@ -76,16 +116,33 @@
   </div>
 </header>
 
-<section class="page-hero">
+<section class="page-hero page-hero-alumni">
   <div class="container">
-    <p class="eyebrow">Jejaring Alumni</p>
-    <h1>Ikatan Alumni PS MSP</h1>
-    <p class="hero-sub">Menghubungkan lulusan Manajemen Sumberdaya Perairan FPIK UNSRAT — berbagi peluang kerja, membina almamater, dan merayakan kontribusi alumni di dunia kelautan dan perikanan.</p>
+    <div class="alumni-hero-inner">
+      <div class="alumni-hero-logo" id="alumniLogo"></div>
+      <div class="alumni-hero-text">
+        <p class="eyebrow">Jejaring Alumni</p>
+        <h1>Ikatan Alumni PS MSP</h1>
+        <p class="hero-sub">Menghubungkan lulusan Manajemen Sumberdaya Perairan FPIK UNSRAT — berbagi peluang kerja, membina almamater, dan merayakan kontribusi alumni di dunia kelautan dan perikanan.</p>
+      </div>
+    </div>
   </div>
 </section>
 
+<!-- SUB-MENU HALAMAN ALUMNI -->
+<nav class="submenu" id="alumniSubmenu">
+  <div class="container submenu-inner">
+    <a href="#tentang" class="submenu-link">Tentang</a>
+    <a href="#pengurus" class="submenu-link">Pengurus</a>
+    <a href="#kegiatan" class="submenu-link">Kegiatan</a>
+    <a href="#pekerjaan" class="submenu-link">Sebaran Pekerjaan</a>
+    <a href="#diskusi" class="submenu-link">Percakapan</a>
+    <a href="forum-alumni.html" class="submenu-link submenu-link-cta">Forum →</a>
+  </div>
+</nav>
+
 <!-- TENTANG -->
-<section class="section">
+<section class="section" id="tentang">
   <div class="container">
     <div class="cards-grid">
       <article class="card">
@@ -107,9 +164,9 @@
 <!-- PENGURUS -->
 <section class="section section-alt" id="pengurus">
   <div class="container">
-    <h2 class="section-title">Pengurus</h2>
-    <p class="section-sub">Struktur kepengurusan Ikatan Alumni PS MSP.</p>
-    <div class="cards-grid" id="pengurusGrid">
+    <h2 class="section-title">Pengurus Inti Ikatan Alumni</h2>
+    <div id="ikatanAlumniNarasi" class="himasuper-deskripsi" style="margin-bottom:28px;"></div>
+    <div class="pengurus-grid" id="pengurusGrid">
       <!-- diisi dari js/data/alumni-pengurus.json -->
     </div>
   </div>
@@ -139,24 +196,14 @@
   </div>
 </section>
 
-<!-- DISKUSI / KOMENTAR -->
+<!-- DISKUSI / FORUM -->
 <section class="section" id="diskusi">
   <div class="container">
-    <h2 class="section-title">Diskusi Alumni</h2>
-    <p class="section-sub">Ruang berbagi kabar, lowongan kerja, atau sekadar menyapa sesama alumni MSP. Pesan ditinjau admin sebelum tampil publik.</p>
-
-    <form id="diskusiForm" class="diskusi-form card">
-      <div class="form-row">
-        <input type="text" id="diskusiNama" placeholder="Nama" required maxlength="80">
-        <input type="text" id="diskusiAngkatan" placeholder="Angkatan (mis. 2018)" maxlength="20">
-      </div>
-      <textarea id="diskusiPesan" placeholder="Tulis pesan, kabar, atau info lowongan kerja..." required maxlength="500" rows="3"></textarea>
-      <button type="submit" class="btn btn-primary btn-sm">Kirim Pesan</button>
-      <p class="form-note" id="diskusiStatus"></p>
-    </form>
-
-    <div id="diskusiList" class="diskusi-list">
-      <p class="muted">Memuat diskusi…</p>
+    <h2 class="section-title">Percakapan Alumni</h2>
+    <p class="section-sub">Ruang berbagi kabar, lowongan kerja, dan menyapa sesama alumni MSP — kini dengan tampilan percakapan modern dan fitur saling membalas.</p>
+    <div class="forum-cta card">
+      <div class="forum-cta-preview" id="forumPreview"></div>
+      <a href="forum-alumni.html" class="btn btn-primary">Buka Percakapan Alumni →</a>
     </div>
   </div>
 </section>

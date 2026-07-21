@@ -32,6 +32,7 @@
       <button class="admin-nav-btn active" data-tab="berita">📰 Berita</button>
       <button class="admin-nav-btn" data-tab="galeri">🖼️ Galeri</button>
       <button class="admin-nav-btn" data-tab="dosen-foto">👤 Foto Dosen</button>
+      <button class="admin-nav-btn" data-tab="pengurus-foto">🎓 Foto Pengurus Alumni</button>
       <button class="admin-nav-btn superadmin-only" data-tab="header-foto">🎨 Header Halaman</button>
       <button class="admin-nav-btn superadmin-only" data-tab="slideshow">🖼️ Slideshow Beranda</button>
       <button class="admin-nav-btn superadmin-only" data-tab="logo-footer">🏛️ Logo Header</button>
@@ -73,6 +74,15 @@
             </label>
             <button type="button" id="beritaFotoHapus" class="btn-delete" style="border:0;display:none;">Hapus Gambar</button>
             <input type="hidden" id="beritaFotoUrl">
+
+            <label class="berita-size-label">Posisi gambar terhadap teks:
+              <select id="beritaFotoPosisi">
+                <option value="kiri" selected>Kiri — teks membungkus di kanan</option>
+                <option value="kanan">Kanan — teks membungkus di kiri</option>
+                <option value="penuh">Penuh — gambar besar di atas teks</option>
+                <option value="inline">Kecil — sejajar di dalam teks</option>
+              </select>
+            </label>
 
             <label class="berita-size-label">Rasio kotak gambar:
               <select id="beritaFotoRasio">
@@ -153,6 +163,21 @@
       <div class="admin-grid-preview" id="dosenFotoGrid" style="margin-top:24px;"></div>
     </section>
 
+    <!-- FOTO PENGURUS ALUMNI -->
+    <section id="tab-pengurus-foto" class="admin-tab">
+      <h2>Foto Pengurus Ikatan Alumni</h2>
+      <p class="muted">Pilih pengurus, upload foto — otomatis menggantikan inisial di halaman Alumni.</p>
+      <form id="pengurusFotoForm" class="admin-form">
+        <select id="pengurusFotoSelect"></select>
+        <input type="file" id="pengurusFotoFile" accept="image/*" required>
+        <div class="admin-form-actions">
+          <button type="submit" class="btn btn-primary btn-sm">Upload Foto</button>
+        </div>
+        <p class="form-note" id="pengurusFotoStatus"></p>
+      </form>
+      <div class="admin-grid-preview" id="pengurusFotoGrid" style="margin-top:24px;"></div>
+    </section>
+
     <!-- HEADER FOTO -->
     <section id="tab-header-foto" class="admin-tab">
       <h2>Foto Header per Halaman</h2>
@@ -171,6 +196,7 @@
           <option value="hero:berita">Berita</option>
           <option value="hero:tautan">Tautan</option>
           <option value="korprodi_foto">— Foto Koordinator Prodi (Sambutan Beranda)</option>
+          <option value="alumni_logo">— Logo Ikatan Alumni (Halaman Alumni)</option>
         </select>
         <input type="file" id="headerFotoFile" accept="image/*" required>
         <div class="admin-form-actions">
