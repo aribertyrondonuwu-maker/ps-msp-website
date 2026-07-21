@@ -7,32 +7,44 @@
   {
    "peran": "Ketua Umum",
    "nama": "Ir. Boyke Toloh, M.Sc.",
-   "foto": ""
+   "foto": "",
+   "level": 1,
+   "cabang": "pusat"
   },
   {
    "peran": "Ketua Harian",
    "nama": "Adriyanto Papuke, S.Pi.",
-   "foto": ""
+   "foto": "",
+   "level": 2,
+   "cabang": "pusat"
   },
   {
    "peran": "Sekretaris",
    "nama": "Dr. Ir. Rose O. S. E. Mantiri, M.Sc.",
-   "foto": ""
+   "foto": "",
+   "level": 3,
+   "cabang": "kiri"
   },
   {
    "peran": "Wakil Sekretaris",
    "nama": "Jhon Liuw, S.Pi.",
-   "foto": ""
+   "foto": "",
+   "level": 4,
+   "cabang": "kiri"
   },
   {
    "peran": "Bendahara",
    "nama": "Ir. Ari Rondonuwu, M.Sc.",
-   "foto": ""
+   "foto": "",
+   "level": 3,
+   "cabang": "kanan"
   },
   {
    "peran": "Wakil Bendahara",
    "nama": "Monaliana Manabung, S.Pi.",
-   "foto": ""
+   "foto": "",
+   "level": 4,
+   "cabang": "kanan"
   }
  ],
  "kegiatan": [
