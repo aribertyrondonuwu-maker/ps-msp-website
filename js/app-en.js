@@ -39,9 +39,20 @@ async function renderDosenEn() {
     const res = await fetch('js/data/dosen.json');
     if (!res.ok) throw new Error('dosen.json not found');
     const dosen = await res.json();
+
+    let fotoMap = {};
+    if (window.sbClient) {
+      try {
+        const { data } = await window.sbClient.from('site_settings').select('key,value').like('key', 'dosen_foto:%');
+        (data || []).forEach(row => { fotoMap[row.key.replace('dosen_foto:', '')] = row.value; });
+      } catch (e) { /* diam, pakai avatar inisial */ }
+    }
+
     grid.innerHTML = dosen.map(d => `
       <a class="dosen-card" href="dosen-detail.html?id=${d.id}">
-        <div class="dosen-photo">${d.inisial || d.nama.split(' ').map(w => w[0]).slice(0,2).join('')}</div>
+        ${fotoMap[d.id]
+          ? `<img class="dosen-photo" src="${fotoMap[d.id]}" alt="${d.nama}" style="object-fit:cover;">`
+          : `<div class="dosen-photo">${d.inisial || d.nama.split(' ').map(w => w[0]).slice(0,2).join('')}</div>`}
         <div class="dosen-info">
           <h4>${d.nama}</h4>
           <p>${d.keahlian}</p>
@@ -80,3 +91,56 @@ async function renderSosmedEn() {
   } catch (e) { /* silent */ }
 }
 renderSosmedEn();
+
+// ── Logo institusi navbar (diunggah admin, sama dengan versi ID) ──
+async function renderHeaderLogosEn() {
+  const slot = document.getElementById('navbarLogosTop');
+  if (!slot || !window.sbClient) return;
+  try {
+    const { data } = await window.sbClient.from('site_settings').select('key,value').like('key', 'logo:%');
+    const logos = (data || []).filter(r => r.value && r.value.trim()).sort((a, b) => a.key.localeCompare(b.key));
+    if (!logos.length) return;
+    slot.innerHTML = logos.map(l => `<img src="${l.value}" alt="institutional logo" class="navbar-logo-img">`).join('');
+  } catch (e) { /* diam */ }
+}
+renderHeaderLogosEn();
+
+// ── Menu mobile: sisipkan tombol hamburger otomatis (sebelumnya hilang di versi Inggris) ──
+function setupMobileNavEn() {
+  const navLinks = document.querySelector('.nav-links');
+  const navbarMainInner = document.querySelector('.navbar-main-inner');
+  if (!navLinks || !navbarMainInner || document.querySelector('.nav-hamburger')) return;
+
+  const btn = document.createElement('button');
+  btn.className = 'nav-hamburger';
+  btn.setAttribute('aria-label', 'Open navigation menu');
+  btn.innerHTML = '<span></span><span></span><span></span>';
+  btn.addEventListener('click', () => {
+    navLinks.classList.toggle('mobile-open');
+    btn.classList.toggle('open');
+  });
+
+  const actions = document.querySelector('.navbar-actions');
+  navbarMainInner.insertBefore(btn, actions || null);
+
+  const MOBILE_BREAKPOINT = 1320;
+
+  document.querySelectorAll('.nav-item.has-dropdown > a').forEach(a => {
+    a.addEventListener('click', (e) => {
+      if (window.innerWidth <= MOBILE_BREAKPOINT) {
+        e.preventDefault();
+        a.parentElement.classList.toggle('expanded');
+      }
+    });
+  });
+
+  navLinks.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      if (window.innerWidth <= MOBILE_BREAKPOINT && !a.parentElement.classList.contains('has-dropdown')) {
+        navLinks.classList.remove('mobile-open');
+        btn.classList.remove('open');
+      }
+    });
+  });
+}
+setupMobileNavEn();

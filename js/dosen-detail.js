@@ -82,6 +82,18 @@ async function loadDosenDetail() {
       html += `</ul></div>`;
     }
 
+    if (d.keterlibatan_jurnal?.length) {
+      html += `<div class="detail-block"><h2>Keterlibatan Pengelolaan Jurnal</h2><ul class="rekognisi-list">`;
+      d.keterlibatan_jurnal.forEach(r => html += `<li>${r}</li>`);
+      html += `</ul></div>`;
+    }
+
+    if (d.zona_integritas?.length) {
+      html += `<div class="detail-block"><h2>Keterlibatan dalam Zona Integritas</h2><ul class="rekognisi-list">`;
+      d.zona_integritas.forEach(r => html += `<li>${r}</li>`);
+      html += `</ul></div>`;
+    }
+
     if (d.mata_kuliah_diampu?.length && !d.mata_kuliah_diampu[0].startsWith('[DATA')) {
       html += `<div class="detail-block"><h2>Mata Kuliah Diampu</h2><div class="pill-list">`;
       d.mata_kuliah_diampu.forEach(mk => html += `<span class="pill">${mk}</span>`);
