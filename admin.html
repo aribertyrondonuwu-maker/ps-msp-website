@@ -34,9 +34,9 @@
       <button class="admin-nav-btn" data-tab="dosen-foto">👤 Foto Dosen</button>
       <button class="admin-nav-btn" data-tab="pengurus-foto">🎓 Foto Pengurus Alumni</button>
       <button class="admin-nav-btn" data-tab="lab-foto">🔬 Foto Laboratorium</button>
-      <button class="admin-nav-btn superadmin-only" data-tab="header-foto">🎨 Header Halaman</button>
+      <button class="admin-nav-btn superadmin-only" data-tab="header-foto">🎨 Foto Header &amp; Logo Alumni</button>
       <button class="admin-nav-btn superadmin-only" data-tab="slideshow">🖼️ Slideshow Beranda</button>
-      <button class="admin-nav-btn superadmin-only" data-tab="logo-footer">🏛️ Logo Header</button>
+      <button class="admin-nav-btn superadmin-only" data-tab="logo-footer">🏛️ Logo Institusi (Navbar)</button>
       <button class="admin-nav-btn superadmin-only" data-tab="sosmed">🔗 Media Sosial</button>
       <button class="admin-nav-btn superadmin-only" data-tab="diskusi">💬 Diskusi Alumni</button>
       <button class="admin-nav-btn superadmin-only" data-tab="kelola-admin">🔑 Kelola Admin</button>
@@ -220,23 +220,23 @@
 
     <!-- HEADER FOTO -->
     <section id="tab-header-foto" class="admin-tab">
-      <h2>Foto Header per Halaman</h2>
-      <p class="muted">Ganti latar hero/header setiap halaman dengan foto asli.</p>
+      <h2>Foto Header per Halaman &amp; Logo Ikatan Alumni</h2>
+      <p class="muted">Ganti latar hero/header setiap halaman dengan foto asli, foto Koordinator Prodi, atau logo Ikatan Alumni. <strong>Beda dengan tab "Logo Header"</strong> yang khusus untuk logo institusi (Unsrat, Kemendikbud, dll) di navbar atas.</p>
       <form id="headerFotoForm" class="admin-form">
         <select id="headerFotoSelect">
-          <option value="hero:beranda">Beranda</option>
-          <option value="hero:profil">Profil</option>
-          <option value="hero:akreditasi">Akreditasi</option>
-          <option value="hero:tridharma">Tridharma</option>
-          <option value="hero:sarana">Sarana &amp; Prasarana</option>
-          <option value="hero:kurikulum">Kurikulum</option>
-          <option value="hero:kemahasiswaan">Kemahasiswaan</option>
-          <option value="hero:mutu">Penjaminan Mutu</option>
-          <option value="hero:alumni">Alumni</option>
-          <option value="hero:berita">Berita</option>
-          <option value="hero:tautan">Tautan</option>
-          <option value="korprodi_foto">— Foto Koordinator Prodi (Sambutan Beranda)</option>
-          <option value="alumni_logo">— Logo Ikatan Alumni (Halaman Alumni)</option>
+          <option value="hero:beranda">Foto latar — Beranda</option>
+          <option value="hero:profil">Foto latar — Profil</option>
+          <option value="hero:akreditasi">Foto latar — Akreditasi</option>
+          <option value="hero:tridharma">Foto latar — Tridharma</option>
+          <option value="hero:sarana">Foto latar — Sarana &amp; Prasarana</option>
+          <option value="hero:kurikulum">Foto latar — Kurikulum</option>
+          <option value="hero:kemahasiswaan">Foto latar — Kemahasiswaan</option>
+          <option value="hero:mutu">Foto latar — Penjaminan Mutu</option>
+          <option value="hero:alumni">Foto latar — Alumni</option>
+          <option value="hero:berita">Foto latar — Berita</option>
+          <option value="hero:tautan">Foto latar — Tautan</option>
+          <option value="korprodi_foto">👤 Foto Koordinator Prodi (Sambutan Beranda)</option>
+          <option value="alumni_logo">🎓 LOGO IKATAN ALUMNI (tampil bulat di atas halaman Alumni)</option>
         </select>
         <input type="file" id="headerFotoFile" accept="image/*" required>
         <div class="admin-form-actions">
