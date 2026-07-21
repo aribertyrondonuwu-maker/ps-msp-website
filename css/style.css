@@ -380,14 +380,16 @@ img.dosen-photo { display: block; }
 .akun-card { text-decoration: none; transition: transform .15s, box-shadow .15s; }
 .akun-card:hover { transform: translateY(-3px); box-shadow: 0 10px 26px rgba(10,37,64,0.14); }
 
-/* ── Berita: gambar kiri, narasi kanan (halaman detail) ── */
-.berita-layout { display: flex; gap: 32px; align-items: flex-start; }
-.berita-layout .berita-konten { flex: 1 1 0; min-width: 0; }
+/* ── Berita: gambar mengalir dengan teks (float, ala WordPress) ── */
+.berita-artikel { overflow: visible; }
+.berita-artikel::after { content: ''; display: table; clear: both; }
 .berita-foto-box { border-radius: 14px; overflow: hidden; box-shadow: var(--shadow); background: #f2f5f7; }
 .berita-foto-box img { width: 100%; height: auto; display: block; }
-@media (max-width: 720px) {
-  .berita-layout { flex-direction: column; }
-  .berita-foto-box { flex: 0 0 auto !important; max-width: 100% !important; width: 100%; }
+.berita-konten { line-height: 1.75; }
+.berita-konten p { margin-bottom: 16px; }
+@media (max-width: 640px) {
+  /* di HP, gambar selalu penuh di atas agar tidak sempit */
+  .berita-foto-box { float: none !important; width: 100% !important; max-width: 100% !important; margin: 0 0 20px 0 !important; }
 }
 
 /* ── Berita: kartu daftar dengan thumbnail (kiri gambar, kanan teks) ── */
@@ -411,8 +413,7 @@ img.dosen-photo { display: block; }
 .berita-size-label select { padding: 8px 10px; border-radius: 8px; border: 1px solid var(--border); font-family: var(--font-body); }
 
 /* Berita: mode poster penuh (gambar di atas, teks di bawah) */
-.berita-layout.foto-atas { flex-direction: column; }
-.berita-layout.foto-atas .berita-foto-box { width: 100%; }
+.berita-foto-box.pos-penuh { float: none; }
 
 /* HIMASUPER — organisasi kemahasiswaan */
 .himasuper-head { display: flex; align-items: center; gap: 22px; margin-bottom: 24px; flex-wrap: wrap; }
@@ -430,3 +431,97 @@ img.dosen-photo { display: block; }
 
 /* Pemisah antar blok organisasi kemahasiswaan */
 .organisasi-block-sep { margin-top: 48px; padding-top: 40px; border-top: 2px dashed var(--border); }
+
+/* Pengurus Ikatan Alumni — kartu dengan foto */
+.pengurus-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 20px; }
+.pengurus-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 16px; box-shadow: var(--shadow); overflow: hidden; text-align: center; transition: transform .15s, box-shadow .15s; }
+.pengurus-card:hover { transform: translateY(-4px); box-shadow: 0 12px 28px rgba(10,37,64,0.14); }
+.pengurus-foto { width: 100%; aspect-ratio: 1 / 1; overflow: hidden; background: #e8eef2; }
+.pengurus-foto img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.pengurus-foto-empty { display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--navy), var(--deep)); }
+.pengurus-foto-empty span { color: #fff; font-family: var(--font-head); font-weight: 800; font-size: 2rem; letter-spacing: 0.05em; }
+.pengurus-body { padding: 16px 16px 20px; }
+.pengurus-peran { display: inline-block; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--teal); background: rgba(20,184,166,0.1); padding: 3px 12px; border-radius: 999px; margin-bottom: 8px; }
+.pengurus-nama { font-size: 0.98rem; color: var(--navy); font-family: var(--font-head); margin: 0; line-height: 1.3; }
+
+/* Sejarah lengkap terstruktur */
+.sejarah-pengantar { font-size: 1.05rem; line-height: 1.75; color: var(--ink); margin-bottom: 24px; font-weight: 500; }
+.sejarah-subjudul { color: var(--navy); font-family: var(--font-head); font-size: 1.1rem; margin: 30px 0 12px; padding-left: 14px; border-left: 4px solid var(--teal); }
+#sejarahLengkap p { line-height: 1.75; margin-bottom: 14px; color: var(--ink); }
+.sejarah-list { margin: 4px 0 16px 0; padding-left: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.sejarah-list li { position: relative; padding-left: 28px; line-height: 1.5; }
+.sejarah-list li::before { content: '▸'; position: absolute; left: 6px; color: var(--teal); font-weight: 700; }
+
+/* ═══ Forum Alumni — percakapan modern ═══ */
+.forum-form { max-width: 760px; margin-bottom: 36px; }
+.forum-form-title { font-family: var(--font-head); color: var(--navy); font-size: 1.05rem; margin: 0 0 16px; }
+.forum-form .form-row { display: flex; gap: 12px; margin-bottom: 12px; }
+.forum-form .form-row input { flex: 1; }
+.forum-form input, .forum-form textarea { width: 100%; padding: 11px 14px; border: 1px solid var(--border); border-radius: 10px; font-family: var(--font-body); font-size: 0.9rem; }
+.forum-form textarea { margin-bottom: 12px; resize: vertical; }
+
+.forum-list { display: flex; flex-direction: column; gap: 18px; }
+.forum-empty { text-align: center; padding: 40px 20px; }
+.forum-thread { background: var(--card-bg); border: 1px solid var(--border); border-radius: 16px; box-shadow: var(--shadow); overflow: hidden; }
+
+.forum-msg { display: flex; gap: 14px; padding: 18px 20px; }
+.forum-avatar { flex: 0 0 44px; width: 44px; height: 44px; }
+.forum-avatar-svg { width: 44px; height: 44px; border-radius: 12px; display: block; }
+.forum-msg-body { flex: 1; min-width: 0; }
+.forum-msg-head { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 5px; }
+.forum-nama { font-weight: 700; color: var(--navy); font-size: 0.95rem; }
+.forum-angkatan { font-size: 0.72rem; font-weight: 600; color: var(--teal); background: rgba(20,184,166,0.1); padding: 2px 10px; border-radius: 999px; }
+.forum-waktu { font-size: 0.78rem; color: var(--muted); }
+.forum-pesan { font-size: 0.93rem; color: var(--ink); line-height: 1.6; white-space: pre-wrap; word-wrap: break-word; }
+.forum-msg-actions { margin-top: 8px; }
+.forum-reply-btn { background: none; border: none; color: var(--muted); font-size: 0.8rem; font-weight: 600; cursor: pointer; padding: 2px 0; transition: color .15s; }
+.forum-reply-btn:hover { color: var(--teal); }
+
+/* balasan (threaded) */
+.forum-replies { border-top: 1px solid var(--border); background: #f8fafc; }
+.forum-msg.is-reply { padding-left: 40px; position: relative; }
+.forum-msg.is-reply::before { content: ''; position: absolute; left: 24px; top: 0; bottom: 0; width: 2px; background: var(--border); }
+.forum-msg.is-reply .forum-avatar { flex-basis: 36px; width: 36px; height: 36px; }
+.forum-msg.is-reply .forum-avatar-svg { width: 36px; height: 36px; border-radius: 10px; }
+
+/* form balas inline */
+.forum-reply-form { margin-top: 12px; padding: 14px; background: #f2f5f7; border-radius: 12px; display: flex; flex-direction: column; gap: 8px; }
+.forum-reply-form input, .forum-reply-form textarea { padding: 9px 12px; border: 1px solid var(--border); border-radius: 8px; font-family: var(--font-body); font-size: 0.86rem; }
+.forum-reply-form-actions { display: flex; gap: 8px; }
+
+@media (max-width: 600px) {
+  .forum-form .form-row { flex-direction: column; }
+  .forum-msg.is-reply { padding-left: 28px; }
+}
+
+/* CTA forum di halaman Alumni */
+.forum-cta { max-width: 620px; text-align: center; padding: 28px; }
+.forum-cta-preview { margin-bottom: 20px; text-align: left; }
+.forum-cta-label { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); margin-bottom: 10px; }
+.forum-cta-item { font-size: 0.9rem; color: var(--ink); padding: 10px 14px; background: #f8fafc; border-radius: 10px; margin-bottom: 8px; }
+.forum-cta-item strong { color: var(--navy); }
+
+/* ═══ Halaman Alumni: hero dengan logo + sub-menu ═══ */
+.alumni-hero-inner { display: flex; align-items: center; gap: 28px; flex-wrap: wrap; }
+.alumni-hero-logo { flex: 0 0 120px; width: 120px; height: 120px; border-radius: 50%; background: rgba(255,255,255,0.12); display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.alumni-hero-logo img { width: 100%; height: 100%; object-fit: contain; }
+.alumni-hero-logo .logo-placeholder { color: rgba(255,255,255,0.65); font-size: 0.7rem; text-align: center; padding: 0 8px; line-height: 1.3; }
+.alumni-hero-text { flex: 1; min-width: 260px; }
+@media (max-width: 560px) {
+  .alumni-hero-logo { flex-basis: 88px; width: 88px; height: 88px; }
+}
+
+/* Sub-menu halaman (sticky) */
+.submenu { position: sticky; top: 0; z-index: 40; background: #fff; border-bottom: 1px solid var(--border); box-shadow: 0 2px 10px rgba(10,37,64,0.05); }
+.submenu-inner { display: flex; gap: 4px; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+.submenu-inner::-webkit-scrollbar { display: none; }
+.submenu-link { white-space: nowrap; padding: 15px 18px; font-size: 0.85rem; font-weight: 600; color: var(--muted); border-bottom: 3px solid transparent; transition: color .15s, border-color .15s; }
+.submenu-link:hover { color: var(--navy); }
+.submenu-link.active { color: var(--teal); border-bottom-color: var(--teal); }
+.submenu-link-cta { color: var(--teal); margin-left: auto; }
+.submenu-link-cta:hover { color: var(--deep); }
+
+/* Dropdown menu paling kanan: rata kanan agar tidak keluar layar */
+.nav-links > .nav-item:nth-last-child(-n+2) .dropdown { left: auto; right: 0; transform: translateX(0) translateY(8px); }
+.nav-links > .nav-item:nth-last-child(-n+2).has-dropdown:hover .dropdown,
+.nav-links > .nav-item:nth-last-child(-n+2).has-dropdown:focus-within .dropdown { transform: translateX(0) translateY(4px); }
