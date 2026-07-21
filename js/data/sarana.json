@@ -1,142 +1,116 @@
 {
  "_meta": {
-  "terakhir_diperbarui": "2026-07-20",
-  "sumber": "SK Rektor No. 1348/UN12/KP/2022 (30 September 2022); Ketersediaan_Laboratorium_FPIK_MSD_Perairan_v2; Peralatan_Laboratorium_FPIK_Unsrat; LED IAPS 1.0 K.2.1",
-  "catatan": "Daftar 14 laboratorium sesuai SK Rektor resmi. Kolom 'url_dokumen' dan 'gambar' dikosongkan agar admin dapat mengisi tautan bukti/foto lab melalui panel admin."
+  "terakhir_diperbarui": "2026-07-21",
+  "sumber": "SK Rektor No. 1348/UN12/KP/2022 (30 September 2022) Lampiran II — Pengangkatan Kepala Laboratorium periode 2022-2026 (dokumen SK asli, bukan ringkasan)",
+  "catatan": "PENTING: SK ini memberhentikan SELURUH kepala lab lama (Lampiran I) dan mengangkat 10 kepala lab baru (Lampiran II) akibat penggabungan beberapa laboratorium. Data di bawah ini mengikuti Lampiran II (yang AKTIF menjabat), bukan Lampiran I. Field 'kepala_foto' dan 'gambar' dapat diisi admin melalui panel admin (upload foto)."
  },
  "ringkasan": {
-  "jumlah_lab_aktif": 14,
-  "dasar_hukum": "SK Rektor No. 1348/UN12/KP/2022 (30 September 2022)",
+  "jumlah_lab_aktif": 10,
+  "dasar_hukum": "SK Rektor No. 1348/UN12/KP/2022 (30 September 2022), berlaku periode 2022–2026",
   "investasi_rata_rata_tahunan": "Rp 81,7 juta/tahun tingkat PS MSP; Rp 229 juta/tahun tingkat UPPS (2023–2025)",
   "kepuasan_mahasiswa": "65% menilai fasilitas praktikum & laboratorium Sangat Baik/Baik (30% sangat baik, 35% baik)"
  },
  "laboratorium": [
   {
    "no": 1,
-   "nama": "Laboratorium Pesisir dan Pulau-Pulau Kecil",
-   "kepala": "Dr. Ir. Hariyani Sambali, M.Sc",
-   "fungsi": "Penelitian ekosistem pesisir, mangrove, terumbu karang dan pulau kecil",
-   "relevansi": "Sangat Relevan",
+   "nama": "Laboratorium Pengujian Produk Perikanan dan Kelautan",
+   "kepala": "Prof. Ir. Elvy Like Ginting, M.Si., Ph.D",
+   "fungsi": "Pengujian produk perikanan untuk sertifikasi dan keamanan pangan",
+   "relevansi": "Relevan",
    "url_dokumen": "",
-   "gambar": ""
+   "gambar": "",
+   "kepala_foto": ""
   },
   {
    "no": 2,
-   "nama": "Laboratorium Teknologi Penanganan dan Pengolahan Hasil Perikanan",
-   "kepala": "Dr. Ir. Hens Onibala, M.Sc",
-   "fungsi": "Analisis kualitas dan pengolahan produk perikanan",
-   "relevansi": "Relevan",
+   "nama": "Laboratorium Pesisir dan Pulau-Pulau Kecil",
+   "kepala": "Dr. Ir. Arie Berty Rondonuwu, M.Sc",
+   "fungsi": "Penelitian ekosistem pesisir, mangrove, terumbu karang dan pulau kecil",
+   "relevansi": "Sangat Relevan",
    "url_dokumen": "",
-   "gambar": ""
+   "gambar": "",
+   "kepala_foto": ""
   },
   {
    "no": 3,
-   "nama": "Laboratorium Bioekologi Air Tawar",
-   "kepala": "Dr. Ir. Nego E. Bataragoa, M.Sc",
-   "fungsi": "Studi ekologi perairan tawar, keanekaragaman biota air tawar",
-   "relevansi": "Sangat Relevan",
+   "nama": "Laboratorium Teknologi Pengolahan dan Pengendalian Mutu Hasil Perikanan",
+   "kepala": "Nurmelita Taher, S.Pi., M.Si",
+   "fungsi": "Analisis kualitas, pengolahan, dan pengendalian mutu produk perikanan",
+   "relevansi": "Relevan",
    "url_dokumen": "",
-   "gambar": ""
+   "gambar": "",
+   "kepala_foto": ""
   },
   {
    "no": 4,
-   "nama": "Laboratorium Teknologi Akuakultur",
-   "kepala": "Ir. Jopy D. Mudeng, M.Si",
-   "fungsi": "Penelitian budidaya perairan, teknik akuakultur berkelanjutan",
-   "relevansi": "Relevan",
+   "nama": "Laboratorium Bioteknologi dan Farmasitika Laut",
+   "kepala": "Dr. Veibe Warouw, S.Pi., M.Si",
+   "fungsi": "Analisis genetik, bioteknologi dan farmasitika biota perairan",
+   "relevansi": "Sangat Relevan",
    "url_dokumen": "",
-   "gambar": ""
+   "gambar": "",
+   "kepala_foto": ""
   },
   {
    "no": 5,
-   "nama": "Laboratorium Pengendalian Mutu Hasil Perikanan",
-   "kepala": "Dr. Ir. Lena J. Damongilala, M.Si",
-   "fungsi": "Uji mutu dan keamanan produk perikanan",
+   "nama": "Laboratorium Teknologi Akuakultur",
+   "kepala": "Dr. Ir. Hariyani Sambali, M.Sc",
+   "fungsi": "Penelitian budidaya perairan, teknik akuakultur berkelanjutan",
    "relevansi": "Relevan",
    "url_dokumen": "",
-   "gambar": ""
+   "gambar": "",
+   "kepala_foto": ""
   },
   {
    "no": 6,
-   "nama": "Laboratorium Sosial Ekonomi Perikanan",
-   "kepala": "Dr. Ir. Jeannette F. Pangemanan, M.Si",
-   "fungsi": "Analisis sosial, ekonomi, dan kebijakan pengelolaan sumber daya perairan",
+   "nama": "Laboratorium Bioekologi Perairan",
+   "kepala": "Dr. Ir. Medy Ompi, M.Sc",
+   "fungsi": "Studi ekologi perairan, keanekaragaman biota perairan tawar dan laut",
    "relevansi": "Sangat Relevan",
    "url_dokumen": "",
-   "gambar": ""
+   "gambar": "",
+   "kepala_foto": ""
   },
   {
    "no": 7,
-   "nama": "Laboratorium Biologi Kelautan",
-   "kepala": "Dr. Indri Shelovita Manembu, S.IK., M.Si",
-   "fungsi": "Studi keanekaragaman hayati laut, ekologi biota kelautan",
+   "nama": "Laboratorium Sosial Ekonomi Perikanan",
+   "kepala": "Dr. Jardie Androkles Andaki, S.Pi., M.Si",
+   "fungsi": "Analisis sosial, ekonomi, dan kebijakan pengelolaan sumber daya perairan",
    "relevansi": "Sangat Relevan",
    "url_dokumen": "",
-   "gambar": ""
+   "gambar": "",
+   "kepala_foto": ""
   },
   {
    "no": 8,
-   "nama": "Laboratorium Geomorfologi Pantai",
-   "kepala": "Ir. Jane M. Mamuaja, M.Sc., Ph.D",
-   "fungsi": "Analisis perubahan morfologi pantai, sedimentasi dan dinamika perairan",
-   "relevansi": "Sangat Relevan",
-   "url_dokumen": "",
-   "gambar": ""
-  },
-  {
-   "no": 9,
    "nama": "Laboratorium Rekayasa Perikanan Tangkap",
    "kepala": "Prof. Dr. Ir. Wilhelmina Patty, M.Sc",
    "fungsi": "Teknologi penangkapan ikan, alat tangkap ramah lingkungan",
    "relevansi": "Relevan",
    "url_dokumen": "",
-   "gambar": ""
+   "gambar": "",
+   "kepala_foto": ""
   },
   {
-   "no": 10,
-   "nama": "Laboratorium Biologi Molekular dan Farmakologi",
-   "kepala": "Dr. Veibe Warouw, S.Pi., M.Si",
-   "fungsi": "Analisis genetik, biologi molekuler biota perairan",
-   "relevansi": "Sangat Relevan",
-   "url_dokumen": "",
-   "gambar": ""
-  },
-  {
-   "no": 11,
-   "nama": "Laboratorium Kesehatan Ikan, Lingkungan dan Toksikologi",
-   "kepala": "Dr. Ir. Reny L. Kreckhoff, M.Si",
-   "fungsi": "Analisis kesehatan perairan, pencemaran dan uji toksikologi",
-   "relevansi": "Sangat Relevan",
-   "url_dokumen": "",
-   "gambar": ""
-  },
-  {
-   "no": 12,
-   "nama": "Laboratorium Field Station Likupang",
-   "kepala": "Dr. Ir. Lefrand Manoppo, M.Si",
-   "fungsi": "Penelitian lapangan ekosistem laut di kawasan Likupang (KEK)",
+   "no": 9,
+   "nama": "Laboratorium Marine Field Station Likupang",
+   "kepala": "Dr. Indri Shelovita Manembu, S.IK., M.Si",
+   "fungsi": "Penelitian lapangan ekosistem laut di kawasan Likupang",
    "relevansi": "Sangat Relevan",
    "highlight": true,
    "url_dokumen": "",
-   "gambar": ""
+   "gambar": "",
+   "kepala_foto": ""
   },
   {
-   "no": 13,
+   "no": 10,
    "nama": "Laboratorium Penjaminan Mutu",
    "kepala": "Dr.rer.nat. Robert Antonius Bara, S.IK., M.Sc",
    "fungsi": "Sistem jaminan mutu penelitian dan standarisasi prosedur",
    "relevansi": "Relevan",
    "url_dokumen": "",
-   "gambar": ""
-  },
-  {
-   "no": 14,
-   "nama": "Laboratorium Pengujian Produk Perikanan dan Kelautan",
-   "kepala": "Ir. Elvy Like Ginting, M.Si., Ph.D",
-   "fungsi": "Pengujian produk perikanan untuk sertifikasi dan keamanan pangan",
-   "relevansi": "Relevan",
-   "url_dokumen": "",
-   "gambar": ""
+   "gambar": "",
+   "kepala_foto": ""
   }
  ],
  "lab_universitas": [
