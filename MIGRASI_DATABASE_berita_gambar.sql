@@ -12,6 +12,11 @@ ALTER TABLE berita ADD COLUMN IF NOT EXISTS gambar_url   text;
 ALTER TABLE berita ADD COLUMN IF NOT EXISTS gambar_rasio text DEFAULT 'asli';
 ALTER TABLE berita ADD COLUMN IF NOT EXISTS gambar_lebar text DEFAULT '50';
 ALTER TABLE berita ADD COLUMN IF NOT EXISTS gambar_posisi text DEFAULT 'kiri';
+ALTER TABLE berita ADD COLUMN IF NOT EXISTS galeri_foto  jsonb DEFAULT '[]'::jsonb;
+
+-- galeri_foto: daftar URL foto dokumentasi tambahan (0 atau lebih), terpisah dari
+-- gambar_url (foto utama). Ditampilkan sebagai galeri di bawah isi berita, dengan
+-- lightbox agar pengunjung bisa memperbesar & menavigasi antar foto.
 
 -- Selesai. Berita lama tetap aman (tanpa gambar); berita baru bisa diberi gambar
 -- lewat panel admin: pilih gambar → atur posisi (crop) → atur rasio & lebar kotak.

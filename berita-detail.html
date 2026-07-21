@@ -144,11 +144,23 @@
       <article class="berita-konten" id="beritaKonten"></article>
       <div style="clear:both;"></div>
     </div>
+    <div id="beritaGaleriSection" style="display:none;">
+      <h2 class="berita-galeri-title">Galeri Foto Dokumentasi</h2>
+      <div class="berita-galeri-grid" id="beritaGaleriGrid"></div>
+    </div>
     <div style="margin-top:40px;">
       <a href="berita.html" class="btn btn-primary btn-sm">← Kembali ke daftar berita</a>
     </div>
   </div>
 </section>
+
+<!-- Lightbox galeri foto -->
+<div class="galeri-lightbox" id="galeriLightbox" onclick="tutupLightbox(event)">
+  <button class="galeri-lightbox-close" onclick="tutupLightbox(event)" aria-label="Tutup">&times;</button>
+  <button class="galeri-lightbox-nav galeri-lightbox-prev" onclick="navLightbox(event,-1)" aria-label="Sebelumnya">&#10094;</button>
+  <img id="galeriLightboxImg" src="" alt="">
+  <button class="galeri-lightbox-nav galeri-lightbox-next" onclick="navLightbox(event,1)" aria-label="Berikutnya">&#10095;</button>
+</div>
 
 <footer class="footer" id="kontak">
   <div class="container footer-grid">

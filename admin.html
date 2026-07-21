@@ -33,6 +33,7 @@
       <button class="admin-nav-btn" data-tab="galeri">🖼️ Galeri</button>
       <button class="admin-nav-btn" data-tab="dosen-foto">👤 Foto Dosen</button>
       <button class="admin-nav-btn" data-tab="pengurus-foto">🎓 Foto Pengurus Alumni</button>
+      <button class="admin-nav-btn" data-tab="lab-foto">🔬 Foto Laboratorium</button>
       <button class="admin-nav-btn superadmin-only" data-tab="header-foto">🎨 Header Halaman</button>
       <button class="admin-nav-btn superadmin-only" data-tab="slideshow">🖼️ Slideshow Beranda</button>
       <button class="admin-nav-btn superadmin-only" data-tab="logo-footer">🏛️ Logo Header</button>
@@ -109,6 +110,17 @@
           </div>
         </div>
 
+        <div class="berita-galeri-section">
+          <label class="berita-size-label" style="margin-bottom:8px;">Galeri Foto Dokumentasi Kegiatan (boleh lebih dari satu):</label>
+          <div class="berita-galeri-preview" id="beritaGaleriPreview"></div>
+          <label class="btn-outline-dark" style="cursor:pointer;display:inline-block;margin-top:8px;">
+            + Tambah Foto Dokumentasi
+            <input type="file" id="beritaGaleriInput" accept="image/*" multiple style="display:none;">
+          </label>
+          <p class="form-note" id="beritaGaleriStatus"></p>
+          <input type="hidden" id="beritaGaleriUrls" value="[]">
+        </div>
+
         <label class="checkbox-label"><input type="checkbox" id="beritaPublished"> Publikasikan sekarang</label>
         <div class="admin-form-actions">
           <button type="submit" class="btn btn-primary btn-sm">Simpan</button>
@@ -176,6 +188,34 @@
         <p class="form-note" id="pengurusFotoStatus"></p>
       </form>
       <div class="admin-grid-preview" id="pengurusFotoGrid" style="margin-top:24px;"></div>
+    </section>
+
+    <!-- FOTO LABORATORIUM -->
+    <section id="tab-lab-foto" class="admin-tab">
+      <h2>Foto Laboratorium</h2>
+      <p class="muted">Unggah foto suasana/peralatan laboratorium (tampil besar di kartu) dan foto kepala laboratorium (tampil kecil bulat).</p>
+
+      <h3 style="margin-top:20px;">Foto Laboratorium (suasana/peralatan)</h3>
+      <form id="labFotoForm" class="admin-form">
+        <select id="labFotoSelect"></select>
+        <input type="file" id="labFotoFile" accept="image/*" required>
+        <div class="admin-form-actions">
+          <button type="submit" class="btn btn-primary btn-sm">Upload Foto Lab</button>
+        </div>
+        <p class="form-note" id="labFotoStatus"></p>
+      </form>
+      <div class="admin-grid-preview" id="labFotoGrid" style="margin-top:16px;"></div>
+
+      <h3 style="margin-top:32px;">Foto Kepala Laboratorium</h3>
+      <form id="labKepalaFotoForm" class="admin-form">
+        <select id="labKepalaFotoSelect"></select>
+        <input type="file" id="labKepalaFotoFile" accept="image/*" required>
+        <div class="admin-form-actions">
+          <button type="submit" class="btn btn-primary btn-sm">Upload Foto Kepala Lab</button>
+        </div>
+        <p class="form-note" id="labKepalaFotoStatus"></p>
+      </form>
+      <div class="admin-grid-preview" id="labKepalaFotoGrid" style="margin-top:16px;"></div>
     </section>
 
     <!-- HEADER FOTO -->
