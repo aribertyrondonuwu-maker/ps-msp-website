@@ -56,6 +56,8 @@ function showDashboard(email) {
   loadGaleri();
   loadDosenDropdown();
   loadDosenFoto();
+  loadPengurusDropdown();
+  loadPengurusFoto();
   if (currentRole === 'superadmin') {
     loadHeaderFoto();
     loadDiskusi();
@@ -311,6 +313,7 @@ document.getElementById('beritaForm').addEventListener('submit', async (e) => {
     gambar_url: document.getElementById('beritaFotoUrl').value || null,
     gambar_rasio: document.getElementById('beritaFotoRasio').value || '1.3333',
     gambar_lebar: document.getElementById('beritaFotoLebar').value || '42',
+    gambar_posisi: document.getElementById('beritaFotoPosisi').value || 'kiri',
   };
   if (!id) {
     payload.slug = payload.judul.toLowerCase().replace(/[^a-z0-9]+/g, '-').slice(0, 60) + '-' + Date.now();
@@ -338,6 +341,7 @@ function editBerita(id) {
   document.getElementById('beritaFotoUrl').value = b.gambar_url || '';
   document.getElementById('beritaFotoRasio').value = b.gambar_rasio || '1.3333';
   document.getElementById('beritaFotoLebar').value = b.gambar_lebar || '42';
+  document.getElementById('beritaFotoPosisi').value = b.gambar_posisi || 'kiri';
   setBeritaFotoPreview(b.gambar_url || '');
   document.getElementById('beritaFotoStatus').textContent = '';
   document.getElementById('beritaCancelEdit').style.display = 'inline-block';
@@ -460,6 +464,63 @@ async function loadDosenFoto() {
 }
 
 // ─────────────────────────────────────────────────────────────────────────
+// FOTO PENGURUS ALUMNI (site_settings, key = pengurus_foto:{index})
+// ─────────────────────────────────────────────────────────────────────────
+async function loadPengurusDropdown() {
+  const select = document.getElementById('pengurusFotoSelect');
+  if (!select) return;
+  try {
+    const res = await fetch('js/data/alumni-pengurus.json');
+    const data = await res.json();
+    select.innerHTML = (data.pengurus || []).map((p, i) => `<option value="${i}">${p.peran} — ${p.nama}</option>`).join('');
+  } catch (e) { console.error(e); }
+}
+
+const _pengurusFotoForm = document.getElementById('pengurusFotoForm');
+if (_pengurusFotoForm) {
+  _pengurusFotoForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const status = document.getElementById('pengurusFotoStatus');
+    const idx = document.getElementById('pengurusFotoSelect').value;
+    const file = document.getElementById('pengurusFotoFile').files[0];
+    if (!file) return;
+    try {
+      const cropped = await openCropper(file, 1, 'Sesuaikan Foto Pengurus');
+      status.textContent = 'Mengunggah…';
+      const url = await uploadToMedia(cropped, 'pengurus', 'foto.jpg');
+      const { error } = await sb.from('site_settings').upsert([{ key: `pengurus_foto:${idx}`, value: url, updated_at: new Date().toISOString() }]);
+      if (error) throw error;
+      status.textContent = '✅ Foto tersimpan.';
+      _pengurusFotoForm.reset();
+      loadPengurusFoto();
+    } catch (err) {
+      if (err.message !== 'dibatalkan') status.textContent = '⚠️ Gagal: ' + err.message;
+    }
+  });
+}
+
+async function loadPengurusFoto() {
+  const grid = document.getElementById('pengurusFotoGrid');
+  if (!grid) return;
+  let pengurusData = [];
+  try { pengurusData = (await (await fetch('js/data/alumni-pengurus.json')).json()).pengurus || []; } catch (e) {}
+  const { data, error } = await sb.from('site_settings').select('*').like('key', 'pengurus_foto:%');
+  if (error) { grid.innerHTML = `<p>Gagal memuat: ${error.message}</p>`; return; }
+  grid.innerHTML = (data || []).map(s => {
+    const idx = parseInt(s.key.replace('pengurus_foto:', ''), 10);
+    const label = pengurusData[idx] ? `${pengurusData[idx].peran} — ${pengurusData[idx].nama}` : `Pengurus #${idx}`;
+    return `
+      <div class="admin-preview-card">
+        <img src="${s.value}" alt="">
+        <div class="body">
+          <strong>${label}</strong>
+          <button onclick="deleteSetting('${s.key}', loadPengurusFoto)">Hapus</button>
+        </div>
+      </div>`;
+  }).join('') || '<p class="muted">Belum ada foto pengurus diunggah.</p>';
+}
+
+// ─────────────────────────────────────────────────────────────────────────
 // FOTO HEADER HALAMAN (site_settings, key = hero:{halaman})
 // ─────────────────────────────────────────────────────────────────────────
 document.getElementById('headerFotoForm').addEventListener('submit', async (e) => {
@@ -469,8 +530,12 @@ document.getElementById('headerFotoForm').addEventListener('submit', async (e) =
   const file = document.getElementById('headerFotoFile').files[0];
   if (!file) return;
   const isKorprodi = key === 'korprodi_foto';
+  const isLogo = key === 'alumni_logo';
   try {
-    const cropped = await openCropper(file, isKorprodi ? 3 / 4 : 16 / 9, isKorprodi ? 'Sesuaikan Foto Koordinator' : 'Sesuaikan Foto Header Halaman');
+    let ratio = 16 / 9, judul = 'Sesuaikan Foto Header Halaman';
+    if (isKorprodi) { ratio = 3 / 4; judul = 'Sesuaikan Foto Koordinator'; }
+    else if (isLogo) { ratio = 1; judul = 'Sesuaikan Logo Ikatan Alumni'; }
+    const cropped = await openCropper(file, ratio, judul);
     status.textContent = 'Mengunggah…';
     const url = await uploadToMedia(cropped, 'header', 'foto.jpg');
     const { error } = await sb.from('site_settings').upsert([{ key, value: url, updated_at: new Date().toISOString() }]);
@@ -514,7 +579,7 @@ async function loadDiskusi() {
   list.innerHTML = data.map(d => `
     <div class="diskusi-admin-item ${d.approved ? 'approved' : 'pending'}">
       <div>
-        <strong>${d.nama}</strong> ${d.angkatan ? '· Angkatan ' + d.angkatan : ''}
+        <strong>${d.nama}</strong> ${d.angkatan ? '· Angkatan ' + d.angkatan : ''}${d.parent_id ? ' <span class="badge-balasan">↩ Balasan</span>' : ''}
         <p>${d.pesan}</p>
       </div>
       <div class="diskusi-admin-actions">

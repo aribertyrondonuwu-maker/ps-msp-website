@@ -4,13 +4,39 @@ async function loadPengurusKegiatan() {
     const res = await fetch('js/data/alumni-pengurus.json');
     const data = await res.json();
 
+    const narasi = document.getElementById('ikatanAlumniNarasi');
+    if (narasi && data.ikatan_alumni && Array.isArray(data.ikatan_alumni.deskripsi)) {
+      narasi.innerHTML = data.ikatan_alumni.deskripsi.map(p => `<p>${p}</p>`).join('');
+    }
+
+    // Ambil override foto pengurus dari Supabase (diunggah superadmin)
+    let fotoOverride = {};
+    if (window.sbClient) {
+      try {
+        const { data: settings } = await window.sbClient.from('site_settings').select('key,value').like('key', 'pengurus_foto:%');
+        (settings || []).forEach(s => {
+          const idx = parseInt(s.key.replace('pengurus_foto:', ''), 10);
+          if (!isNaN(idx) && s.value) fotoOverride[idx] = s.value;
+        });
+      } catch (e) { /* diam */ }
+    }
+
     const pengurusGrid = document.getElementById('pengurusGrid');
-    pengurusGrid.innerHTML = data.pengurus.map(p => `
-      <article class="card">
-        <h3>${p.peran}</h3>
-        <p>${p.nama}${p.angkatan ? ' · Angkatan ' + p.angkatan : ''}</p>
-      </article>
-    `).join('');
+    pengurusGrid.innerHTML = data.pengurus.map((p, i) => {
+      const fotoUrl = fotoOverride[i] || (p.foto && p.foto.trim() ? p.foto : '');
+      const inisial = p.nama.replace(/\[.*?\]/g, '').split(/\s+/).filter(w => /^[A-Za-z]/.test(w)).map(w => w[0]).slice(0, 2).join('').toUpperCase() || '—';
+      const foto = fotoUrl
+        ? `<div class="pengurus-foto"><img src="${fotoUrl}" alt="${p.nama}" loading="lazy"></div>`
+        : `<div class="pengurus-foto pengurus-foto-empty"><span>${inisial}</span></div>`;
+      return `
+        <article class="pengurus-card">
+          ${foto}
+          <div class="pengurus-body">
+            <span class="pengurus-peran">${p.peran}</span>
+            <h3 class="pengurus-nama">${p.nama}</h3>
+          </div>
+        </article>`;
+    }).join('');
 
     const kegiatanList = document.getElementById('kegiatanList');
     kegiatanList.innerHTML = data.kegiatan.map(k => `
@@ -32,77 +58,80 @@ loadPengurusKegiatan();
 // tabel `alumni_diskusi`), ganti fungsi submitDiskusi() & loadDiskusi()
 // di bawah untuk memanggil window.sbClient.from('alumni_diskusi')... dst.
 
-const DISKUSI_SUPABASE_READY = true; // Supabase sudah terhubung — pesan tersimpan permanen & melalui moderasi admin
-let _diskusiDemoStore = [
-  { nama: 'Tim PS MSP', angkatan: '', pesan: 'Selamat datang di ruang diskusi alumni! Silakan berbagi kabar atau info lowongan kerja di sini.', created_at: new Date().toISOString() }
-];
-
-async function loadDiskusi() {
-  const list = document.getElementById('diskusiList');
-  if (DISKUSI_SUPABASE_READY && window.sbClient) {
+// ── Preview percakapan alumni (ringkas) di halaman Alumni ──
+// Forum lengkap ada di forum-alumni.html
+async function loadDiskusiPreview() {
+  const prev = document.getElementById('forumPreview');
+  if (!prev) return;
+  if (window.sbClient) {
     try {
       const { data, error } = await window.sbClient
         .from('alumni_diskusi')
-        .select('nama, angkatan, pesan, created_at')
+        .select('nama, pesan, created_at')
         .eq('approved', true)
         .order('created_at', { ascending: false })
-        .limit(50);
+        .limit(2);
       if (error) throw error;
-      renderDiskusi(data);
-      return;
-    } catch (e) {
-      console.error(e);
-    }
+      if (data && data.length) {
+        prev.innerHTML = '<p class="forum-cta-label">Percakapan terbaru:</p>' + data.map(d =>
+          `<div class="forum-cta-item"><strong>${escapeHtml(d.nama)}</strong>: ${escapeHtml(d.pesan).slice(0, 90)}${d.pesan.length > 90 ? '…' : ''}</div>`
+        ).join('');
+        return;
+      }
+    } catch (e) { /* diam */ }
   }
-  renderDiskusi(_diskusiDemoStore);
-}
-
-function renderDiskusi(items) {
-  const list = document.getElementById('diskusiList');
-  if (!items.length) {
-    list.innerHTML = '<p class="muted">Belum ada diskusi. Jadilah yang pertama menulis pesan!</p>';
-    return;
-  }
-  list.innerHTML = items.map(d => `
-    <div class="diskusi-item">
-      <div class="meta"><strong>${escapeHtml(d.nama)}</strong>${d.angkatan ? ' · Angkatan ' + escapeHtml(d.angkatan) : ''} · ${new Date(d.created_at).toLocaleDateString('id-ID', { day: 'numeric', month: 'short', year: 'numeric' })}</div>
-      <div class="pesan">${escapeHtml(d.pesan)}</div>
-    </div>
-  `).join('');
+  prev.innerHTML = '<p class="muted">Jadilah yang pertama memulai percakapan di forum alumni.</p>';
 }
 
 function escapeHtml(str) {
   const div = document.createElement('div');
-  div.textContent = str;
+  div.textContent = str == null ? '' : str;
   return div.innerHTML;
 }
 
-document.getElementById('diskusiForm').addEventListener('submit', async (e) => {
-  e.preventDefault();
-  const nama = document.getElementById('diskusiNama').value.trim();
-  const angkatan = document.getElementById('diskusiAngkatan').value.trim();
-  const pesan = document.getElementById('diskusiPesan').value.trim();
-  const status = document.getElementById('diskusiStatus');
-  if (!nama || !pesan) return;
+loadDiskusiPreview();
 
-  if (DISKUSI_SUPABASE_READY && window.sbClient) {
+// ── Logo Ikatan Alumni (diunggah superadmin via Supabase) ──
+async function loadAlumniLogo() {
+  const box = document.getElementById('alumniLogo');
+  if (!box) return;
+  let url = '';
+  if (window.sbClient) {
     try {
-      const { error } = await window.sbClient.from('alumni_diskusi').insert([{ nama, angkatan, pesan }]);
-      if (error) throw error;
-      status.textContent = '✅ Pesan terkirim, menunggu peninjauan admin sebelum tampil.';
-    } catch (err) {
-      status.textContent = '⚠️ Gagal mengirim, coba lagi nanti.';
-      console.error(err);
-      return;
-    }
-  } else {
-    // Mode pratinjau: tampil langsung di sesi ini saja, tidak tersimpan permanen
-    _diskusiDemoStore.unshift({ nama, angkatan, pesan, created_at: new Date().toISOString() });
-    status.textContent = 'ℹ️ Mode pratinjau — pesan tampil sementara di sesi ini. Setelah Supabase terhubung, pesan asli akan tersimpan & melalui moderasi admin.';
-    renderDiskusi(_diskusiDemoStore);
+      const { data } = await window.sbClient.from('site_settings').select('value').eq('key', 'alumni_logo').maybeSingle();
+      if (data && data.value) url = data.value;
+    } catch (e) { /* diam */ }
   }
+  box.innerHTML = url
+    ? `<img src="${url}" alt="Logo Ikatan Alumni PS MSP">`
+    : `<span class="logo-placeholder">Logo Ikatan Alumni<br>(dapat ditambahkan admin)</span>`;
+}
+loadAlumniLogo();
 
-  document.getElementById('diskusiForm').reset();
-});
+// ── Scroll-spy sub-menu: soroti section aktif ──
+(function submenuSpy() {
+  const links = Array.from(document.querySelectorAll('.submenu-link[href^="#"]'));
+  if (!links.length) return;
+  const map = links.map(a => ({ link: a, sec: document.querySelector(a.getAttribute('href')) })).filter(x => x.sec);
 
-loadDiskusi();
+  function onScroll() {
+    const y = window.scrollY + 120;
+    let current = map[0];
+    for (const m of map) { if (m.sec.offsetTop <= y) current = m; }
+    links.forEach(l => l.classList.remove('active'));
+    if (current) current.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // smooth scroll dengan offset agar tidak tertutup submenu sticky
+  links.forEach(a => {
+    a.addEventListener('click', (e) => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if (!target) return;
+      e.preventDefault();
+      const top = target.getBoundingClientRect().top + window.scrollY - 70;
+      window.scrollTo({ top, behavior: 'smooth' });
+    });
+  });
+})();

@@ -3,8 +3,26 @@ async function loadProfil() {
     const res = await fetch('js/data/profil.json');
     const d = await res.json();
 
-    document.getElementById('sejarahText').textContent = d.sejarah;
-    if (d.sejarah_ps) document.getElementById('sejarahPsText').textContent = d.sejarah_ps;
+    // Sejarah lengkap terstruktur
+    const sejarahEl = document.getElementById('sejarahLengkap');
+    if (sejarahEl && d.sejarah_lengkap) {
+      const sl = d.sejarah_lengkap;
+      let html = '';
+      if (sl.pengantar) html += `<p class="sejarah-pengantar">${sl.pengantar}</p>`;
+      (sl.bagian || []).forEach(b => {
+        html += `<h3 class="sejarah-subjudul">${b.judul}</h3>`;
+        (b.paragraf || []).forEach(p => { html += `<p>${p}</p>`; });
+        if (b.daftar_intro) html += `<p>${b.daftar_intro}</p>`;
+        if (Array.isArray(b.daftar) && b.daftar.length) {
+          html += '<ul class="sejarah-list">' + b.daftar.map(i => `<li>${i}</li>`).join('') + '</ul>';
+        }
+        (b.paragraf_lanjut || []).forEach(p => { html += `<p>${p}</p>`; });
+      });
+      sejarahEl.innerHTML = html;
+    } else if (sejarahEl) {
+      // fallback ke sejarah lama bila struktur baru tidak ada
+      sejarahEl.innerHTML = `<p>${d.sejarah || ''}</p>${d.sejarah_ps ? `<p>${d.sejarah_ps}</p>` : ''}`;
+    }
 
     if (d.sambutan_korprodi) {
       const s = d.sambutan_korprodi;
