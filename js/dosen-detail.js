@@ -71,9 +71,15 @@ async function loadDosenDetail() {
     }
 
     if (d.rekognisi?.length) {
-      html += `<div class="detail-block"><h2>Rekognisi & Aktivitas Ilmiah</h2>`;
-      d.rekognisi.forEach(r => html += `<div class="timeline-item">${r}</div>`);
-      html += `</div>`;
+      html += `<div class="detail-block"><h2>Rekognisi &amp; Aktivitas Ilmiah</h2><ul class="rekognisi-list">`;
+      d.rekognisi.forEach(r => html += `<li>${r}</li>`);
+      html += `</ul></div>`;
+    }
+
+    if (d.organisasi_keilmuan?.length) {
+      html += `<div class="detail-block"><h2>Keterlibatan dalam Organisasi Keilmuan</h2><ul class="rekognisi-list">`;
+      d.organisasi_keilmuan.forEach(r => html += `<li>${r}</li>`);
+      html += `</ul></div>`;
     }
 
     if (d.mata_kuliah_diampu?.length && !d.mata_kuliah_diampu[0].startsWith('[DATA')) {
