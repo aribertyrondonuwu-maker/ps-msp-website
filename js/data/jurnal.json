@@ -1,38 +1,38 @@
 {
-  "_meta": {
-    "terakhir_diperbarui": "2026-07-20",
-    "sumber": "LED IAPS 1.0 K.2.2/K.3; ejournal.unsrat.ac.id",
-    "catatan": "Field 'gambar' (sampul/cover jurnal) dikosongkan agar admin dapat mengunggah/menempel URL gambar sampul melalui panel admin. Data akreditasi SINTA per LED 2026."
+ "_meta": {
+  "terakhir_diperbarui": "2026-07-20",
+  "sumber": "LED IAPS 1.0 K.2.2/K.3; ejournal.unsrat.ac.id",
+  "catatan": "Field 'gambar' (sampul/cover jurnal) dikosongkan agar admin dapat mengunggah/menempel URL gambar sampul melalui panel admin. Data akreditasi SINTA per LED 2026."
+ },
+ "portal": {
+  "nama": "Portal e-Journal Universitas Sam Ratulangi",
+  "deskripsi": "Direktori seluruh jurnal ilmiah yang dikelola di lingkungan Unsrat, termasuk Fakultas Perikanan dan Ilmu Kelautan.",
+  "url": "https://ejournal.unsrat.ac.id/index.php?lang=id&q=platax&faculty=4&category=0#daftar-jurnal"
+ },
+ "jurnal_kelolaan": [
+  {
+   "nama": "Jurnal Ilmiah Platax",
+   "akreditasi": "SINTA 2",
+   "catatan": "Naik peringkat dari SINTA 4 ke SINTA 2 pada 2025. Redaktur/Chief Editor: Dr. Ir. Ari B. Rondonuwu, M.Si., M.Sc.; tim penyunting DTPS PS MSP.",
+   "fokus": "Ilmu kelautan, perikanan, dan pengelolaan sumber daya perairan.",
+   "url": "https://ejournal.unsrat.ac.id/v3/index.php/platax",
+   "gambar": ""
   },
-  "portal": {
-    "nama": "Portal e-Journal Universitas Sam Ratulangi",
-    "deskripsi": "Direktori seluruh jurnal ilmiah yang dikelola di lingkungan Unsrat, termasuk Fakultas Perikanan dan Ilmu Kelautan.",
-    "url": "https://ejournal.unsrat.ac.id/index.php?lang=id&q=platax&faculty=4&category=0#daftar-jurnal"
+  {
+   "nama": "Jurnal Perikanan dan Kelautan Tropis (JPKT)",
+   "akreditasi": "",
+   "catatan": "Redaktur/Chief Editor: Prof. Dr. Ir. Rene Charles Kepel, DEA; tim penyunting DTPS PS MSP.",
+   "fokus": "Perikanan dan kelautan tropis.",
+   "url": "https://ejournal.unsrat.ac.id/v3/index.php/JPKT",
+   "gambar": ""
   },
-  "jurnal_kelolaan": [
-    {
-      "nama": "Jurnal Ilmiah Platax",
-      "akreditasi": "SINTA 2",
-      "catatan": "Naik peringkat dari SINTA 4 ke SINTA 2 pada 2025. Dikelola DTPS PS MSP (Ir. Alex Denny Kambey, M.Sc., M.Si. sebagai Editor in Chief).",
-      "fokus": "Ilmu kelautan, perikanan, dan pengelolaan sumber daya perairan.",
-      "url": "https://ejournal.unsrat.ac.id/v3/index.php/platax",
-      "gambar": ""
-    },
-    {
-      "nama": "Jurnal Perikanan dan Kelautan Tropis (JPKT)",
-      "akreditasi": "",
-      "catatan": "Jurnal ilmiah bidang perikanan dan kelautan tropis di lingkungan FPIK Unsrat.",
-      "fokus": "Perikanan dan kelautan tropis.",
-      "url": "https://ejournal.unsrat.ac.id/v3/index.php/JPKT",
-      "gambar": ""
-    },
-    {
-      "nama": "Journal of Aquatic Resources Bioecology (JARB)",
-      "akreditasi": "",
-      "catatan": "Jurnal bioekologi sumber daya perairan; sebagian DTPS PS MSP menjabat sebagai editor.",
-      "fokus": "Bioekologi dan sumber daya akuatik.",
-      "url": "https://ejournal.unsrat.ac.id/v3/index.php/jarb",
-      "gambar": ""
-    }
-  ]
+  {
+   "nama": "Journal of Aquatic Resources Bioecology (JARB)",
+   "akreditasi": "",
+   "catatan": "Redaktur/Chief Editor: Ir. Rose O.S.E. Mantiri, M.Sc., Ph.D.; tim penyunting DTPS PS MSP.",
+   "fokus": "Bioekologi dan sumber daya akuatik.",
+   "url": "https://ejournal.unsrat.ac.id/v3/index.php/jarb",
+   "gambar": ""
+  }
+ ]
 }

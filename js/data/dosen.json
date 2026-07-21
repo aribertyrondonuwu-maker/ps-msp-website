@@ -1,18 +1,98 @@
 [
-  {"id": "lumingas", "nama": "Prof. Dr. Ir. Lawrence J.L. Lumingas, DEA", "jabatan": "Guru Besar", "keahlian": "Oseanografi Biologi & Ekologi Laut"},
-  {"id": "pratasik", "nama": "Prof. Dr. Ir. Silvester B. Pratasik, M.Sc.", "jabatan": "Guru Besar", "keahlian": "Ekologi Tingkah Laku dan Genetika"},
-  {"id": "kepel", "nama": "Prof. Dr. Ir. Rene C. Kepel, DEA", "jabatan": "Guru Besar", "keahlian": "Pengelolaan Wilayah Pesisir"},
-  {"id": "kambey", "nama": "Ir. Alex Denny Kambey, M.Sc., M.Si.", "jabatan": "Lektor Kepala", "keahlian": "Manajemen Perikanan Terumbu"},
-  {"id": "rangan", "nama": "Dr. Ir. Jety K. Rangan, M.Si.", "jabatan": "Lektor Kepala", "keahlian": "Bioekologi Gastropoda"},
-  {"id": "lohoo", "nama": "Ir. Anneke V. Lohoo, M.Si.", "jabatan": "Lektor Kepala", "keahlian": "Limnologi"},
-  {"id": "mandagi", "nama": "Ir. Stephanus V. Mandagi, M.App.Sc., Ph.D.", "jabatan": "Lektor Kepala", "keahlian": "Pengolahan Sumberdaya Perikanan"},
-  {"id": "wantasen", "nama": "Dr. Ir. Adnan S. Wantasen, M.Si.", "jabatan": "Lektor Kepala", "keahlian": "Pengelolaan Pesisir"},
-  {"id": "rembet", "nama": "Dr. Ir. U.N.W.J. Rembet, M.Si.", "jabatan": "Lektor Kepala", "keahlian": "Valuasi Sumberdaya Perairan"},
-  {"id": "kondoy", "nama": "Dr. Khristin F.I. Kondoy, S.Pi., M.Si.", "jabatan": "Lektor Kepala", "keahlian": "Tumbuhan Air & Ekologi Perairan"},
-  {"id": "lasabuda", "nama": "Dr. Ir. Ridwan Lasabuda, M.Si.", "jabatan": "Lektor", "keahlian": "Pengelolaan Sumberdaya Pesisir"},
-  {"id": "menajang", "nama": "Dr. Ir. Febry S.I. Menajang, M.Sc., M.Si.", "jabatan": "Lektor", "keahlian": "Bioekologi Lamun"},
-  {"id": "tombokan", "nama": "Dr. Ir. John L. Tombokan, M.Sc., M.Si.", "jabatan": "Lektor", "keahlian": "Ekologi Tumbuhan Air"},
-  {"id": "ari-rondonuwu", "nama": "Dr. Ir. Ari B. Rondonuwu, M.Sc., M.Si.", "jabatan": "Lektor", "keahlian": "Manajemen Sumberdaya Perairan · Koordinator Prodi"},
-  {"id": "mantiri", "nama": "Ir. Rose O.S.E. Mantiri, M.Sc., Ph.D.", "jabatan": "Lektor", "keahlian": "Manajemen Sumber Daya Perairan"},
-  {"id": "sangari", "nama": "Ir. Joudy R.R. Sangari, MA., MMA.", "jabatan": "Lektor", "keahlian": "Ekologi Terumbu Karang"}
+ {
+  "id": "lumingas",
+  "nama": "Prof. Dr. Ir. Lawrence J.L. Lumingas, DEA",
+  "jabatan": "Guru Besar",
+  "keahlian": "Oseanografi Biologi & Ekologi Laut"
+ },
+ {
+  "id": "pratasik",
+  "nama": "Prof. Dr. Ir. Silvester B. Pratasik, M.Sc.",
+  "jabatan": "Guru Besar",
+  "keahlian": "Ekologi Tingkah Laku dan Genetika"
+ },
+ {
+  "id": "kepel",
+  "nama": "Prof. Dr. Ir. Rene C. Kepel, DEA",
+  "jabatan": "Guru Besar",
+  "keahlian": "Pengelolaan Wilayah Pesisir"
+ },
+ {
+  "id": "kambey",
+  "nama": "Ir. Alex Denny Kambey, M.Sc., M.Si.",
+  "jabatan": "Lektor Kepala",
+  "keahlian": "Manajemen Perikanan Terumbu"
+ },
+ {
+  "id": "rangan",
+  "nama": "Dr. Ir. Jety K. Rangan, M.Si.",
+  "jabatan": "Lektor Kepala",
+  "keahlian": "Bioekologi Gastropoda"
+ },
+ {
+  "id": "lohoo",
+  "nama": "Ir. Anneke V. Lohoo, M.Si.",
+  "jabatan": "Lektor Kepala",
+  "keahlian": "Limnologi"
+ },
+ {
+  "id": "mandagi",
+  "nama": "Ir. Stephanus V. Mandagi, M.App.Sc., Ph.D.",
+  "jabatan": "Lektor Kepala",
+  "keahlian": "Pengolahan Sumberdaya Perikanan"
+ },
+ {
+  "id": "wantasen",
+  "nama": "Dr. Ir. Adnan S. Wantasen, M.Si.",
+  "jabatan": "Lektor Kepala",
+  "keahlian": "Pengelolaan Pesisir"
+ },
+ {
+  "id": "rembet",
+  "nama": "Dr. Ir. U.N.W.J. Rembet, M.Si.",
+  "jabatan": "Lektor Kepala",
+  "keahlian": "Valuasi Sumberdaya Perairan"
+ },
+ {
+  "id": "kondoy",
+  "nama": "Dr. Khristin F.I. Kondoy, S.Pi., M.Si.",
+  "jabatan": "Lektor Kepala",
+  "keahlian": "Tumbuhan Air & Ekologi Perairan"
+ },
+ {
+  "id": "lasabuda",
+  "nama": "Dr. Ir. Ridwan Lasabuda, M.Si.",
+  "jabatan": "Lektor",
+  "keahlian": "Pengelolaan Sumberdaya Pesisir"
+ },
+ {
+  "id": "menajang",
+  "nama": "Dr. Ir. Febry S.I. Menajang, M.Sc., M.Si.",
+  "jabatan": "Lektor",
+  "keahlian": "Bioekologi Lamun"
+ },
+ {
+  "id": "tombokan",
+  "nama": "Dr. Ir. John L. Tombokan, M.Sc., M.Si.",
+  "jabatan": "Lektor",
+  "keahlian": "Ekologi Tumbuhan Air"
+ },
+ {
+  "id": "ari-rondonuwu",
+  "nama": "Dr. Ir. Ari B. Rondonuwu, M.Sc., M.Si.",
+  "jabatan": "Lektor",
+  "keahlian": "Ekologi Terumbu Karang · Penginderaan Jauh Pesisir"
+ },
+ {
+  "id": "mantiri",
+  "nama": "Ir. Rose O.S.E. Mantiri, M.Sc., Ph.D.",
+  "jabatan": "Lektor",
+  "keahlian": "Manajemen Sumber Daya Perairan"
+ },
+ {
+  "id": "sangari",
+  "nama": "Ir. Joudy R.R. Sangari, MA., MMA.",
+  "jabatan": "Lektor",
+  "keahlian": "Ekologi Terumbu Karang"
+ }
 ]

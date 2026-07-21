@@ -8,22 +8,27 @@
    "nama": "Dr. Ir. Ari Berty Rondonuwu, M.Sc., M.Si.",
    "nip": "196801291993031001",
    "jabatan": "Lektor",
-   "peran": "Koordinator Program Studi MSP · Ketua Tim Kerja Akreditasi LAM-PTIP 2026",
+   "peran": "Ketua Tim Kerja Akreditasi LAM-PTIP 2026 · Chief Editor Jurnal Ilmiah Platax",
    "keahlian": "Manajemen Sumberdaya Perairan · Ekologi Terumbu Karang · Penginderaan Jauh Pesisir",
    "status_lengkap": true,
    "riwayat_pendidikan": [
     {
-     "jenjang": "Doktor (S3)",
-     "institusi": "Università Politecnica delle Marche, Italia",
-     "bidang": "Manajemen Sumberdaya Perairan"
+     "jenjang": "Magister (M.Sc)",
+     "institusi": "Università Politecnica delle Marche, Ancona, Italia",
+     "bidang": "Marine Biodiversity and Management"
     },
     {
-     "jenjang": "Magister (M.Sc, M.Si)",
-     "institusi": "—",
-     "bidang": "—"
+     "jenjang": "Magister (M.Si)",
+     "institusi": "Universitas Sam Ratulangi",
+     "bidang": "Ilmu Perairan"
+    },
+    {
+     "jenjang": "Doktor (S3)",
+     "institusi": "FPIK Universitas Sam Ratulangi",
+     "bidang": "Ilmu Kelautan"
     }
    ],
-   "bio": "Dr. Ari B. Rondonuwu adalah Koordinator Program Studi MSP dan Ketua Tim Kerja Akreditasi LAM-PTIP PS MSP 2026 (SK Dekan FPIK UNSRAT No. 38/UN12.5/LL/2026). Kepakarannya di bidang ekologi terumbu karang, teknologi penginderaan jauh pesisir, dan pemetaan habitat menjadikan beliau salah satu pembimbing tugas akhir paling diminati mahasiswa PS MSP — dengan beban bimbingan tertinggi di antara seluruh DTPS (rasio bimbingan 4,3), mencerminkan relevansi kuat riset beliau terhadap topik-topik skripsi mahasiswa di kawasan Taman Nasional Bunaken dan Coral Triangle.",
+   "bio": "Dr. Ir. Ari B. Rondonuwu menjabat Ketua Tim Kerja Akreditasi LAM-PTIP PS MSP 2026 (SK Dekan FPIK UNSRAT No. 38/UN12.5/LL/2026) dan Redaktur/Chief Editor Jurnal Ilmiah Platax (SK Dekan FPIK No. 574/UN12.5/LL/2026). Beliau juga ditugaskan sebagai Operator Penginputan Data Zona Integritas untuk FPIK pada Aplikasi Inspirasi Dikti (SK Rektor No. 723/UN12/LL/2026). Kepakarannya di bidang ekologi terumbu karang, teknologi penginderaan jauh pesisir, dan pemetaan habitat menjadikan beliau salah satu pembimbing tugas akhir paling diminati mahasiswa PS MSP — dengan beban bimbingan tertinggi di antara seluruh DTPS (rasio bimbingan 4,3), mencerminkan relevansi kuat riset beliau terhadap topik-topik skripsi mahasiswa di kawasan Taman Nasional Bunaken dan Coral Triangle.",
    "inovasi_unggulan": [
     {
      "judul": "Metode Terumbu Buatan (Reef Ball®)",
@@ -87,6 +92,13 @@
    "organisasi_keilmuan": [
     "Chief Editor  Journal of Aquatic  Resources Bioecology — Nasional (2024 - sekarang)",
     "Editor Jurnal Ilmiah Platax (Sinta 4) — Nasional (2024 - sekarang)"
+   ],
+   "keterlibatan_jurnal": [
+    "Redaktur/Chief Editor — Jurnal Ilmiah Platax (SK Dekan FPIK No. 574/UN12.5/LL/2026)",
+    "Penyunting/Editor — Jurnal Perikanan dan Kelautan Tropis (SK Dekan FPIK No. 630/UN12.5/LL/2026)"
+   ],
+   "zona_integritas": [
+    "Operator Penginputan Data Unit Kerja pada Aplikasi Inspirasi Dikti terkait Zona Integritas — FPIK (SK Rektor No. 723/UN12/LL/2026)"
    ]
   },
   "lumingas": {
@@ -95,6 +107,11 @@
    "keahlian": "Oseanografi Biologi & Ekologi Laut",
    "status_lengkap": true,
    "riwayat_pendidikan": [
+    {
+     "jenjang": "Magister",
+     "institusi": "Université de Bretagne Occidentale, Brest, Prancis",
+     "bidang": "Océanologie Biologique"
+    },
     {
      "jenjang": "Doktor (S3) / DEA",
      "institusi": "Université de Bretagne Occidentale, Prancis",
@@ -141,9 +158,14 @@
    "status_lengkap": true,
    "riwayat_pendidikan": [
     {
-     "jenjang": "Doktor (S3)",
+     "jenjang": "Magister (M.Sc)",
      "institusi": "Simon Fraser University, Kanada",
-     "bidang": "Ekologi Tingkah Laku dan Genetika"
+     "bidang": "Biological Sciences"
+    },
+    {
+     "jenjang": "Doktor (S3)",
+     "institusi": "Universitas Brawijaya, Malang",
+     "bidang": "Ilmu Perikanan dan Kelautan"
     }
    ],
    "bio": "Prof. Pratasik dikenal aktif dalam pembinaan kemampuan menulis ilmiah dosen dan mahasiswa muda di Sulawesi Utara, di samping perannya di editorial jurnal internasional bereputasi Scopus.",
@@ -174,6 +196,9 @@
    "sertifikasi": [],
    "organisasi_keilmuan": [
     "Editor Jurnal AACL Bioflux (Q3), Moderator dan Presenter International Symposium, Reviewer ENNRJ — Internasional (2018- sekarang)"
+   ],
+   "keterlibatan_jurnal": [
+    "Penyunting/Editor — Jurnal Ilmiah Platax (SK Dekan FPIK No. 574/UN12.5/LL/2026)"
    ]
   },
   "kepel": {
@@ -183,8 +208,13 @@
    "status_lengkap": true,
    "riwayat_pendidikan": [
     {
-     "jenjang": "Doktor (S3) / DEA",
+     "jenjang": "Magister",
      "institusi": "Université de Bretagne Occidentale, Prancis",
+     "bidang": "Geomorfologi dan Pengelolaan Wilayah Pesisir"
+    },
+    {
+     "jenjang": "Doktor (S3) / DEA",
+     "institusi": "Université de Bretagne Occidentale (UBO), Brest, Prancis",
      "bidang": "Pengelolaan Wilayah Pesisir"
     }
    ],
@@ -264,6 +294,13 @@
     "Pengurus Pusat Persatuan Insinyur Indonesia Bidang Hubungan Kemaritiman  No: 048/KPP-PII/VII/2023 — Nasional (2023)",
     "Organisasi Pelaksana Penghargaan Pembangunan Daerah (PPD) Tahun 2022 (SK Gubernur Sulut No. 59 Tahun 2022) — Nasional (2022)",
     "IKATAN SARJANA PERIKANAN INDONESIA (ISPIKANI)Nomor:021/KPTS/DPP/ISPIKANI/XII/2024 — Nasional (2024)"
+   ],
+   "keterlibatan_jurnal": [
+    "Redaktur/Chief Editor — Jurnal Perikanan dan Kelautan Tropis (SK Dekan FPIK No. 630/UN12.5/LL/2026)",
+    "Penyunting/Editor — Jurnal Ilmiah Platax (SK Dekan FPIK No. 574/UN12.5/LL/2026)"
+   ],
+   "zona_integritas": [
+    "Koordinator Tim 1 (Manajemen Perubahan) — Tim Kerja Pembangunan Zona Integritas FPIK Menuju WBK/WBBM 2026 (SK Rektor No. 691/UN12/LL/2026)"
    ]
   },
   "kambey": {
@@ -274,8 +311,8 @@
    "riwayat_pendidikan": [
     {
      "jenjang": "Magister (M.Sc, M.Si)",
-     "institusi": "—",
-     "bidang": "Manajemen Perikanan Karang"
+     "institusi": "Università Politecnica delle Marche, Ancona, Italia",
+     "bidang": "Marine Biodiversity and Management"
     }
    ],
    "bio": "Salah satu dari tiga DTPS yang saat ini sedang didorong menempuh studi lanjut S3 (Rencana Pengembangan Dosen FPIK Unsrat 2025–2029), dengan peran editorial yang sangat aktif di tiga jurnal ilmiah sekaligus.",
@@ -309,9 +346,14 @@
    "peran": "Koordinator Program Studi MSP (per data Tracer Study 2026)",
    "riwayat_pendidikan": [
     {
-     "jenjang": "Doktor (S3)",
+     "jenjang": "Magister (M.Si)",
      "institusi": "Institut Pertanian Bogor (IPB)",
-     "bidang": "Bioekologi Gastropoda"
+     "bidang": "Biologi Laut"
+    },
+    {
+     "jenjang": "Doktor (S3)",
+     "institusi": "Universitas Brawijaya, Malang",
+     "bidang": "Ilmu Perikanan dan Kelautan"
     }
    ],
    "bio": "Menjabat Koordinator Program Studi MSP. Penelitian kerjasama internasional beliau dengan Rare, Inc./Bloomberg Vibrant Oceans Initiative (2024) menghasilkan salah satu survei sosio-ekonomi perikanan terbesar yang pernah dilakukan PS MSP di Sulawesi Utara.",
@@ -339,8 +381,8 @@
    "riwayat_pendidikan": [
     {
      "jenjang": "Magister (M.Si)",
-     "institusi": "—",
-     "bidang": "Limnologi"
+     "institusi": "Universitas Sam Ratulangi",
+     "bidang": "Ilmu Perairan"
     }
    ],
    "bio": "Berperan aktif dalam tim akreditasi PS MSP 2026 sebagai PIC Kriteria 8 (Tracer Study) dan Kriteria 3 (Kemahasiswaan). Salah satu dari tiga DTPS yang sedang didorong menempuh studi lanjut S3.",
@@ -375,9 +417,14 @@
    "status_lengkap": true,
    "riwayat_pendidikan": [
     {
-     "jenjang": "Doktor (S3) / Ph.D",
-     "institusi": "James Cook University, Australia",
-     "bidang": "Pengolahan Sumberdaya Perikanan"
+     "jenjang": "Magister (M.App.Sc)",
+     "institusi": "James Cook University, Townsville, Australia",
+     "bidang": "Tropical Environment Management Research"
+    },
+    {
+     "jenjang": "Doktor (Ph.D)",
+     "institusi": "The Australian National University, Australia",
+     "bidang": "Resources Management and Environmental Science"
     }
    ],
    "bio": "DTPS dengan rekognisi internasional paling luas di PS MSP — dipercaya sebagai tenaga ahli oleh lembaga donor kelas dunia (USAID, FAO) dan firma konsultan internasional, mencerminkan reputasi PS MSP di ranah kebijakan perikanan global.",
@@ -421,7 +468,10 @@
     "Kewirausahaan"
    ],
    "sertifikasi": [],
-   "organisasi_keilmuan": []
+   "organisasi_keilmuan": [],
+   "keterlibatan_jurnal": [
+    "Penyunting/Editor — Jurnal Perikanan dan Kelautan Tropis (SK Dekan FPIK No. 630/UN12.5/LL/2026)"
+   ]
   },
   "wantasen": {
    "nama": "Dr. Ir. Adnan Sjaltout Wantasen, M.Si.",
@@ -431,9 +481,14 @@
    "peran": "PIC K8 / Tracer Study, Tim Akreditasi PS MSP 2026",
    "riwayat_pendidikan": [
     {
+     "jenjang": "Magister (M.Si)",
+     "institusi": "Institut Pertanian Bogor (IPB)",
+     "bidang": "Sumberdaya Pesisir dan Laut"
+    },
+    {
      "jenjang": "Doktor (S3)",
      "institusi": "Institut Pertanian Bogor (IPB)",
-     "bidang": "Pengelolaan Pesisir"
+     "bidang": "Pengelolaan Sumberdaya Pesisir dan Lautan"
     }
    ],
    "bio": "Aktif membina langsung kelompok nelayan pesisir Sulawesi Utara, dengan pendekatan pendampingan manajemen usaha perikanan tangkap skala kecil hingga strategi akses pasar.",
@@ -462,6 +517,13 @@
    ],
    "organisasi_keilmuan": [
     "Pengurus Ikatan Sarjana Oseanologi Indonesia Komisariat Daerah Manado Bidang Kerjasama Internasional No. 15/SK/ISOI/IX/2023 — Internasional (2023)"
+   ],
+   "keterlibatan_jurnal": [
+    "Penyunting/Editor — Jurnal Ilmiah Platax (SK Dekan FPIK No. 574/UN12.5/LL/2026)",
+    "Penyunting/Editor — Journal of Aquatic Resources Bioecology (SK Dekan FPIK No. 641/UN12.5/LL/2026)"
+   ],
+   "zona_integritas": [
+    "Koordinator Tim 3 (Penataan Manajemen SDM) — Tim Kerja Pembangunan Zona Integritas FPIK Menuju WBK/WBBM 2026 (SK Rektor No. 691/UN12/LL/2026)"
    ]
   },
   "rembet": {
@@ -471,9 +533,14 @@
    "status_lengkap": true,
    "riwayat_pendidikan": [
     {
+     "jenjang": "Magister (M.Si)",
+     "institusi": "Institut Pertanian Bogor (IPB)",
+     "bidang": "Ekologi-Ekonomi Sumberdaya Pesisir"
+    },
+    {
      "jenjang": "Doktor (S3)",
      "institusi": "Institut Pertanian Bogor (IPB)",
-     "bidang": "Valuasi Sumberdaya Perairan"
+     "bidang": "Pengelolaan Sumberdaya Pesisir dan Lautan"
     }
    ],
    "bio": "Kepakaran valuasi ekonomi sumberdaya perairan menjadikan beliau rujukan dalam analisis nilai ekonomi jasa ekosistem perairan tropis di Sulawesi Utara.",
@@ -497,6 +564,9 @@
    "rekognisi": [],
    "organisasi_keilmuan": [
     "Pengurus Ikatan Sarjana Oseanologi Indonesia Komisariat Daerah Manado  Bidang Pertemuan Ilmiah No. 15/SK/ISOI/IX/2023 — Internasional (2023)"
+   ],
+   "keterlibatan_jurnal": [
+    "Penyunting/Editor — Jurnal Perikanan dan Kelautan Tropis (SK Dekan FPIK No. 630/UN12.5/LL/2026)"
    ]
   },
   "kondoy": {
@@ -507,9 +577,14 @@
    "peran": "PIC K3 / Kemahasiswaan, Tim Akreditasi PS MSP 2026",
    "riwayat_pendidikan": [
     {
+     "jenjang": "Magister (M.Si)",
+     "institusi": "Universitas Sam Ratulangi",
+     "bidang": "Biologi (Ilmu Perairan)"
+    },
+    {
      "jenjang": "Doktor (S3)",
-     "institusi": "Universitas Brawijaya",
-     "bidang": "Tumbuhan Air"
+     "institusi": "Universitas Brawijaya, Malang",
+     "bidang": "Ilmu Perikanan dan Kelautan"
     }
    ],
    "bio": "Salah satu DTPS dengan capaian sitasi tinggi (21 sitasi dari 10 artikel, 2023–2025), dengan beban bimbingan tugas akhir yang terus meningkat — dari 1 mahasiswa (2023) menjadi 5 mahasiswa (2025) — mencerminkan proses regenerasi pembimbing yang berhasil di PS MSP.",
@@ -537,6 +612,9 @@
    ],
    "organisasi_keilmuan": [
     "Editor Platax, — Nasional (2018-sekarang)"
+   ],
+   "keterlibatan_jurnal": [
+    "Penyunting/Editor — Journal of Aquatic Resources Bioecology (SK Dekan FPIK No. 641/UN12.5/LL/2026)"
    ]
   },
   "lasabuda": {
@@ -546,9 +624,14 @@
    "status_lengkap": true,
    "riwayat_pendidikan": [
     {
-     "jenjang": "Doktor (S3)",
+     "jenjang": "Magister (M.Si)",
      "institusi": "Universitas Sam Ratulangi",
-     "bidang": "Pengelolaan Sumberdaya Pesisir"
+     "bidang": "Perencanaan Pembangunan Wilayah"
+    },
+    {
+     "jenjang": "Doktor (S3)",
+     "institusi": "Institut Pertanian Bogor (IPB)",
+     "bidang": "Pengelolaan Sumberdaya Pesisir dan Lautan"
     }
    ],
    "bio": "Satu-satunya DTPS PS MSP yang meraih gelar doktor dari Unsrat sendiri, membawa kedalaman pemahaman konteks lokal dan kearifan ekologis Sulawesi Utara. Pemegang sertifikasi profesional terbanyak di antara seluruh DTPS.",
@@ -579,6 +662,9 @@
    ],
    "organisasi_keilmuan": [
     "Pengurus Ikatan Sarjana Oseanologi Indonesia Komisariat Daerah Manado No. 15/SK/ISOI/IX/2023 — Internasional (2023)"
+   ],
+   "keterlibatan_jurnal": [
+    "Penyunting/Editor — Journal of Aquatic Resources Bioecology (SK Dekan FPIK No. 641/UN12.5/LL/2026)"
    ]
   },
   "menajang": {
@@ -588,12 +674,17 @@
    "status_lengkap": true,
    "riwayat_pendidikan": [
     {
+     "jenjang": "Magister (M.Sc, M.Si)",
+     "institusi": "Università Politecnica delle Marche, Ancona, Italia",
+     "bidang": "Marine Biodiversity and Management"
+    },
+    {
      "jenjang": "Doktor (S3)",
-     "institusi": "Università Politecnica delle Marche, Italia",
-     "bidang": "Bioekologi Lamun"
+     "institusi": "Fakultas Perikanan dan Ilmu Kelautan, Universitas Brawijaya",
+     "bidang": "Ilmu Perikanan dan Kelautan"
     }
    ],
-   "bio": "Bagian dari lima DTPS PS MSP yang meraih gelar doktor dari Università Politecnica delle Marche, Italia — memberi PS MSP jejaring riset lamun dan bioekologi laut yang kuat di Eropa.",
+   "bio": "Bagian dari lima DTPS PS MSP yang meraih gelar Magister dari Università Politecnica delle Marche, Ancona, Italia (Marine Biodiversity and Management), sebelum menempuh Doktor di Fakultas Perikanan dan Ilmu Kelautan Universitas Brawijaya — memberi PS MSP jejaring riset lamun dan bioekologi laut yang kuat di Eropa.",
    "tema_riset_aktif": [
     "Penyuluhan Pewarna dan Pengolahan Alga Halimeda sp. sebagai Minuman Fungsional, Desa Arakan (2024, Rp 8 juta)",
     "Pelatihan Pembuatan Karagenan dari Alga Kappaphycus alvarezii, Desa Buku Utara (2025, Rp 8 juta)"
@@ -623,9 +714,14 @@
    "status_lengkap": true,
    "riwayat_pendidikan": [
     {
+     "jenjang": "Magister (M.Sc, M.Si)",
+     "institusi": "Università Politecnica delle Marche, Ancona, Italia",
+     "bidang": "Marine Biodiversity and Management"
+    },
+    {
      "jenjang": "Doktor (S3)",
-     "institusi": "Università Politecnica delle Marche, Italia",
-     "bidang": "Ekologi Tumbuhan Air"
+     "institusi": "FPIK Universitas Sam Ratulangi",
+     "bidang": "Ilmu Kelautan"
     }
    ],
    "bio": "Kepakaran ekologi tumbuhan air melengkapi cakupan keilmuan PS MSP di ranah perairan tawar dan vegetasi akuatik, mendukung mata kuliah seperti Botani Akuatik dan Limnologi.",
@@ -653,9 +749,14 @@
    "peran": "Sekretaris Tim Akreditasi PS MSP 2026",
    "riwayat_pendidikan": [
     {
-     "jenjang": "Doktor (S3) / Ph.D",
-     "institusi": "Acadia University, Kanada / Hiroshima University, Jepang",
-     "bidang": "Manajemen Sumber Daya Perairan"
+     "jenjang": "Magister (M.Sc)",
+     "institusi": "Acadia University, Kanada",
+     "bidang": "Biology"
+    },
+    {
+     "jenjang": "Doktor (Ph.D)",
+     "institusi": "Hiroshima University, Jepang",
+     "bidang": "Philosophy (PhD)"
     }
    ],
    "bio": "Menjabat Sekretaris Tim Kerja Akreditasi LAM-PTIP PS MSP 2026. Aktif sebagai moderator forum internasional bertema konservasi pesisir dan blue carbon, mencerminkan jejaring internasional yang kuat dari pendidikan doktoralnya di Kanada dan Jepang.",
@@ -692,6 +793,9 @@
    ],
    "organisasi_keilmuan": [
     "Pengurus Ikatan Sarjana Oseanologi Indonesia Komisariat Daerah Manado Bidang Pendidikan dan Pelatihan No. 15/SK/ISOI/IX/2023 — Nasional (2023)"
+   ],
+   "keterlibatan_jurnal": [
+    "Redaktur/Chief Editor — Journal of Aquatic Resources Bioecology (SK Dekan FPIK No. 641/UN12.5/LL/2026)"
    ]
   },
   "sangari": {
@@ -702,8 +806,8 @@
    "riwayat_pendidikan": [
     {
      "jenjang": "Magister (MA, MMA)",
-     "institusi": "—",
-     "bidang": "Manajemen Sumberdaya Perairan / Ekologi Terumbu Karang"
+     "institusi": "University of Rhode Island, Amerika Serikat",
+     "bidang": "Marine Affairs and Policy"
     }
    ],
    "bio": "Salah satu dari tiga DTPS yang sedang didorong menempuh studi lanjut S3, dengan aktivitas ilmiah internasional yang menonjol di bidang konservasi terumbu karang dan isu mikroplastik.",
