@@ -42,34 +42,43 @@ async function loadPengurusKegiatan() {
     // Petakan pengurus + index aslinya
     const withIdx = data.pengurus.map((p, i) => ({ p, i }));
     const cari = (fn) => withIdx.filter(x => fn(x.p));
-    const lvl1 = cari(x => x.level === 1);
-    const lvl2 = cari(x => x.level === 2);
-    const kiri = cari(x => x.cabang === 'kiri').sort((a, b) => a.p.level - b.p.level);
-    const kanan = cari(x => x.cabang === 'kanan').sort((a, b) => a.p.level - b.p.level);
-    const lainnya = cari(x => x.level >= 5);
+    const lvl1 = cari(p => p.level === 1);
+    const lvl2 = cari(p => p.level === 2);
+    const kiri = cari(p => p.cabang === 'kiri').sort((a, b) => a.p.level - b.p.level);
+    const kanan = cari(p => p.cabang === 'kanan').sort((a, b) => a.p.level - b.p.level);
+    const lainnya = cari(p => p.level >= 5);
 
-    // Bila struktur hierarki dikenali, render sebagai bagan; jika tidak, fallback grid
     if (lvl1.length || lvl2.length) {
       let html = '<div class="bagan-struktur">';
-      // Level 1
+
+      // Level 1 — Ketua Umum
       if (lvl1.length) {
-        html += `<div class="bagan-baris bagan-baris-tunggal">${lvl1.map(x => kartu(x.p, x.i)).join('')}</div>`;
-        if (lvl2.length || kiri.length || kanan.length) html += '<div class="bagan-garis-vertikal"></div>';
+        html += `<div class="bagan-level">${lvl1.map(x => kartu(x.p, x.i)).join('')}</div>`;
+        html += '<div class="bagan-konektor"></div>';
       }
-      // Level 2
+      // Level 2 — Ketua Harian
       if (lvl2.length) {
-        html += `<div class="bagan-baris bagan-baris-tunggal">${lvl2.map(x => kartu(x.p, x.i)).join('')}</div>`;
-        if (kiri.length || kanan.length) html += '<div class="bagan-garis-vertikal"></div><div class="bagan-garis-horizontal"></div>';
+        html += `<div class="bagan-level">${lvl2.map(x => kartu(x.p, x.i)).join('')}</div>`;
       }
-      // Cabang kiri & kanan
+      // Percabangan kiri (Sekretariat) & kanan (Keuangan)
       if (kiri.length || kanan.length) {
+        html += '<div class="bagan-konektor"></div>';
+        html += '<div class="bagan-cabang-wrap">';
+        html += '<div class="bagan-cabang-garis"></div>'; // garis horizontal komando
         html += '<div class="bagan-cabang">';
-        html += `<div class="bagan-kolom">${kiri.map(x => kartu(x.p, x.i)).join('<div class="bagan-garis-vertikal kecil"></div>')}</div>`;
-        html += `<div class="bagan-kolom">${kanan.map(x => kartu(x.p, x.i)).join('<div class="bagan-garis-vertikal kecil"></div>')}</div>`;
+        // kolom kiri
+        html += '<div class="bagan-kolom"><div class="bagan-konektor-turun"></div>';
+        html += kiri.map((x, k) => (k > 0 ? '<div class="bagan-konektor"></div>' : '') + kartu(x.p, x.i)).join('');
         html += '</div>';
+        // kolom kanan
+        html += '<div class="bagan-kolom"><div class="bagan-konektor-turun"></div>';
+        html += kanan.map((x, k) => (k > 0 ? '<div class="bagan-konektor"></div>' : '') + kartu(x.p, x.i)).join('');
+        html += '</div>';
+        html += '</div></div>';
       }
       if (lainnya.length) {
-        html += `<div class="bagan-baris">${lainnya.map(x => kartu(x.p, x.i)).join('')}</div>`;
+        html += '<div class="bagan-konektor"></div>';
+        html += `<div class="bagan-level">${lainnya.map(x => kartu(x.p, x.i)).join('')}</div>`;
       }
       html += '</div>';
       pengurusGrid.className = '';

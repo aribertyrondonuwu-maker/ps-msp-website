@@ -177,15 +177,22 @@ async function kirimBalasan(e, parentId) {
 }
 
 // ── Form utama (pesan baru / thread baru) ──
+let _forumCooldown = false;
 const _forumForm = document.getElementById('forumForm');
 if (_forumForm) {
   _forumForm.addEventListener('submit', async (e) => {
     e.preventDefault();
+    if (_forumCooldown) return;
     const nama = document.getElementById('forumNama').value.trim();
     const angkatan = document.getElementById('forumAngkatan').value.trim();
     const pesan = document.getElementById('forumPesan').value.trim();
     const status = document.getElementById('forumStatus');
+    const btn = _forumForm.querySelector('button[type="submit"]');
     if (!nama || !pesan) return;
+    if (pesan.length > 500 || nama.length > 80) { status.textContent = '⚠️ Teks terlalu panjang.'; return; }
+
+    const labelAsli = btn ? btn.textContent : '';
+    if (btn) { btn.disabled = true; btn.textContent = 'Mengirim…'; }
     if (FORUM_READY && window.sbClient) {
       try {
         const { error } = await window.sbClient.from('alumni_diskusi').insert([{ nama, angkatan, pesan }]);
@@ -196,6 +203,20 @@ if (_forumForm) {
         status.textContent = '⚠️ Gagal mengirim, coba lagi nanti.';
         console.error(err);
       }
+    } else {
+      status.textContent = '⚠️ Koneksi ke server belum siap. Muat ulang halaman.';
+    }
+    // cooldown 5 detik cegah spam
+    _forumCooldown = true;
+    let sisa = 5;
+    if (btn) {
+      const timer = setInterval(() => {
+        sisa--;
+        if (sisa <= 0) { clearInterval(timer); _forumCooldown = false; btn.disabled = false; btn.textContent = labelAsli; }
+        else { btn.textContent = `Tunggu ${sisa}s…`; }
+      }, 1000);
+    } else {
+      setTimeout(() => { _forumCooldown = false; }, 5000);
     }
   });
 }
