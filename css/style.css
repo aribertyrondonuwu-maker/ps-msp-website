@@ -324,10 +324,13 @@ img.dosen-photo { display: block; }
   .nav-links .nav-item { width: 100%; }
   .nav-links .nav-item > a { display: block; padding: 14px 4px; color: var(--navy) !important; border-bottom: 1px solid var(--border); font-size: 0.95rem; text-transform: none; letter-spacing: normal; }
   .nav-item.has-dropdown .dropdown {
-    position: static; opacity: 1; visibility: visible; transform: none; box-shadow: none;
-    padding: 0 0 0 16px; display: none; min-width: 0;
+    position: static !important; opacity: 1 !important; visibility: visible !important;
+    transform: none !important; box-shadow: none; left: auto !important; right: auto !important;
+    padding: 0 0 0 16px; display: none; min-width: 0; width: 100% !important;
   }
-  .nav-item.has-dropdown.expanded .dropdown { display: flex; }
+  .nav-item.has-dropdown:hover .dropdown,
+  .nav-item.has-dropdown:focus-within .dropdown { transform: none !important; }
+  .nav-item.has-dropdown.expanded .dropdown { display: flex !important; }
   .nav-item.has-dropdown.expanded > a { color: var(--teal) !important; }
   .nav-links .dropdown a,
   .nav-item.has-dropdown .dropdown a { padding: 12px 4px 12px 14px !important; border-bottom: 1px solid #f1f5f9; color: #0a2540 !important; font-weight: 500 !important; background: #fff !important; text-transform: none !important; opacity: 1 !important; }
@@ -525,9 +528,11 @@ img.dosen-photo { display: block; }
 .submenu-link-cta:hover { color: var(--deep); }
 
 /* Dropdown menu paling kanan: rata kanan agar tidak keluar layar */
-.nav-links > .nav-item:nth-last-child(-n+2) .dropdown { left: auto; right: 0; transform: translateX(0) translateY(8px); }
-.nav-links > .nav-item:nth-last-child(-n+2).has-dropdown:hover .dropdown,
-.nav-links > .nav-item:nth-last-child(-n+2).has-dropdown:focus-within .dropdown { transform: translateX(0) translateY(4px); }
+@media (min-width: 1321px) {
+  .nav-links > .nav-item:nth-last-child(-n+2) .dropdown { left: auto; right: 0; transform: translateX(0) translateY(8px); }
+  .nav-links > .nav-item:nth-last-child(-n+2).has-dropdown:hover .dropdown,
+  .nav-links > .nav-item:nth-last-child(-n+2).has-dropdown:focus-within .dropdown { transform: translateX(0) translateY(4px); }
+}
 
 /* ═══ Bagan Struktur Pengurus Alumni (dengan garis komando) ═══ */
 .bagan-struktur { display: flex; flex-direction: column; align-items: center; padding: 10px 0; }
