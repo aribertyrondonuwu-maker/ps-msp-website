@@ -3,25 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Percakapan Alumni — PS Manajemen Sumberdaya Perairan FPIK UNSRAT</title>
-<meta name="description" content="Ruang percakapan dan diskusi alumni Program Studi Manajemen Sumberdaya Perairan FPIK UNSRAT — berbagi kabar, lowongan kerja, dan jejaring.">
+<title>Zona Integritas — PS Manajemen Sumberdaya Perairan FPIK UNSRAT</title>
+<meta name="description" content="Zona Integritas FPIK UNSRAT menuju Wilayah Bebas dari Korupsi (WBK) — enam area perubahan, tim kerja, SPIP, Whistle Blowing System, dan penanganan pengaduan masyarakat.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/kurikulum.css">
+<link rel="stylesheet" href="css/akreditasi.css">
+<link rel="stylesheet" href="css/dosen-detail.css">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Percakapan Alumni — PS Manajemen Sumberdaya Perairan FPIK UNSRAT">
-<meta property="og:description" content="Ruang percakapan dan diskusi alumni Program Studi Manajemen Sumberdaya Perairan FPIK UNSRAT — berbagi kabar, lowongan kerja, dan jejaring.">
-<meta property="og:url" content="https://msp-fpikunsrat.id/forum-alumni.html">
+<meta property="og:title" content="Zona Integritas — PS MSP FPIK UNSRAT">
+<meta property="og:description" content="Zona Integritas FPIK UNSRAT menuju Wilayah Bebas dari Korupsi (WBK) 2026.">
+<meta property="og:url" content="https://msp-fpikunsrat.id/zona-integritas.html">
 <meta property="og:image" content="https://msp-fpikunsrat.id/images/og-default.jpg">
 <meta property="og:site_name" content="PS MSP FPIK UNSRAT">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Percakapan Alumni — PS Manajemen Sumberdaya Perairan FPIK UNSRAT">
-<meta name="twitter:description" content="Ruang percakapan dan diskusi alumni Program Studi Manajemen Sumberdaya Perairan FPIK UNSRAT — berbagi kabar, lowongan kerja, dan jejaring.">
-<meta name="twitter:image" content="https://msp-fpikunsrat.id/images/og-default.jpg">
-<link rel="canonical" href="https://msp-fpikunsrat.id/forum-alumni.html">
+<link rel="canonical" href="https://msp-fpikunsrat.id/zona-integritas.html">
 </head>
-<body data-page="forum-alumni">
+<body data-page="zona-integritas">
 
 <header class="navbar" id="navbar">
   <div class="navbar-top">
@@ -83,7 +81,7 @@
         </div>
       </div>
       <div class="nav-item has-dropdown">
-        <a href="alumni.html" class="active">Alumni &#9662;</a>
+        <a href="alumni.html">Alumni &#9662;</a>
         <div class="dropdown">
           <a href="alumni.html#tentang">Tentang Ikatan Alumni</a>
           <a href="alumni.html#pengurus">Pengurus</a>
@@ -97,7 +95,7 @@
         <div class="dropdown">
           <a href="mutu.html">Penjaminan Mutu</a>
           <a href="layanan-pengaduan.html">Layanan Pengaduan</a>
-          <a href="zona-integritas.html">Zona Integritas</a>
+          <a href="zona-integritas.html" class="active">Zona Integritas</a>
         </div>
       </div>
       <div class="nav-item has-dropdown">
@@ -119,7 +117,6 @@
     </nav>
     <div class="navbar-actions">
       <button class="nav-search-btn" onclick="openSearch()" aria-label="Cari"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></button>
-      <a href="alumni.html" class="btn-outline-dark btn-sm-outline">← Alumni</a>
       <a href="index.html" class="btn btn-primary btn-sm">Beranda</a>
     </div>
     </div>
@@ -128,31 +125,93 @@
 
 <section class="page-hero">
   <div class="container">
-    <p class="eyebrow">Jejaring &amp; Silaturahmi Alumni</p>
-    <h1>Percakapan Alumni</h1>
-    <p class="hero-sub">Ruang berbagi kabar, info lowongan kerja, dan menyapa sesama alumni MSP. Balas pesan satu sama lain untuk membangun percakapan. <strong id="forumCount">0</strong> pesan sejauh ini.</p>
+    <p class="eyebrow">Reformasi Birokrasi FPIK UNSRAT</p>
+    <h1>Zona Integritas</h1>
+    <p class="hero-sub">Komitmen menuju Wilayah Bebas dari Korupsi (WBK) 2026 — tata kelola yang bersih, transparan, dan melayani.</p>
   </div>
 </section>
 
-<section class="section">
-  <div class="container" style="max-width:760px;">
-    <!-- Form pesan baru -->
-    <form id="forumForm" class="forum-form card">
-      <h3 class="forum-form-title">Mulai percakapan baru</h3>
-      <div class="form-row">
-        <input type="text" id="forumNama" placeholder="Nama" required maxlength="80">
-        <input type="text" id="forumAngkatan" placeholder="Angkatan (mis. 2018)" maxlength="20">
-      </div>
-      <textarea id="forumPesan" placeholder="Tulis pesan, kabar, atau info lowongan kerja…" required maxlength="500" rows="3"></textarea>
-      <button type="submit" class="btn btn-primary btn-sm">Kirim Pesan</button>
-      <p class="form-note" id="forumStatus"></p>
-      <p class="form-note muted">Pesan ditinjau admin sebelum tampil publik.</p>
-    </form>
+<!-- SUB-MENU HALAMAN -->
+<nav class="submenu" id="ziSubmenu">
+  <div class="container submenu-inner">
+    <a href="#tentang" class="submenu-link">Tentang</a>
+    <a href="#area" class="submenu-link">Enam Area Perubahan</a>
+    <a href="#tim-kerja" class="submenu-link">Tim Kerja ZI</a>
+    <a href="#spip" class="submenu-link">SPIP</a>
+    <a href="#wbs" class="submenu-link">WBS</a>
+    <a href="#pengaduan" class="submenu-link">Pengaduan Masyarakat</a>
+    <a href="https://inspirasidikti.kemdiktisaintek.go.id/" target="_blank" class="submenu-link submenu-link-cta">Portal Inspirasi DIKTI →</a>
+  </div>
+</nav>
 
-    <!-- Daftar percakapan -->
-    <div id="forumList" class="forum-list">
-      <p class="muted">Memuat percakapan…</p>
+<!-- TENTANG -->
+<section class="section" id="tentang">
+  <div class="container" style="max-width:840px;">
+    <h2 class="section-title">Tentang Zona Integritas</h2>
+    <div id="ziTentang" class="himasuper-deskripsi"></div>
+    <h3 class="himasuper-subtitle">Dasar Hukum</h3>
+    <ul class="rekognisi-list" id="ziDasarHukum"></ul>
+  </div>
+</section>
+
+<!-- ENAM AREA PERUBAHAN -->
+<section class="section section-alt" id="area">
+  <div class="container">
+    <h2 class="section-title">Enam Area Perubahan</h2>
+    <p class="section-sub">Kerangka nasional pembangunan Zona Integritas yang diterapkan di FPIK UNSRAT.</p>
+    <div class="cards-grid" id="ziAreaGrid"></div>
+  </div>
+</section>
+
+<!-- TIM KERJA ZI -->
+<section class="section" id="tim-kerja">
+  <div class="container">
+    <h2 class="section-title">Tim Kerja Pembangunan Zona Integritas</h2>
+    <p class="section-sub" id="ziTimKerjaSumber"></p>
+    <div id="ziTimKerjaPimpinan" class="cards-grid" style="margin-bottom:32px;"></div>
+    <div class="table-wrap">
+      <table class="data-table" id="ziAreaTable">
+        <thead><tr><th>Area</th><th>Koordinator</th><th>Wakil Koordinator</th><th>Anggota</th></tr></thead>
+        <tbody id="ziAreaTableBody"></tbody>
+      </table>
     </div>
+    <div id="ziTimPendukung" style="margin-top:28px;"></div>
+  </div>
+</section>
+
+<!-- SPIP -->
+<section class="section section-alt" id="spip">
+  <div class="container">
+    <h2 class="section-title" id="ziSpipJudul">Tim SPIP</h2>
+    <p class="section-sub" id="ziSpipSumber"></p>
+    <div id="ziSpipBody"></div>
+  </div>
+</section>
+
+<!-- WBS -->
+<section class="section" id="wbs">
+  <div class="container">
+    <h2 class="section-title" id="ziWbsJudul">Tim WBS</h2>
+    <p class="section-sub" id="ziWbsSumber"></p>
+    <div id="ziWbsBody"></div>
+  </div>
+</section>
+
+<!-- PENGADUAN MASYARAKAT -->
+<section class="section section-alt" id="pengaduan">
+  <div class="container">
+    <h2 class="section-title" id="ziPengaduanJudul">Tim Pengaduan Masyarakat</h2>
+    <p class="section-sub" id="ziPengaduanSumber"></p>
+    <div id="ziPengaduanBody"></div>
+  </div>
+</section>
+
+<!-- PORTAL INSPIRASI -->
+<section class="section">
+  <div class="container" style="max-width:700px;text-align:center;">
+    <h2 class="section-title" style="justify-content:center;">Portal Inspirasi DIKTI</h2>
+    <p id="ziPortalDeskripsi" style="margin-bottom:24px;"></p>
+    <a href="https://inspirasidikti.kemdiktisaintek.go.id/" target="_blank" rel="noopener" class="btn btn-primary">Buka Portal Inspirasi DIKTI →</a>
   </div>
 </section>
 
@@ -173,10 +232,13 @@
     <div>
       <h4>Tautan Cepat</h4>
       <a href="index.html">Beranda</a>
-      <a href="alumni.html">Alumni</a>
       <a href="profil.html">Profil</a>
+      <a href="index.html#dosen">Dosen</a>
       <a href="akreditasi.html">Akreditasi</a>
       <a href="mutu.html">Penjaminan Mutu</a>
+      <a href="layanan-pengaduan.html">Layanan Pengaduan</a>
+      <a href="zona-integritas.html">Zona Integritas</a>
+      <a href="galeri-media.html">Galeri Media</a>
       <a href="berita.html">Berita</a>
       <a href="https://aribertyrondonuwu-maker.github.io/tracer-study-msp/" target="_blank">Tracer Study</a>
     </div>
@@ -194,7 +256,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="js/supabase-client.js"></script>
 <script src="js/app.js"></script>
-<script src="js/forum-alumni.js"></script>
+<script src="js/zona-integritas.js"></script>
 <div class="search-modal" id="searchModal" onclick="if(event.target===this)closeSearch()">
   <div class="search-box">
     <input type="text" id="searchInput" placeholder="Cari halaman: profil, kurikulum, dosen, penelitian…" autocomplete="off" oninput="runSearch(this.value)" onkeydown="if(event.key==='Escape')closeSearch()">
