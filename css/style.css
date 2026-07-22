@@ -567,7 +567,8 @@ img.dosen-photo { display: block; }
 /* ═══ UX & Aksesibilitas ═══ */
 /* Fix anchor offset agar judul section tidak tertutup navbar/submenu sticky saat diklik dari menu */
 [id] { scroll-margin-top: 80px; }
-.submenu ~ * [id], #tentang, #pengurus, #kegiatan, #pekerjaan, #diskusi { scroll-margin-top: 130px; }
+.submenu ~ * [id], #tentang, #pengurus, #kegiatan, #pekerjaan, #diskusi,
+#area, #tim-kerja, #spip, #wbs, #pengaduan { scroll-margin-top: 130px; }
 
 /* Cegah input/form meluber di layar kecil */
 input, textarea, select { max-width: 100%; box-sizing: border-box; }
