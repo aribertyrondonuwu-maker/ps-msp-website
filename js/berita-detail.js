@@ -77,10 +77,16 @@ async function loadBeritaDetail() {
       }
     }
 
-    // Render konten: pertahankan paragraf
+    // Render konten: HTML kaya (dari editor) atau teks polos (data lama)
     const konten = (data.konten || '').trim();
-    const paragraphs = konten.split(/\n\s*\n/).map(p => `<p>${p.replace(/\n/g, '<br>')}</p>`).join('');
-    document.getElementById('beritaKonten').innerHTML = paragraphs || '<p class="muted">(Isi berita kosong)</p>';
+    const isHtml = /<[a-z][\s\S]*>/i.test(konten);
+    let kontenHtml;
+    if (isHtml) {
+      kontenHtml = konten;
+    } else {
+      kontenHtml = konten.split(/\n\s*\n/).map(p => `<p>${p.replace(/\n/g, '<br>')}</p>`).join('');
+    }
+    document.getElementById('beritaKonten').innerHTML = kontenHtml || '<p class="muted">(Isi berita kosong)</p>';
 
     // Galeri foto dokumentasi (0 atau lebih)
     const galeri = Array.isArray(data.galeri_foto) ? data.galeri_foto.filter(Boolean) : [];

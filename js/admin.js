@@ -236,6 +236,64 @@ function openCropper(file, aspectRatio, judul) {
 // ─────────────────────────────────────────────────────────────────────────
 // BERITA
 // ─────────────────────────────────────────────────────────────────────────
+// ── Quill Rich Text Editor untuk isi berita (mirip Microsoft Word) ──
+const Font = Quill.import('formats/font');
+Font.whitelist = ['sans-serif', 'serif', 'monospace'];
+Quill.register(Font, true);
+const Size = Quill.import('attributors/style/size');
+Size.whitelist = ['12px', '14px', '16px', '18px', '24px', '32px', '48px'];
+Quill.register(Size, true);
+
+const beritaQuill = new Quill('#beritaKontenEditor', {
+  theme: 'snow',
+  modules: { toolbar: '#beritaKontenToolbar' },
+  placeholder: 'Tulis isi berita di sini...'
+});
+
+// Upload gambar disisipkan di dalam naskah (bukan foto utama/galeri)
+beritaQuill.getModule('toolbar').addHandler('image', () => {
+  const input = document.createElement('input');
+  input.type = 'file';
+  input.accept = 'image/*';
+  input.onchange = async () => {
+    const file = input.files[0];
+    if (!file) return;
+    const status = document.getElementById('beritaKontenStatus');
+    try {
+      status.textContent = 'Mengunggah gambar…';
+      const url = await uploadToMedia(file, 'berita-konten', 'gambar.jpg');
+      const range = beritaQuill.getSelection(true) || { index: beritaQuill.getLength() };
+      beritaQuill.insertEmbed(range.index, 'image', url, 'user');
+      beritaQuill.setSelection(range.index + 1);
+      status.textContent = '✅ Gambar disisipkan.';
+    } catch (err) {
+      status.textContent = '⚠️ Gagal mengunggah gambar.';
+      console.error(err);
+    }
+  };
+  input.click();
+});
+
+// Sinkronkan isi Quill ke textarea tersembunyi setiap perubahan (dipakai saat submit)
+beritaQuill.on('text-change', () => {
+  const html = beritaQuill.root.innerHTML;
+  const isEmpty = beritaQuill.getText().trim().length === 0;
+  document.getElementById('beritaKonten').value = isEmpty ? '' : html;
+});
+
+// Muat konten (mendukung data lama teks polos maupun data baru berformat HTML)
+function setBeritaKontenEditor(konten) {
+  const isHtml = /<[a-z][\s\S]*>/i.test(konten || '');
+  if (isHtml) {
+    beritaQuill.root.innerHTML = konten;
+  } else {
+    // data lama: teks polos dengan baris kosong sebagai pemisah paragraf
+    const paragraphs = (konten || '').trim().split(/\n\s*\n/).map(p => `<p>${p.replace(/\n/g, '<br>')}</p>`).join('');
+    beritaQuill.root.innerHTML = paragraphs || '<p><br></p>';
+  }
+  document.getElementById('beritaKonten').value = konten || '';
+}
+
 async function loadBerita() {
   const { data, error } = await sb.from('berita').select('*').order('tanggal_publish', { ascending: false });
   const table = document.getElementById('beritaTable');
@@ -355,6 +413,10 @@ document.getElementById('beritaGaleriInput').addEventListener('change', async (e
 
 document.getElementById('beritaForm').addEventListener('submit', async (e) => {
   e.preventDefault();
+  if (beritaQuill.getText().trim().length === 0) {
+    document.getElementById('beritaKontenStatus').textContent = '⚠️ Isi berita tidak boleh kosong.';
+    return;
+  }
   const id = document.getElementById('beritaId').value;
   const payload = {
     judul: document.getElementById('beritaJudul').value.trim(),
@@ -374,6 +436,7 @@ document.getElementById('beritaForm').addEventListener('submit', async (e) => {
   const { error } = await query;
   if (error) { alert('Gagal menyimpan: ' + error.message); return; }
   document.getElementById('beritaForm').reset();
+  setBeritaKontenEditor('');
   document.getElementById('beritaId').value = '';
   document.getElementById('beritaFotoUrl').value = '';
   setBeritaFotoPreview('');
@@ -390,7 +453,7 @@ function editBerita(id) {
   document.getElementById('beritaId').value = b.id;
   document.getElementById('beritaJudul').value = b.judul;
   document.getElementById('beritaKategori').value = b.kategori || 'Akademik';
-  document.getElementById('beritaKonten').value = b.konten || '';
+  setBeritaKontenEditor(b.konten || '');
   document.getElementById('beritaPublished').checked = b.published;
   document.getElementById('beritaFotoUrl').value = b.gambar_url || '';
   document.getElementById('beritaFotoRasio').value = b.gambar_rasio || '1.3333';
@@ -404,6 +467,7 @@ function editBerita(id) {
 }
 document.getElementById('beritaCancelEdit').addEventListener('click', () => {
   document.getElementById('beritaForm').reset();
+  setBeritaKontenEditor('');
   document.getElementById('beritaId').value = '';
   document.getElementById('beritaFotoUrl').value = '';
   setBeritaFotoPreview('');
