@@ -1,0 +1,186 @@
+{
+ "_meta": {
+  "terakhir_diperbarui": "2026-07-22",
+  "sumber": "Rencana Pembangunan Zona Integritas FPIK UNSRAT Menuju WBK 2025-2026 (Dok. No. 001/FPIK-ZI/XI/2025); SK Dekan FPIK No. 1955, 1957, 1958, 1959/UN12.5/LL/2025; SK Rektor No. 691 & 723/UN12/LL/2026"
+ },
+ "tentang": {
+  "judul": "Zona Integritas FPIK UNSRAT",
+  "deskripsi": [
+   "Zona Integritas (ZI) adalah komitmen moral dan kelembagaan Fakultas Perikanan dan Ilmu Kelautan (FPIK) Universitas Sam Ratulangi untuk mewujudkan tata kelola pemerintahan fakultas yang bersih, transparan, dan melayani, sejalan dengan Reformasi Birokrasi Nasional.",
+   "Program ini mengacu pada Peraturan Menteri PANRB Nomor 90 Tahun 2021 tentang Pembangunan dan Evaluasi Zona Integritas Menuju Wilayah Bebas dari Korupsi (WBK) dan Wilayah Birokrasi Bersih Melayani (WBBM) di Instansi Pemerintah, sebagaimana diubah dengan Peraturan Menteri PANRB Nomor 5 Tahun 2024.",
+   "FPIK UNSRAT menargetkan predikat WBK pada tahun 2026, melalui pelaksanaan enam area perubahan yang dikelola secara digital melalui sistem Portal Inspirasi DIKTI, guna memastikan keterbukaan, akuntabilitas, dan keterukuran capaian di setiap tahap."
+  ],
+  "dasar_hukum": [
+   "Peraturan Menteri PANRB No. 90 Tahun 2021 jo. No. 5 Tahun 2024 tentang Pembangunan dan Evaluasi Zona Integritas Menuju WBK/WBBM",
+   "SK Dekan FPIK UNSRAT No. 1955/UN12.5/LL/2025 tentang Tim Zona Integritas FPIK",
+   "SK Rektor UNSRAT No. 691/UN12/LL/2026 tentang Pengangkatan Tim Kerja Pembangunan Zona Integritas FPIK Menuju WBK/WBBM Tahun 2026"
+  ]
+ },
+ "portal_inspirasi": {
+  "nama": "Portal Inspirasi DIKTI",
+  "deskripsi": "Sistem digital resmi Kementerian Pendidikan Tinggi, Sains, dan Teknologi untuk pengelolaan, dokumentasi, dan penilaian pembangunan Zona Integritas seluruh satuan kerja di lingkungan Kemendiktisaintek — termasuk FPIK UNSRAT.",
+  "url": "https://inspirasidikti.kemdiktisaintek.go.id/"
+ },
+ "enam_area": [
+  {
+   "no": 1,
+   "nama": "Manajemen Perubahan",
+   "deskripsi": "Membangun komitmen dan pola pikir perubahan seluruh sivitas menuju budaya kerja berintegritas — mencakup penetapan tim ZI, agen perubahan, tata nilai organisasi, dan sosialisasi nilai integritas kepada seluruh unsur fakultas."
+  },
+  {
+   "no": 2,
+   "nama": "Penataan Tatalaksana",
+   "deskripsi": "Menata proses bisnis dan standar operasional prosedur (SOP) seluruh layanan agar lebih efektif, efisien, terukur, dan mudah diakses publik, termasuk keterbukaan informasi dan digitalisasi layanan."
+  },
+  {
+   "no": 3,
+   "nama": "Penataan Sistem Manajemen SDM",
+   "deskripsi": "Memperkuat pengelolaan sumber daya manusia berbasis merit — meliputi analisis jabatan, penilaian kinerja berkala, pengembangan kompetensi pegawai, dan kepatuhan terhadap kode etik."
+  },
+  {
+   "no": 4,
+   "nama": "Penguatan Akuntabilitas",
+   "deskripsi": "Meningkatkan akuntabilitas kinerja melalui perencanaan (RKT, Perjanjian Kinerja), pelaporan (LAKIP), monitoring dan evaluasi berkala, serta keterbukaan capaian Indikator Kinerja Utama (IKU)."
+  },
+  {
+   "no": 5,
+   "nama": "Penguatan Pengawasan",
+   "deskripsi": "Memperkuat sistem pengawasan internal melalui Whistle Blowing System (WBS), pengendalian gratifikasi, penanganan benturan kepentingan, dan audit internal berkala untuk mencegah penyimpangan."
+  },
+  {
+   "no": 6,
+   "nama": "Peningkatan Kualitas Pelayanan Publik",
+   "deskripsi": "Meningkatkan mutu layanan kepada mahasiswa, dosen, dan masyarakat melalui standar pelayanan yang jelas, maklumat pelayanan, portal pengaduan online, dan inovasi layanan berbasis digital."
+  }
+ ],
+ "tim_kerja_zi": {
+  "judul": "Tim Kerja Pembangunan Zona Integritas FPIK",
+  "sumber": "SK Rektor UNSRAT No. 691/UN12/LL/2026",
+  "pimpinan": [
+   {
+    "peran": "Ketua",
+    "nama": "Dr. Ir. Reiny Antonetha Tumbol, M.App.Sc."
+   },
+   {
+    "peran": "Wakil Ketua",
+    "nama": "Daisy M. Makapedua, S.Pi., M.Sc., Ph.D."
+   },
+   {
+    "peran": "Sekretaris",
+    "nama": "Dr. Ir. James J. H. Paulus, M.Si."
+   }
+  ],
+  "tim_area": [
+   {
+    "no": 1,
+    "nama": "Manajemen Perubahan",
+    "koordinator": "Prof. Dr. Ir. Rene Charles Kepel, D.E.A.",
+    "wakil": "Dr. Ir. Diane J. Kusen, M.Si.",
+    "anggota": "Irene Lumintang"
+   },
+   {
+    "no": 2,
+    "nama": "Penataan Tatalaksana",
+    "koordinator": "Prof. Dr. Ir. Carolus Paulus Paruntu, M.Sc.",
+    "wakil": "Vivanda O. Modaso, S.Pi., M.Si., Ph.D.",
+    "anggota": "Dely Raco"
+   },
+   {
+    "no": 3,
+    "nama": "Penataan Manajemen SDM",
+    "koordinator": "Dr. Ir. Adnan Sjaltout Wantasen, M.Si.",
+    "wakil": "Dr. Indri S. Manembu, SIK., M.Si.",
+    "anggota": "Alfa Bachdim, S.Sos."
+   },
+   {
+    "no": 4,
+    "nama": "Penguatan Akuntabilitas Kinerja",
+    "koordinator": "Dr. Robert Antonius Bara, SIK., M.Sc.",
+    "wakil": "Dr. Jardie Androkles Andaki, S.Pi., M.Si.",
+    "anggota": "Poula J. Bawole"
+   },
+   {
+    "no": 5,
+    "nama": "Penguatan Pengawasan",
+    "koordinator": "Dr. Ir. Hariyani Sambali, M.Sc.",
+    "wakil": "Dr. Veibe Warouw, S.Pi., M.Si.",
+    "anggota": "Olha Rondo"
+   },
+   {
+    "no": 6,
+    "nama": "Peningkatan Kualitas Pelayanan",
+    "koordinator": "Prof. Dr. Ir. Feny Mentang, M.Sc.",
+    "wakil": "Fransisco P.Th. Pangalila, S.Pi., M.Si.",
+    "anggota": "Levie F. Sendow, S.E."
+   }
+  ],
+  "sekretariat": {
+   "koordinator": "Dr. Ir. Edwin L. A. Ngangi, M.Si.",
+   "wakil": "Prof. Dr. Joshian Nicolas W. Schaduw, SIK., M.Si.",
+   "anggota": "James D. W. Rompas, S.E., M.Si."
+  },
+  "tim_survey": [
+   "Dr. Ir. Florence Verra Longdong, M.Si.",
+   "Dr. Sipriana S. Tumembouw, S.Pi., M.Si.",
+   "Ervina Y. Lapedandi, S.IP."
+  ],
+  "tim_mahasiswa": [
+   "Belinda Sirait",
+   "William Lumintang"
+  ]
+ },
+ "tim_spip": {
+  "judul": "Tim Sistem Pengendalian Intern Pemerintah (SPIP)",
+  "sumber": "SK Dekan FPIK UNSRAT No. 1959/UN12.5/LL/2025",
+  "ketua": "Dr. Ir. Patrice Nelson I. Kalangi, M.Sc.",
+  "sekretaris": "Dr. Khristin Ivone Fisje Kondoy, S.Pi., M.Si.",
+  "anggota": [
+   "Heffry Veibert Dien, S.Pi., M.Si., Ph.D.",
+   "Dr. Ir. Diane Joula Kusen, M.Si.",
+   "Dr. Ir. Fitje Losung, M.Si.",
+   "Ir. Ping Astony Angmalisang, Ph.D.",
+   "Dr. Ir. Rosita Anggreiny J. Lintang, M.Si.",
+   "Silvana Dinaintang Harikedua, S.Pi., M.Si.",
+   "Dr. Ir. Chatrien Annita Luzianna Sinjal, M.Sc.",
+   "Ir. Fanny Silooy, M.Si.",
+   "Dr. Drs. Nickson J. Kawung, M.Si.",
+   "Dr. Ir. Deislie R. Henrieta Kumampung, M.Si."
+  ]
+ },
+ "tim_wbs": {
+  "judul": "Tim Whistle Blowing System (WBS)",
+  "sumber": "SK Dekan FPIK UNSRAT No. 1957/UN12.5/LL/2025",
+  "ketua": "Prof. Dr. Ir. Lefrand Manoppo, M.Si.",
+  "sekretaris": "Ir. Joppy Denny Mudeng, M.Si.",
+  "anggota": [
+   "Ir. Grace O. Tambani, M.Si.",
+   "Dr. Ir. Johnny Budiman, M.Si., M.Sc.",
+   "Ir. Djuwita Rosthati Ruth Aling, M.Si.",
+   "Ir. Joyce Christina V. Palenewen, M.Sc.",
+   "Ir. Albert Royke Reo, M.Sc., M.Si.",
+   "Ixchel Feibie Mandagi, S.Pi., M.Si., Ph.D.",
+   "Calvyn Fredrik Aldus Sondak, S.Pi., M.Sc., Ph.D.",
+   "Ir. John Leonard Tombokan, M.Si.",
+   "Ir. Royke Marcelus Rampengan, M.Si.",
+   "Dr. Ir. Natalie Detty C. Rumampuk, M.Si."
+  ]
+ },
+ "tim_pengaduan": {
+  "judul": "Tim Teknis/Satgas Penanganan Pengaduan Masyarakat",
+  "sumber": "SK Dekan FPIK UNSRAT No. 1958/UN12.5/LL/2025",
+  "ketua": "Ir. Steelma Vivera Rantung, M.Si.",
+  "sekretaris": "Ir. Olvie Vanda Kotambunan, M.Si.",
+  "anggota": [
+   "Ir. Febry Susana Ivonne Menajang, M.Sc.",
+   "Josefa Tety Kaparang, S.Pi., M.Si.",
+   "Ir. Anneke Vivera Lohoo, M.Si.",
+   "Ir. Alex Denny Kambey, M.Si., M.Sc.",
+   "Ir. Fanny Silooy, M.Si.",
+   "Dr. Kurniati Kemer, S.Pi., M.Si.",
+   "Dr. Esther Dellayani Angkouw, S.Pi., M.Si.",
+   "Dr. Ir. Sandra Olivia Tilaar, M.Si.",
+   "Dr. Ir. Fitje Losung, M.Si.",
+   "Dr. Ir. Victoria Era Nicoline Manoppo, M.Si."
+  ]
+ }
+}
