@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /admin.html
+
+Sitemap: https://aribertyrondonuwu-maker.github.io/ps-msp-website/sitemap.xml
