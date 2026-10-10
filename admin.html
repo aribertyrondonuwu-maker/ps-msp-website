@@ -34,6 +34,7 @@
       <button class="admin-nav-btn" data-tab="galeri">🖼️ Galeri</button>
       <button class="admin-nav-btn" data-tab="dosen-foto">👤 Foto Dosen</button>
       <button class="admin-nav-btn" data-tab="pengurus-foto">🎓 Foto Pengurus Alumni</button>
+      <button class="admin-nav-btn" data-tab="dokumen">📁 Dokumen LKPS &amp; LED</button>
       <button class="admin-nav-btn" data-tab="lab-foto">🔬 Foto Laboratorium</button>
       <button class="admin-nav-btn superadmin-only" data-tab="header-foto">🎨 Foto Header &amp; Logo Alumni</button>
       <button class="admin-nav-btn superadmin-only" data-tab="slideshow">🖼️ Slideshow Beranda</button>
@@ -336,6 +337,46 @@
         </div>
         <p class="form-note" id="sosmedStatus"></p>
       </form>
+    </section>
+
+    <!-- DOKUMEN LKPS & LED (admin: lihat/unduh; superadmin: kelola) -->
+    <section id="tab-dokumen" class="admin-tab">
+      <h2>Dokumen LKPS &amp; LED</h2>
+      <p class="muted">Dokumen akreditasi bersifat internal. Hanya akun admin yang sudah login yang dapat melihat dan mengunduh. Unggah, ganti, dan hapus hanya untuk superadmin.</p>
+
+      <div class="superadmin-only">
+        <form id="dokumenForm" class="admin-form">
+          <input type="text" id="dokJudul" placeholder="Judul dokumen (mis. LKPS PS MSP 2026)" required>
+          <select id="dokJenis">
+            <option value="LKPS">LKPS (Excel)</option>
+            <option value="LED">LED (Word)</option>
+            <option value="Lainnya">Lainnya</option>
+          </select>
+          <input type="number" id="dokTahun" placeholder="Tahun (mis. 2026)" min="2000" max="2100">
+          <input type="text" id="dokVersi" placeholder="Versi (mis. v3 — revisi 10 Okt 2026)">
+          <textarea id="dokCatatan" rows="2" placeholder="Catatan perubahan (opsional)"></textarea>
+          <label class="form-note">File (.xlsx, .docx, .pdf; maks. 50 MB):
+            <input type="file" id="dokFile" accept=".xlsx,.xls,.docx,.doc,.pdf,.zip">
+          </label>
+          <input type="url" id="dokLink" placeholder="ATAU tautan Google Sheets/Docs (akses diatur di Google)">
+          <div class="admin-form-actions">
+            <button type="submit" class="btn btn-primary btn-sm">Simpan Dokumen</button>
+          </div>
+          <p class="form-note" id="dokStatus"></p>
+        </form>
+      </div>
+
+      <div style="margin:18px 0 8px;">
+        <select id="dokFilter" class="admin-filter">
+          <option value="">Semua jenis</option>
+          <option value="LKPS">LKPS</option>
+          <option value="LED">LED</option>
+          <option value="Lainnya">Lainnya</option>
+        </select>
+      </div>
+      <div class="table-wrap">
+        <table class="data-table" id="dokumenTable"></table>
+      </div>
     </section>
 
     <!-- KELOLA ADMIN (superadmin only) -->
