@@ -842,7 +842,7 @@ async function loadAdminUsers() {
         <tr>
           <td>${a.username}</td><td>${a.nama || '-'}</td>
           <td><span class="role-badge ${a.role}" style="color:${a.role === 'superadmin' ? '#fff' : '#0f172a'};">${a.role}</span></td>
-          <td>${a.username !== document.getElementById('adminEmail').textContent ? `<button class="btn-delete" onclick="deleteAdminUser('${a.id}')">Hapus akses</button>` : '<em class="muted">akun Anda</em>'}</td>
+          <td>${a.username !== document.getElementById('adminEmail').textContent ? `<button class="btn-outline-dark btn-sm-outline" onclick="resetPasswordAdmin('${escD(a.username)}')">Reset password</button> <button class="btn-delete" onclick="deleteAdminUser('${a.id}')">Hapus akses</button>` : '<em class="muted">akun Anda</em>'}</td>
         </tr>
       `).join('')}
     </tbody>`;
@@ -857,11 +857,9 @@ document.getElementById('adminUserForm').addEventListener('submit', async (e) =>
   const role = document.getElementById('newAdminRole').value;
   status.textContent = 'Membuat akun…';
   try {
-    const { data: signUpData, error: signUpError } = await sb.auth.signUp({ email, password });
-    if (signUpError) throw signUpError;
-    const { error: insertError } = await sb.from('admin_users').insert([{ username: email, password_hash: 'n/a - pakai Supabase Auth', nama, role }]);
-    if (insertError) throw insertError;
-    status.textContent = '✅ Admin ditambahkan. Catatan: Anda mungkin otomatis ter-logout dari sesi ini karena keterbatasan teknis Supabase saat membuat akun baru — cukup login ulang sebagai superadmin jika itu terjadi.';
+    const { error: rpcErr } = await sb.rpc('admin_create_user', { p_email: email, p_password: password, p_nama: nama, p_role: role });
+    if (rpcErr) throw rpcErr;
+    status.textContent = '✅ Admin ditambahkan. Berikan email dan password sementara kepada yang bersangkutan, lalu minta mengganti password lewat menu Ganti Password.';
     document.getElementById('adminUserForm').reset();
     loadAdminUsers();
   } catch (err) {
@@ -1137,3 +1135,37 @@ document.getElementById('dokumenForm').addEventListener('submit', async (e) => {
     st.textContent = '⚠️ Gagal: ' + (err.message || err);
   }
 });
+
+
+// ─────────────────────────────────────────────────────────────────────────
+// GANTI / RESET PASSWORD
+// ─────────────────────────────────────────────────────────────────────────
+document.getElementById('gantiPwForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const st = document.getElementById('gantiPwStatus');
+  const lama = document.getElementById('pwLama').value;
+  const baru = document.getElementById('pwBaru').value;
+  const baru2 = document.getElementById('pwBaru2').value;
+  const email = document.getElementById('adminEmail').textContent;
+  if (baru !== baru2) { st.textContent = '⚠️ Password baru dan pengulangannya tidak sama.'; return; }
+  if (baru.length < 10 || !/[a-z]/.test(baru) || !/[A-Z]/.test(baru) || !/\d/.test(baru)) {
+    st.textContent = '⚠️ Password baru minimal 10 karakter dan harus memuat huruf besar, huruf kecil, dan angka.'; return;
+  }
+  if (baru === lama) { st.textContent = '⚠️ Password baru harus berbeda dari yang lama.'; return; }
+  st.textContent = 'Memeriksa password saat ini…';
+  const chk = await sb.auth.signInWithPassword({ email, password: lama });
+  if (chk.error) { st.textContent = '⚠️ Password saat ini salah.'; return; }
+  const { error } = await sb.auth.updateUser({ password: baru });
+  if (error) { st.textContent = '⚠️ Gagal: ' + error.message; return; }
+  st.textContent = '✅ Password berhasil diganti. Gunakan password baru saat login berikutnya.';
+  document.getElementById('gantiPwForm').reset();
+});
+
+async function resetPasswordAdmin(email) {
+  const baru = prompt('Password baru untuk ' + email + ' (minimal 10 karakter).\nBerikan password ini kepada yang bersangkutan lewat jalur pribadi:');
+  if (baru === null) return;
+  if (baru.length < 10) { alert('Password minimal 10 karakter.'); return; }
+  const { error } = await sb.rpc('admin_set_password', { target_email: email, new_password: baru });
+  if (error) { alert('Gagal: ' + error.message + '\n\nPastikan MIGRASI_DATABASE_kelola_akun_admin.sql sudah dijalankan.'); return; }
+  alert('✅ Password ' + email + ' berhasil diatur ulang.');
+}
