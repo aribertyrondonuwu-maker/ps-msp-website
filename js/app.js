@@ -65,6 +65,8 @@ renderDosen();
 // PENCARIAN SITUS (client-side, indeks halaman statis)
 // ─────────────────────────────────────────────────────────────────────────
 const SEARCH_INDEX = [
+  { judul: 'Dashboard Informasi', url: 'dashboard.html', kata: 'dashboard berita pengumuman agenda kalender akademik informasi terbaru' },
+  { judul: 'Dokumen Internal LKPS & LED (login admin)', url: 'admin.html#dokumen', kata: 'dokumen lkps led akreditasi login admin unduh' },
   { judul: 'Profil Program Studi', url: 'profil.html', kata: 'profil sejarah visi misi tujuan struktur organisasi pimpinan sambutan koordinator renstra' },
   { judul: 'Akreditasi', url: 'akreditasi.html', kata: 'akreditasi lam ptip unggul status sk dokumen legal landasan hukum' },
   { judul: 'HIMASUPER (Organisasi Mahasiswa)', url: 'kemahasiswaan.html#himasuper', kata: 'himasuper mapala zooxanthellae organisasi himpunan mahasiswa pecinta alam ormawa kegiatan non akademik kepemimpinan konservasi terumbu karang kaderisasi program kerja' },

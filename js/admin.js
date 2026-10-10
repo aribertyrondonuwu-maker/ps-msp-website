@@ -61,6 +61,8 @@ function showDashboard(email) {
   loadLabDropdowns();
   loadLabFoto();
   loadLabKepalaFoto();
+  loadDokumen();
+  if (location.hash === '#dokumen') document.querySelector('[data-tab="dokumen"]').click();
   if (currentRole === 'superadmin') {
     loadHeaderFoto();
     loadDiskusi();
@@ -1020,3 +1022,118 @@ document.getElementById('sosmedForm').addEventListener('submit', async (e) => {
 
 // ─────────────────────────────────────────────────────────────────────────
 checkSession();
+
+
+// ─────────────────────────────────────────────────────────────────────────
+// DOKUMEN LKPS & LED (bucket privat 'dokumen'; admin: lihat/unduh, superadmin: kelola)
+// ─────────────────────────────────────────────────────────────────────────
+function escD(s) {
+  return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+function fmtUkuran(b) {
+  if (!b) return '-';
+  return b > 1048576 ? (b / 1048576).toFixed(1) + ' MB' : Math.max(1, Math.round(b / 1024)) + ' KB';
+}
+let _dokData = [];
+
+async function loadDokumen() {
+  const table = document.getElementById('dokumenTable');
+  const { data, error } = await sb.from('dokumen_internal').select('*').order('created_at', { ascending: false });
+  if (error) {
+    table.innerHTML = `<tbody><tr><td>Gagal memuat: ${escD(error.message)}. Pastikan MIGRASI_DATABASE_dokumen_berlogin.sql sudah dijalankan.</td></tr></tbody>`;
+    return;
+  }
+  _dokData = data || [];
+  renderDokumen();
+}
+
+function renderDokumen() {
+  const table = document.getElementById('dokumenTable');
+  const f = document.getElementById('dokFilter').value;
+  const list = f ? _dokData.filter(d => d.jenis === f) : _dokData;
+  if (!list.length) { table.innerHTML = '<tbody><tr><td class="muted">Belum ada dokumen.</td></tr></tbody>'; return; }
+  const isSuper = currentRole === 'superadmin';
+  table.innerHTML = `
+    <thead><tr><th>Jenis</th><th>Dokumen</th><th>Versi</th><th>Ukuran</th><th>Diunggah</th><th>Aksi</th></tr></thead>
+    <tbody>${list.map(d => `
+      <tr>
+        <td><strong>${escD(d.jenis)}</strong>${d.tahun ? '<br><small>' + escD(d.tahun) + '</small>' : ''}</td>
+        <td>${escD(d.judul)}${d.catatan ? '<br><small class="muted">' + escD(d.catatan) + '</small>' : ''}${d.file_name ? '<br><small class="muted">' + escD(d.file_name) + '</small>' : ''}</td>
+        <td>${escD(d.versi || '-')}</td>
+        <td>${d.file_path ? fmtUkuran(d.ukuran) : 'tautan'}</td>
+        <td>${new Date(d.created_at).toLocaleDateString('id-ID', { day: 'numeric', month: 'short', year: 'numeric' })}<br><small class="muted">${escD(d.diunggah_oleh || '')}</small></td>
+        <td>
+          ${d.file_path ? `<button class="btn btn-primary btn-sm" onclick="unduhDokumen('${d.id}')">Unduh</button>` : ''}
+          ${d.link_eksternal ? `<button class="btn-outline-dark btn-sm-outline" onclick="bukaTautanDokumen('${d.id}')">Buka tautan</button>` : ''}
+          ${isSuper ? `<button class="btn-delete" onclick="hapusDokumen('${d.id}')">Hapus</button>` : ''}
+        </td>
+      </tr>`).join('')}</tbody>`;
+}
+document.getElementById('dokFilter').addEventListener('change', renderDokumen);
+
+async function unduhDokumen(id) {
+  const d = _dokData.find(x => x.id === id);
+  if (!d || !d.file_path) return;
+  // Tautan sementara (2 menit); tidak ada tautan permanen ke dokumen
+  const { data, error } = await sb.storage.from('dokumen').createSignedUrl(d.file_path, 120, { download: d.file_name || true });
+  if (error) { alert('Gagal membuat tautan unduhan: ' + error.message); return; }
+  window.location.href = data.signedUrl;
+}
+
+function bukaTautanDokumen(id) {
+  const d = _dokData.find(x => x.id === id);
+  if (d && /^https:\/\//i.test(d.link_eksternal || '')) window.open(d.link_eksternal, '_blank', 'noopener');
+}
+
+async function hapusDokumen(id) {
+  const d = _dokData.find(x => x.id === id);
+  if (!d || !confirm('Hapus dokumen "' + d.judul + '" secara permanen? Tindakan ini tidak bisa dibatalkan.')) return;
+  if (d.file_path) {
+    const { error: e1 } = await sb.storage.from('dokumen').remove([d.file_path]);
+    if (e1) { alert('Gagal menghapus file: ' + e1.message); return; }
+  }
+  const { error } = await sb.from('dokumen_internal').delete().eq('id', id);
+  if (error) { alert('Gagal menghapus data: ' + error.message); return; }
+  loadDokumen();
+}
+
+document.getElementById('dokumenForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const st = document.getElementById('dokStatus');
+  if (currentRole !== 'superadmin') { st.textContent = '⚠️ Hanya superadmin yang dapat mengunggah.'; return; }
+  const file = document.getElementById('dokFile').files[0];
+  const link = document.getElementById('dokLink').value.trim();
+  if (!file && !link) { st.textContent = '⚠️ Pilih file atau isi tautan.'; return; }
+  if (link && !/^https:\/\//i.test(link)) { st.textContent = '⚠️ Tautan harus diawali https://'; return; }
+  if (file && file.size > 52428800) { st.textContent = '⚠️ File melebihi 50 MB.'; return; }
+  const jenis = document.getElementById('dokJenis').value;
+  let path = null;
+  try {
+    if (file) {
+      st.textContent = 'Mengunggah file…';
+      const safe = file.name.replace(/[^A-Za-z0-9._-]+/g, '_');
+      path = jenis.toLowerCase() + '/' + Date.now() + '_' + safe;
+      const { error: upErr } = await sb.storage.from('dokumen').upload(path, file, { upsert: false, contentType: file.type || undefined });
+      if (upErr) throw upErr;
+    }
+    const { error } = await sb.from('dokumen_internal').insert([{
+      judul: document.getElementById('dokJudul').value.trim(),
+      jenis,
+      tahun: parseInt(document.getElementById('dokTahun').value, 10) || null,
+      versi: document.getElementById('dokVersi').value.trim() || null,
+      catatan: document.getElementById('dokCatatan').value.trim() || null,
+      file_path: path, file_name: file ? file.name : null, ukuran: file ? file.size : null,
+      link_eksternal: link || null,
+      diunggah_oleh: document.getElementById('adminEmail').textContent
+    }]);
+    if (error) {
+      if (path) await sb.storage.from('dokumen').remove([path]); // jangan tinggalkan file yatim
+      throw error;
+    }
+    st.textContent = '✅ Dokumen tersimpan.';
+    document.getElementById('dokumenForm').reset();
+    loadDokumen();
+  } catch (err) {
+    st.textContent = '⚠️ Gagal: ' + (err.message || err);
+  }
+});
