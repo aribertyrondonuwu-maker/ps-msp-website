@@ -669,3 +669,19 @@ input, textarea, select { max-width: 100%; box-sizing: border-box; }
 #beritaKontenToolbar { border-radius: 10px 10px 0 0; border-color: var(--border) !important; background: #f8fafc; }
 #beritaKontenEditor { min-height: 220px; border-radius: 0 0 10px 10px; border-color: var(--border) !important; font-family: var(--font-body); font-size: 0.95rem; }
 #beritaKontenEditor .ql-editor { min-height: 220px; }
+
+/* Dashboard & Login di bar atas */
+.navbar-top-inner { gap: 16px; }
+.top-links { display: flex; gap: 10px; margin-left: auto; align-items: center; }
+.top-dash, .top-login { font-size: 0.82rem; font-weight: 700; padding: 8px 16px; border-radius: 999px; white-space: nowrap; }
+.top-dash { background: var(--teal); color: #fff; }
+.top-dash:hover { filter: brightness(1.08); }
+.top-login { border: 1.5px solid var(--navy); color: var(--navy); }
+.top-login:hover { background: var(--navy); color: #fff; }
+@media (max-width: 600px) { .top-dash, .top-login { font-size: 0.72rem; padding: 6px 10px; } .navbar-top-inner { flex-wrap: wrap; } }
+@media (min-width: 1025px) and (max-width: 1400px) {
+  .nav-links { gap: 0; }
+  .nav-links > .nav-item > a { padding: 17px 7px; letter-spacing: 0; }
+  .navbar-main-inner { gap: 8px; }
+}
+.luaran-meta { white-space: normal; overflow-wrap: anywhere; max-width: 100%; }
