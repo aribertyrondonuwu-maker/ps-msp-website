@@ -62,6 +62,7 @@ function showDashboard(email) {
   loadLabFoto();
   loadLabKepalaFoto();
   loadDokumen();
+  loadKomentarAdmin();
   if (location.hash === '#dokumen') document.querySelector('[data-tab="dokumen"]').click();
   if (currentRole === 'superadmin') {
     loadHeaderFoto();
@@ -1218,4 +1219,53 @@ function isiFieldPengumuman(b) {
   document.getElementById('pengNarahubung').value = b.narahubung || '';
   document.getElementById('pengLampiran').value = lampiranToText(b.lampiran);
   togglePengumumanFields();
+}
+
+
+// ─────────────────────────────────────────────────────────────────────────
+// MODERASI KOMENTAR (admin & superadmin)
+// ─────────────────────────────────────────────────────────────────────────
+let _komData = [];
+async function loadKomentarAdmin() {
+  const table = document.getElementById('komTable');
+  const { data, error } = await sb.from('komentar').select('*, berita(judul)').order('created_at', { ascending: false }).limit(300);
+  if (error) {
+    table.innerHTML = `<tbody><tr><td>Gagal memuat: ${escD(error.message)}. Pastikan MIGRASI_DATABASE_kunjungan_komentar.sql sudah dijalankan.</td></tr></tbody>`;
+    return;
+  }
+  _komData = data || [];
+  const n = _komData.filter(k => k.status === 'menunggu').length;
+  const badge = document.getElementById('komBadge');
+  badge.textContent = n; badge.style.display = n ? 'inline-block' : 'none';
+  renderKomentarAdmin();
+}
+function renderKomentarAdmin() {
+  const table = document.getElementById('komTable');
+  const f = document.getElementById('komFilter').value;
+  const list = f ? _komData.filter(k => k.status === f) : _komData;
+  if (!list.length) { table.innerHTML = '<tbody><tr><td class="muted">Tidak ada komentar.</td></tr></tbody>'; return; }
+  table.innerHTML = `<thead><tr><th>Pengirim</th><th>Komentar</th><th>Pada</th><th>Status</th><th>Aksi</th></tr></thead><tbody>${list.map(k => `
+    <tr>
+      <td><strong>${escD(k.nama)}</strong><br><small class="muted">${new Date(k.created_at).toLocaleString('id-ID')}</small></td>
+      <td style="max-width:320px;overflow-wrap:anywhere;white-space:pre-wrap;">${escD(k.isi)}</td>
+      <td>${escD((k.berita && k.berita.judul) || '-')}</td>
+      <td>${escD(k.status)}</td>
+      <td>
+        ${k.status !== 'disetujui' ? `<button class="btn btn-primary btn-sm" onclick="ubahStatusKomentar('${k.id}','disetujui')">Setujui</button>` : ''}
+        ${k.status !== 'ditolak' ? `<button class="btn-outline-dark btn-sm-outline" onclick="ubahStatusKomentar('${k.id}','ditolak')">Tolak</button>` : ''}
+        <button class="btn-delete" onclick="hapusKomentar('${k.id}')">Hapus</button>
+      </td>
+    </tr>`).join('')}</tbody>`;
+}
+document.getElementById('komFilter').addEventListener('change', renderKomentarAdmin);
+async function ubahStatusKomentar(id, status) {
+  const { error } = await sb.from('komentar').update({ status }).eq('id', id);
+  if (error) { alert('Gagal: ' + error.message); return; }
+  loadKomentarAdmin();
+}
+async function hapusKomentar(id) {
+  if (!confirm('Hapus komentar ini secara permanen?')) return;
+  const { error } = await sb.from('komentar').delete().eq('id', id);
+  if (error) { alert('Gagal: ' + error.message); return; }
+  loadKomentarAdmin();
 }

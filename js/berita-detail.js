@@ -204,3 +204,45 @@ function renderPengumumanExtra(d) {
         t.map(x => `<a href="berita-detail.html?id=${encodeURIComponent(x.id)}">${escHtml(x.judul)}</a>`).join('') + '</div>';
     });
 }
+
+
+// ── Komentar (dimoderasi admin) ──
+async function muatKomentar(id) {
+  const box = document.getElementById('komDaftar');
+  try {
+    const { data, error } = await window.sbClient.from('komentar').select('nama, isi, created_at')
+      .eq('berita_id', id).eq('status', 'disetujui').order('created_at', { ascending: true });
+    if (error) throw error;
+    document.getElementById('komJumlah').textContent = (data || []).length ? '(' + data.length + ')' : '';
+    box.innerHTML = (data || []).length ? data.map(k => `<div class="komentar-item"><strong>${escHtml(k.nama)}</strong>
+      <small>${new Date(k.created_at).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' })}</small>
+      <p>${escHtml(k.isi)}</p></div>`).join('') : '<p class="muted">Belum ada komentar. Jadilah yang pertama.</p>';
+  } catch (e) {
+    box.innerHTML = '<p class="muted">Komentar belum tersedia.</p>';
+  }
+}
+(function () {
+  const id = new URLSearchParams(location.search).get('id');
+  const form = document.getElementById('komForm');
+  if (!id || !form || !window.sbClient) { if (form) form.style.display = 'none'; return; }
+  muatKomentar(id);
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const st = document.getElementById('komStatus');
+    const nama = document.getElementById('komNama').value.trim();
+    const isi = document.getElementById('komIsi').value.trim();
+    if (nama.length < 2 || isi.length < 3) { st.textContent = '⚠️ Isi nama (min. 2 huruf) dan komentar (min. 3 huruf).'; return; }
+    let last = 0; try { last = parseInt(localStorage.getItem('msp_kom_t') || '0', 10); } catch (_) {}
+    if (Date.now() - last < 60000) { st.textContent = '⚠️ Tunggu sebentar sebelum mengirim komentar lagi.'; return; }
+    st.textContent = 'Mengirim…';
+    const vid = window._mspVid || (function () { try { return localStorage.getItem('msp_vid'); } catch (_) { return null; } })() || ('anon' + Math.random().toString(16).slice(2, 14));
+    const { error } = await window.sbClient.rpc('kirim_komentar', { p_berita: id, p_nama: nama, p_isi: isi, p_visitor: vid, p_hp: document.getElementById('komHp').value });
+    if (error) {
+      st.textContent = '⚠️ ' + (/function|schema cache/i.test(error.message) ? 'Fitur komentar belum diaktifkan.' : error.message);
+      return;
+    }
+    try { localStorage.setItem('msp_kom_t', String(Date.now())); } catch (_) {}
+    form.reset();
+    st.textContent = '✅ Terima kasih. Komentar Anda akan tampil setelah disetujui admin.';
+  });
+})();

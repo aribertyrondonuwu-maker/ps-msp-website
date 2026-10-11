@@ -72,3 +72,65 @@ async function loadDashAgenda() {
 
 loadDashBerita();
 loadDashAgenda();
+
+
+// ── Statistik kunjungan & komentar terbaru ──
+const NAMA_HALAMAN = {
+  'index.html': 'Beranda', '': 'Beranda', 'dashboard.html': 'Dashboard', 'berita.html': 'Berita', 'pengumuman.html': 'Pengumuman',
+  'profil.html': 'Profil', 'akreditasi.html': 'Akreditasi', 'kurikulum.html': 'Kurikulum', 'pendidikan.html': 'Pendidikan & Pengajaran',
+  'tridharma.html': 'Tridharma', 'sarana.html': 'Sarana & Prasarana', 'kemahasiswaan.html': 'Kemahasiswaan', 'alumni.html': 'Alumni',
+  'forum-alumni.html': 'Forum Alumni', 'mutu.html': 'Penjaminan Mutu', 'zona-integritas.html': 'Zona Integritas',
+  'layanan-pengaduan.html': 'Layanan Pengaduan', 'galeri-media.html': 'Galeri Media', 'tautan.html': 'Tautan Layanan',
+  'penelitian-minat.html': 'Bidang Minat Penelitian', 'dosen-detail.html': 'Profil Dosen', 'index-en.html': 'Home (EN)'
+};
+const fmtAngka = n => Number(n || 0).toLocaleString('id-ID');
+
+async function loadStatistik() {
+  if (!window.sbClient) return;
+  try {
+    const { data, error } = await window.sbClient.rpc('statistik_kunjungan');
+    if (error) throw error;
+    document.getElementById('visTotal').textContent = fmtAngka(data.total);
+    document.getElementById('visUnik').textContent = fmtAngka(data.unik);
+    document.getElementById('visHari').textContent = fmtAngka(data.hari_ini);
+    document.getElementById('visBulan').textContent = fmtAngka(data.bulan_ini);
+    const pop = data.populer || [];
+    // judul berita untuk halaman berita-detail?id=...
+    const ids = pop.map(p => (p.halaman.match(/berita-detail\.html\?id=([a-z0-9-]+)/) || [])[1]).filter(Boolean);
+    let judul = {};
+    if (ids.length) {
+      const r = await window.sbClient.from('berita').select('id, judul').in('id', ids);
+      (r.data || []).forEach(b => judul[b.id] = b.judul);
+    }
+    document.getElementById('visPopuler').innerHTML = pop.length ? pop.map(p => {
+      const base = p.halaman.split('?')[0].replace(/\/$/, '');
+      const id = (p.halaman.match(/\?id=([a-z0-9-]+)/) || [])[1];
+      const nama = id ? (judul[id] || 'Berita/pengumuman') : (NAMA_HALAMAN[base] || base || 'Beranda');
+      return `<li>${esc(nama)}<span>${fmtAngka(p.jumlah)} tampilan</span></li>`;
+    }).join('') : '<li class="muted">Belum ada data.</li>';
+  } catch (e) {
+    console.error(e);
+    document.getElementById('visPopuler').innerHTML = '<li class="muted">Statistik belum tersedia.</li>';
+  }
+}
+
+async function loadKomentarTerbaru() {
+  const box = document.getElementById('komTerbaru');
+  if (!window.sbClient) return;
+  try {
+    const { data, error, count } = await window.sbClient.from('komentar')
+      .select('id, nama, isi, created_at, berita_id', { count: 'exact' })
+      .eq('status', 'disetujui').order('created_at', { ascending: false }).limit(3);
+    if (error) throw error;
+    document.getElementById('komTotal').textContent = '(' + fmtAngka(count) + ' disetujui)';
+    box.innerHTML = (data || []).length ? data.map(k => `
+      <div class="dash-kom"><strong>${esc(k.nama)}</strong>: ${esc(k.isi.length > 140 ? k.isi.slice(0, 140) + '…' : k.isi)}
+      <small><a href="berita-detail.html?id=${encodeURIComponent(k.berita_id)}#komentar">Lihat di berita</a> · ${new Date(k.created_at).toLocaleDateString('id-ID', { day: 'numeric', month: 'short', year: 'numeric' })}</small></div>`).join('')
+      : '<p class="muted">Belum ada komentar.</p>';
+  } catch (e) {
+    console.error(e);
+    box.innerHTML = '<p class="muted">Komentar belum tersedia.</p>';
+  }
+}
+loadStatistik();
+loadKomentarTerbaru();
