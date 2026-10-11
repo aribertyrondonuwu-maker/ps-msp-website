@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/admin.css">
+<link rel="stylesheet" href="css/pengumuman.css">
 <link href="https://cdn.jsdelivr.net/npm/quill@1.3.7/dist/quill.snow.css" rel="stylesheet">
 </head>
 <body class="admin-body">
@@ -73,6 +74,16 @@
           <option value="Kerjasama">Kerjasama</option>
           <option value="Lain-lain">Lain-lain</option>
         </select>
+        <div id="pengumumanFields" class="peng-fields" style="display:none;">
+          <strong style="font-size:0.85rem;">Informasi khusus PENGUMUMAN (kosongkan yang tidak perlu)</strong>
+          <label class="form-note">Berlaku sampai / deadline: <input type="date" id="pengBerakhir"></label>
+          <label class="checkbox-label"><input type="checkbox" id="pengSemat"> Sematkan di atas (maks. 3 yang aktif)</label>
+          <input type="text" id="pengWaktu" placeholder="Waktu kegiatan (mis. Senin, 20 Okt 2026, 08.00 WITA)">
+          <input type="text" id="pengLokasi" placeholder="Lokasi / media (mis. Ruang Sidang FPIK atau Zoom)">
+          <input type="text" id="pengTarget" placeholder="Target peserta (mis. Mahasiswa semester 7 ke atas)">
+          <textarea id="pengNarahubung" rows="2" placeholder="Narahubung, satu per baris:  Nama | No. WA | email"></textarea>
+          <textarea id="pengLampiran" rows="3" placeholder="Lampiran, satu per baris:  Label | https://tautan | jenis   (jenis: dasar = kotak Dasar Hukum; unduh = tombol unduh; kosong = unduh)"></textarea>
+        </div>
         <label class="berita-size-label" style="margin-bottom:4px;">Isi Berita:</label>
         <div id="beritaKontenToolbar">
           <span class="ql-formats">

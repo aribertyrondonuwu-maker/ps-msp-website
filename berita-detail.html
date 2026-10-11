@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/kurikulum.css">
 <link rel="stylesheet" href="css/akreditasi.css">
+<link rel="stylesheet" href="css/pengumuman.css">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Berita — PS Manajemen Sumberdaya Perairan FPIK UNSRAT">
 <meta property="og:description" content="Program Studi Manajemen Sumberdaya Perairan FPIK Universitas Sam Ratulangi.">
@@ -123,6 +124,7 @@
         <div class="dropdown">
           <a href="dashboard.html">Dashboard Informasi</a>
           <a href="berita.html">Semua Berita</a>
+          <a href="pengumuman.html">Pengumuman</a>
           <a href="galeri-media.html">Galeri Media</a>
           <a href="tautan.html">Tautan Penting</a>
         </div>
@@ -139,6 +141,7 @@
 
 <section class="page-hero" id="konten-utama">
   <div class="container">
+    <nav class="breadcrumb" id="beritaBreadcrumb" aria-label="Breadcrumb"><a href="index.html">Beranda</a> › <a href="berita.html">Berita</a></nav>
     <p class="eyebrow" id="beritaKategori">Berita</p>
     <h1 id="beritaJudul">Memuat…</h1>
     <p class="hero-sub" id="beritaTanggal"></p>
@@ -147,6 +150,7 @@
 
 <section class="section">
   <div class="container" id="beritaContainer" style="max-width:820px;">
+    <div id="pengAtas"></div>
     <div class="berita-artikel" id="beritaArtikel">
       <div class="berita-foto-box" id="beritaFotoBox" style="display:none;">
         <img id="beritaFotoImg" src="" alt="">
@@ -154,12 +158,13 @@
       <article class="berita-konten" id="beritaKonten"></article>
       <div style="clear:both;"></div>
     </div>
+    <div id="pengBawah"></div>
     <div id="beritaGaleriSection" style="display:none;">
       <h2 class="berita-galeri-title">Galeri Foto Dokumentasi</h2>
       <div class="berita-galeri-grid" id="beritaGaleriGrid"></div>
     </div>
     <div style="margin-top:40px;">
-      <a href="berita.html" class="btn btn-primary btn-sm">← Kembali ke daftar berita</a>
+      <a href="berita.html" class="btn btn-primary btn-sm" id="beritaKembali">← Kembali ke daftar berita</a>
     </div>
   </div>
 </section>
