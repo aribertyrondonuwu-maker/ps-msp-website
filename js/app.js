@@ -258,8 +258,8 @@ async function renderHighlight() {
       .limit(20);
     if (error) throw error;
 
-    const pengumuman = (data || []).filter(b => b.kategori === 'Pengumuman').slice(0, 5);
-    const berita = (data || []).filter(b => b.kategori !== 'Pengumuman').slice(0, 4);
+    const pengumuman = (data || []).filter(b => parseKategori(b.kategori).jenis === 'Pengumuman').slice(0, 5);
+    const berita = (data || []).filter(b => parseKategori(b.kategori).jenis !== 'Pengumuman').slice(0, 4);
 
     if (beritaList) {
       beritaList.innerHTML = berita.length ? berita.map(b => `

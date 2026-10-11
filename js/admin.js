@@ -306,7 +306,7 @@ async function loadBerita() {
       ${data.map(b => `
         <tr>
           <td>${b.judul}</td>
-          <td>${b.kategori || '-'}</td>
+          <td>${(() => { const p = parseKategori(b.kategori); return p.jenis.toUpperCase() + ' › ' + p.sub; })()}</td>
           <td>${b.published ? '✅ Terbit' : '⏳ Draft'}</td>
           <td>
             <button onclick="editBerita('${b.id}')" class="btn-outline-dark" style="padding:4px 10px;font-size:0.75rem;">Edit</button>
@@ -422,7 +422,7 @@ document.getElementById('beritaForm').addEventListener('submit', async (e) => {
   const id = document.getElementById('beritaId').value;
   const payload = {
     judul: document.getElementById('beritaJudul').value.trim(),
-    kategori: document.getElementById('beritaKategori').value,
+    kategori: buildKategori(document.getElementById('beritaJenis').value, document.getElementById('beritaKategori').value),
     konten: document.getElementById('beritaKonten').value.trim(),
     published: document.getElementById('beritaPublished').checked,
     gambar_url: document.getElementById('beritaFotoUrl').value || null,
@@ -454,7 +454,9 @@ function editBerita(id) {
   if (!b) return;
   document.getElementById('beritaId').value = b.id;
   document.getElementById('beritaJudul').value = b.judul;
-  document.getElementById('beritaKategori').value = b.kategori || 'Akademik';
+  const pk = parseKategori(b.kategori);
+  document.getElementById('beritaJenis').value = pk.jenis;
+  document.getElementById('beritaKategori').value = pk.sub;
   setBeritaKontenEditor(b.konten || '');
   document.getElementById('beritaPublished').checked = b.published;
   document.getElementById('beritaFotoUrl').value = b.gambar_url || '';

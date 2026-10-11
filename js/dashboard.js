@@ -19,8 +19,8 @@ async function loadDashBerita() {
       .order('tanggal_publish', { ascending: false })
       .limit(30);
     if (error) throw error;
-    const peng = (data || []).filter(b => b.kategori === 'Pengumuman').slice(0, 6);
-    const ber = (data || []).filter(b => b.kategori !== 'Pengumuman').slice(0, 6);
+    const peng = (data || []).filter(b => parseKategori(b.kategori).jenis === 'Pengumuman').slice(0, 6);
+    const ber = (data || []).filter(b => parseKategori(b.kategori).jenis !== 'Pengumuman').slice(0, 6);
     bl.innerHTML = ber.length ? ber.map(b => `
       <a href="berita-detail.html?id=${encodeURIComponent(b.id)}" class="highlight-item">
         <div class="highlight-item-body">
