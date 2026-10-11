@@ -685,3 +685,12 @@ input, textarea, select { max-width: 100%; box-sizing: border-box; }
   .navbar-main-inner { gap: 8px; }
 }
 .luaran-meta { white-space: normal; overflow-wrap: anywhere; max-width: 100%; }
+
+.top-survei, .top-lang { font-size: 0.82rem; font-weight: 700; padding: 8px 16px; border-radius: 999px; white-space: nowrap; }
+.top-survei { background: #0f7d86; color: #fff; }
+.top-lang { border: 1.5px solid var(--border); color: var(--navy); }
+.top-lang:hover { background: var(--navy); color: #fff; }
+@media (max-width: 600px) { .top-survei, .top-lang { font-size: 0.72rem; padding: 6px 10px; } .top-links { flex-wrap: wrap; justify-content: flex-end; } }
+@media (min-width: 1321px) and (max-width: 1500px) {
+  .nav-links > .nav-item > a { padding: 17px 6px; font-size: 0.72rem; }
+}
