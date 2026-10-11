@@ -59,11 +59,19 @@
       <form id="beritaForm" class="admin-form">
         <input type="hidden" id="beritaId">
         <input type="text" id="beritaJudul" placeholder="Judul berita" required>
+        <select id="beritaJenis">
+          <option value="Berita">BERITA</option>
+          <option value="Pengumuman">PENGUMUMAN</option>
+        </select>
         <select id="beritaKategori">
-          <option value="Akademik">Akademik</option>
+          <option value="Perkuliahan">Perkuliahan</option>
+          <option value="Kemahasiswaan">Kemahasiswaan</option>
+          <option value="Penelitian">Penelitian</option>
+          <option value="Pengabdian">Pengabdian</option>
+          <option value="Penjaminan Mutu">Penjaminan Mutu</option>
           <option value="Prestasi">Prestasi</option>
           <option value="Kerjasama">Kerjasama</option>
-          <option value="Pengumuman">Pengumuman</option>
+          <option value="Lain-lain">Lain-lain</option>
         </select>
         <label class="berita-size-label" style="margin-bottom:4px;">Isi Berita:</label>
         <div id="beritaKontenToolbar">
@@ -421,6 +429,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="js/supabase-client.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/quill@1.3.7/dist/quill.min.js"></script>
+<script src="js/kategori.js"></script>
 <script src="js/admin.js"></script>
 <!-- MODAL CROP FOTO -->
 <div class="crop-modal" id="cropModal">
