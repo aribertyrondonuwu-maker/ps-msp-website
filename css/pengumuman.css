@@ -54,3 +54,12 @@
 
 @media (max-width: 900px) { .peng-layout { grid-template-columns: 1fr; } .peng-controls { grid-template-columns: 1fr 1fr; } .peng-controls input { grid-column: 1 / -1; } }
 @media (max-width: 520px) { .peng-kunci { grid-template-columns: 1fr; } .peng-card { gap: 12px; padding: 14px; } }
+
+.komentar-sec { margin-top: 40px; border-top: 1px solid var(--border); padding-top: 8px; }
+.komentar-item { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; margin: 10px 0; }
+.komentar-item strong { color: var(--navy); }
+.komentar-item small { color: var(--muted); margin-left: 8px; }
+.komentar-item p { margin: 6px 0 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+.komentar-form { display: flex; flex-direction: column; gap: 10px; margin-top: 22px; position: relative; }
+.komentar-form input[type=text], .komentar-form textarea { padding: 11px 14px; border: 1px solid var(--border); border-radius: 10px; font: inherit; }
+.komentar-form button { align-self: flex-start; }
