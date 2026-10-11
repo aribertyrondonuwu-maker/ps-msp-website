@@ -163,6 +163,19 @@
       <h2 class="berita-galeri-title">Galeri Foto Dokumentasi</h2>
       <div class="berita-galeri-grid" id="beritaGaleriGrid"></div>
     </div>
+        <section id="komentar" class="komentar-sec">
+      <h2 class="berita-galeri-title">Komentar <small id="komJumlah" class="muted"></small></h2>
+      <div id="komDaftar"><p class="muted">Memuat komentar…</p></div>
+      <form id="komForm" class="komentar-form" novalidate>
+        <h3>Tulis komentar</h3>
+        <input type="text" id="komNama" placeholder="Nama Anda" maxlength="60" required autocomplete="name">
+        <textarea id="komIsi" rows="4" placeholder="Komentar Anda (tanpa tautan, maks. 1000 karakter)" maxlength="1000" required></textarea>
+        <input type="text" id="komHp" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0;height:0;width:0;">
+        <button type="submit" class="btn btn-primary btn-sm">Kirim komentar</button>
+        <p class="form-note" id="komStatus" role="status"></p>
+        <p class="muted" style="font-size:0.78rem;">Komentar tampil setelah disetujui admin. Gunakan bahasa yang sopan; komentar yang melanggar akan dihapus.</p>
+      </form>
+    </section>
     <div style="margin-top:40px;">
       <a href="berita.html" class="btn btn-primary btn-sm" id="beritaKembali">← Kembali ke daftar berita</a>
     </div>
@@ -213,11 +226,12 @@
       <div class="sosmed-row" id="sosmedRow"></div>
     </div>
   </div>
-  <p class="footer-bottom">&copy; <span id="year"></span> Program Studi Manajemen Sumberdaya Perairan &middot; FPIK UNSRAT</p>
+  <p class="footer-bottom">&copy; <span id="year"></span> Program Studi Manajemen Sumberdaya Perairan &middot; FPIK UNSRAT &middot; Kunjungan dihitung secara anonim (tanpa IP dan nama).</p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="js/supabase-client.js"></script>
+<script src="js/visit.js"></script>
 <script src="js/kategori.js"></script>
 <script src="js/app.js"></script>
 <script src="js/berita-detail.js"></script>

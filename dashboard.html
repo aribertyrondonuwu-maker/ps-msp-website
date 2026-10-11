@@ -182,6 +182,23 @@
   </div>
 </section>
 
+<section class="section section-alt" id="statistik">
+  <div class="container">
+    <h2 class="section-title">Statistik Situs &amp; Komentar</h2>
+    <div class="dash-visit">
+      <div class="dash-visit-card"><span class="v" id="visTotal">–</span><span class="l">Total tampilan halaman</span></div>
+      <div class="dash-visit-card"><span class="v" id="visUnik">–</span><span class="l">Pengunjung unik</span></div>
+      <div class="dash-visit-card"><span class="v" id="visHari">–</span><span class="l">Tampilan hari ini</span></div>
+      <div class="dash-visit-card"><span class="v" id="visBulan">–</span><span class="l">Tampilan bulan ini</span></div>
+    </div>
+    <div class="dash-two">
+      <div class="card"><h3>Halaman terpopuler</h3><ol id="visPopuler" class="dash-pop"><li class="muted">Memuat…</li></ol></div>
+      <div class="card"><h3>Komentar terbaru <small id="komTotal" class="muted"></small></h3><div id="komTerbaru"><p class="muted">Memuat…</p></div></div>
+    </div>
+    <p class="muted" style="font-size:0.8rem;margin-top:12px;">Statistik dihitung anonim (kode acak di browser, tanpa IP dan nama). Satu pengunjung dihitung satu kali per halaman per hari. Komentar tampil setelah disetujui admin.</p>
+  </div>
+</section>
+
 <section class="section">
   <div class="container">
     <h2 class="section-title">Pintasan Layanan</h2>
@@ -232,11 +249,12 @@
       <div class="sosmed-row" id="sosmedRow"></div>
     </div>
   </div>
-  <p class="footer-bottom">&copy; <span id="year"></span> Program Studi Manajemen Sumberdaya Perairan &middot; FPIK UNSRAT</p>
+  <p class="footer-bottom">&copy; <span id="year"></span> Program Studi Manajemen Sumberdaya Perairan &middot; FPIK UNSRAT &middot; Kunjungan dihitung secara anonim (tanpa IP dan nama).</p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="js/supabase-client.js"></script>
+<script src="js/visit.js"></script>
 <script src="js/kategori.js"></script>
 <script src="js/app.js"></script>
 <script src="js/dashboard.js"></script>

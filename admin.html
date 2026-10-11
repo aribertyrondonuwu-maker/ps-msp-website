@@ -35,6 +35,7 @@
       <button class="admin-nav-btn" data-tab="galeri">🖼️ Galeri</button>
       <button class="admin-nav-btn" data-tab="dosen-foto">👤 Foto Dosen</button>
       <button class="admin-nav-btn" data-tab="pengurus-foto">🎓 Foto Pengurus Alumni</button>
+      <button class="admin-nav-btn" data-tab="komentar">💬 Komentar <span id="komBadge" class="role-badge admin" style="display:none;background:#dc2626;color:#fff;margin:0 0 0 4px;"></span></button>
       <button class="admin-nav-btn" data-tab="dokumen">📁 Dokumen LKPS &amp; LED</button>
       <button class="admin-nav-btn" data-tab="ganti-password">🔐 Ganti Password</button>
       <button class="admin-nav-btn" data-tab="lab-foto">🔬 Foto Laboratorium</button>
@@ -357,6 +358,21 @@
         </div>
         <p class="form-note" id="sosmedStatus"></p>
       </form>
+    </section>
+
+    <!-- KOMENTAR (moderasi) -->
+    <section id="tab-komentar" class="admin-tab">
+      <h2>Moderasi Komentar</h2>
+      <p class="muted">Komentar baru berstatus <strong>menunggu</strong> dan belum tampil di situs. Setujui agar tampil, atau tolak/hapus bila tidak pantas.</p>
+      <div style="margin:12px 0;">
+        <select id="komFilter" class="admin-filter">
+          <option value="menunggu">Menunggu persetujuan</option>
+          <option value="disetujui">Disetujui</option>
+          <option value="ditolak">Ditolak</option>
+          <option value="">Semua</option>
+        </select>
+      </div>
+      <div class="table-wrap"><table class="data-table" id="komTable"></table></div>
     </section>
 
     <!-- DOKUMEN LKPS & LED (admin: lihat/unduh; superadmin: kelola) -->
