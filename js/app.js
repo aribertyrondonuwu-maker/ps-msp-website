@@ -65,6 +65,7 @@ renderDosen();
 // PENCARIAN SITUS (client-side, indeks halaman statis)
 // ─────────────────────────────────────────────────────────────────────────
 const SEARCH_INDEX = [
+  { judul: 'Pengumuman (arsip)', url: 'pengumuman.html', kata: 'pengumuman arsip deadline beasiswa jadwal ujian skripsi pendaftaran informasi resmi' },
   { judul: 'Dashboard Informasi', url: 'dashboard.html', kata: 'dashboard berita pengumuman agenda kalender akademik informasi terbaru' },
   { judul: 'Dokumen Internal LKPS & LED (login admin)', url: 'admin.html#dokumen', kata: 'dokumen lkps led akreditasi login admin unduh' },
   { judul: 'Profil Program Studi', url: 'profil.html', kata: 'profil sejarah visi misi tujuan struktur organisasi pimpinan sambutan koordinator renstra' },
@@ -252,13 +253,15 @@ async function renderHighlight() {
   try {
     const { data, error } = await window.sbClient
       .from('berita')
-      .select('id, judul, kategori, konten, tanggal_publish')
+      .select('*')
       .eq('published', true)
       .order('tanggal_publish', { ascending: false })
-      .limit(20);
+      .limit(40);
     if (error) throw error;
 
-    const pengumuman = (data || []).filter(b => parseKategori(b.kategori).jenis === 'Pengumuman').slice(0, 5);
+    // Pengumuman aktif saja (belum lewat tanggal berakhir); yang disematkan di atas
+    const pengumuman = (data || []).filter(b => parseKategori(b.kategori).jenis === 'Pengumuman' && !infoPengumuman(b).berakhir)
+      .sort((x, y) => (!!y.disematkan) - (!!x.disematkan)).slice(0, 5);
     const berita = (data || []).filter(b => parseKategori(b.kategori).jenis !== 'Pengumuman').slice(0, 4);
 
     if (beritaList) {
@@ -282,7 +285,7 @@ async function renderHighlight() {
             <span class="pd-day">${t.getDate()}</span>
             <span class="pd-mon">${t.toLocaleDateString('id-ID', { month: 'short' })}</span>
           </div>
-          <span class="pengumuman-judul">${b.judul}</span>
+          <span class="pengumuman-judul">${b.judul}${badgePengumuman(infoPengumuman(b))}</span>
         </a>`;
       }).join('') : '<p class="muted">Belum ada pengumuman.</p>';
     }

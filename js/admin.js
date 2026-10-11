@@ -431,12 +431,16 @@ document.getElementById('beritaForm').addEventListener('submit', async (e) => {
     gambar_posisi: document.getElementById('beritaFotoPosisi').value || 'kiri',
     galeri_foto: getGaleriUrls(),
   };
+  if (document.getElementById('beritaJenis').value === 'Pengumuman') Object.assign(payload, bacaFieldPengumuman());
   if (!id) {
     payload.slug = payload.judul.toLowerCase().replace(/[^a-z0-9]+/g, '-').slice(0, 60) + '-' + Date.now();
   }
   const query = id ? sb.from('berita').update(payload).eq('id', id) : sb.from('berita').insert([payload]);
   const { error } = await query;
-  if (error) { alert('Gagal menyimpan: ' + error.message); return; }
+  if (error) {
+    alert('Gagal menyimpan: ' + error.message + (/column/i.test(error.message) ? '\n\nJalankan dulu MIGRASI_DATABASE_pengumuman.sql di Supabase (SQL Editor).' : ''));
+    return;
+  }
   document.getElementById('beritaForm').reset();
   setBeritaKontenEditor('');
   document.getElementById('beritaId').value = '';
@@ -457,6 +461,7 @@ function editBerita(id) {
   const pk = parseKategori(b.kategori);
   document.getElementById('beritaJenis').value = pk.jenis;
   document.getElementById('beritaKategori').value = pk.sub;
+  isiFieldPengumuman(b);
   setBeritaKontenEditor(b.konten || '');
   document.getElementById('beritaPublished').checked = b.published;
   document.getElementById('beritaFotoUrl').value = b.gambar_url || '';
@@ -1170,4 +1175,47 @@ async function resetPasswordAdmin(email) {
   const { error } = await sb.rpc('admin_set_password', { target_email: email, new_password: baru });
   if (error) { alert('Gagal: ' + error.message + '\n\nPastikan MIGRASI_DATABASE_kelola_akun_admin.sql sudah dijalankan.'); return; }
   alert('✅ Password ' + email + ' berhasil diatur ulang.');
+}
+
+
+// ─────────────────────────────────────────────────────────────────────────
+// Kolom khusus PENGUMUMAN (tanggal berakhir, sematkan, info kunci, lampiran)
+// ─────────────────────────────────────────────────────────────────────────
+function togglePengumumanFields() {
+  document.getElementById('pengumumanFields').style.display =
+    document.getElementById('beritaJenis').value === 'Pengumuman' ? 'flex' : 'none';
+}
+document.getElementById('beritaJenis').addEventListener('change', togglePengumumanFields);
+document.getElementById('beritaForm').addEventListener('reset', () => setTimeout(togglePengumumanFields, 0));
+
+function parseLampiranText(t) {
+  return (t || '').split('\n').map(s => s.trim()).filter(Boolean).map(s => {
+    const [label, url, tipe] = s.split('|').map(x => (x || '').trim());
+    return { label: label || 'Unduh', url: url || '', tipe: (tipe || '').toLowerCase() === 'dasar' ? 'dasar' : 'unduh' };
+  }).filter(l => /^https?:\/\//i.test(l.url));
+}
+function lampiranToText(arr) {
+  return (Array.isArray(arr) ? arr : []).map(l => [l.label, l.url, l.tipe].join(' | ')).join('\n');
+}
+function bacaFieldPengumuman() {
+  const v = id => document.getElementById(id).value.trim();
+  return {
+    tanggal_berakhir: v('pengBerakhir') || null,
+    disematkan: document.getElementById('pengSemat').checked,
+    waktu_kegiatan: v('pengWaktu') || null,
+    lokasi: v('pengLokasi') || null,
+    target_audiens: v('pengTarget') || null,
+    narahubung: v('pengNarahubung') || null,
+    lampiran: parseLampiranText(document.getElementById('pengLampiran').value),
+  };
+}
+function isiFieldPengumuman(b) {
+  document.getElementById('pengBerakhir').value = b.tanggal_berakhir || '';
+  document.getElementById('pengSemat').checked = !!b.disematkan;
+  document.getElementById('pengWaktu').value = b.waktu_kegiatan || '';
+  document.getElementById('pengLokasi').value = b.lokasi || '';
+  document.getElementById('pengTarget').value = b.target_audiens || '';
+  document.getElementById('pengNarahubung').value = b.narahubung || '';
+  document.getElementById('pengLampiran').value = lampiranToText(b.lampiran);
+  togglePengumumanFields();
 }

@@ -14,12 +14,13 @@ async function loadDashBerita() {
   try {
     const { data, error } = await window.sbClient
       .from('berita')
-      .select('id, judul, kategori, tanggal_publish')
+      .select('*')
       .eq('published', true)
       .order('tanggal_publish', { ascending: false })
       .limit(30);
     if (error) throw error;
-    const peng = (data || []).filter(b => parseKategori(b.kategori).jenis === 'Pengumuman').slice(0, 6);
+    const peng = (data || []).filter(b => parseKategori(b.kategori).jenis === 'Pengumuman' && !infoPengumuman(b).berakhir)
+      .sort((x, y) => (!!y.disematkan) - (!!x.disematkan)).slice(0, 6);
     const ber = (data || []).filter(b => parseKategori(b.kategori).jenis !== 'Pengumuman').slice(0, 6);
     bl.innerHTML = ber.length ? ber.map(b => `
       <a href="berita-detail.html?id=${encodeURIComponent(b.id)}" class="highlight-item">
@@ -33,7 +34,7 @@ async function loadDashBerita() {
       const t = new Date(b.tanggal_publish);
       return `<a href="berita-detail.html?id=${encodeURIComponent(b.id)}" class="pengumuman-item">
         <div class="pengumuman-date"><span class="pd-day">${t.getDate()}</span><span class="pd-mon">${BLN[t.getMonth()]}</span></div>
-        <span class="pengumuman-judul">${esc(b.judul)}</span></a>`;
+        <span class="pengumuman-judul">${esc(b.judul)}${badgePengumuman(infoPengumuman(b))}</span></a>`;
     }).join('') : '<p class="muted">Belum ada pengumuman.</p>';
   } catch (e) {
     console.error(e);
